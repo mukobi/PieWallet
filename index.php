@@ -154,11 +154,9 @@ endif;
 ?>
 <?php
 echo '<?xml version="1.0" encoding="utf-8"?>' ?>
-	<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML Basic 1.1//EN"
-    "http://www.w3.org/TR/xhtml-basic/xhtml-basic11.dtd"
->
-	<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
-
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML Basic 1.1//EN"
+    "http://www.w3.org/TR/xhtml-basic/xhtml-basic11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 	<head>
 		<title>Dashboard - PayPeer.io</title>
 		<link rel="stylesheet" href="https://changelly.com/widget.css">

@@ -6,7 +6,7 @@ body {
 	margin: 0;
 	padding: 0;
 	background-color: #842447;
-	background-image: linear-gradient(to bottom right, #c04847, #480047)
+	background-image: linear-gradient(to right, #376ccf, #750e9e);
 	font-size: 12pt;
 }
 [id=dashboard] {

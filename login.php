@@ -169,10 +169,6 @@ echo '<?xml version="1.0" encoding="utf-8"?>'
 	rel="stylesheet"
 	href="/css/style11.css"
 >
-<link
-	rel="stylesheet"
-	href="/css/oldstyle.css"
->
  <link rel="stylesheet" href="/css/buybox11.css">
 <meta
 	name="viewport"
