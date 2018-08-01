@@ -46,27 +46,12 @@ body {
 }
 
 
-.coin-widget {
-	margin-top: 1em;
-	background-color: white;
-	font-size: 24pt;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
 .imgleft {
 	width: 4em;
 }
 .imghead {
 	height: 1em;
 	padding: 0;
-}
-.headlogo {
-	height: 1.7em;
-}
-.headlogodiv {
-	margin: 1em;
 }
 .fixedmenuwrapper {
 	display: inline-block;
@@ -93,7 +78,20 @@ div.navheadicon {
 /* header */
 #header {
 	background-color: #252544;
+	color: white;
 	margin-bottom: -1em;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+
+#header .headlogo {
+	width: 150px;
+}
+
+#header .login a {
+	color: #2da4ff;
 }
 
 /* navigation */
@@ -101,6 +99,16 @@ div.navheadicon {
 	background-color: #252544;
 	display: flex;
 	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+/* coin widgets */
+.coin-widget {
+	margin-top: 16px;
+	background-color: white;
+	font-size: 24pt;
+	display: flex;
 	justify-content: center;
 	align-items: center;
 }
