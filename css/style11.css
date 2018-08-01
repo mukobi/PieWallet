@@ -56,7 +56,7 @@ body {
 }
 
 .imgleft {
-	width: 3em;
+	width: 4em;
 }
 .imghead {
 	height: 1em;
@@ -99,6 +99,10 @@ div.navheadicon {
 /* navigation */
 #navigation-menu {
 	background-color: #252544;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
 /* graph */
