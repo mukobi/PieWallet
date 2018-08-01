@@ -1,12 +1,12 @@
 html {
-	height: 100%;
+	height: 100vh;
 }
 body {
-	height: 100%;
+	/* height: 100%; */
 	margin: 0;
 	padding: 0;
-	background-color: #842447;
-	background-image: linear-gradient(to right, #376ccf, #750e9e);
+	background-color: #007bd9;
+	background-image: linear-gradient(to top right, #007bd9, #d76afd);
 	font-size: 12pt;
 }
 [id=dashboard] {
