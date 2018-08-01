@@ -1,4 +1,11 @@
-html {
+* {
+	padding: 0;
+	margin: 0;
+	font-family: "Proxima Nova", sans-serif;
+    
+}
+
+html, body {
 	height: 100vh;
 }
 
@@ -11,57 +18,111 @@ body {
 	font-size: 12pt;
 }
 
+#header {grid-area: header;}
+#widget-bitcoin {grid-area: bitcoin;}
+#widget-litecoin {grid-area: litecoin;}
+#widget-etherium {grid-area: etherium;}
+#widget-ripple {grid-area: ripple;}
+#navigation-menu {grid-area: navigation;}
+#balance-transaction-history {grid-area: history;}
+#market-overview {grid-area: market;}
+#trading-graph {grid-area: graph;}
+
 [id=dashboard] {
 	display: grid;
-	margin: 0;
+	height: 100%;
+	margin-right: 1em;
 	grid-gap: 1em;
-	grid-template-rows: 5em auto 10em;
-	grid-template-columns: 7em 17em auto;
+	grid-template-rows: 1fr 3fr 2fr;
+	grid-template-columns: 200px 1fr 1fr 1fr 1fr;
+	grid-template-areas: 
+		"header bitcoin litecoin etherium ripple"
+		"navigation graph graph market market"
+		"navigation history history history history";
 }
 
 [id=fixedheading] {
 	display: none;
 }
 
-[id=header] {
-	grid-row: 1;
-	grid-column-start: 1;
-	grid-column-end: 4;
+
+.coin-widget {
+	margin-top: 1em;
+	background-color: white;
+	font-size: 24pt;
 	display: flex;
-	justify-content: space-between;
-	/* width: 100%; */
+	justify-content: center;
+	align-items: center;
 }
 
-[id=leftmenu] {
-	grid-row-start: 2;
-	grid-row-end: 4;
-	grid-column: 1;
+.imgleft {
+	width: 3em;
+}
+.imghead {
+	height: 1em;
+	padding: 0;
+}
+.headlogo {
+	height: 1.7em;
+}
+.headlogodiv {
+	margin: 1em;
+}
+.fixedmenuwrapper {
+	display: inline-block;
+	margin-right: 0.2em;
+}
+.fixedlogodiv {
+	margin: 1em 0.2em;
+}
+.fixedlogo {
+	display: inline-block;
+	height: 1em;
+}
+div.navicon {
+	margin: 1em 1em;
+	display: block;
+	position: relative;
+}
+div.navheadicon {
+	margin: 1em 0.4em;
+	display: inline-block;
+	position: relative;
 }
 
-.content-main {
-	width: 100%;
+/* header */
+#header {
+	background-color: #252544;
+	margin-bottom: -1em;
+}
+
+/* navigation */
+#navigation-menu {
+	background-color: #252544;
+}
+
+/* graph */
+#trading-graph > div {
 	height: 100%;
 }
 
-.left {
-	grid-row-start: 2;
-	grid-row-end: 4;
-	grid-column: 2;
-	display: grid;
-	grid-gap: 1em;
-	grid-template-rows: auto 340px auto;
+/* market */
+#market-overview {
+	background-color: white;
 }
 
-.bottom {
-	grid-row: 3;
-	grid-column: 3;
-	display: grid;
+/* history */
+#balance-transaction-history {
+	background-color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 1em;
 }
 
-.main {
-	grid-row: 2;
-	grid-column: 3;
-}
+
+
+
 
 /* Begin mobile */
 

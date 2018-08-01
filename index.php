@@ -161,7 +161,7 @@ echo '<?xml version="1.0" encoding="utf-8"?>' ?>
 		<title>Dashboard - PayPeer.io</title>
 		<link rel="stylesheet" href="https://changelly.com/widget.css">
 		<link rel="stylesheet" href="/css/style11.css">
-		<link rel="stylesheet" href="/css/buybox11.css">
+		<!-- <link rel="stylesheet" href="/css/buybox11.css"> -->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
 		<style>
@@ -258,6 +258,10 @@ echo '<?xml version="1.0" encoding="utf-8"?>' ?>
 
 				</div>
 			</div>
+			<div id="widget-bitcoin" class="coin-widget">Bitcoin</div>
+			<div id="widget-litecoin" class="coin-widget">Litecoin</div>
+			<div id="widget-etherium" class="coin-widget">Etherium</div>
+			<div id="widget-ripple" class="coin-widget">Ripple</div>
 			<!-- Start Left Menu -->
 			<div id="navigation-menu" class="genbox">
 				<div class="navicon">
@@ -300,18 +304,13 @@ echo '<?xml version="1.0" encoding="utf-8"?>' ?>
 				</div>
 				<!--End Left Menu-->
 			</div>
-			<div class="genbox balancebox">
-				<h4>Balance</h4>
+			<div id="balance-transaction-history" class="genbox balancebox">
+				<h3>Balance and Transaction History</h3>
+				</br>
 				<div id="balance-content">
 					<?php
 					if ( !mysqli_connect_errno() && isset($_SESSION['ud_login'])){
 
-					// echo '<pre>';
-					// var_dump($_SESSION);
-					// echo '</pre>';
-					// var_dump($_SESSION['ud_loasdasfafa']);
-					// var_dump($_SESSION['ud_login']['email']);
-					// echo $_SESSION['ud_laogin']['email'];
 					$email = $_SESSION['ud_login']['email'] ;
 					$stmt = " SELECT label from ls_users where email LIKE '".$email."'; " ;
 					$result = $conn->query($stmt);
@@ -334,73 +333,75 @@ echo '<?xml version="1.0" encoding="utf-8"?>' ?>
 					?>
 				</div>
 			</div>
-			<!-- TradingView Widget BEGIN -->
-			<div class="tradingview-widget-container2 genbox">
-				<div class="tradingview-widget-container__widget"></div>
-				<script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-market-overview.js" async>
-					{
-						"showChart": false,
-						"locale": "en",
-						"largeChartUrl": "",
-						"width": "100%",
-						"height": "100%",
-						"plotLineColorGrowing": "rgba(0, 0, 255, 1)",
-						"plotLineColorFalling": "#FF4A68",
-						"gridLineColor": "#e9e9ea",
-						"scaleFontColor": "#DADDE0",
-						"belowLineFillColorGrowing": "rgba(60, 188, 152, 0.05)",
-						"belowLineFillColorFalling": "rgba(255, 74, 104, 0.05)",
-						"symbolActiveColor": "#F2FAFE",
-						"tabs": [{
-							"title": "Cryptocurrencies",
-							"symbols": [{
-									"s": "BITFINEX:BTCUSD",
-									"d": "Bitcoin"
-								},
-								{
-									"s": "BITFINEX:LTCUSD",
-									"d": "Litecoin"
-								},
-								{
-									"s": "BITFINEX:ETHUSD",
-									"d": "Ethereum"
-								},
-								{
-									"s": "BITFINEX:XRPUSD",
-									"d": "Ripple"
-								},
-								{
-									"s": "BITFINEX:BTCUSD",
-									"d": "Bitcoin Cash"
-								}
-							]
-						}]
-					}
-				</script>
-			</div>
-			<!-- TradingView Widget END -->
-			<div class="genbox buybox">
-				<h4 class="buybox">Buy Cryptocurrencies</h4>
-				<a id="changellyButton" href="https://changelly.com/widget/v1?auth=email&from=USD&to=BTC&merchant_id=b6b98ece50c8&address=&amount=100&ref_id=b6b98ece50c8&color=4977f1"
-					target="_blank">
-					<img src="https://changelly.com/pay_button_buy_sell.png" />
-				</a>
-				<div id="changellyModal">
-					<div class="changellyModal-content">
-						<span class="changellyModal-close">x</span>
-						<iframe src="https://changelly.com/widget/v1?auth=email&from=USD&to=BTC&merchant_id=b6b98ece50c8&address=&amount=100&ref_id=b6b98ece50c8&color=4977f1"
-							width="600" height="500" class="changelly" scrolling="no" style="overflow-y: hidden; border: none">
-							Can't load widget
-						</iframe>
-					</div>
-					<script type="text/javascript">
-						var changellyModal = document.getElementById('changellyModal');
-						var changellyButton = document.getElementById('changellyButton');
-						var changellyCloseButton = document.getElementsByClassName('changellyModal-close')[0];
+			<div id="market-overview">
+				<!-- TradingView Widget BEGIN -->
+				<div class="tradingview-widget-container2 genbox">
+					<div class="tradingview-widget-container__widget"></div>
+					<script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-market-overview.js" async>
+						{
+							"showChart": false,
+							"locale": "en",
+							"largeChartUrl": "",
+							"width": "100%",
+							"height": "100%",
+							"plotLineColorGrowing": "rgba(0, 0, 255, 1)",
+							"plotLineColorFalling": "#FF4A68",
+							"gridLineColor": "#e9e9ea",
+							"scaleFontColor": "#DADDE0",
+							"belowLineFillColorGrowing": "rgba(60, 188, 152, 0.05)",
+							"belowLineFillColorFalling": "rgba(255, 74, 104, 0.05)",
+							"symbolActiveColor": "#F2FAFE",
+							"tabs": [{
+								"title": "Cryptocurrencies",
+								"symbols": [{
+										"s": "BITFINEX:BTCUSD",
+										"d": "Bitcoin"
+									},
+									{
+										"s": "BITFINEX:LTCUSD",
+										"d": "Litecoin"
+									},
+									{
+										"s": "BITFINEX:ETHUSD",
+										"d": "Ethereum"
+									},
+									{
+										"s": "BITFINEX:XRPUSD",
+										"d": "Ripple"
+									},
+									{
+										"s": "BITFINEX:BTCUSD",
+										"d": "Bitcoin Cash"
+									}
+								]
+							}]
+						}
 					</script>
 				</div>
+				<!-- TradingView Widget END -->
+				<div class="genbox buybox">
+					<h4 class="buybox">Buy Cryptocurrencies</h4>
+					<a id="changellyButton" href="https://changelly.com/widget/v1?auth=email&from=USD&to=BTC&merchant_id=b6b98ece50c8&address=&amount=100&ref_id=b6b98ece50c8&color=4977f1"
+						target="_blank">
+						<img src="https://changelly.com/pay_button_buy_sell.png" />
+					</a>
+					<div id="changellyModal">
+						<div class="changellyModal-content">
+							<span class="changellyModal-close">x</span>
+							<iframe src="https://changelly.com/widget/v1?auth=email&from=USD&to=BTC&merchant_id=b6b98ece50c8&address=&amount=100&ref_id=b6b98ece50c8&color=4977f1"
+								width="600" height="500" class="changelly" scrolling="no" style="overflow-y: hidden; border: none">
+								Can't load widget
+							</iframe>
+						</div>
+						<script type="text/javascript">
+							var changellyModal = document.getElementById('changellyModal');
+							var changellyButton = document.getElementById('changellyButton');
+							var changellyCloseButton = document.getElementsByClassName('changellyModal-close')[0];
+						</script>
+					</div>
+				</div>
+				<!-- End Buy Box -->
 			</div>
-			<!-- End Buy Box -->
 			
 			<div id="trading-graph">
 				<div id="tradingview_c355b" class="main"></div>
