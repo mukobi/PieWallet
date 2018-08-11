@@ -145,7 +145,7 @@ body {
 	background-color:  #003964;
 }
 
-#navigation-menu div.navicon:hover {
+#navigation-menu div.navicon:not(.active):hover {
 	background-color: rgba(255,255,255,0.3);
 }
 
