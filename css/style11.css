@@ -99,14 +99,27 @@ body {
 	flex-direction: column;
 	justify-content: center;
 	align-items: stretch;
+}
+
+#navigation-menu p {
 	font-family: "haettenschweiler";
+	font-size: 24pt;
+	color: black;
+}
+
+#navigation-menu a {
+	text-decoration-line: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 }
 
 #navigation-menu .navicon {
 	height: 15%;
 	display: flex;
-  justify-content: center;
-  align-items: center;
+	justify-content: center;
+	align-items: center;
 }
 
 #navigation-menu div.navicon.active {

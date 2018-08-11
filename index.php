@@ -248,11 +248,11 @@ echo '<?xml version="1.0" encoding="utf-8"?>' ?>
 					</span>
 
 					<?php else : ?>
-					<span class="login-button">
+					<!-- <span class="login-button">
 						<a href="/login">Sign in</a>
 					</span>
 					<span class="or">or</span>
-					<a class="sign-up" aria-current="false" href="/signup">Sign up</a>
+					<a class="sign-up" aria-current="false" href="/signup">Sign up</a> -->
 
 					<?php endif ?>
 
@@ -267,16 +267,19 @@ echo '<?xml version="1.0" encoding="utf-8"?>' ?>
 				<div class="navicon active dashboard">
 					<a href="/">
 						<img class="imgleft" src="/images/navigation/dashboard.png" />
+						<p>DASHBOARD</p>
 					</a>
 				</div>
 				<div class="navicon exchange">
 					<a href="/exchange">
 						<img class="imgleft" src="/images/navigation/exchange.png" />
+						<p>EXCHANGE</p>
 					</a>
 				</div>
 				<div class="navicon chat">
 					<a href="/send">
 						<img class="imgleft" src="/images/navigation/chat.png" />
+						<p>CHAT</p>
 					</a>
 				</div>
 				<div class="navicon account">
@@ -295,12 +298,14 @@ echo '<?xml version="1.0" encoding="utf-8"?>' ?>
 					}
 					?>
 						<img class="imgleft" src="/images/navigation/account.png" />
+						<p>ACCOUNT</p>
 						</a>
 				</div>
 				<div class="navicon login-logout">
 					<a href="#">
 						<img class="imgleft" src="/images/navigation/login.png" />
 						<img class="imgleft" src="/images/navigation/logout.png" />
+						<p>LOGOUT</p>
 					</a>
 				</div>
 			</div>
