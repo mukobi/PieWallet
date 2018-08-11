@@ -264,22 +264,22 @@ echo '<?xml version="1.0" encoding="utf-8"?>' ?>
 			<div id="widget-ripple" class="coin-widget">Ripple</div>
 			<!-- Start Left Menu -->
 			<div id="navigation-menu" class="genbox">
-				<div class="navicon active">
+				<div class="navicon active dashboard">
 					<a href="/">
-						<img class="imgleft" src="/images/003-gauge.png" />
+						<img class="imgleft" src="/images/navigation/dashboard.png" />
 					</a>
 				</div>
-				<div class="navicon">
+				<div class="navicon exchange">
 					<a href="/exchange">
-						<img class="imgleft" src="/images/002-arrows.png" />
+						<img class="imgleft" src="/images/navigation/exchange.png" />
 					</a>
 				</div>
-				<div class="navicon">
+				<div class="navicon chat">
 					<a href="/send">
-						<img class="imgleft" src="/images/001-right-arrow.png" />
+						<img class="imgleft" src="/images/navigation/chat.png" />
 					</a>
 				</div>
-				<div class="navicon">
+				<div class="navicon account">
 					<?php
 					if ( !mysqli_connect_errno()  && isset($_SESSION['ud_login'])){
 						$email = $_SESSION['ud_login']['email'] ;
@@ -294,15 +294,15 @@ echo '<?xml version="1.0" encoding="utf-8"?>' ?>
 						echo '<a href="/login">' ;
 					}
 					?>
-						<img class="imgleft" src="/images/account.png" />
+						<img class="imgleft" src="/images/navigation/account.png" />
 						</a>
 				</div>
-				<div class="navicon">
-					<a href="/help">
-						<img class="imgleft" src="/images/help.png" />
+				<div class="navicon login-logout">
+					<a href="#">
+						<img class="imgleft" src="/images/navigation/login.png" />
+						<img class="imgleft" src="/images/navigation/logout.png" />
 					</a>
 				</div>
-				<!--End Left Menu-->
 			</div>
 			<div id="balance-transaction-history" class="genbox balancebox">
 				<h3>Balance and Transaction History</h3>

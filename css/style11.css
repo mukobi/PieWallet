@@ -113,6 +113,10 @@ body {
 	background-color:  #003964;
 }
 
+#navigation-menu .navicon.login-logout {
+	margin-top: 50%;
+}
+
 /* coin widgets */
 .coin-widget {
 	margin-top: 16px;
