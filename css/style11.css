@@ -1,13 +1,22 @@
+/* general styling */
+
 * {
 	padding: 0;
 	margin: 0;
-	font-family: "Proxima Nova", sans-serif;
+	font-family: sans-serif;
     
 }
 
 html, body {
 	height: 100vh;
 }
+
+@font-face {
+    font-family: haettenschweiler;
+	src: url(fonts/Haettenschweiler-Regular.ttf)  format('truetype'),
+		 url(fonts/Haettenschweiler-Regular.ttf);
+}
+
 
 body {
 	/* height: 100%; */
@@ -90,6 +99,7 @@ body {
 	flex-direction: column;
 	justify-content: center;
 	align-items: stretch;
+	font-family: "haettenschweiler";
 }
 
 #navigation-menu .navicon {
