@@ -181,7 +181,7 @@ echo '<?xml version="1.0" encoding="utf-8"?>' ?>
 			</div>
 			<!-- Start fixed menu buttons -->
 			<div class="fixedmenuwrapper">
-				<div class="navheadicon">
+				<div class="navheadicon active">
 					<a href="/">
 						<img class="imghead" src="/images/003-gauge.png" />
 					</a>
@@ -264,7 +264,7 @@ echo '<?xml version="1.0" encoding="utf-8"?>' ?>
 			<div id="widget-ripple" class="coin-widget">Ripple</div>
 			<!-- Start Left Menu -->
 			<div id="navigation-menu" class="genbox">
-				<div class="navicon">
+				<div class="navicon active">
 					<a href="/">
 						<img class="imgleft" src="/images/003-gauge.png" />
 					</a>
