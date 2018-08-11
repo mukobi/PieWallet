@@ -258,10 +258,9 @@ echo '<?xml version="1.0" encoding="utf-8"?>' ?>
 
 				</div>
 			</div>
-			<div id="widget-bitcoin" class="coin-widget">Bitcoin</div>
-			<div id="widget-litecoin" class="coin-widget">Litecoin</div>
-			<div id="widget-etherium" class="coin-widget">Etherium</div>
-			<div id="widget-ripple" class="coin-widget">Ripple</div>
+			<div id="widget-bitcoin" class="coin-widget dashbox">Bitcoin</div>
+			<div id="widget-litecoin" class="coin-widget dashbox">Litecoin</div>
+			<div id="widget-etherium" class="coin-widget dashbox">Etherium</div>
 			<!-- Start Left Menu -->
 			<div id="navigation-menu" class="genbox">
 				<div class="navicon active dashboard">
@@ -303,13 +302,12 @@ echo '<?xml version="1.0" encoding="utf-8"?>' ?>
 				</div>
 				<div class="navicon login-logout">
 					<a href="#">
-						<img class="imgleft" src="/images/navigation/login.png" />
 						<img class="imgleft" src="/images/navigation/logout.png" />
 						<p>LOGOUT</p>
 					</a>
 				</div>
 			</div>
-			<div id="balance-transaction-history" class="genbox balancebox">
+			<div id="transactions" class="dashbox genbox balancebox">
 				<h3>Balance and Transaction History</h3>
 				</br>
 				<div id="balance-content">
@@ -338,52 +336,11 @@ echo '<?xml version="1.0" encoding="utf-8"?>' ?>
 					?>
 				</div>
 			</div>
-			<div id="market-overview">
-				<!-- TradingView Widget BEGIN -->
-				<div class="tradingview-widget-container2 genbox">
-					<div class="tradingview-widget-container__widget"></div>
-					<script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-market-overview.js" async>
-						{
-							"showChart": false,
-							"locale": "en",
-							"largeChartUrl": "",
-							"width": "100%",
-							"height": "100%",
-							"plotLineColorGrowing": "rgba(0, 0, 255, 1)",
-							"plotLineColorFalling": "#FF4A68",
-							"gridLineColor": "#e9e9ea",
-							"scaleFontColor": "#DADDE0",
-							"belowLineFillColorGrowing": "rgba(60, 188, 152, 0.05)",
-							"belowLineFillColorFalling": "rgba(255, 74, 104, 0.05)",
-							"symbolActiveColor": "#F2FAFE",
-							"tabs": [{
-								"title": "Cryptocurrencies",
-								"symbols": [{
-										"s": "BITFINEX:BTCUSD",
-										"d": "Bitcoin"
-									},
-									{
-										"s": "BITFINEX:LTCUSD",
-										"d": "Litecoin"
-									},
-									{
-										"s": "BITFINEX:ETHUSD",
-										"d": "Ethereum"
-									},
-									{
-										"s": "BITFINEX:XRPUSD",
-										"d": "Ripple"
-									},
-									{
-										"s": "BITFINEX:BTCUSD",
-										"d": "Bitcoin Cash"
-									}
-								]
-							}]
-						}
-					</script>
-				</div>
-				<!-- TradingView Widget END -->
+			<div id="sendreceive" class="dashbox">
+				<h3>Send/Receive</h3>
+			</div>
+			<div id="shapeshift" class="dashbox">
+				<h3>ShapeShift</h3>
 				<div class="genbox buybox">
 					<h4 class="buybox">Buy Cryptocurrencies</h4>
 					<a id="changellyButton" href="https://changelly.com/widget/v1?auth=email&from=USD&to=BTC&merchant_id=b6b98ece50c8&address=&amount=100&ref_id=b6b98ece50c8&color=4977f1"
@@ -405,10 +362,9 @@ echo '<?xml version="1.0" encoding="utf-8"?>' ?>
 						</script>
 					</div>
 				</div>
-				<!-- End Buy Box -->
 			</div>
 			
-			<div id="trading-graph">
+			<div id="trading-graph" class="dashbox">
 				<div id="tradingview_c355b" class="main"></div>
 				<script type="text/javascript">
 					new TradingView.widget({

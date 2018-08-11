@@ -30,27 +30,42 @@ body {
 #widget-bitcoin {grid-area: bitcoin;}
 #widget-litecoin {grid-area: litecoin;}
 #widget-etherium {grid-area: etherium;}
-#widget-ripple {grid-area: ripple;}
 #navigation-menu {grid-area: navigation;}
-#balance-transaction-history {grid-area: history;}
-#market-overview {grid-area: market;}
+#transactions {grid-area: transactions;}
+#shapeshift {grid-area: shapeshift;}
 #trading-graph {grid-area: graph;}
+#sendreceive {grid-area: sendreceive;}
 
 [id=dashboard] {
 	display: grid;
-	height: 100%;
-	margin-right: 1em;
+	position: absolute;
+	top: 16px;
+	right: 16px;
+	bottom: 16px;
+	left: 0;
 	grid-gap: 1em;
-	grid-template-rows: 1fr 3fr 2fr;
-	grid-template-columns: 160px 1fr 1fr 1fr 1fr;
+	grid-template-rows: 2fr 1fr 5fr 3fr;
+	grid-template-columns: 160px 2fr 2fr 2fr 3fr;
 	grid-template-areas: 
-		"header bitcoin litecoin etherium ripple"
-		"navigation graph graph market market"
-		"navigation history history history history";
+		"header     bitcoin    litecoin   etherium   sendreceive"
+		"navigation graph      graph      graph      sendreceive"
+		"navigation graph      graph      graph      transactions"
+		"navigation shapeshift shapeshift shapeshift transactions";
 }
 
 [id=fixedheading] {
 	display: none;
+}
+
+#dashboard .dashbox {
+	/* background-color: white; */
+	color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	border: 4px solid #584dbf;
+	border-image: linear-gradient(to right, #0c58a5, #7249c9) 30;
 }
 
 
@@ -77,6 +92,7 @@ body {
 #header {
 	background: linear-gradient(to bottom, #704ac7, #544ebe);
 	color: white;
+	margin-top: -16px;
 	margin-bottom: -1em;
 	display: flex;
 	flex-direction: column;
@@ -99,6 +115,7 @@ body {
 	flex-direction: column;
 	justify-content: center;
 	align-items: stretch;
+	margin-bottom: -16px;
 }
 
 #navigation-menu p {
@@ -120,10 +137,16 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	transition: all 250ms;
+	filter: brightness(100%);
 }
 
 #navigation-menu div.navicon.active {
 	background-color:  #003964;
+}
+
+#navigation-menu div.navicon:hover {
+	background-color: rgba(255,255,255,0.3);
 }
 
 #navigation-menu .navicon.login-logout {
@@ -132,8 +155,6 @@ body {
 
 /* coin widgets */
 .coin-widget {
-	margin-top: 16px;
-	background-color: white;
 	font-size: 24pt;
 	display: flex;
 	justify-content: center;
@@ -143,11 +164,11 @@ body {
 /* graph */
 #trading-graph > div {
 	height: 100%;
+	width: 100%;
 }
 
-/* market */
-#market-overview {
-	background-color: white;
+/* send/receive */
+#sendreceive{
 }
 
 /* history */
