@@ -89,14 +89,15 @@ body {
 	flex-direction: column;
 	justify-content: space-around;
 	align-items: center;
+	padding-top: 16px;
 }
 
 #header .headlogo {
-	width: 150px;
+	width: 21vh;
 }
 
 #header .login a {
-	color: #2da4ff;
+	color: #14181b;
 }
 
 /* navigation */
