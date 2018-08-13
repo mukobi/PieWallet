@@ -173,55 +173,6 @@ echo '<?xml version="1.0" encoding="utf-8"?>' ?>
 	</head>
 
 	<body>
-		<!-- Start mobile heading -->
-		<div id="fixedheading">
-			<div class="fixedlogodiv">
-				<a href="/">
-					<img class="fixedlogo" src="/images/header-logo2.png" />
-				</a>
-			</div>
-			<!-- Start fixed menu buttons -->
-			<div class="fixedmenuwrapper">
-				<div class="navheadicon active">
-					<a href="/">
-						<img class="imghead" src="/images/003-gauge.png" />
-					</a>
-				</div>
-				<div class="navheadicon">
-					<a href="/exchange">
-						<img class="imghead" src="/images/002-arrows.png" />
-					</a>
-				</div>
-				<div class="navheadicon">
-					<a href="/send">
-						<img class="imghead" src="/images/001-right-arrow.png" />
-					</a>
-				</div>
-				<div class="navheadicon">
-					<?php
-					if ( !mysqli_connect_errno() ){
-					$email = $_SESSION['ud_login']['email'] ;
-					$stmt = " SELECT label from ls_users where email LIKE '".$email."'; " ;
-					$result = $conn->query($stmt);
-					if ( $result->num_rows > 0 ) {
-					echo '<a href="/account">' ;
-					} else {
-					echo '<a href="/login">' ;
-					}
-					}
-				?>
-						<img class="imghead" src="/images/account.png" />
-						</a>
-				</div>
-				<div class="navheadicon">
-					<a href="/help">
-						<img class="imghead" src="/images/help.png" />
-					</a>
-				</div>
-			</div>
-			<!-- End Fixed menu buttons -->
-		</div>
-		<!-- End mobile heading -->
 		<div id="dashboard" class="content-main">
 			<div id="header" class="header genbox">
 				<div class="headlogodiv">
@@ -262,15 +213,15 @@ echo '<?xml version="1.0" encoding="utf-8"?>' ?>
 			<div id="coin-widget-container">
 				<div id="widget-bitcoin" class="coin-widget dashbox">
 					<img class="coin-logo" src="images/Bitcoin-logo.png" alt="Bitcoin Logo">
-					<h3>Bitcoin</h3>
+					<h3>BTC</h3>
 				</div>
 				<div id="widget-litecoin" class="coin-widget dashbox">
 					<img class="coin-logo" src="images/Litecoin-logo.png" alt="Litecoin Logo">
-					<h3>Litecoin</h3>
+					<h3>LTC</h3>
 				</div>
 				<div id="widget-ethereum" class="coin-widget dashbox">
 					<img class="coin-logo" src="images/Ethereum-logo.png" alt="Ethereum Logo">
-					<h3>Ethereum</h3>
+					<h3>ETH</h3>
 				</div>
 			</div>
 			<!-- Start Left Menu -->
