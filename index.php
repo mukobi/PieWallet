@@ -165,11 +165,6 @@ echo '<?xml version="1.0" encoding="utf-8"?>' ?>
 		<!-- <link rel="stylesheet" href="/css/buybox11.css"> -->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
-		<style>
-			body {
-				font-size: 12pt;
-			}
-		</style>
 	</head>
 
 	<body>
@@ -178,6 +173,7 @@ echo '<?xml version="1.0" encoding="utf-8"?>' ?>
 				<div class="headlogodiv">
 					<a href="/">
 						<img class="headlogo" src="/images/header-logo2.png" />
+						<h2>PieWallet</h2>
 					</a>
 				</div>
 				<div class="login">

@@ -8,7 +8,6 @@
 }
 
 html, body {
-	height: 100vh;
 }
 
 @font-face {
@@ -91,13 +90,14 @@ body {
 	align-items: center;
 	padding-top: 16px;
 }
-
 #header .headlogo {
 	width: 21vh;
 }
-
 #header .login a {
 	color: #14181b;
+}
+#header h2 {
+	display: none;
 }
 
 /* navigation */
@@ -212,9 +212,6 @@ body {
 	width: 100%;
 }
 
-/* send/receive */
-#sendreceive{
-}
 
 /* history */
 #balance-transaction-history {
@@ -225,3 +222,91 @@ body {
 	margin-bottom: 1em;
 }
 
+
+
+
+/**** Mobile Design ****/
+
+@media screen and (max-width: 800px) {
+	/* navigation */
+	#navigation-menu {
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		height: 60px;
+		align-items: center;
+		margin: 0;
+		flex-direction: row;
+		justify-content: space-between;
+		background: linear-gradient(to right, #704ac7, #005ba1);
+	}
+	#navigation-menu .navicon {
+		height: 60px;
+		width: 100%;
+		margin: 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		transition: none;
+	}
+	#navigation-menu .navicon.login-logout {
+		margin: 0;
+	}
+	#navigation-menu div.navicon.active {
+		background-color:  initial;
+	}
+	#navigation-menu div.navicon .imgleft {
+		width: 17vw;
+		max-width: 50px;
+	}
+	#navigation-menu div.navicon p {
+		display: none;
+	}
+
+	/* general layout */
+	#dashboard {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		top: 0;
+		left: 0;
+		bottom: 60px;
+		right: 0;
+	}
+
+	#header {
+		background: linear-gradient(to right, #704ac7, #005ba1);
+		margin: 0;
+		padding: 8px 0;
+	}
+	#header a {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		text-decoration: none;
+	}
+	#header .headlogo {
+		width: 50px;
+		display: block;
+		margin: 0;
+		padding: 0;
+	}
+	#header h2 {
+		display: block;
+		color: white;
+	}
+
+	#coin-widget-container {
+		height: 35%;
+	}
+
+	#transactions {
+		height: 50%;
+	}
+
+	#dashboard #sendreceive, #dashboard #shapeshift, #dashboard #trading-graph {
+		display: none;
+	}
+}
