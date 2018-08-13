@@ -186,8 +186,14 @@ body {
 	justify-content: space-between;
 }
 .coin-widget {
-	font-size: 24pt;
-	width: 30%;
+	font-size: 20pt;
+	width: 31%;
+	position: relative;
+}
+.coin-widget img.coin-logo {
+	position: absolute;
+	top: 10px;
+	left: 10px;
 }
 
 /* graph */

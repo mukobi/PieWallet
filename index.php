@@ -261,15 +261,15 @@ echo '<?xml version="1.0" encoding="utf-8"?>' ?>
 			</div>
 			<div id="coin-widget-container">
 				<div id="widget-bitcoin" class="coin-widget dashbox">
-					<img class="bitcoin-logo" src="images/Bitcoin-logo.png" alt="Bitcoin Logo">
+					<img class="coin-logo" src="images/Bitcoin-logo.png" alt="Bitcoin Logo">
 					<h3>Bitcoin</h3>
 				</div>
 				<div id="widget-litecoin" class="coin-widget dashbox">
-					<img class="litecoin-logo" src="images/Litecoin-logo.png" alt="Litecoin Logo">
+					<img class="coin-logo" src="images/Litecoin-logo.png" alt="Litecoin Logo">
 					<h3>Litecoin</h3>
 				</div>
 				<div id="widget-ethereum" class="coin-widget dashbox">
-					<img class="ethereum-logo" src="images/Ethereum-logo.png" alt="Ethereum Logo">
+					<img class="coin-logo" src="images/Ethereum-logo.png" alt="Ethereum Logo">
 					<h3>Ethereum</h3>
 				</div>
 			</div>
