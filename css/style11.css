@@ -27,9 +27,7 @@ body {
 }
 
 #header {grid-area: header;}
-#widget-bitcoin {grid-area: bitcoin;}
-#widget-litecoin {grid-area: litecoin;}
-#widget-etherium {grid-area: etherium;}
+#coin-widget-container {grid-area: coin-widgets;}
 #navigation-menu {grid-area: navigation;}
 #transactions {grid-area: transactions;}
 #shapeshift {grid-area: shapeshift;}
@@ -45,12 +43,12 @@ body {
 	left: 0;
 	grid-gap: 1em;
 	grid-template-rows: 2fr 1fr 5fr 3fr;
-	grid-template-columns: 160px 2fr 2fr 2fr 3fr;
+	grid-template-columns: 160px 2fr 1fr;
 	grid-template-areas: 
-		"header     bitcoin    litecoin   etherium   sendreceive"
-		"navigation graph      graph      graph      sendreceive"
-		"navigation graph      graph      graph      transactions"
-		"navigation shapeshift shapeshift shapeshift transactions";
+		"header     coin-widgets sendreceive"
+		"navigation graph        sendreceive"
+		"navigation graph        transactions"
+		"navigation shapeshift   transactions";
 }
 
 [id=fixedheading] {
@@ -182,11 +180,14 @@ body {
 }
 
 /* coin widgets */
+#coin-widget-container {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+}
 .coin-widget {
 	font-size: 24pt;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	width: 30%;
 }
 
 /* graph */

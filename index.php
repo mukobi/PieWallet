@@ -154,9 +154,10 @@ endif;
 ?>
 <?php
 echo '<?xml version="1.0" encoding="utf-8"?>' ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML Basic 1.1//EN"
+	<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML Basic 1.1//EN"
     "http://www.w3.org/TR/xhtml-basic/xhtml-basic11.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+	<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
 	<head>
 		<title>Dashboard - PayPeer.io</title>
 		<link rel="stylesheet" href="https://changelly.com/widget.css">
@@ -258,9 +259,20 @@ echo '<?xml version="1.0" encoding="utf-8"?>' ?>
 
 				</div>
 			</div>
-			<div id="widget-bitcoin" class="coin-widget dashbox">Bitcoin</div>
-			<div id="widget-litecoin" class="coin-widget dashbox">Litecoin</div>
-			<div id="widget-etherium" class="coin-widget dashbox">Etherium</div>
+			<div id="coin-widget-container">
+				<div id="widget-bitcoin" class="coin-widget dashbox">
+					<img class="bitcoin-logo" src="images/Bitcoin-logo.png" alt="Bitcoin Logo">
+					<h3>Bitcoin</h3>
+				</div>
+				<div id="widget-litecoin" class="coin-widget dashbox">
+					<img class="litecoin-logo" src="images/Litecoin-logo.png" alt="Litecoin Logo">
+					<h3>Litecoin</h3>
+				</div>
+				<div id="widget-ethereum" class="coin-widget dashbox">
+					<img class="ethereum-logo" src="images/Ethereum-logo.png" alt="Ethereum Logo">
+					<h3>Ethereum</h3>
+				</div>
+			</div>
 			<!-- Start Left Menu -->
 			<div id="navigation-menu" class="genbox">
 				<div class="navicon active dashboard">
@@ -323,8 +335,8 @@ echo '<?xml version="1.0" encoding="utf-8"?>' ?>
 						?>
 						<span id="amount-lite-coin">0 LTC</span>
 						<?php	echo '  /  <img src="images/bitcoin.png"> '; ?>
-						<span id="amount-bit-coin">0 BTC</span>
-						<?php	
+							<span id="amount-bit-coin">0 BTC</span>
+							<?php	
 					}
 						else {
 							echo "Please login to see your balance";
@@ -344,14 +356,14 @@ echo '<?xml version="1.0" encoding="utf-8"?>' ?>
 				<div class="genbox buybox">
 					<h4 class="buybox">Buy Cryptocurrencies</h4>
 					<a id="changellyButton" href="https://changelly.com/widget/v1?auth=email&from=USD&to=BTC&merchant_id=b6b98ece50c8&address=&amount=100&ref_id=b6b98ece50c8&color=4977f1"
-						target="_blank">
+					    target="_blank">
 						<img src="https://changelly.com/pay_button_buy_sell.png" />
 					</a>
 					<div id="changellyModal">
 						<div class="changellyModal-content">
 							<span class="changellyModal-close">x</span>
 							<iframe src="https://changelly.com/widget/v1?auth=email&from=USD&to=BTC&merchant_id=b6b98ece50c8&address=&amount=100&ref_id=b6b98ece50c8&color=4977f1"
-								width="600" height="500" class="changelly" scrolling="no" style="overflow-y: hidden; border: none">
+							    width="600" height="500" class="changelly" scrolling="no" style="overflow-y: hidden; border: none">
 								Can't load widget
 							</iframe>
 						</div>
@@ -363,7 +375,7 @@ echo '<?xml version="1.0" encoding="utf-8"?>' ?>
 					</div>
 				</div>
 			</div>
-			
+
 			<div id="trading-graph" class="dashbox">
 				<div id="tradingview_c355b" class="main"></div>
 				<script type="text/javascript">
@@ -385,7 +397,7 @@ echo '<?xml version="1.0" encoding="utf-8"?>' ?>
 						"container_id": "tradingview_c355b"
 					});
 				</script>
-			<!-- TradingView Widget END -->
+				<!-- TradingView Widget END -->
 			</div>
 		</div>
 	</body>
