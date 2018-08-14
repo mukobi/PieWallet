@@ -194,7 +194,7 @@ echo '<?xml version="1.0" encoding="utf-8"?>' ?>
 							<?php echo $_SESSION['ud_login']['firstname']; ?>
 						</a>
 						&nbsp;
-						<a href="/logout">Logout</a>
+						<a href="/logout.php">Logout</a>
 					</span>
 
 					<?php else : ?>
@@ -231,13 +231,13 @@ echo '<?xml version="1.0" encoding="utf-8"?>' ?>
 					</a>
 				</div>
 				<div class="navicon exchange">
-					<a href="/exchange">
+					<a href="/exchange.php">
 						<img class="imgleft" src="/images/navigation/exchange.png" />
 						<p>EXCHANGE</p>
 					</a>
 				</div>
 				<div class="navicon chat">
-					<a href="/send">
+					<a href="/send.php">
 						<img class="imgleft" src="/images/navigation/chat.png" />
 						<p>CHAT</p>
 					</a>
@@ -249,12 +249,12 @@ echo '<?xml version="1.0" encoding="utf-8"?>' ?>
 						$stmt = " SELECT label from ls_users where email LIKE '".$email."'; " ;
 						$result = $conn->query($stmt);
 						if ( $result->num_rows > 0 ) {
-							echo '<a href="/account">' ;
+							echo '<a href="/account.php">' ;
 						} else {
-							echo '<a href="/login">' ;
+							echo '<a href="/login.php">' ;
 						}
 					} else {
-						echo '<a href="/login">' ;
+						echo '<a href="/login.php">' ;
 					}
 					?>
 						<img class="imgleft" src="/images/navigation/account.png" />
