@@ -4,7 +4,6 @@
 	padding: 0;
 	margin: 0;
 	font-family: sans-serif;
-    
 }
 
 @font-face {
@@ -47,11 +46,26 @@ body {
 		"navigation shapeshift   transactions";
 }
 
+[id=exchange] {
+	display: grid;
+	position: absolute;
+	top: 16px;
+	right: 16px;
+	bottom: 16px;
+	left: 0;
+	grid-gap: 1em;
+	grid-template-rows: 2fr 9fr;
+	grid-template-columns: 160px 1fr;
+	grid-template-areas: 
+		"header     exchange"
+		"navigation exchange";
+}
+
 [id=fixedheading] {
 	display: none;
 }
 
-#dashboard .dashbox {
+.content-main .dashbox {
 	/* background-color: white; */
 	color: white;
 	display: flex;
@@ -214,16 +228,16 @@ body {
 
 
 /* transactions */
-#dashboard #transactions {
+.content-main #transactions {
 	display: block;
 	text-align: center;
 	margin-bottom: 1em;
 	overflow-y: scroll;
 }
-#dashboard #transactions #balance-content {
+.content-main #transactions #balance-content {
 	margin-bottom: 20px;
 }
-#dashboard #transactions .balancetable ul {
+.content-main #transactions .balancetable ul {
 	width: 50%;
 	margin: 0 auto;
 }
@@ -271,7 +285,7 @@ body {
 	}
 
 	/* general layout */
-	#dashboard {
+	.content-main {
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
@@ -334,7 +348,7 @@ body {
 		overflow-y: scroll;
 	}
 
-	#dashboard #exchange, #dashboard #shapeshift, #dashboard #trading-graph {
+	.content-main #exchange, .content-main #shapeshift, .content-main #trading-graph {
 		display: none;
 	}
 }
