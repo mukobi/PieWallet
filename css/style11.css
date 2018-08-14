@@ -88,6 +88,7 @@ body {
 }
 #header .headlogo.desktop {
 	width: 21vh;
+	max-width: 160px;
 }
 #header .headlogo.mobile {
 	display: none;
