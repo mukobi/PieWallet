@@ -1,0 +1,27 @@
+#main-container.exchange {
+	display: grid;
+	position: absolute;
+	top: 16px;
+	right: 16px;
+	bottom: 16px;
+	left: 0;
+	grid-gap: 1em;
+	grid-template-rows: 2fr 9fr;
+	grid-template-columns: 160px 1fr;
+	grid-template-areas: 
+		"header     exchange"
+		"navigation exchange";
+}
+
+@media screen and (max-width: 800px) {
+    #main-container.exchange {
+        display: flex;
+        top: 0;
+        right: 0;
+        bottom: 60px;
+        left: 0;
+    }
+    #main-container.exchange #exchange {
+        height: 90%;
+    }
+}

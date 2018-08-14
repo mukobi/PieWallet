@@ -29,7 +29,7 @@ body {
 #trading-graph {grid-area: graph;}
 #exchange {grid-area: exchange;}
 
-[id=dashboard] {
+#main-container.dashboard {
 	display: grid;
 	position: absolute;
 	top: 16px;
@@ -46,26 +46,11 @@ body {
 		"navigation shapeshift   transactions";
 }
 
-[id=exchange] {
-	display: grid;
-	position: absolute;
-	top: 16px;
-	right: 16px;
-	bottom: 16px;
-	left: 0;
-	grid-gap: 1em;
-	grid-template-rows: 2fr 9fr;
-	grid-template-columns: 160px 1fr;
-	grid-template-areas: 
-		"header     exchange"
-		"navigation exchange";
-}
-
 [id=fixedheading] {
 	display: none;
 }
 
-.content-main .dashbox {
+#main-container .dashbox {
 	/* background-color: white; */
 	color: white;
 	display: flex;
@@ -228,21 +213,19 @@ body {
 
 
 /* transactions */
-.content-main #transactions {
+#main-container #transactions {
 	display: block;
 	text-align: center;
 	margin-bottom: 1em;
 	overflow-y: scroll;
 }
-.content-main #transactions #balance-content {
+#main-container #transactions #balance-content {
 	margin-bottom: 20px;
 }
-.content-main #transactions .balancetable ul {
+#main-container #transactions .balancetable ul {
 	width: 50%;
 	margin: 0 auto;
 }
-
-
 
 
 /**** Mobile Design ****/
@@ -285,7 +268,7 @@ body {
 	}
 
 	/* general layout */
-	.content-main {
+	#main-container.content-main {
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
@@ -348,7 +331,7 @@ body {
 		overflow-y: scroll;
 	}
 
-	.content-main #exchange, .content-main #shapeshift, .content-main #trading-graph {
+	#main-container.dashboard #exchange, #main-container.dashboard #shapeshift, #main-container.dashboard #trading-graph {
 		display: none;
 	}
 }

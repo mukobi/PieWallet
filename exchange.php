@@ -7,12 +7,13 @@ echo '<?xml version="1.0" encoding="utf-8"?>' ?>
 	<head>
 		<title>Exchange - PayPeer.io</title>
 		<link rel="stylesheet" href="/css/style11.css">
+		<link rel="stylesheet" href="/css/exchange.css">
 		<!-- <link rel="stylesheet" href="/css/buybox11.css"> -->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
 
 	<body>
-		<div id="exchange" class="content-main">
+		<div id="main-container" class="content-main exchange">
 			<?php include_once("components/header.php"); ?>
 			<?php include_once("components/navigation.php"); ?>
 			<?php include_once("components/exchange/exchange.php"); ?>
