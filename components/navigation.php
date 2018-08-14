@@ -1,23 +1,39 @@
 <div id="navigation-menu" class="genbox">
-    <div class="navicon active dashboard">
+    <div class="navicon dashboard 
+        <?php if(basename($_SERVER['PHP_SELF']) == "index.php") {
+            echo "active";
+        } ?>">
         <a href="/">
             <img class="imgleft" src="/images/navigation/dashboard.png" />
             <p>DASHBOARD</p>
+            
         </a>
     </div>
-    <div class="navicon exchange">
+    <div class="navicon exchange 
+        <?php if(basename($_SERVER['PHP_SELF']) == "exchange.php") {
+            echo "active";
+        } ?>">
         <a href="/exchange.php">
             <img class="imgleft" src="/images/navigation/exchange.png" />
             <p>EXCHANGE</p>
         </a>
     </div>
-    <div class="navicon chat">
-        <a href="/send.php">
+    <div class="navicon chat 
+        <?php if(basename($_SERVER['PHP_SELF']) == "chat.php") {
+            echo "active";
+        } ?>">
+        <a href="/send.php 
+        <?php if(basename($_SERVER['PHP_SELF']) == "send.php") {
+            echo "active";
+        } ?>">
             <img class="imgleft" src="/images/navigation/chat.png" />
             <p>CHAT</p>
         </a>
     </div>
-    <div class="navicon account">
+    <div class="navicon account 
+        <?php if(basename($_SERVER['PHP_SELF']) == "account.php") {
+            echo "active";
+        } ?>">
         <?php
             if ( !mysqli_connect_errno()  && isset($_SESSION['ud_login'])){
                 $email = $_SESSION['ud_login']['email'] ;
