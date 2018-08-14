@@ -1,0 +1,363 @@
+AWSTATS DATA FILE 7.4 (build 20140726)
+# If you remove this file, all statistics for date 201806 will be lost/reset.
+# Last config file used to build this data file was /home/paypeer1/tmp/awstats/ssl/awstats.paypeer.io.conf.
+
+# Position (offset in bytes) in this file for beginning of each section for
+# direct I/O access. If you made changes somewhere in this file, you should
+# also remove completely the MAP section (AWStats will rewrite it at next
+# update).
+BEGIN_MAP 28
+POS_GENERAL 2011                
+POS_TIME 2682                
+POS_VISITOR 7826                
+POS_DAY 8879                
+POS_DOMAIN 3442                
+POS_LOGIN 3713                
+POS_ROBOT 3868                
+POS_WORMS 4170                
+POS_EMAILSENDER 4301                
+POS_EMAILRECEIVER 4444                
+POS_SESSION 9573                
+POS_SIDER 9763                
+POS_FILETYPES 4579                
+POS_DOWNLOADS 4814                
+POS_OS 4862                
+POS_BROWSER 5026                
+POS_SCREENSIZE 5371                
+POS_UNKNOWNREFERER 5445                
+POS_UNKNOWNREFERERBROWSER 5713                
+POS_ORIGIN 5917                
+POS_SEREFERRALS 6055                
+POS_PAGEREFS 6210                
+POS_SEARCHWORDS 6358                
+POS_KEYWORDS 6510                
+POS_MISC 2346                
+POS_ERRORS 6569                
+POS_CLUSTER 3569                
+POS_SIDER_404 6679                
+END_MAP
+
+# LastLine    = Date of last record processed - Last record line number in last log - Last record offset in last log - Last record signature value
+# FirstTime   = Date of first visit for history file
+# LastTime    = Date of last visit for history file
+# LastUpdate  = Date of last update - Nb of parsed records - Nb of parsed old records - Nb of parsed new records - Nb of parsed corrupted - Nb of parsed dropped
+# TotalVisits = Number of visits
+# TotalUnique = Number of unique visitors
+# MonthHostsKnown   = Number of hosts known
+# MonthHostsUnKnown = Number of hosts unknown
+BEGIN_GENERAL 8
+LastLine 20180701080505 1 0 9151103313399
+FirstTime 20180601102609
+LastTime 20180630204747
+LastUpdate 20180701091746 1 0 0 0 0
+TotalVisits 64                  
+TotalUnique 25                  
+MonthHostsKnown 0                   
+MonthHostsUnknown 25                  
+END_GENERAL
+
+# Misc ID - Pages - Hits - Bandwidth
+BEGIN_MISC 10
+FlashSupport 0 0 0
+TotalMisc 0 0 0
+RealPlayerSupport 0 0 0
+JavascriptDisabled 0 0 0
+JavaEnabled 0 0 0
+WindowsMediaPlayerSupport 0 0 0
+AddToFavourites 0 0 0
+PDFSupport 0 0 0
+DirectorSupport 0 0 0
+QuickTimeSupport 0 0 0
+END_MISC
+
+# Hour - Pages - Hits - Bandwidth - Not viewed Pages - Not viewed Hits - Not viewed Bandwidth
+BEGIN_TIME 24
+0 12 74 3281104 19 33 745371
+1 1 9 201240 5 26 640002
+2 1 1 5372 9 44 2473335
+3 0 0 0 2 22 1785842
+4 2 2 10744 2 8 689351
+5 3 3 16116 18 93 4273778
+6 2 2 10744 2 24 1386873
+7 1 1 5372 2 12 631784
+8 9 9 48348 5 21 1218965
+9 3 21 409203 6 16 50772
+10 6 13 43627 9 32 819309
+11 38 212 20661133 23 55 2477056
+12 82 257 15834912 81 134 234156
+13 3 3 16116 8 16 38616
+14 8 58 2027774 16 31 122513
+15 5 31 1439312 24 33 91532
+16 33 170 17532279 42 53 108536
+17 2 18 402480 3 11 35221
+18 0 0 0 7 37 2465702
+19 6 28 1420056 8 19 1202632
+20 14 22 289365 7 17 33936
+21 3 3 16116 7 28 1223288
+22 5 13 201240 9 14 55500
+23 1 9 201240 4 20 636575
+END_TIME
+
+# Domain - Pages - Hits - Bandwidth
+# The 25 first Pages must be first (order not required for others)
+BEGIN_DOMAIN 4
+us 217 920 63561800
+ca 13 21 283993
+ch 6 14 228100
+bg 4 4 0
+END_DOMAIN
+
+# Cluster ID - Pages - Hits - Bandwidth
+BEGIN_CLUSTER 0
+END_CLUSTER
+
+# Login - Pages - Hits - Bandwidth - Last visit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_LOGIN 0
+END_LOGIN
+
+# Robot ID - Hits - Bandwidth - Last visit - Hits on robots.txt
+# The 25 first Hits must be first (order not required for others)
+BEGIN_ROBOT 4
+bot[\s_+:,\.\;\/\\-] 318 9113067 20180630054938 75
+googlebot 166 13844399 20180628092113 0
+netcraft 4 21488 20180607022926 0
+[\s_+:,\.\;\/\\-]bot 1 6637 20180610234002 0
+END_ROBOT
+
+# Worm ID - Hits - Bandwidth - Last visit
+# The 5 first Hits must be first (order not required for others)
+BEGIN_WORMS 0
+END_WORMS
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first Hits must be first (order not required for others)
+BEGIN_EMAILSENDER 0
+END_EMAILSENDER
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first hits must be first (order not required for others)
+BEGIN_EMAILRECEIVER 0
+END_EMAILRECEIVER
+
+# Files type - Hits - Bandwidth - Bandwidth without compression - Bandwidth after compression
+BEGIN_FILETYPES 9
+gif 1 1035 0 0
+jpg 1 10313 0 0
+js 217 55111833 0 0
+css 216 1012324 0 0
+woff2 20 353720 0 0
+html 147 768196 0 0
+png 284 6292784 0 0
+Unknown 39 288838 0 0
+php 34 234850 0 0
+END_FILETYPES
+
+# Downloads - Hits - Bandwidth
+BEGIN_DOWNLOADS 0
+END_DOWNLOADS
+
+# OS ID - Hits
+BEGIN_OS ID - Hits - Pages 7
+Unknown 16 16
+macosx 29 21
+winnt 650 101
+win8.1 105 23
+linux 112 32
+linuxandroid 1 1
+win2000 46 46
+END_OS
+
+# Browser ID - Hits - Pages
+BEGIN_BROWSER 14
+chrome67.0.3396.87 350 47
+chrome67.0.3396.62 10 2
+chrome45.0.2454.94 1 1
+chrome65.0.3325.162 132 27
+firefox39.0 105 23
+firefox17.0 4 4
+Unknown 6 6
+chrome67.0.3396.79 63 11
+mozilla 24 24
+msie6.0 46 46
+chrome66.0.3359.181 114 17
+chrome61.0.3163.100 19 19
+firefox60.0 84 12
+chrome44.0.2403.89 1 1
+END_BROWSER
+
+# Screen size - Hits
+BEGIN_SCREENSIZE 0
+END_SCREENSIZE
+
+# Unknown referer OS - Last visit date
+BEGIN_UNKNOWNREFERER 7
+rs 20180614135412
+Zend_Http_Client 20180626131833
+sk 20180627065546
+ea 20180621135734
+ij 20180609202603
+Mozilla/5.0_(compatible;_Dataprovider.com;) 20180630204745
+qc 20180607145439
+END_UNKNOWNREFERER
+
+# Unknown referer Browser - Last visit date
+BEGIN_UNKNOWNREFERERBROWSER 6
+ij 20180609202603
+qc 20180607145439
+rs 20180614135412
+sk 20180627065546
+Zend_Http_Client 20180626131833
+ea 20180621135734
+END_UNKNOWNREFERERBROWSER
+
+# Origin - Pages - Hits 
+BEGIN_ORIGIN 6
+From0 131 131
+From1 0 0
+From2 1 1
+From3 0 0
+From4 108 827
+From5 0 0
+END_ORIGIN
+
+# Search engine referers ID - Pages - Hits
+BEGIN_SEREFERRALS 1
+google 1 1
+END_SEREFERRALS
+
+# External page referers - Pages - Hits
+# The 25 first Pages must be first (order not required for others)
+BEGIN_PAGEREFS 0
+END_PAGEREFS
+
+# Search keyphrases - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_SEARCHWORDS 0
+END_SEARCHWORDS
+
+# Search keywords - Number of search
+# The 25 first number of search must be first (order not required for others)
+BEGIN_KEYWORDS 0
+END_KEYWORDS
+
+# Errors - Hits - Bandwidth
+BEGIN_ERRORS 3
+301 6 1422
+302 8 0
+404 256 453632
+END_ERRORS
+
+# URL with 404 errors - Hits - Last URL referrer
+BEGIN_SIDER_404 20
+/css/helvetica_neu_bold-webfont.woff 12 https://paypeer.io/css/style.css
+/css/bootstrap.min.css.map 2 -
+/sitemap.xml 43 -
+/css/helveticaneuelt-webfont.woff2 12 https://paypeer.io/css/style.css
+/css/helveticaneuebd-webfont.woff2 12 https://paypeer.io/css/style.css
+/css/helveticaneue_light-webfont.woff2 12 https://paypeer.io/css/style.css
+/robots.txt 94 -
+/css/helveticaneuebd-webfont.woff 12 https://paypeer.io/css/style.css
+/ads.txt 1 -
+/sitemap.xml/ 1 -
+/css/helveticaneue_light-webfont.woff 12 https://paypeer.io/css/style.css
+/alternateindex 1 -
+/8179307324555061506 1 -
+/css/helveticaneuelt-webfont.woff 12 https://paypeer.io/css/style.css
+/plupload/js/Moxie.xap 1 -
+/robots.txt/ 1 -
+/css/helvetica_neu_bold-webfont.woff2 12 https://paypeer.io/css/style.css
+/account/ 5 -
+/help 9 https://www.paypeer.io/
+/plupload/js/Moxie.swf 1 -
+END_SIDER_404
+
+# Host - Pages - Hits - Bandwidth - Last visit date - [Start date of last visit] - [Last page of last visit]
+# [Start date of last visit] and [Last page of last visit] are saved only if session is not finished
+# The 25 first Hits must be first (order not required for others)
+BEGIN_VISITOR 25
+76.72.0.24 83 279 16419195 20180619115820
+184.190.193.204 67 457 30579446 20180626150440
+76.72.0.85 32 149 16375139 20180608164246
+167.114.209.28 11 11 77381 20180630204747
+13.57.220.0 7 7 37604 20180620025027
+52.53.201.78 5 5 26860 20180630154835
+54.215.254.26 4 4 21488 20180611040646
+37.60.253.187 4 4 0 20180624221327
+13.57.233.99 3 3 16116 20180628141225
+35.231.117.130 2 2 10744 20180613084419
+35.227.71.124 2 2 10744 20180607103349
+35.229.48.247 2 2 10744 20180616080657
+35.196.7.99 2 2 10744 20180622213135
+35.231.139.203 2 2 10744 20180627195014
+104.196.59.107 2 2 10744 20180610085059
+47.195.240.11 2 10 206612 20180607202531
+35.185.63.161 2 2 10744 20180603053819
+185.35.63.82 1 1 5372 20180609202603
+185.35.63.214 1 1 5372 20180614135412
+185.35.63.232 1 1 5372 20180627065546
+185.35.63.148 1 1 5372 20180607145439
+213.3.17.104 1 9 201240 20180620091328
+107.191.100.200 1 1 5372 20180626131833
+185.35.63.112 1 1 5372 20180621135734
+54.186.96.86 1 1 5372 20180606215734
+END_VISITOR
+
+# Date - Pages - Hits - Bandwidth - Visits
+BEGIN_DAY 28
+20180601 30 143 16363044 2
+20180602 3 25 1403940 2
+20180603 4 12 211984 3
+20180604 2 18 402480 2
+20180605 3 13 213335 3
+20180606 7 32 1848818 2
+20180607 7 23 429340 5
+20180608 8 36 1456779 4
+20180609 2 2 10744 2
+20180610 3 3 10744 2
+20180611 74 211 13774810 3
+20180613 3 3 16116 2
+20180614 2 10 206612 2
+20180615 1 1 5372 1
+20180616 15 56 11433159 2
+20180617 1 1 0 1
+20180618 1 1 5372 1
+20180619 11 80 4334293 2
+20180620 7 45 1841792 3
+20180621 3 19 407852 2
+20180622 24 135 6522053 5
+20180623 0 1 1035 0
+20180624 3 11 206612 3
+20180625 1 1 5372 1
+20180626 8 60 2852622 3
+20180627 3 3 16116 2
+20180628 2 2 10744 2
+20180630 12 12 82753 2
+END_DAY
+
+# Session range - Number of visits
+BEGIN_SESSION 5
+15mn-30mn 1
+0s-30s 57
+2mn-5mn 3
+5mn-15mn 1
+30mn-1h 2
+END_SESSION
+
+# URL - Pages - Bandwidth - Entry - Exit
+# The 25 first Pages must be first (order not required for others)
+BEGIN_SIDER 13
+/ 147 768196 62 60
+/send.php 23 107037 0 0
+/exchange 15 142965 0 1
+/fonts/helveticaneuebd-webfont.woff2 10 180280 0 2
+/fonts/helveticaneuelt-webfont.woff2 10 173440 0 0
+/profile.php 9 115657 1 0
+/send 8 35216 0 0
+/signup 4 24380 1 0
+/forgotPassword 3 13548 0 0
+/login 3 18195 0 0
+/support 3 38694 0 0
+/dashboard 3 15840 0 0
+/login.php 2 12156 0 1
+END_SIDER
