@@ -90,8 +90,11 @@ body {
 	align-items: center;
 	padding-top: 16px;
 }
-#header .headlogo {
+#header .headlogo.desktop {
 	width: 21vh;
+}
+#header .headlogo.mobile {
+	display: none;
 }
 #header .login a {
 	color: #14181b;
@@ -293,11 +296,14 @@ body {
 		align-items: center;
 		text-decoration: none;
 	}
-	#header .headlogo {
-		width: 50px;
+	#header .headlogo.mobile {
+		height: 50px;
 		display: block;
 		margin: 0;
 		padding: 0;
+	}
+	#header .headlogo.desktop {
+		display: none;
 	}
 	#header h2 {
 		display: block;

@@ -174,8 +174,8 @@ echo '<?xml version="1.0" encoding="utf-8"?>' ?>
 			<div id="header" class="header genbox">
 				<div class="headlogodiv">
 					<a href="/">
-						<img class="headlogo" src="/images/header-logo2.png" />
-						<h2>PieWallet</h2>
+						<img class="headlogo desktop" src="/images/header-logo2.png" />
+						<img class="headlogo mobile" src="/images/piewallet-long-logo.png" />
 					</a>
 				</div>
 				<div class="login">
