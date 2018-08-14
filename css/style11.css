@@ -12,8 +12,8 @@ html, body {
 
 @font-face {
     font-family: haettenschweiler;
-	src: url(fonts/Haettenschweiler-Regular.ttf)  format('truetype'),
-		 url(fonts/Haettenschweiler-Regular.ttf);
+	src: url(../fonts/Haettenschweiler-Regular.ttf)  format('truetype'),
+		 url(../fonts/Haettenschweiler-Regular.ttf);
 }
 
 
