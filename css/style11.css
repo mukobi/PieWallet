@@ -28,7 +28,7 @@ body {
 #transactions {grid-area: transactions;}
 #shapeshift {grid-area: shapeshift;}
 #trading-graph {grid-area: graph;}
-#sendreceive {grid-area: sendreceive;}
+#exchange {grid-area: exchange;}
 
 [id=dashboard] {
 	display: grid;
@@ -41,8 +41,8 @@ body {
 	grid-template-rows: 2fr 1fr 5fr 3fr;
 	grid-template-columns: 160px 2fr 1fr;
 	grid-template-areas: 
-		"header     coin-widgets sendreceive"
-		"navigation graph        sendreceive"
+		"header     coin-widgets exchange"
+		"navigation graph        exchange"
 		"navigation graph        transactions"
 		"navigation shapeshift   transactions";
 }
@@ -334,7 +334,7 @@ body {
 		overflow-y: scroll;
 	}
 
-	#dashboard #sendreceive, #dashboard #shapeshift, #dashboard #trading-graph {
+	#dashboard #exchange, #dashboard #shapeshift, #dashboard #trading-graph {
 		display: none;
 	}
 }

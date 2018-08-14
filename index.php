@@ -161,10 +161,10 @@ echo '<?xml version="1.0" encoding="utf-8"?>' ?>
 	<body>
 		<div id="dashboard" class="content-main">
 			<?php include_once("components/header.php"); ?>
-			<?php include_once("components/dashboard/coinwidgets.php"); ?>
 			<?php include_once("components/navigation.php"); ?>
+			<?php include_once("components/dashboard/coinwidgets.php"); ?>
 			<?php include_once("components/dashboard/transactions.php"); ?>
-			<?php include_once("components/dashboard/sendreceive.php"); ?>
+			<?php include_once("components/exchange/exchange.php"); ?>
 			<?php include_once("components/dashboard/shapeshift.php"); ?>
 			<?php include_once("components/dashboard/graph.php"); ?>
 		</div>
