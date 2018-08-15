@@ -1,0 +1,76 @@
+#main-container #sendreceive {
+    display: block;
+    overflow-y: auto;
+}
+
+#sendreceiveform {
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+#sendreceiveform .walletsellect, 
+#sendreceiveform .button-bar, #sendreceiveform .bottomform {
+    width: 100%;
+}
+
+#sendreceiveform .walletsellect {
+    padding: 2px 16px;
+}
+#sendreceiveform .walletsellect h4 {
+    display: inline-block;
+    margin-right: 8px;
+}
+#sendreceiveform .walletsellect p {
+    display: inline-block;
+}
+#sendreceiveform .walletsellect select {
+    color: white;
+    background-color: rgba(255,255,255,0.1);
+    border: none;
+    padding: 2px 16px;
+}
+#sendreceiveform .walletsellect select option {
+    background-color: #4ba0eb;
+}
+
+#sendreceiveform .button-bar {
+    border-top: 4px solid #4ba0eb;
+}
+
+#sendreceiveform button {
+    border: none;
+    padding: 2px 16px;
+    background-color: transparent;
+    color: white;
+}
+#sendreceiveform button.active {
+    background-color: #4ba0eb;
+}
+#sendreceiveform .bottomform {
+    padding: 2px 16px;
+}
+#sendreceiveform .bottomform .input-row {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-bottom: 2px;
+    justify-content: space-around;
+}
+#sendreceiveform .bottomform h4 {
+    display: inline-block;
+    margin-right: 8px;
+}
+#sendreceiveform .bottomform input[type="text"] {
+    display: inline-block;
+    width: 100%;
+}
+
+#sendreceiveform .bottomform input[type="submit"] {
+    border: none;
+    padding: 2px 16px;
+    background-color: #4ba0eb;
+    color: white;
+}
