@@ -1,15 +1,25 @@
 /* general styling */
-
-* {
-	padding: 0;
-	margin: 0;
-	font-family: sans-serif;
-}
-
 @font-face {
     font-family: haettenschweiler;
 	src: url(../fonts/Haettenschweiler-Regular.ttf)  format('truetype'),
 		 url(../fonts/Haettenschweiler-Regular.ttf);
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	font-family: haettenschweiler, sans-serif;
+	font-weight: lighter;
+	font-size: 22pt;
+}
+
+h3 {
+	font-size: 28pt;
+}
+
+p {
+	font-family: sans-serif;
+	font-size: 16pt;
 }
 
 
@@ -18,7 +28,6 @@ body {
 	margin: 0;
 	padding: 0;
 	background-color: #003964;
-	font-size: 12pt;
 }
 
 #header {grid-area: header;}
@@ -36,7 +45,7 @@ body {
 	right: 16px;
 	bottom: 16px;
 	left: 0;
-	grid-gap: 1em;
+	grid-gap: 16px;
 	grid-template-rows: 2fr 1fr 5fr 3fr;
 	grid-template-columns: 160px 2fr 1fr;
 	grid-template-areas: 
@@ -64,14 +73,14 @@ body {
 
 .fixedmenuwrapper {
 	display: inline-block;
-	margin-right: 0.2em;
+	margin-right: 8px;
 }
 .fixedlogodiv {
-	margin: 1em 0.2em;
+	margin: 16px 8px;
 }
 .fixedlogo {
 	display: inline-block;
-	height: 1em;
+	height: 16px;
 }
 
 /* header */
@@ -79,7 +88,7 @@ body {
 	background: linear-gradient(to bottom, #704ac7, #544ebe);
 	color: white;
 	margin-top: -16px;
-	margin-bottom: -1em;
+	margin-bottom: -16px;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
@@ -134,19 +143,19 @@ body {
 }
 
 #navigation-menu .navicon .imgleft {
-	width: 4em;
+	width: 64px;
 }
 @media screen and (max-height: 840px) {
 	#navigation-menu p {	
 		font-size: 20pt;
 	}
 	#navigation-menu .navicon .imgleft {
-		width: 3em;
+		width: 48px;
 	}
 }
 @media screen and (max-height: 660px) {
 	#navigation-menu .navicon .imgleft {
-		width: 2.5em;
+		width: 40px;
 	}
 }
 @media screen and (max-height: 590px) {
@@ -159,12 +168,12 @@ body {
 		font-size: 16pt;
 	}
 	#navigation-menu .navicon .imgleft {
-		width: 2em;
+		width: 32px;
 	}
 }
 @media screen and (max-height: 380px) {
 	#navigation-menu .navicon .imgleft {
-		width: 1.5em;
+		width: 24px;
 	}
 }
 
@@ -217,7 +226,7 @@ body {
 #main-container #transactions {
 	display: block;
 	text-align: center;
-	margin-bottom: 1em;
+	margin-bottom: 16px;
 	overflow-y: scroll;
 }
 #main-container #transactions #balance-content {
