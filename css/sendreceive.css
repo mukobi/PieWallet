@@ -1,6 +1,7 @@
 #main-container #sendreceive {
     display: block;
     overflow-y: auto;
+    overflow-x: hidden;
 }
 
 #sendreceiveform {
@@ -58,6 +59,22 @@
     flex-wrap: nowrap;
     margin-bottom: 2px;
     justify-content: space-around;
+}
+#sendreceiveform .bottomform .input-row.address {
+    height: 50px;
+    width: 100%;
+    display: block;
+    margin-bottom: 14px;
+}
+#sendreceiveform .bottomform .input-row.address h4 {
+    display: inline;
+}
+#sendreceiveform .bottomform .input-row.address p {
+    display: inline;
+    word-break: break-all;
+    word-wrap: break-word;
+    height: 50px;
+    line-height: 25px;
 }
 #sendreceiveform .bottomform h4 {
     display: inline-block;

@@ -32,8 +32,10 @@
                 </div> 
             </div>
             <div id="receive" class="w3-container tab" style="display:none">
-                <div class="input-row">
-                    <h4>Your Public Key: </h4><p id="address">JHD87nd43oqw8SHD2l8edfh82gwerf3</p>
+                <div class="input-row address">
+                    <p id="address">   
+                        Your Public Key: JHD87nd43oqw8SHD2l8edfh82gwerf3
+                    </p>
                 </div>
                 <div class="input-row">
                     <a href="#">
