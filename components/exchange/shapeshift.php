@@ -1,8 +1,8 @@
 <div id="shapeshift">
     <?php @session_start(); ?>
+    <link rel="stylesheet" href="css/shapeshift.css" />
     <section class="banner">
         <div class="container">
-            <h1 class="mb-5">Exchange</h1>
             <form class="conversion-rates" method="post" action="exchangeProcess.php">
                 <div class="form-field pr-5">
                     <div class="input-field">
@@ -56,4 +56,9 @@
             </div>
         </div>
     </div>
+    <script type="text/javascript" src="js/convert-currency.js?ver=1534402058"></script>
+    <script type="text/javascript" src="js/faq-accordian.js"></script>
+    <script type="text/javascript" src="js/app_js.js?ver=1534402058"></script>
+    <script type="text/javascript" src="js/functions.js?ver=1534402058"></script>
+    <script src="js/wow.min.js"></script>
 </div>

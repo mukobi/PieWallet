@@ -6,6 +6,7 @@ echo '<?xml version="1.0" encoding="utf-8"?>' ?>
 
 	<head>
 		<title>Exchange - PayPeer.io</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 		<link rel="stylesheet" href="/css/style11.css">
 		<link rel="stylesheet" href="/css/exchange.css">
 		<!-- <link rel="stylesheet" href="/css/buybox11.css"> -->
