@@ -1,4 +1,4 @@
-<div id="exchange" class="dashbox">
+<div id="shapeshift">
     <?php @session_start(); ?>
     <section class="banner">
         <div class="container">

@@ -16,7 +16,7 @@ echo '<?xml version="1.0" encoding="utf-8"?>' ?>
 		<div id="main-container" class="content-main exchange">
 			<?php include_once("components/header.php"); ?>
 			<?php include_once("components/navigation.php"); ?>
-			<?php include_once("components/exchange/exchange.php"); ?>
+			<?php include_once("components/exchange/echangewidget.php"); ?>
 		</div>
 	</body>
 </html>
