@@ -64,17 +64,19 @@
     height: 50px;
     width: 100%;
     display: block;
-    margin-bottom: 14px;
+    margin: 7px 0;
+    position: relative;
 }
 #sendreceiveform .bottomform .input-row.address h4 {
     display: inline;
 }
 #sendreceiveform .bottomform .input-row.address p {
-    display: inline;
+    display: block;
     word-break: break-all;
     word-wrap: break-word;
-    height: 50px;
-    line-height: 25px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
 }
 #sendreceiveform .bottomform h4 {
     display: inline-block;
