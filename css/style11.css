@@ -1,4 +1,4 @@
-/* general styling */
+
 @font-face {
     font-family: haettenschweiler;
 	src: url(../fonts/Haettenschweiler-Regular.ttf)  format('truetype'),
@@ -17,6 +17,7 @@ html {
 	box-sizing: inherit;
 }
 
+/* general styling */
 * {
 	padding: 0;
 	margin: 0;
@@ -34,7 +35,6 @@ p {
 	font-size: 12pt;
 }
 
-
 body {
 	/* height: 100%; */
 	margin: 0;
@@ -42,6 +42,26 @@ body {
 	background-color: #00001a;
 }
 
+html {
+	scrollbar-face-color: #646464;
+	scrollbar-base-color: #646464;
+	scrollbar-3dlight-color: #646464;
+	scrollbar-highlight-color: #646464;
+	scrollbar-track-color: #000;
+	scrollbar-arrow-color: #000;
+	scrollbar-shadow-color: #646464;
+	scrollbar-dark-shadow-color: #646464;
+}
+::-webkit-scrollbar { width: 8px; height: 3px;}
+::-webkit-scrollbar-button { background-color: transparent; }
+::-webkit-scrollbar-track { background-color: #646464;}
+::-webkit-scrollbar-track-piece { background-color: #00001a;}
+::-webkit-scrollbar-thumb { height: 50px; background-color: #005c96; border-radius: 3px;}
+::-webkit-scrollbar-corner { background-color: #061082;}}
+::-webkit-resizer { background-color: #666;}
+
+
+/* grid layout */
 #header {grid-area: header;}
 #coin-widget-container {grid-area: coin-widgets;}
 #navigation-menu {grid-area: navigation;}
