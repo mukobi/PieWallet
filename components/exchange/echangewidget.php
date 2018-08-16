@@ -5,9 +5,7 @@
                 <button id="changelly-button" class="button" onclick="changeTab('changelly')">Changelly</button>
             </div>
         <div class="content-area">
-            <div id="shapeshift" class="tab">
-                <?php include("components/exchange/shapeshift.php"); ?>
-            </div>
+            <?php include("components/exchange/shapeshift.php"); ?>
             <?php include("components/exchange/changelly.php"); ?>
             <script>
             function changeTab(tabName) {
