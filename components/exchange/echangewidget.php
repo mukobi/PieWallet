@@ -6,11 +6,9 @@
             </div>
         <div class="content-area">
             <div id="shapeshift" class="tab">
-                <?php include("components/exchange/shapeshift.php"); ?>;
+                <?php include("components/exchange/shapeshift.php"); ?>
             </div>
-            <div id="changelly" class="tab" style="display:none">
-                <?php include("components/exchange/changelly.php"); ?>;
-            </div>
+            <?php include("components/exchange/changelly.php"); ?>
             <script>
             function changeTab(tabName) {
                 // change tab
