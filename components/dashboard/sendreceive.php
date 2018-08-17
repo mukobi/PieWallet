@@ -17,7 +17,7 @@
                 <button id="receive-button" class="button" onclick="changeTab('receive')">Receive</button>
             </div>
         <div class="bottomform">
-            <div id="send" class="tab">
+            <div id="send" class="tab-sendreceive">
                 <div class="input-row">
                     <h4>Ammount: </h4><input type="text" name="ammount"/>
                 </div>  
@@ -31,7 +31,7 @@
                     <input type="submit" value="Send" />
                 </div> 
             </div>
-            <div id="receive" class="tab" style="display:none">
+            <div id="receive" class="tab-sendreceive" style="display:none">
                 <div class="input-row address">
                     <p id="address">   
                         Your Public Key: JHD87nd43oqw8SHD2l8edfh82gwerf3
@@ -47,7 +47,7 @@
             function changeTab(tabName) {
                 // change tab
                 var i;
-                var x = document.getElementsByClassName("tab");
+                var x = document.getElementsByClassName("tab-sendreceive");
                 for (i = 0; i < x.length; i++) {
                     x[i].style.display = "none";  
                 }
