@@ -236,16 +236,22 @@ html {
 	width: 31%;
 	position: relative;
 }
-#coin-widget-container .coin-widget img.coin-logo {
-	height: 35px;
+#coin-widget-container .coin-widget .coin-label {
 	position: absolute;
 	top: 10px;
 	left: 10px;
+	display: flex;
+	flex-wrap: nowrap;
+	align-items: center;
+}
+#coin-widget-container .coin-widget .coin-label img {
+	height: 35px;
+	margin-right: 8px;
+}
+#coin-widget-container .coin-widget .coin-label h4 {
+	display: block;
 }
 @media screen and (max-width: 1230px) {
-	#coin-widget-container .coin-widget {
-		font-size: 16pt;
-	}
 	#coin-widget-container .coin-widget img.coin-logo {
 		height: 25px;
 	}
