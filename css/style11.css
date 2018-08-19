@@ -250,6 +250,12 @@ html {
 }
 #coin-widget-container .coin-widget .coin-label h4 {
 	display: block;
+	font-size: 26px;
+	color: #584dbf; /*fallback*/
+	background-image: linear-gradient(to top right, #0c58a5, #7249c9); 
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
 }
 @media screen and (max-width: 1230px) {
 	#coin-widget-container .coin-widget img.coin-logo {
