@@ -238,7 +238,7 @@ html {
 }
 
 #navigation-menu div.navicon.active {
-	background-color:  #003964;
+	background-color:  rgba(0,0,0,0.2);
 }
 
 #navigation-menu div.navicon:not(.active):not(.empty):hover {
