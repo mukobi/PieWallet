@@ -1,4 +1,9 @@
 <div id="navigation-menu" class="genbox">
+    <div class="headlogodiv">
+        <a href="/">
+            <img class="headlogo desktop" src="/images/header-logo2.png" />
+        </a>
+    </div>
     <div class="navicon dashboard 
         <?php if(basename($_SERVER['PHP_SELF']) == "index.php") {
             echo "active";

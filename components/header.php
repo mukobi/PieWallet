@@ -1,7 +1,6 @@
-<div id="header" class="header genbox">
+<div id="header-mobile" class="header-mobile genbox">
     <div class="headlogodiv">
         <a href="/">
-            <img class="headlogo desktop" src="/images/header-logo2.png" />
             <img class="headlogo mobile" src="/images/piewallet-long-logo.png" />
         </a>
     </div>
