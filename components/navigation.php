@@ -7,7 +7,7 @@
             var color1 = colorsArray[gradientIndex];
             var color2 = colorsArray[(gradientIndex + 1) % colorsArray.length];
             console.log(`${gradientIndex}:: 1: ${color1}, 2: ${color2}`);
-            TweenMax.to("html", 5, {"--color1": color1, "--color2": color2});
+            TweenMax.to("html", 7, {"--color1": color1, "--color2": color2});
             gradientIndex++;
             gradientIndex %= colorsArray.length;
         }

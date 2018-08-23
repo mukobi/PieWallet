@@ -110,6 +110,7 @@ html {
 	align-items: center;
 	border: 4px solid #584dbf;
 	border-image: linear-gradient(to right, #0c58a5, #7249c9) 30;
+	border-image: linear-gradient(to right, var(--color2), var(--color1)) 30;
 }
 
 
@@ -300,6 +301,7 @@ html {
 	#header-mobile {
 		display: block;
 		background: linear-gradient(to right, #704ac7, #005ba1);
+		background: linear-gradient(to right, var(--color1), var(--color2));
 		margin: 0;
 		padding: 8px 0;
 	}
@@ -328,6 +330,7 @@ html {
 		flex-direction: row;
 		justify-content: space-between;
 		background: linear-gradient(to right, #704ac7, #005ba1);
+		background: linear-gradient(to right, var(--color1), var(--color2));
 	}
 	#navigation-menu .navicon {
 		height: 60px;
