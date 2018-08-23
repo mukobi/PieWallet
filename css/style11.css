@@ -17,7 +17,6 @@ html {
 	box-sizing: border-box;
 	--color1: #704ac7;
 	--color2: #005ba1;
-	--myColor: green;
 }
 *, *:before, *:after {
 	-webkit-box-sizing: inherit;
@@ -130,30 +129,6 @@ html {
 #header-mobile {
 	display: none;
 }
-/* #header {
-	background: linear-gradient(to bottom, #704ac7, #544ebe);
-	color: white;
-	margin-top: -16px;
-	margin-bottom: -16px;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-	align-items: center;
-	padding-top: 16px;
-}
-#header .headlogo.desktop {
-	width: 21vh;
-	max-width: 160px;
-}
-#header .headlogo.mobile {
-	display: none;
-}
-#header .login a {
-	color: #14181b;
-}
-#header h2 {
-	display: none;
-} */
 
 /* navigation */
 #navigation-menu {
@@ -238,7 +213,7 @@ html {
 }
 
 #navigation-menu div.navicon.active {
-	background-color:  rgba(255,255,255,0.1);
+	background-color:  rgba(255,255,255,0.15);
 }
 
 #navigation-menu div.navicon:not(.active):not(.empty):hover {
