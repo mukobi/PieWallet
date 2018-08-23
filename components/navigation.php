@@ -1,11 +1,13 @@
 <div id="navigation-menu" class="genbox">
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/TweenMax-latest-beta.js"></script>
     <script>
-        var colorsArray = ["#005ba1", "#704ac7", "#0c58a5", "#7249c9", "#4286f4", "#c35bff", "#005972","#350072", "#d9a0ff", "#ce1257", "#67d4fc", "#4f0749", "#d4baff", "#00305e"];
-        var gradientIndex = 2;
+        var colorsArray = ["#005ba1" ,"#704ac7", "#0e770a", "#7249c9", "#4286f4", "#c35bff", "#005972","#350072", "#0c58a5", "#d9a0ff", "#ce1257", "#67d4fc", "#4f0749", "#d4baff", "#00305e"];
+        var gradientIndex = 1;
         function changeGradient() {
             var color1 = colorsArray[gradientIndex];
-            // console.log(`${gradientIndex}:: 1: ${color1}`);
-            document.getElementById("navigation-menu").style.backgroundColor = color1;
+            var color2 = colorsArray[(gradientIndex + 1) % colorsArray.length];
+            console.log(`${gradientIndex}:: 1: ${color1}, 2: ${color2}`);
+            TweenMax.to("html", 5, {"--color1": color1, "--color2": color2});
             gradientIndex++;
             gradientIndex %= colorsArray.length;
         }

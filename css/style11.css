@@ -1,7 +1,7 @@
 .tempcolorholderaaaaaaaa {
 	background-color: initial;
 	background: linear-gradient(
-		#005ba1,#704ac7, #0c58a5, #7249c9, #4286f4, #c35bff, #005972,#350072, #d9a0ff, #ce1257, #67d4fc, #4f0749, #d4baff, #00305e); 
+		#005ba1 ,#704ac7, #0e770a, #7249c9, #4286f4, #c35bff, #005972,#350072, #0c58a5, #d9a0ff, #ce1257, #67d4fc, #4f0749, #d4baff, #00305e); 
 }
 
 @font-face {
@@ -15,6 +15,9 @@ html {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
+	--color1: #704ac7;
+	--color2: #005ba1;
+	--myColor: green;
 }
 *, *:before, *:after {
 	-webkit-box-sizing: inherit;
@@ -154,13 +157,13 @@ html {
 
 /* navigation */
 #navigation-menu {
-	background-color: #704ac7;
+	background: linear-gradient(to bottom, #704ac7, #005ba1);
+	background: linear-gradient(to bottom, var(--color1), var(--color2));
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: stretch;
 	margin: -16px 0;
-	transition: all 6000ms;
 }
 
 #navigation-menu p {
