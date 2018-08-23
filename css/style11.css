@@ -1,3 +1,7 @@
+.tempcolorholderaaaaaaaa {
+	background-color: initial;
+	background: linear-gradient(#4286f4, #c35bff, #ce1257, #67d4fc, #005972, #350072, #d9a0ff, #4f0749, #d4baff, #00305e); 
+}
 
 @font-face {
     font-family: haettenschweiler;
@@ -282,7 +286,6 @@ html {
 	height: 100%;
 	width: 100%;
 }
-
 
 /* transactions */
 #main-container #transactions {

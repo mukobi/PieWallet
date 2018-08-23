@@ -2,7 +2,7 @@
     <div id="widget-bitcoin" class="coin-widget dashbox carousel-cell">
         <div class="coin-label">
             <img class="coin-logo" src="images/Bitcoin-logo.png" alt="Bitcoin Logo">
-            <h4>BTC</h34>
+            <h4>BTC</h4>
         </div>
         <div class="ticker-main">
             <h3>$8,573.00</h3>
