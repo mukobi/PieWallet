@@ -1,9 +1,10 @@
 <div id="navigation-menu" class="genbox">
-    <div class="headlogodiv">
+    <div class="navicon headlogodiv">
         <a href="/">
             <img class="headlogo desktop" src="/images/header-logo2.png" />
         </a>
     </div>
+    <div class="navicon empty"></div>
     <div class="navicon dashboard 
         <?php if(basename($_SERVER['PHP_SELF']) == "index.php") {
             echo "active";
@@ -57,6 +58,7 @@
         <p>ACCOUNT</p>
         </a>
     </div>
+    <div class="navicon empty"></div>
     <div class="navicon login-logout">
         <a href="#">
             <img class="imgleft" src="/images/navigation/logout.png" />

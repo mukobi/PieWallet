@@ -176,12 +176,19 @@ html {
 }
 
 #navigation-menu .navicon {
-	height: 15%;
+	height: 12%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	transition: all 250ms;
 	filter: brightness(100%);
+}
+#navigation-menu .navicon.headlogodiv a {
+	height: 100%;
+}
+#navigation-menu .navicon.headlogodiv img.headlogo {
+	height: 100%;
+	min-height: 80px;
 }
 
 #navigation-menu .navicon .imgleft {
@@ -198,6 +205,9 @@ html {
 @media screen and (max-height: 660px) {
 	#navigation-menu .navicon .imgleft {
 		width: 40px;
+	}
+	#navigation-menu .navicon.headlogodiv {
+		margin-top: 15px;
 	}
 }
 @media screen and (max-height: 590px) {
@@ -217,18 +227,17 @@ html {
 	#navigation-menu .navicon .imgleft {
 		width: 24px;
 	}
+	#navigation-menu .navicon.headlogodiv {
+		margin-top: 30px;
+	}
 }
 
 #navigation-menu div.navicon.active {
 	background-color:  #003964;
 }
 
-#navigation-menu div.navicon:not(.active):hover {
+#navigation-menu div.navicon:not(.active):not(.empty):hover {
 	background-color: rgba(255,255,255,0.3);
-}
-
-#navigation-menu .navicon.login-logout {
-	margin-top: 50%;
 }
 
 /* coin widgets */

@@ -160,7 +160,7 @@ echo '<?xml version="1.0" encoding="utf-8"?>' ?>
 
 	<body>
 		<div id="main-container" class="content-main dashboard">
-			<?php include_once("components/header.php"); ?>
+			<?php include_once("components/header-mobile.php"); ?>
 			<?php include_once("components/navigation.php"); ?>
 			<?php include_once("components/dashboard/coinwidgets.php"); ?>
 			<?php include_once("components/dashboard/transactions.php"); ?>
