@@ -1,6 +1,7 @@
 .tempcolorholderaaaaaaaa {
 	background-color: initial;
-	background: linear-gradient(#4286f4, #c35bff, #ce1257, #67d4fc, #005972, #350072, #d9a0ff, #4f0749, #d4baff, #00305e); 
+	background: linear-gradient(
+		#0c58a5, #7249c9, #4286f4, #c35bff, #005972,#350072, #d9a0ff, #ce1257, #67d4fc, #4f0749, #d4baff, #00305e); 
 }
 
 @font-face {
@@ -153,12 +154,13 @@ html {
 
 /* navigation */
 #navigation-menu {
-	background: linear-gradient(to bottom, #544ebe, #005ba1);
+	background: linear-gradient(to bottom, #704ac7, #005ba1);
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: stretch;
 	margin: -16px 0;
+	transition: all 3000ms;
 }
 
 #navigation-menu p {

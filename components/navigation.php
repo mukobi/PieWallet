@@ -1,4 +1,17 @@
 <div id="navigation-menu" class="genbox">
+    <script>
+        var colorsArray = ["#0c58a5", "#7249c9", "#4286f4", "#c35bff", "#005972","#350072", "#d9a0ff", "#ce1257", "#67d4fc", "#4f0749", "#d4baff", "#00305e"];
+        var gradientIndex = 1;
+        function changeGradient() {
+            var color1 = colorsArray[gradientIndex];
+            var color2 = colorsArray[(gradientIndex + 1) % colorsArray.length];
+            console.log(`${gradientIndex}:: 1: ${color1}, 2: ${color2}`);
+            document.getElementById("navigation-menu").style.background = `linear-gradient(to bottom, ${color1}, ${color2})`;
+            gradientIndex++;
+            gradientIndex %= colorsArray.length;
+        }
+        setInterval(changeGradient, 3000);
+    </script>
     <div class="navicon headlogodiv">
         <a href="/">
             <img class="headlogo desktop" src="/images/header-logo2.png" />
