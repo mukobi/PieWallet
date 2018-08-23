@@ -363,6 +363,9 @@ html {
 		align-items: center;
 		transition: none;
 	}
+	#navigation-menu .navicon.headlogodiv, #navigation-menu .navicon.empty {
+		display: none;
+	}
 	#navigation-menu .navicon.login-logout {
 		margin: 0;
 	}
