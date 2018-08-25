@@ -3,7 +3,7 @@
     <div class="picture">
         <img src="./images/users/genericprofile.png" alt="profile picture" />
     </div>
-    <div class="myinfo">
+    <div class="info">
         <h3>@EthanC</h3>
         <p>Followers: 536</p>
         <p>Following: 75</p>
@@ -12,15 +12,15 @@
         <p>Portfolio: $6379.42</p>
     </div>
     <div class="profile">
-        <a href="#">Profile</a>
+        <a href="#" class="button">Profile</a>
     </div>
     <div class="settings">
-        <a href="#">Settings</a>
+        <a href="#" class="button">Settings</a>
     </div>
     <div class="add-friends">
-        <a href="#">+Add Friends</a>
+        <a href="#" class="button">+Add Friends</a>
     </div>
     <div class="logout">
-        <a href="#">Logout</a>
+        <a href="#" class="button">Logout</a>
     </div>
 </div>
