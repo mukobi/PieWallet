@@ -48,6 +48,19 @@ input[type="text"] {
 	background-color: transparent;
 }
 
+a.button {
+	color: white;
+	text-align: center;
+	padding: 4px 0;
+	display: block;
+	width: 100%;
+	text-decoration: none;
+	background: linear-gradient(to right, #704ac7, #005ba1);
+	background: linear-gradient(to right, var(--color1), var(--color2));
+	margin: 0 auto;
+	border-radius: 16px
+}
+
 body {
 	margin: 0;
 	padding: 0;
@@ -395,7 +408,7 @@ html {
 		overflow-y: scroll;
 	}
 
-	#main-container.dashboard #sendreceive, #main-container.dashboard #shapeshift, #main-container.dashboard #trading-graph {
+	#main-container.dashboard #profilewidget, #main-container.dashboard #shapeshift, #main-container.dashboard #trading-graph {
 		display: none;
 	}
 }

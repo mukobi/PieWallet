@@ -1,7 +1,6 @@
 <div id="profilewidget" class="dashbox">
     <link rel="stylesheet" href="../../css/profilewidget.css" />
     <div class="picture">
-        <img src="./images/users/genericprofile.png" alt="profile picture" />
     </div>
     <div class="info">
         <h3>@EthanC</h3>
