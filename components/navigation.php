@@ -1,7 +1,7 @@
 <div id="navigation-menu" class="genbox">
     <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/TweenMax-latest-beta.js"></script>
     <script>
-        var colorsArray = ["#005ba1" ,"#704ac7", "#0e770a", "#7249c9", "#4286f4", "#c35bff", "#005972","#350072", "#0c58a5", "#d9a0ff", "#ce1257", "#67d4fc", "#4f0749", "#d4baff", "#00305e"];
+        var colorsArray = ["#005ba1","#704ac7","#ff6666","#7249c9","#4286f4","#c35bff","#005972","#d4baff","#350072","#0c58a5","#d9a0ff","#ce1257","#67d4fc","#4f0749","#e099ff"];
         var gradientIndex = 3;
         function changeGradient() {
             var color1 = colorsArray[gradientIndex];
@@ -11,7 +11,7 @@
             gradientIndex %= colorsArray.length;
         }
         setTimeout(changeGradient, 10);
-        setInterval(changeGradient, 5000);
+        setInterval(changeGradient, 6000);
     </script>
     <div class="navicon headlogodiv">
         <a href="/">

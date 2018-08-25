@@ -1,7 +1,9 @@
 .tempcolorholderaaaaaaaa {
 	background-color: initial;
 	background: linear-gradient(
-		#005ba1 ,#704ac7, #0e770a, #7249c9, #4286f4, #c35bff, #005972,#350072, #0c58a5, #d9a0ff, #ce1257, #67d4fc, #4f0749, #d4baff, #00305e); 
+		#005ba1,#704ac7,#ff6666,#7249c9,#4286f4,#c35bff,
+		#005972,#d4baff,#350072,#0c58a5,#d9a0ff,#ce1257,
+		#67d4fc,#4f0749,#e099ff); 
 }
 
 @font-face {
@@ -78,7 +80,7 @@ html {
 #transactions {grid-area: transactions;}
 #shapeshift {grid-area: shapeshift;}
 #trading-graph {grid-area: graph;}
-#sendreceive {grid-area: sendreceive;}
+#profilewidget {grid-area: profile;}
 
 #main-container.dashboard {
 	display: grid;
@@ -91,8 +93,8 @@ html {
 	grid-template-rows: 2fr 1fr 5fr 3fr;
 	grid-template-columns: 160px 2fr 1fr;
 	grid-template-areas: 
-		"navigation coin-widgets sendreceive"
-		"navigation graph        sendreceive"
+		"navigation coin-widgets profile"
+		"navigation graph        profile"
 		"navigation graph        transactions"
 		"navigation shapeshift   transactions";
 }
