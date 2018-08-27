@@ -257,9 +257,10 @@ html {
 #coin-widget-container .coin-widget .ticker-main {
 	flex-grow: 1;
 	padding: 0 8px;
-	background: linear-gradient(to right, #704ac7, #005ba1);
-	background: linear-gradient(to right, var(--color1), var(--color2));
+	background: linear-gradient(to left, #704ac7, #005ba1);
+	background: linear-gradient(to left, var(--color1), var(--color2));
 	position: relative;
+	border: none;
 }
 #coin-widget-container .coin-widget .ticker-main img {
 	position: absolute;
