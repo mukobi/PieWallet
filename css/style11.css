@@ -249,6 +249,19 @@ html {
 	font-size: 20pt;
 	width: 31%;
 	position: relative;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+}
+#coin-widget-container .coin-widget .ticker-main {
+	flex-grow: 1;
+}
+
+#coin-widget-container .coin-widget .buttons a {
+	display: inline-block;
+	width: 49%;
+	margin-top: 8px;
 }
 
 /* graph */
