@@ -256,8 +256,20 @@ html {
 }
 #coin-widget-container .coin-widget .ticker-main {
 	flex-grow: 1;
+	padding: 0 8px;
+	/* background: linear-gradient(to left, #704ac7, #005ba1);
+	background: linear-gradient(to left, var(--color1), var(--color2)); */
 }
-
+#coin-widget-container .coin-widget .ticker-main div.title {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+#coin-widget-container .coin-widget .ticker-main div.title span {font-size: 20pt;}
+#coin-widget-container .coin-widget .ticker-main p {
+	text-align: right;
+	width: 100%;
+}
 #coin-widget-container .coin-widget .buttons a {
 	display: inline-block;
 	width: 49%;

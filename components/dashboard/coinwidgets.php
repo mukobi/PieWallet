@@ -1,7 +1,7 @@
 <div id="coin-widget-container" class="main-carousel js-flickity" data-flickity-options='{"wrapAround": true, "watchCSS": true, "setGallerySize": false, "pageDots": false}'>
     <div id="widget-bitcoin" class="coin-widget carousel-cell">
         <div class="ticker-main dashbox">
-            <h4>BITCOIN $8,573.00</h4>
+            <div class="title"><span>BITCOIN</span><span>$8,573.00</span></div>
             <p>+1.52%</p>
             <p>1.3122314 ($8635.64)</p>
         </div>
