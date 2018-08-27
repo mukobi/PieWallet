@@ -267,7 +267,7 @@ html {
 	left: 50%;
 	transform: translate(-50%, -50%);
 	z-index: 0;
-	opacity: 0.2;
+	opacity: 0.3;
 }
 #coin-widget-container .coin-widget .ticker-main div.title {
 	width: 100%;
