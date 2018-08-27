@@ -259,6 +259,15 @@ html {
 	padding: 0 8px;
 	background: linear-gradient(to right, #704ac7, #005ba1);
 	background: linear-gradient(to right, var(--color1), var(--color2));
+	position: relative;
+}
+#coin-widget-container .coin-widget .ticker-main img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 0;
+	opacity: 0.2;
 }
 #coin-widget-container .coin-widget .ticker-main div.title {
 	width: 100%;

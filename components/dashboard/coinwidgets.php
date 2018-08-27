@@ -4,6 +4,8 @@
             <div class="title"><span>BITCOIN</span><span>$8,573.00</span></div>
             <p>+1.52%</p>
             <p>1.3122314 ($8635.64)</p>
+            <div class="img"><img src="images/coins/bitcoin-trans.png" /></div>
+            
         </div>
         <div class="buttons">
             <a href="#" class="button">Send</a>
