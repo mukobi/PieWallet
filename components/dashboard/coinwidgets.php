@@ -1,13 +1,13 @@
 <div id="coin-widget-container" class="main-carousel js-flickity" data-flickity-options='{"wrapAround": true, "watchCSS": true, "setGallerySize": false, "pageDots": false}'>
-    <div id="widget-bitcoin" class="coin-widget dashbox carousel-cell">
-        <div class="coin-label">
-            <img class="coin-logo" src="images/Bitcoin-logo.png" alt="Bitcoin Logo">
-            <h4>BTC</h4>
+    <div id="widget-bitcoin" class="coin-widget carousel-cell">
+        <div class="ticker-main dashbox">
+            <h4>BITCOIN $8,573.00</h4>
+            <p>+1.52%</p>
+            <p>1.3122314 ($8635.64)</p>
         </div>
-        <div class="ticker-main">
-            <h3>$8,573.00</h3>
-            <h4 class="change">+6.84%</h4>
-            <h4>Balance: 4.39320</h4>
+        <div class="buttons">
+            <a href="#" class="button">Send</a>
+            <a href="#" class="button">Receive</a>
         </div>
     </div>
     <div id="widget-litecoin" class="coin-widget dashbox carousel-cell">

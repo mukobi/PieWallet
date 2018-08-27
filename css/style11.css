@@ -39,6 +39,10 @@ h3 {
 	font-size: 26pt;
 }
 
+h4 {
+	font-size: 20pt;
+}
+
 p {
 	font-size: 16pt;
 }
@@ -245,46 +249,6 @@ html {
 	font-size: 20pt;
 	width: 31%;
 	position: relative;
-}
-#coin-widget-container .coin-widget .coin-label {
-	position: absolute;
-	top: 5px;
-	left: 10px;
-	display: flex;
-	flex-wrap: nowrap;
-	align-items: center;
-}
-#coin-widget-container .coin-widget .coin-label img {
-	height: 35px;
-}
-#coin-widget-container .coin-widget .coin-label h4 {
-	display: block;
-	font-size: 26px;
-	/* color: #584dbf; /*fallback*/
-	background-image: linear-gradient(to top right, #0c58a5, #7249c9); 
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-}
-@media screen and (max-width: 1230px) {
-	#coin-widget-container .coin-widget img.coin-logo {
-		height: 25px;
-	}
-}
-
-#coin-widget-container .coin-widget .ticker-main {
-	color: white;
-	font-style: italic;
-}
-@media screen and (min-width: 800px) and (max-width: 1530px) {
-	#coin-widget-container .coin-widget .ticker-main {
-		position: relative;
-		top: 18px;
-	}
-}
-
-#coin-widget-container .coin-widget .ticker-main h4.change {
-	color: rgb(16, 182, 16);
 }
 
 /* graph */
