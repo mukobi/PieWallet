@@ -65,7 +65,7 @@
                 document.getElementById("sendreceive").classList.add("transparent");
                 setTimeout(function() {
                     document.getElementById("sendreceive").classList.remove("active");
-                }, 0.5);
+                }, 500);
             }
             </script>
         </div>
