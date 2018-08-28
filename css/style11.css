@@ -288,7 +288,7 @@ html {
 	width: 49%;
 	margin-top: 8px;
 }
-#coin-widget-container .coin-widget .buttons a img {
+#coin-widget-container .coin-widget .buttons a svg {
 	fill: white;
 	display: inline-block;
 	height: 16px;
