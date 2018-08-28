@@ -288,6 +288,12 @@ html {
 	width: 49%;
 	margin-top: 8px;
 }
+#coin-widget-container .coin-widget .buttons a img {
+	fill: white;
+	display: inline-block;
+	height: 16px;
+	margin-right: 8px;
+}
 
 /* graph */
 #trading-graph > div {
