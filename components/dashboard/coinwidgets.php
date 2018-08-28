@@ -38,6 +38,7 @@
     <script>
         function popupSendReceive(coin, action) {
             document.getElementById("send-receive-coin-select").selectedIndex = coin;
+            changeSendReceiveTab(action);
             document.getElementById("sendreceive").classList.remove("transparent");
             document.getElementById("sendreceive").classList.add("active");
         }

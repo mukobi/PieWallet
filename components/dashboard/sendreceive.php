@@ -14,8 +14,8 @@
             </div>
         </div>
         <div class="button-bar">
-                <button id="send-button" class="button active" onclick="changeTab('send')">Send</button>
-                <button id="receive-button" class="button" onclick="changeTab('receive')">Receive</button>
+                <button id="send-button" class="button active" onclick="changeSendReceiveTab('send')">Send</button>
+                <button id="receive-button" class="button" onclick="changeSendReceiveTab('receive')">Receive</button>
             </div>
         <div class="bottomform">
             <div id="send" class="tab-sendreceive">
@@ -45,7 +45,7 @@
                 </div> 
             </div>
             <script>
-            function changeTab(tabName) {
+            function changeSendReceiveTab(tabName) {
                 // change tab
                 var i;
                 var x = document.getElementsByClassName("tab-sendreceive");
