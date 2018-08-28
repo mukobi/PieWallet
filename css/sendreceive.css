@@ -4,6 +4,7 @@
     overflow-x: hidden;
 }
 
+
 #sendreceiveform {
     width: 100%;
     min-height: 100%;
@@ -92,4 +93,47 @@
     padding: 2px 16px;
     background-color: #4ba0eb;
     color: white;
+}
+
+
+/* special dashboard popup styling */
+
+#main-container.dashboard #sendreceive {
+    position: fixed;
+    top: 10%;
+    left: 10%;
+    right: 10%;
+    bottom: 10%;
+    box-shadow: 0 0 16vw 8vw rgba(10,10,10,0.8);
+    background-color: #0c1744;
+    z-index: -100;
+    opacity: 0;
+    transition: opacity 500ms;
+}
+#main-container.dashboard #sendreceive.transparent {
+    opacity: 0;
+}
+
+#main-container.dashboard #sendreceive.active {
+    z-index: 100;
+    opacity: 1;
+}
+
+#main-container.dashboard #sendreceive > form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#main-container #sendreceive .x-out {
+    display: none;
+}
+#main-container.dashboard #sendreceive .x-out {
+    display: block;
+    position: absolute;
+    top: 5vh;
+    right: 5vh;
+    cursor: pointer;
+}
+#main-container.dashboard #sendreceive .x-out img {
+    height: 40px;
 }

@@ -7,8 +7,8 @@
             <img src="images/coins/bitcoin-trans.png" />
         </div>
         <div class="buttons">
-            <a href="#" class="button">Send</a>
-            <a href="#" class="button">Receive</a>
+            <a onClick="popupSendReceive(0,'send')" class="button">Send</a>
+            <a onClick="popupSendReceive(0,'receive')" class="button">Receive</a>
         </div>
     </div>
     <div id="widget-litecoin" class="coin-widget carousel-cell">
@@ -19,8 +19,8 @@
             <img src="images/coins/litecoin-trans.png" />
         </div>
         <div class="buttons">
-            <a href="#" class="button">Send</a>
-            <a href="#" class="button">Receive</a>
+            <a onClick="popupSendReceive(2,'send')" class="button" class="button">Send</a>
+            <a onClick="popupSendReceive(2,'receive')" class="button">Receive</a>
         </div>
     </div>
     <div id="widget-ethereum" class="coin-widget carousel-cell">
@@ -31,8 +31,15 @@
             <img src="images/coins/ethereum-trans.png" />
         </div>
         <div class="buttons">
-            <a href="#" class="button">Send</a>
-            <a href="#" class="button">Receive</a>
+            <a onClick="popupSendReceive(1,'send')"  class="button">Send</a>
+            <a onClick="popupSendReceive(1,'receive')"  class="button">Receive</a>
         </div>
     </div>
+    <script>
+        function popupSendReceive(coin, action) {
+            document.getElementById("send-receive-coin-select").selectedIndex = coin;
+            document.getElementById("sendreceive").classList.remove("transparent");
+            document.getElementById("sendreceive").classList.add("active");
+        }
+    </script>
 </div>

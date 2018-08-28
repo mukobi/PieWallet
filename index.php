@@ -167,6 +167,7 @@ echo '<?xml version="1.0" encoding="utf-8"?>' ?>
 			<?php include_once("components/dashboard/profilewidget.php"); ?>
 			<?php include_once("components/dashboard/shapeshift.php"); ?>
 			<?php include_once("components/dashboard/graph.php"); ?>
+			<?php include_once("components/dashboard/sendreceive.php"); ?>
 		</div>
 	</body>
 

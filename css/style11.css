@@ -62,13 +62,15 @@ a.button {
 	background: linear-gradient(to right, #704ac7, #005ba1);
 	background: linear-gradient(to right, var(--color1), var(--color2));
 	margin: 0 auto;
-	border-radius: 16px
+	border-radius: 16px;
+	cursor: pointer;
 }
 
 body {
 	margin: 0;
 	padding: 0;
 	background-color: #0c1744;
+	z-index: 0;
 }
 
 html {

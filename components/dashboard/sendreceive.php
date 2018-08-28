@@ -1,9 +1,10 @@
 <div id="sendreceive" class="dashbox">
     <link rel="stylesheet" href="../../css/sendreceive.css" />
+    <div class="x-out" onClick="xOutOfSendReceive()"><img src="images/icons/x-out.png" alt="Close"></div>
     <form action="#" id="sendreceiveform">
         <div class="walletsellect">
             <h4>Select Wallet</h4>
-            <select>
+            <select id="send-receive-coin-select">
                 <option value="btc">BTC</option>
                 <option value="eth">ETH</option>
                 <option value="ltc">LTC</option>
@@ -59,6 +60,12 @@
                     x[i].classList.remove("active");
                 }
                 document.getElementById(tabName + "-button").classList.add("active");
+            }
+            function xOutOfSendReceive() {
+                document.getElementById("sendreceive").classList.add("transparent");
+                setTimeout(function() {
+                    document.getElementById("sendreceive").classList.remove("active");
+                }, 0.5);
             }
             </script>
         </div>
