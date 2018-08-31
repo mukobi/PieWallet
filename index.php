@@ -2,20 +2,14 @@
 <?php 
 ob_start();
 @session_start();
-// error_reporting(E_ALL);
-// ini_set('display_errors', '1');
+
+if(!isset($_SESSION['login'])) {
+	header("Location:login.php");
+}
+
 $conn = new mysqli("localhost", "paypeer1_lite1", "wwOpF+T3bDl&", "paypeer1_litespeed"); 
 
-//require_once 'block_io.php'; 
 
-// require_once __DIR__ . "/blocktrail/vendor/autoload.php";
-// use Blocktrail\SDK\BlocktrailSDK;
-// use Blocktrail\SDK\Connection\Exceptions\ObjectNotFound;
-// use Blocktrail\SDK\Wallet;
-// use Blocktrail\SDK\WalletInterface;
-
-// $client = new BlocktrailSDK(getenv('BLOCKTRAIL_SDK_APIKEY') ?: "aa958b2daea2d6579224fb2105fe83d4b7f1deae", getenv('BLOCKTRAIL_SDK_APISECRET') ?: "3c69765ea03a27d66c631d8037798fec87139bcc", "BTC", true /* testnet */, 'v1'); 
-//print_r($client);
 if(isset($_POST['action'])) : 
 
 	if($_POST['action'] == 'unfollowed'){
@@ -143,10 +137,9 @@ endif;
 ?>
 <?php
 echo '<?xml version="1.0" encoding="utf-8"?>' ?>
-	<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML Basic 1.1//EN"
-    "http://www.w3.org/TR/xhtml-basic/xhtml-basic11.dtd">
-	<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
-
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML Basic 1.1//EN"
+"http://www.w3.org/TR/xhtml-basic/xhtml-basic11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 	<head>
 		<title>Dashboard - PayPeer.io</title>
 		<link rel="stylesheet" href="https://changelly.com/widget.css">
@@ -157,7 +150,6 @@ echo '<?xml version="1.0" encoding="utf-8"?>' ?>
 		<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 		<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 	</head>
-
 	<body>
 		<div id="main-container" class="content-main dashboard">
 			<?php include_once("components/header-mobile.php"); ?>
@@ -170,5 +162,4 @@ echo '<?xml version="1.0" encoding="utf-8"?>' ?>
 			<?php include_once("components/dashboard/sendreceive.php"); ?>
 		</div>
 	</body>
-
-	</html>
+</html>
