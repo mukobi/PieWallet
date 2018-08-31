@@ -6,9 +6,7 @@ ob_start();
 if(isset($_SESSION['login'])) {
 	header("Location:index.php");
 }
-
 $conn = new mysqli("localhost", "paypeer1_lite1", "wwOpF+T3bDl&", "paypeer1_litespeed"); 
-
 ?>
 <?php
 echo '<?xml version="1.0" encoding="utf-8"?>' ?>
@@ -20,11 +18,12 @@ echo '<?xml version="1.0" encoding="utf-8"?>' ?>
 		<link rel="stylesheet" href="/css/style11.css">
 		<link rel="stylesheet" href="/css/login.css">
 		<!-- <link rel="stylesheet" href="/css/buybox11.css"> -->
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script defer src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/TweenMax-latest-beta.js"></script>
+        <script defer src="js/gradient-color-change.js"></script>
 	</head>
 	<body>
 		<div id="main-container" class="content-main login">
-			<?php include_once("components/header-mobile.php"); ?>
 		</div>
 	</body>
 </html>
