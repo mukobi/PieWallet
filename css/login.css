@@ -1,9 +1,41 @@
 #main-container.content-main.login {
-    background: linear-gradient(to bottom, #704ac7, #005ba1);
-    background: linear-gradient(to bottom, var(--color1), var(--color2));
+    background: linear-gradient(to right, #704ac7, #005ba1);
+    background: linear-gradient(to right, var(--color1), var(--color2));
     position: absolute;
 	top: 0;
 	right: 0;
 	bottom: 0;
 	left: 0;
+}
+
+
+#main-container.content-main.login .login-box {
+    width: 80vw;
+    max-width: 600px;
+    display: flex;
+	flex-direction: column;
+    justify-content: space-around;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#main-container.content-main.login .login-box img {
+    width: 100%;
+}
+
+#main-container.content-main.login .login-box div {
+    color: white;
+    text-align: center;
+}
+
+#main-container.content-main.login #moving-floor-canvas-container {
+    position: absolute;
+    bottom: 0;
+    left: -100vw;
+    right: -100vw;
+    width: auto;
+    top: 50%;
+    overflow: hidden;
 }
