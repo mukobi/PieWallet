@@ -7,8 +7,7 @@
 	bottom: 0;
     left: 0;
     overflow:hidden;
-    
-    perspective: 30vh;
+    perspective: 22vh;
 }
 
 
@@ -19,7 +18,7 @@
 	flex-direction: column;
     justify-content: space-around;
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%,-50%);
 }
@@ -41,17 +40,17 @@
     left: -25vw;
     right: -25vw;
     width: auto;
-    top: 30%;
+    top: 20%;
     overflow: hidden;
     mix-blend-mode: hard-light;
-    transform: rotateX(60deg);
+    transform: rotateX(80deg);
 }
 
 #main-container.content-main.login #moving-floor-canvas-container:after {
     position: absolute;
     content: "";
     left: 0px;
-    top: 0;
+    top: 0px;
     height: 100%;
     width: 100%;
     background: linear-gradient(gray, transparent);
