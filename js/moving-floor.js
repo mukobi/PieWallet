@@ -1,3 +1,5 @@
+window.onload = function() {
+
 function resizeAndDrawMovingFloor() {
     var canvas = document.getElementById("moving-floor-canvas");
     var canvasContainer = document.getElementById("moving-floor-canvas-container");
@@ -16,13 +18,13 @@ function resizeAndDrawMovingFloor() {
     var numberVerticalReys = 37;
     for(var i = 0; i <= numberVerticalReys; ++i) {
         ctx.moveTo(maxWidth / 2, 0);
-        ctx.lineTo(maxWidth * i / numberVerticalReys,maxHeight);
+        ctx.lineTo(maxWidth * i / numberVerticalReys,maxHeight - 1);
         ctx.stroke();
     }
 
-    
+
 }
 resizeAndDrawMovingFloor();
 window.addEventListener('resize', resizeAndDrawMovingFloor);
 
-
+}
