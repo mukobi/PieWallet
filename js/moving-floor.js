@@ -17,35 +17,32 @@ function resizeAndDrawMovingFloor() {
     var horizontalLineArray = [];
     function initHorizontalLines(numberLines, height) {
         horizontalLineArray = [];
-        var base = Math.pow(height,(1/numberLines));
         for(var i=0; i < numberLines; i++) {
-            var k = Math.pow(base, i) + 0.4 * i/numberLines * height;
-            //var k = i/numberLines * height;
+            var k = i/numberLines * height;
             horizontalLineArray.push(k);
         }
     }
-    initHorizontalLines(10, maxHeight);
+    initHorizontalLines(20, maxHeight);
 
     var numberVerticalReys = 37;
     function updateAndDrawLines() {
         ctx.clearRect(0, 0, maxWidth, maxHeight);
         ctx.beginPath();
-        console.log("update");
         for(var i = 0; i <= numberVerticalReys; ++i) {
-            ctx.moveTo(0.2 * (maxWidth * i / numberVerticalReys + 2 * maxWidth), -100);
+            ctx.moveTo(maxWidth * i / numberVerticalReys, 0);
             ctx.lineTo(maxWidth * i / numberVerticalReys,maxHeight - 1);
         }
         console.log(horizontalLineArray);
         for(var i = 0; i < horizontalLineArray.length; ++i) {
-             horizontalLineArray[i] = (1.01 * horizontalLineArray[i] + 0.5) % maxHeight; 
-
-            ctx.moveTo(0, horizontalLineArray[i]);
-            ctx.lineTo(maxWidth, horizontalLineArray[i]);
+            horizontalLineArray[i] = (horizontalLineArray[i] + 0.002 * maxHeight) % maxHeight; 
+            var roundedPosition = Math.round(horizontalLineArray[i]);
+            ctx.moveTo(0, roundedPosition);
+            ctx.lineTo(maxWidth, roundedPosition);
         }
         ctx.stroke();
     }
     clearInterval(refreshInterval);
-    refreshInterval = setInterval(updateAndDrawLines, 20);
+    refreshInterval = setInterval(updateAndDrawLines, 16);
 }
 resizeAndDrawMovingFloor();
 window.addEventListener('resize', resizeAndDrawMovingFloor);

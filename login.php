@@ -40,6 +40,7 @@ echo '<?xml version="1.0" encoding="utf-8"?>' ?>
                 alert('Logged in as ' + user.first_name + ' ' + user.last_name + ' (' + user.id + (user.username ? ', @' + user.username : '') + ')');
             }
             </script>
+            </div>
         </div>
     </div>
 </body>
