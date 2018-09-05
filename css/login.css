@@ -39,4 +39,16 @@
     width: auto;
     top: 50%;
     overflow: hidden;
+    mix-blend-mode: hard-light;
+
 }
+
+#main-container.content-main.login #moving-floor-canvas-container:after {
+    position: absolute;
+    content: "";
+    left: 0px;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(gray, transparent);
+  }
