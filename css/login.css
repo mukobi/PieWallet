@@ -7,7 +7,7 @@
 	bottom: 0;
     left: 0;
     overflow:hidden;
-    perspective: 25vh;
+    perspective: 15vh;
 }
 
 
@@ -35,7 +35,7 @@
 
 
 #main-container.content-main.login #moving-floor-canvas-container {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     left: -35vw;
     right: -35vw;
@@ -43,7 +43,7 @@
     top: 20%;
     overflow: hidden;
     mix-blend-mode: hard-light;
-    transform: rotateX(80deg);
+    transform: rotateX(70deg);
 }
 
 #main-container.content-main.login #moving-floor-canvas-container:after {
@@ -51,7 +51,10 @@
     content: "";
     left: 0px;
     top: 0px;
+    bottom: 0px;
+    right: 0px;
     height: 100%;
     width: 100%;
+    transform: rotateX(0deg);
     background: linear-gradient(gray, transparent);
 }
