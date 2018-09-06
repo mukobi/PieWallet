@@ -1,9 +1,9 @@
 <?php session_start(); ?>
 <?php 
 ob_start();
-@session_start();
+//@session_start();
 
-if(!isset($_SESSION['login'])) {
+if(!isset($_COOKIE['tg_user'])) {
 	header("Location:login.php");
 }
 

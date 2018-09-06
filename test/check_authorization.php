@@ -1,6 +1,6 @@
 <?php
 
-define('BOT_TOKEN', '628350776:AAGMY3nI9ctd-XlAeBQBSO38PSutOT9_lbM');
+define('BOT_TOKEN', '628350776:AAGMY3nI9ctd-XlAeBQBSO38PSutOT9_lbM'); // place bot token of your bot here
 
 function checkTelegramAuthorization($auth_data) {
   $check_hash = $auth_data['hash'];
@@ -24,9 +24,9 @@ function checkTelegramAuthorization($auth_data) {
 
 function saveTelegramUserData($auth_data) {
   $auth_data_json = json_encode($auth_data);
-  // set cookie for 3 months
-  setcookie('tg_user', $auth_data_json, time() + 7776000, '/');
+  setcookie('tg_user', $auth_data_json);
 }
+
 
 try {
   $auth_data = checkTelegramAuthorization($_GET);
@@ -35,6 +35,6 @@ try {
   die ($e->getMessage());
 }
 
-header('Location:../index.php');
+header('Location: login_example.php');
 
 ?>
