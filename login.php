@@ -2,8 +2,7 @@
 <?php 
 ob_start();
 //@session_start();
-
-if(isset($_SESSION['login'])) {
+if(isset($_COOKIE['tg_user'])) {
 	header("Location:index.php");
 }
 $conn = new mysqli("localhost", "paypeer1_lite1", "wwOpF+T3bDl&", "paypeer1_litespeed"); 
