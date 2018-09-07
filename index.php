@@ -3,9 +3,7 @@
 ob_start();
 //@session_start();
 
-if(!isset($_COOKIE['tg_user'])) {
-	header("Location:login.php");
-}
+include_once("server/components/handleTgLogin.php");
 
 $conn = new mysqli("localhost", "paypeer1_lite1", "wwOpF+T3bDl&", "paypeer1_litespeed"); 
 
