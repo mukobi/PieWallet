@@ -1,4 +1,8 @@
 <?php 
+
+include_once("server/components/handleTgLogin.php");
+
+
 	include('header.php'); 
 	$cur_path = dirname(__FILE__);
 	//require_once "$cur_path/block_io.php";
