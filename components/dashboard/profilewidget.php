@@ -1,9 +1,9 @@
 <div id="profilewidget" class="dashbox">
     <link rel="stylesheet" href="../../css/profilewidget.css" />
-    <div class="picture">
+    <div class="picture" <?php echo ($tg_photo_url ? "style=\"background-image: url(" . $tg_photo_url . ");\"" : "") ?>>
     </div>
     <div class="info">
-        <h3>@EthanC</h3>
+        <h3><?php echo ($tg_first_name . ($tg_last_name ? mb_substr($tg_last_name, 0, 1, 'utf-8') : "")) ?></h3>
         <p>Followers: 536</p>
         <p>Following: 75</p>
     </div>
