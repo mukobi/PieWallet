@@ -50,6 +50,7 @@ p {
 input[type="text"] {
 	border: 2px solid #584dbf;
 	background-color: transparent;
+	color: white;
 }
 
 a.button {
