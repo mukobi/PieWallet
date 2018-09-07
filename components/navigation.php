@@ -62,7 +62,7 @@
     </div>
     <div class="navicon empty"></div>
     <div class="navicon login-logout">
-        <a href="#">
+        <a href="?logout=1">
             <img class="imgleft" src="/images/navigation/logout.png" />
             <p>LOGOUT</p>
         </a>

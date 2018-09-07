@@ -4,10 +4,10 @@ if(!isset($_COOKIE['tg_user'])) {
 	header('Location:login.php');
 }
 
-// if ($_GET['logout']) {
-//   setcookie('tg_user', '');
-//   header('Location:login.php');
-// }
+if (isset($_GET['logout']) && $_GET['logout']) {
+  setcookie('tg_user', '');
+  header('Location:login.php');
+}
 
 function getTelegramUserData() {
     if (isset($_COOKIE['tg_user'])) {
