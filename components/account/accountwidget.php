@@ -9,15 +9,18 @@
         <p>Following: 75</p>
     </div>
     <div class="buttons">
-        <div class="settings">
+        <div>
+            <a href="#" class="button">Wallets</a>
             <a href="#" class="button">Settings</a>
         </div>
-        <div class="logout">
+        <div>
             <a href="?logout=1" class="button">Logout</a>
         </div>
     </div>
     <div class="search">
+        Search
     </div>
     <div class="notifications">
+        Notifications
     </div>
 </div>

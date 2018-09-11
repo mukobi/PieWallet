@@ -5,17 +5,37 @@
     grid-template-rows:  1fr 3fr;
     grid-template-columns: 2fr 7fr 3fr;
     grid-template-areas:
-        "picture info profile"
-        "picture info settings"
-        "picture info friends"
-        "portfolio portfolio logout"
+        "picture info info"
+        "buttons search notifications"
 }
 
 #main-container.account #account-widget .picture {
+    grid-area: picture;
     background-image: url(../images/users/genericprofile.png);
     background-repeat: no-repeat;
     background-position: center; /* Center the image */
     background-size: contain;
     height: 100%;
     width: 100%;
+}
+
+#main-container.account #account-widget .profile-info {
+    grid-area: info;
+}
+#main-container.account #account-widget .buttons {
+    grid-area: buttons;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    height: 100%;
+}
+#main-container.account #account-widget .buttons > div > a:first-child {
+    margin-bottom: 16px;
+}
+#main-container.account #account-widget .search {
+    grid-area: search;
+}
+#main-container.account #account-widget .notifications {
+    grid-area: notifications;
 }
