@@ -1,5 +1,5 @@
 <div id="exchange-widget" class="dashbox">
-    <link rel="stylesheet" href="../../css/echangewidget.css" />
+    <link rel="stylesheet" href="../../css/widgets/exchangewidget.css" />
         <div class="button-bar">
                 <button id="shapeshift-button" class="button active" onclick="changeTab('shapeshift')">Shapeshift</button>
                 <button id="changelly-button" class="button" onclick="changeTab('changelly')">Changelly</button>
