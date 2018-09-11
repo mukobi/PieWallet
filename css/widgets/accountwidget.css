@@ -30,9 +30,14 @@
     justify-content: space-between;
     height: 100%;
 }
+#main-container.account #account-widget .buttons a {    
+    font-size: 26px;
+}
+
 #main-container.account #account-widget .buttons > div > a:first-child {
     margin-bottom: 16px;
 }
+
 #main-container.account #account-widget .search {
     grid-area: search;
 }

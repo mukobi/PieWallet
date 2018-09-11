@@ -1,0 +1,3 @@
+<div>
+    Notifications Widget
+</div>

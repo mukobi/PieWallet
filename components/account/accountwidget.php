@@ -18,9 +18,9 @@
         </div>
     </div>
     <div class="search">
-        Search
+        <?php include('searchwidget.php'); ?>
     </div>
     <div class="notifications">
-        Notifications
+        <?php include('notificationswidget.php'); ?>
     </div>
 </div>
