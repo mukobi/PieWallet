@@ -30,10 +30,7 @@
         <?php if(basename($_SERVER['PHP_SELF']) == "chat.php") {
             echo "active";
         } ?>">
-        <a href="/send.php 
-        <?php if(basename($_SERVER['PHP_SELF']) == "send.php") {
-            echo "active";
-        } ?>">
+        <a href="/chat.php">
             <img class="imgleft" src="/images/navigation/chat.png" />
             <p>CHAT</p>
         </a>
@@ -42,22 +39,9 @@
         <?php if(basename($_SERVER['PHP_SELF']) == "account.php") {
             echo "active";
         } ?>">
-        <?php
-            if ( !mysqli_connect_errno()  && isset($_SESSION['ud_login'])){
-                $email = $_SESSION['ud_login']['email'] ;
-                $stmt = " SELECT label from ls_users where email LIKE '".$email."'; " ;
-                $result = $conn->query($stmt);
-                if ( $result->num_rows > 0 ) {
-                    echo '<a href="/account.php">' ;
-                } else {
-                    echo '<a href="/login.php">' ;
-                }
-            } else {
-                echo '<a href="/login.php">' ;
-            }
-        ?>
-        <img class="imgleft" src="/images/navigation/account.png" />
-        <p>ACCOUNT</p>
+        <a href="/account.php">
+            <img class="imgleft" src="/images/navigation/account.png" />
+            <p>ACCOUNT</p>
         </a>
     </div>
     <div class="navicon empty"></div>
