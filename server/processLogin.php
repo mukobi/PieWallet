@@ -1,6 +1,6 @@
 <?php
 
-define('BOT_TOKEN', '628350776:AAGMY3nI9ctd-XlAeBQBSO38PSutOT9_lbM');
+include_once('./components/getTgBotInfo.php');
 
 function checkTelegramAuthorization($auth_data) {
   $check_hash = $auth_data['hash'];
@@ -11,7 +11,7 @@ function checkTelegramAuthorization($auth_data) {
   }
   sort($data_check_arr);
   $data_check_string = implode("\n", $data_check_arr);
-  $secret_key = hash('sha256', BOT_TOKEN, true);
+  $secret_key = hash('sha256', TG_BOT_TOKEN, true);
   $hash = hash_hmac('sha256', $data_check_string, $secret_key);
   if (strcmp($hash, $check_hash) !== 0) {
     throw new Exception('Data is NOT from Telegram');
