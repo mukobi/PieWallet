@@ -1,0 +1,16 @@
+[19-Jan-2018 11:03:48 Etc/GMT] PHP Warning:  strlen() expects parameter 1 to be string, array given in /home/uniqu2vo/public_html/dev/litespeed/blocktrail/vendor/bitwasp/bitcoin/src/Base58.php on line 69
+[19-Jan-2018 11:03:48 Etc/GMT] PHP Fatal error:  Uncaught RuntimeException: Failed to slice string of with requested start/end in /home/uniqu2vo/public_html/dev/litespeed/blocktrail/vendor/bitwasp/buffertools/src/Buffertools/Buffer.php:117
+Stack trace:
+#0 /home/uniqu2vo/public_html/dev/litespeed/blocktrail/vendor/bitwasp/bitcoin/src/Base58.php(109): BitWasp\Buffertools\Buffer->slice(0, -4)
+#1 /home/uniqu2vo/public_html/dev/litespeed/blocktrail/vendor/bitwasp/bitcoin/src/Serializer/Key/HierarchicalKey/Base58ExtendedKeySerializer.php(41): BitWasp\Bitcoin\Base58::decodeCheck(Array)
+#2 /home/uniqu2vo/public_html/dev/litespeed/blocktrail/vendor/bitwasp/bitcoin/src/Key/Deterministic/HierarchicalKeyFactory.php(60): BitWasp\Bitcoin\Serializer\Key\HierarchicalKey\Base58ExtendedKeySerializer->parse(Object(BitWasp\Bitcoin\Network\Network), Array)
+#3 /home/uniqu2vo/public_html/dev/litespeed/blocktrail/src/WalletV1.php(66): BitWasp\Bitcoin\Key\Deterministic\HierarchicalKeyFactory::fromExtended(Array)
+#4 /home/uniqu2vo/public_html/dev/litespeed/blocktrail/src/BlocktrailS in /home/uniqu2vo/public_html/dev/litespeed/blocktrail/vendor/bitwasp/buffertools/src/Buffertools/Buffer.php on line 117
+[19-Jan-2018 11:04:41 Etc/GMT] PHP Warning:  strlen() expects parameter 1 to be string, array given in /home/uniqu2vo/public_html/dev/litespeed/blocktrail/vendor/bitwasp/bitcoin/src/Base58.php on line 69
+[19-Jan-2018 11:04:41 Etc/GMT] PHP Fatal error:  Uncaught RuntimeException: Failed to slice string of with requested start/end in /home/uniqu2vo/public_html/dev/litespeed/blocktrail/vendor/bitwasp/buffertools/src/Buffertools/Buffer.php:117
+Stack trace:
+#0 /home/uniqu2vo/public_html/dev/litespeed/blocktrail/vendor/bitwasp/bitcoin/src/Base58.php(109): BitWasp\Buffertools\Buffer->slice(0, -4)
+#1 /home/uniqu2vo/public_html/dev/litespeed/blocktrail/vendor/bitwasp/bitcoin/src/Serializer/Key/HierarchicalKey/Base58ExtendedKeySerializer.php(41): BitWasp\Bitcoin\Base58::decodeCheck(Array)
+#2 /home/uniqu2vo/public_html/dev/litespeed/blocktrail/vendor/bitwasp/bitcoin/src/Key/Deterministic/HierarchicalKeyFactory.php(60): BitWasp\Bitcoin\Serializer\Key\HierarchicalKey\Base58ExtendedKeySerializer->parse(Object(BitWasp\Bitcoin\Network\Network), Array)
+#3 /home/uniqu2vo/public_html/dev/litespeed/blocktrail/src/WalletV1.php(66): BitWasp\Bitcoin\Key\Deterministic\HierarchicalKeyFactory::fromExtended(Array)
+#4 /home/uniqu2vo/public_html/dev/litespeed/blocktrail/src/BlocktrailS in /home/uniqu2vo/public_html/dev/litespeed/blocktrail/vendor/bitwasp/buffertools/src/Buffertools/Buffer.php on line 117

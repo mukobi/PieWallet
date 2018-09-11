@@ -1,0 +1,682 @@
+Return-Path: <b06622d23aesupport=paypeer.io@bounce.twitter.com>
+Delivered-To: support@paypeer.io
+Received: from us139.siteground.us
+	by us139.siteground.us with LMTP id YAsaL29m9VonnwAA+yMT2Q
+	for <support@paypeer.io>; Fri, 11 May 2018 04:46:23 -0500
+Return-path: <b06622d23aesupport=paypeer.io@bounce.twitter.com>
+Envelope-to: support@paypeer.io
+Delivery-date: Fri, 11 May 2018 04:46:23 -0500
+Received: from [107.6.129.66] (port=48026 helo=se14.mailspamprotection.com)
+	by us139.siteground.us with esmtps (TLSv1.2:ECDHE-RSA-AES256-GCM-SHA384:256)
+	(Exim 4.89_34-9f6032f-XX)
+	(envelope-from <b06622d23aesupport=paypeer.io@bounce.twitter.com>)
+	id 1fH4d5-000Ab0-Nz
+	for support@paypeer.io; Fri, 11 May 2018 04:46:23 -0500
+Received: from spring-chicken-ai.twitter.com ([199.16.156.148])
+	by se14.mailspamprotection.com with esmtps (TLSv1.2:ECDHE-RSA-AES128-GCM-SHA256:128)
+	(Exim 4.89)
+	(envelope-from <b06622d23aesupport=paypeer.io@bounce.twitter.com>)
+	id 1fH4cy-000AM5-9M
+	for support@paypeer.io; Fri, 11 May 2018 04:46:23 -0500
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=twitter.com;
+	s=dkim-201406; t=1526031975;
+	bh=guR/hZ45MOEYNs/D+Fu/dv3E4DVj7XS1A5OUXf/UzOk=;
+	h=Date:From:To:Subject:MIME-Version:Content-Type:List-Unsubscribe:
+	 Message-ID;
+	b=iYhdcavNbghNpzAcB3btEkcXfArgQP5RvCV9PoW8qUKRvYdo9+CYM3CuMibFglshG
+	 8l/K1ghtM6cC89TScRSsJmguag7m/FBwPVKHg3JPt3B0dm500W6xKQv3t9W9Shixr6
+	 aCuFkINoOH8IFa7dTSk2Amc/jtE6xJt/mBAj2+mWE1RnySsY7V65QPe/ZRuYzYogcP
+	 lK8Ybhks4FvoFYmrBoj0n75pl+Pic5Zh5/9h/m4tqxkkOx1mso1TyLh2uaoGVLPRjT
+	 Ja582dt2zubR8XG0B36BtbqU1n5QzDPRG9+KS5oaVf/6Mbl2BYTierUmak0IwrItbu
+	 aL2k9IrIoie8w==
+X-MSFBL: NUWAO0cmEMHwKED13V5Pq+R7IDIwOqtlZhYQ2hx1nWA=|eyJiIjoiYXRsYS1hcWY
+	tMzctc3IxLUJ1bGsuMTY4IiwidSI6InN1cHBvcnRAcGF5cGVlci5pb0BpaWQjI2M
+	0OTZkNWZlNjY0OTRmNDM5ZjE3NzMyODQ2Yjg2OTQ1QHVzYiMjMjRAMjQ0QDk2Mzg
+	4MzMzODIxNjk1MTgwOUAwQDc1MTg1ZmMyOTBiODM2YzI5Njg1YTlkN2FmZDliNzM
+	zMGQ1NDMxMzEiLCJyIjoic3VwcG9ydEBwYXlwZWVyLmlvIiwiZyI6IkJ1bGsifQ=
+	=
+Date: Fri, 11 May 2018 09:46:15 +0000
+From: Twitter <info@twitter.com>
+To: PayPeer <support@paypeer.io>
+Subject: An update on your account security
+MIME-Version: 1.0
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_10261987_1665403291.1526031975472"
+List-Unsubscribe: <https://twitter.com/i/u?t=1&listunsub=t&cn=bGVnYWxfZW1haWxfMg%3D%3D&sig=1ca45575ee3c5896667e0cb941cfa0c8c18e4d11&iid=c496d5fe66494f439f17732846b86945&uid=963883338216951809&nid=244+26&usbid=24>
+Feedback-ID: 0040162518f58f41d1f0:1f401d222bd98f5ec6fcf213ed:none:twitterESP
+Precedence: Bulk
+Message-ID: <AD.8E.60284.76665FA5@twitter.com>
+Received-SPF: pass (se14.mailspamprotection.com: domain of bounce.twitter.com designates 199.16.156.148 as permitted sender) client-ip=199.16.156.148; envelope-from=b06622d23aesupport=paypeer.io@bounce.twitter.com; helo=spring-chicken-ai.twitter.com;
+X-SPF-Result: se14.mailspamprotection.com: domain of bounce.twitter.com designates 199.16.156.148 as permitted sender
+Authentication-Results: se14.mailspamprotection.com; dmarc=pass header.from=twitter.com
+Authentication-Results:  mailspamprotection.com; spf=pass smtp.mailfrom=b06622d23aesupport=paypeer.io@bounce.twitter.com; dkim=pass header.i=twitter.com
+X-Filter-Label: socialmedia
+X-SpamExperts-Class: ham
+X-SpamExperts-Evidence: SB/mailspamprotection_com (0.000377741297828)
+X-Recommended-Action: accept
+X-Filter-ID: EX5BVjFpneJeBchSMxfU5lOG0qM6GIGf2D7p8CsOs+N602E9L7XzfQH6nu9C/Fh982QVzvLLBv+T
+ pcSyn5C6eoolrWwr6VqwBPG5wifip3XK46a19IWV36H0q8eAyVarxGY8PyJu23MMfEmrk/Mb2Zl1
+ h7MwQugJgGZ5tAGaZ2Uu2hdDyLdPwRjOUKh9+FCNUrTrrRXCVtt5h/CF4PkfLiP1HaH27Qjry/05
+ 6DPMnxelaNKd+MjRKoyp1UyTnfVanNOab0QimXsJewaqVbu4SHGwS8tnfwevhMbkEcJ1a9RWEBiW
+ RfALwV6kLUVEhpHlXVhjAzKknG3FFbz0ECg4DTRydEkz84JVLVjOf1d/gMrErSQWJAVfDG006T+P
+ xPfH6MQ5Vdl9FyTrPo8UdsfPtO+etzqlCpco53AsaG+dvcBHR5flvB97+Knj8Fgj/SOfmpx1JLll
+ 28jyuhapsWolHiZ1wzSwjU63i+aMFDzXKjxiRGQksTCPzFZBciAvCYhWS13eVUBc3EOgU71Pwhn9
+ KaxCnhA/wO7rkSMeQ9c4w4xpLRUYE+jf+CRz1mRmvg+3ejx+ZEH83D3uT7G9vVxSoIOZ/FQYqPJu
+ lBW8G2/zLcvJvFCbAD7w3FUirQwmJIqDdpCTR2v69HrUIPmuuI4zpGHQz7lBhrPTgOuIPbnrHXzR
+ SkVB2K1WVo39CgKYyA15rSOIPpeqwlm2NDGXIJ2x7MHvpxh07PgNDzhD0+i+j8djqY5tEkv7TPQF
+ vlxGMFuZZKVl3ATtSCr/M9GbK8sklrmmSN2ImUu4x6tLV63O5hAMemVlAqzNGN7E2HR7lDfmbjLZ
+ LL9+h8r/TCwZZ9kU4i7r7Vu7xRkwhjgeeEWgI98JiD7uhRSOjuxzJ+V11tBnZuM7jUXIESohoO51
+ xWmU8Qc2UpOWtg2JHuZ0hwIQpB+fsFPsFGCS2jBFvrJfWFC3H96bSib9RKmWxKD3bZIwgOTGN9fz
+ ghlqHGcfCo6p+Iny/BGWIolHb9Q+S+t97GiC27SidRwMeeyUCcxhtiyGMgT9fL1uqHa3zvHAM0nV
+ lCeloezS4kkc33oYib9860CW
+X-Report-Abuse-To: spam@quarantine1.mailspamprotection.com
+
+------=_Part_10261987_1665403291.1526031975472
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Twitter=20
+> https://twitter.com
+
+=3D
+
+Hi @PayPeer_io,
+
+When you set a password for your Twitter account, we use technology that ma=
+sks it so no one at the company can see it. We recently identified a bug th=
+at stored passwords unmasked in an internal log. We have fixed the bug, and=
+ our investigation shows no indication of breach or misuse by anyone.
+
+Out of an abundance of caution, we ask that you consider changing your pass=
+word on all services where you=E2=80=99ve used this password. You can chang=
+e your Twitter password anytime by going to the password <a href=3D"https:/=
+/twitter.com/i/redirect?url=3Dhttps%3A%2F%2Fmobile.twitter.com%2Fsettings%2=
+Fpassword%2F.%2F&t=3D1+1526031975467&cn=3DbGVnYWxfZW1haWxfMg%3D%3D&sig=3De6=
+db3ea711e053f0a3644885ce9a27865da22b53&iid=3Dc496d5fe66494f439f17732846b869=
+45&uid=3D963883338216951809&nid=3D244+1553" class=3D"blue">settings</a> pag=
+e.=20
+
+About The Bug=20
+
+We mask passwords through a process called hashing using a function known a=
+s bcrypt, which replaces the actual password with a random set of numbers a=
+nd letters that are stored in Twitter's system. This is an industry standar=
+d.=20
+
+Due to a bug, passwords were written to an internal log before completing t=
+he hashing process. We found this error ourselves, removed the passwords, a=
+nd are implementing plans to prevent this bug from happening again.=20
+
+Tips on Account Security=20
+
+1. Again, although we have no reason to believe password information ever l=
+eft Twitter's systems or was misused by anyone, there are a few steps you c=
+an take to help us keep your account safe:=20
+
+2. Change your password on Twitter and on any other service where you may h=
+ave used the same password.=20
+
+3. Use a strong password that you don't reuse on other services. Enable <a =
+href=3D"https://t.co/redirect?url=3Dhttps%3A%2F%2Ft.co%2Flogin-verification=
+&t=3D1+1526031975467&cn=3DbGVnYWxfZW1haWxfMg%3D%3D&sig=3D143755812c96739b4b=
+1e79742445e245004d0e57&iid=3Dc496d5fe66494f439f17732846b86945&uid=3D9638833=
+38216951809&nid=3D244+1554" class=3D"blue">login verification</a>, also kno=
+wn as two factor authentication.=20
+
+4. This is the single best action you can take to increase your account sec=
+urity. Use a password manager to make sure you're using strong, unique pass=
+words everywhere.=20
+
+We are very sorry this happened. We recognize and appreciate the trust you =
+place in us, and are committed to earning that trust every day.=20
+
+Team Twitter
+
+=3D
+
+Help
+> https://support.twitter.com
+
+Reset Password
+> https://twitter.com/account/begin_password_reset?account_identifier=3DPay=
+Peer_io
+
+Download App
+> https://twitter.com/download
+
+We sent this to @PayPeer_io.
+
+Twitter, Inc. 1355 Market Street, Suite 900 San Francisco, CA 94103
+------=_Part_10261987_1665403291.1526031975472
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "http://www=
+.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns=3D"http://www.w3.org/1999/xhtml" xmlns:v=3D"urn:schemas-microso=
+ft-com:vml" xmlns:o=3D"urn:schemas-microsoft-com:office:office">
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/
+html; charset=3Dutf-8" />
+<meta name=3D"viewport" content=3D"width=3Ddevice-width, minimum-scale=3D1.=
+0, maximum-scale=3D1.0, user-scalable=3D0" />
+<meta name=3D"apple-mobile-web-app-capable" content=3D"yes" />
+<!--[if gte mso 9]><xml>
+<o:OfficeDocumentSettings>
+<o:AllowPNG/>
+<o:PixelsPerInch>96</o:PixelsPerInch>
+</o:OfficeDocumentSettings>
+</xml><![endif]-->
+<style type=3D"text/css">
+/* Windows 10 Mail Fix */
+a { text-decoration: none; }
+/* a:visited { color: #8899A6; text-decoration:none; } */
+.addressLink a { color: #8899A6 !important; text-decoration: none !importan=
+t; }
+/* Windows 10 Mail Fix End */
+
+@media only screen and (max-width: 500px) {
+.width_full {
+width: 100% !important;
+}
+.width_20 {
+width: 20px !important;
+}
+.width_24 {
+width: 24px !important;
+}
+#hide {
+display: none !important;
+}
+
+.hide {
+display: none !important;
+}
+
+.width_full {
+width: 100% !important;
+min-width: 360px !important;
+}
+
+.height_30 {
+height: 30px !important;
+}
+
+}
+</style>
+<style type=3D"text/css">
+u + #new-gmail-hack {
+display: block !important;
+}
+</style>
+</head>
+<body style=3D"margin:0px auto;padding:0px;-webkit-text-size-adjust:100%;-m=
+s-text-size-adjust:100%;">
+<img width=3D"1" height=3D"1" src=3D"https://twitter.com/scribe/ibis?t=3D1&=
+amp;cn=3DbGVnYWxfZW1haWxfMg%3D%3D&amp;iid=3Dc496d5fe66494f439f17732846b8694=
+5&amp;uid=3D963883338216951809&amp;nid=3D244+20" style=3D"margin:0px;paddin=
+g:0px;display:inline-block;-ms-interpolation-mode:bicubic;border:none;outli=
+ne:none;" />
+<style>
+.ios_blue a {
+color: #1DA1F2 !important;
+text-decoration: none;
+}
+</style>
+<!--[if gte mso 15]>
+<style type=3D"text/css">
+table { font-size:1px; line-height:0; mso-margin-top-alt:1px;word-break:bre=
+ak-all }
+</style>
+<![endif]-->
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%" bgco=
+lor=3D"#ffffff" class=3D"wrapper" style=3D"padding:0px;line-height:1px;font=
+-size:1px;margin:0px auto;">
+<tbody>
+<tr>
+<td class=3D"empty" width=3D"100%" align=3D"center" style=3D"padding:0px;ma=
+rgin:0px auto;font-size:0px;line-height:1px;padding:0px;">
+<!-- BODY START -->
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" align=3D"center" bg=
+color=3D"#F5F8FA" width=3D"100%" class=3D"width_full" dir=3D"ltr" style=3D"=
+padding:0px;line-height:1px;font-size:1px;margin:0px auto;">
+<tbody>
+<tr>
+<td class=3D"empty" style=3D"padding:0px;margin:0px auto;font-size:0px;line=
+-height:1px;padding:0px;">
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" align=3D"center" bg=
+color=3D"#ffffff" width=3D"450" class=3D"width_full" style=3D"padding:0px;l=
+ine-height:1px;font-size:1px;margin:0px auto;">
+<tbody>
+<tr>
+<td class=3D"empty width_20" width=3D"24" style=3D"padding:0px;margin:0px a=
+uto;font-size:0px;line-height:1px;padding:0px;"> &nbsp; </td>
+<td class=3D"empty" style=3D"padding:0px;margin:0px auto;font-size:0px;line=
+-height:1px;padding:0px;">
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" align=3D"center" di=
+r=3D"ltr" style=3D"padding:0px;line-height:1px;font-size:1px;margin:0px aut=
+o;">
+<tbody>
+<tr>
+<td class=3D"empty" height=3D"24" style=3D"padding:0px;margin:0px auto;font=
+-size:0px;line-height:1px;padding:0px;"> &nbsp; </td>
+</tr>
+<tr>
+<td class=3D"image empty" align=3D"right" style=3D"padding:0px;margin:0px a=
+uto;font-size:0px;line-height:1px;padding:0px;font-size:0px;line-height:100=
+%;padding:0px;mso-line-height-rule:exactly;"> <a href=3D"https://twitter.co=
+m/i/redirect?url=3Dhttps%3A%2F%2Ftwitter.com&amp;t=3D1+1526031975464&amp;cn=
+=3DbGVnYWxfZW1haWxfMg%3D%3D&amp;sig=3Df52e33c3ae4ba72535c21fe910bf0fb2bf922=
+07c&amp;iid=3Dc496d5fe66494f439f17732846b86945&amp;uid=3D963883338216951809=
+&amp;nid=3D244+1555" style=3D"text-decoration:none;border-style:none;border=
+:0px;padding:0px;margin:0px;color:#1DA1F2;text-decoration:none;"> <img src=
+=3D"https://ea.twimg.com/email/self_serve/media/icon_twitter_blue.png" widt=
+h=3D"32" alt=3D"Twitter" title=3D"Twitter" style=3D"margin:0px;padding:0px;=
+display:inline-block;-ms-interpolation-mode:bicubic;border:none;outline:non=
+e;" /> </a> </td>
+</tr>
+<tr>
+<td class=3D"empty" height=3D"24" style=3D"padding:0px;margin:0px auto;font=
+-size:0px;line-height:1px;padding:0px;"> &nbsp; </td>
+</tr>
+<tr>
+<td class=3D"body black" align=3D"left" dir=3D"ltr" style=3D"padding:0px;ma=
+rgin:0px auto;font-family:'Helvetica Neue Light', Helvetica, Arial, sans-se=
+rif;-webkit-font-smoothing:antialiased;-webkit-text-size-adjust:none;font-s=
+ize:16px;padding:0px;margin:0px;font-weight:normal;line-height:20px;font-fa=
+mily:'Helvetica Neue Light', Helvetica, Arial, sans-serif;-webkit-font-smoo=
+thing:antialiased;-webkit-text-size-adjust:none;font-size:16px;padding:0px;=
+margin:0px;font-weight:normal;line-height:22px;"> Hi @PayPeer_io, </td>
+</tr>
+<tr>
+<td class=3D"empty" height=3D"24" style=3D"padding:0px;margin:0px auto;font=
+-size:0px;line-height:1px;padding:0px;"> &nbsp; </td>
+</tr>
+<tr>
+<td class=3D"body black" align=3D"left" dir=3D"ltr" style=3D"padding:0px;ma=
+rgin:0px auto;font-family:'Helvetica Neue Light', Helvetica, Arial, sans-se=
+rif;-webkit-font-smoothing:antialiased;-webkit-text-size-adjust:none;font-s=
+ize:16px;padding:0px;margin:0px;font-weight:normal;line-height:20px;font-fa=
+mily:'Helvetica Neue Light', Helvetica, Arial, sans-serif;-webkit-font-smoo=
+thing:antialiased;-webkit-text-size-adjust:none;font-size:16px;padding:0px;=
+margin:0px;font-weight:normal;line-height:22px;"> When you set a password f=
+or your Twitter account, we use technology that masks it so no one at the c=
+ompany can see it. We recently identified a bug that stored passwords unmas=
+ked in an internal log. We have fixed the bug, and our investigation shows =
+no indication of breach or misuse by anyone. </td>
+</tr>
+<tr>
+<td class=3D"empty" height=3D"24" style=3D"padding:0px;margin:0px auto;font=
+-size:0px;line-height:1px;padding:0px;"> &nbsp; </td>
+</tr>
+<tr>
+<td class=3D"body black" align=3D"left" dir=3D"ltr" style=3D"padding:0px;ma=
+rgin:0px auto;font-family:'Helvetica Neue Light', Helvetica, Arial, sans-se=
+rif;-webkit-font-smoothing:antialiased;-webkit-text-size-adjust:none;font-s=
+ize:16px;padding:0px;margin:0px;font-weight:normal;line-height:20px;font-fa=
+mily:'Helvetica Neue Light', Helvetica, Arial, sans-serif;-webkit-font-smoo=
+thing:antialiased;-webkit-text-size-adjust:none;font-size:16px;padding:0px;=
+margin:0px;font-weight:normal;line-height:22px;"> Out of an abundance of ca=
+ution, we ask that you consider changing your password on all services wher=
+e you=E2=80=99ve used this password. You can change your Twitter password a=
+nytime by going to the password <a href=3D"https://twitter.com/i/redirect?u=
+rl=3Dhttps%3A%2F%2Fmobile.twitter.com%2Fsettings%2Fpassword%2F.%2F&amp;t=3D=
+1+1526031975465&amp;cn=3DbGVnYWxfZW1haWxfMg%3D%3D&amp;sig=3D5db205fb34ee7aa=
+a627095cd2cf40ba269494d25&amp;iid=3Dc496d5fe66494f439f17732846b86945&amp;ui=
+d=3D963883338216951809&amp;nid=3D244+1553" class=3D"blue" style=3D"text-dec=
+oration:none;border-style:none;border:0px;padding:0px;margin:0px;color:#1DA=
+1F2;color:#1DA1F2;text-decoration:none;">settings</a> page. </td>
+</tr>
+<tr>
+<td class=3D"empty" height=3D"24" style=3D"padding:0px;margin:0px auto;font=
+-size:0px;line-height:1px;padding:0px;"> &nbsp; </td>
+</tr>
+<tr>
+<td class=3D"body black" align=3D"left" dir=3D"ltr" style=3D"padding:0px;ma=
+rgin:0px auto;font-family:'Helvetica Neue Light', Helvetica, Arial, sans-se=
+rif;-webkit-font-smoothing:antialiased;-webkit-text-size-adjust:none;font-s=
+ize:16px;padding:0px;margin:0px;font-weight:normal;line-height:20px;font-fa=
+mily:'Helvetica Neue Light', Helvetica, Arial, sans-serif;-webkit-font-smoo=
+thing:antialiased;-webkit-text-size-adjust:none;font-size:16px;padding:0px;=
+margin:0px;font-weight:normal;line-height:22px;"> <strong>About The Bug</st=
+rong> </td>
+</tr>
+<tr>
+<td class=3D"empty" height=3D"24" style=3D"padding:0px;margin:0px auto;font=
+-size:0px;line-height:1px;padding:0px;"> &nbsp; </td>
+</tr>
+<tr>
+<td class=3D"body black" align=3D"left" dir=3D"ltr" style=3D"padding:0px;ma=
+rgin:0px auto;font-family:'Helvetica Neue Light', Helvetica, Arial, sans-se=
+rif;-webkit-font-smoothing:antialiased;-webkit-text-size-adjust:none;font-s=
+ize:16px;padding:0px;margin:0px;font-weight:normal;line-height:20px;font-fa=
+mily:'Helvetica Neue Light', Helvetica, Arial, sans-serif;-webkit-font-smoo=
+thing:antialiased;-webkit-text-size-adjust:none;font-size:16px;padding:0px;=
+margin:0px;font-weight:normal;line-height:22px;"> We mask passwords through=
+ a process called hashing using a function known as bcrypt, which replaces =
+the actual password with a random set of numbers and letters that are store=
+d in Twitter's system. This allows our systems to validate your account cre=
+dentials without revealing your password. This is an industry standard. </t=
+d>
+</tr>
+<tr>
+<td class=3D"empty" height=3D"24" style=3D"padding:0px;margin:0px auto;font=
+-size:0px;line-height:1px;padding:0px;"> &nbsp; </td>
+</tr>
+<tr>
+<td class=3D"body black" align=3D"left" dir=3D"ltr" style=3D"padding:0px;ma=
+rgin:0px auto;font-family:'Helvetica Neue Light', Helvetica, Arial, sans-se=
+rif;-webkit-font-smoothing:antialiased;-webkit-text-size-adjust:none;font-s=
+ize:16px;padding:0px;margin:0px;font-weight:normal;line-height:20px;font-fa=
+mily:'Helvetica Neue Light', Helvetica, Arial, sans-serif;-webkit-font-smoo=
+thing:antialiased;-webkit-text-size-adjust:none;font-size:16px;padding:0px;=
+margin:0px;font-weight:normal;line-height:22px;"> Due to a bug, passwords w=
+ere written to an internal log before completing the hashing process. We fo=
+und this error ourselves, removed the passwords, and are implementing plans=
+ to prevent this bug from happening again. </td>
+</tr>
+<tr>
+<td class=3D"empty" height=3D"24" style=3D"padding:0px;margin:0px auto;font=
+-size:0px;line-height:1px;padding:0px;"> &nbsp; </td>
+</tr>
+<tr>
+<td class=3D"body black" align=3D"left" dir=3D"ltr" style=3D"padding:0px;ma=
+rgin:0px auto;font-family:'Helvetica Neue Light', Helvetica, Arial, sans-se=
+rif;-webkit-font-smoothing:antialiased;-webkit-text-size-adjust:none;font-s=
+ize:16px;padding:0px;margin:0px;font-weight:normal;line-height:20px;font-fa=
+mily:'Helvetica Neue Light', Helvetica, Arial, sans-serif;-webkit-font-smoo=
+thing:antialiased;-webkit-text-size-adjust:none;font-size:16px;padding:0px;=
+margin:0px;font-weight:normal;line-height:22px;"> <strong>Tips on Account S=
+ecurity</strong> </td>
+</tr>
+<tr>
+<td class=3D"empty" height=3D"24" style=3D"padding:0px;margin:0px auto;font=
+-size:0px;line-height:1px;padding:0px;"> &nbsp; </td>
+</tr>
+<tr>
+<td class=3D"body black" align=3D"left" dir=3D"ltr" style=3D"padding:0px;ma=
+rgin:0px auto;font-family:'Helvetica Neue Light', Helvetica, Arial, sans-se=
+rif;-webkit-font-smoothing:antialiased;-webkit-text-size-adjust:none;font-s=
+ize:16px;padding:0px;margin:0px;font-weight:normal;line-height:20px;font-fa=
+mily:'Helvetica Neue Light', Helvetica, Arial, sans-serif;-webkit-font-smoo=
+thing:antialiased;-webkit-text-size-adjust:none;font-size:16px;padding:0px;=
+margin:0px;font-weight:normal;line-height:22px;"> Again, although we have n=
+o reason to believe password information ever left Twitter's systems or was=
+ misused by anyone, there are a few steps you can take to help us keep your=
+ account safe: </td>
+</tr>
+<tr>
+<td class=3D"empty" height=3D"24" style=3D"padding:0px;margin:0px auto;font=
+-size:0px;line-height:1px;padding:0px;"> &nbsp; </td>
+</tr>
+<tr>
+<td class=3D"empty" style=3D"padding:0px;margin:0px auto;font-size:0px;line=
+-height:1px;padding:0px;">
+<table align=3D"left" dir=3D"ltr" style=3D"padding:0px;line-height:1px;font=
+-size:1px;margin:0px auto;">
+<tbody>
+<tr>
+<td class=3D"body black" valign=3D"top" style=3D"padding:0px;margin:0px aut=
+o;font-family:'Helvetica Neue Light', Helvetica, Arial, sans-serif;-webkit-=
+font-smoothing:antialiased;-webkit-text-size-adjust:none;font-size:16px;pad=
+ding:0px;margin:0px;font-weight:normal;line-height:20px;font-family:'Helvet=
+ica Neue Light', Helvetica, Arial, sans-serif;-webkit-font-smoothing:antial=
+iased;-webkit-text-size-adjust:none;font-size:16px;padding:0px;margin:0px;f=
+ont-weight:normal;line-height:22px;"> 1. </td>
+<td width=3D"10" style=3D"padding:0px;margin:0px auto;">&nbsp;</td>
+<td class=3D"body black" valign=3D"top" align=3D"left" dir=3D"ltr" style=3D=
+"padding:0px;margin:0px auto;font-family:'Helvetica Neue Light', Helvetica,=
+ Arial, sans-serif;-webkit-font-smoothing:antialiased;-webkit-text-size-adj=
+ust:none;font-size:16px;padding:0px;margin:0px;font-weight:normal;line-heig=
+ht:20px;font-family:'Helvetica Neue Light', Helvetica, Arial, sans-serif;-w=
+ebkit-font-smoothing:antialiased;-webkit-text-size-adjust:none;font-size:16=
+px;padding:0px;margin:0px;font-weight:normal;line-height:22px;"> Change you=
+r password on Twitter and on any other service where you may have used the =
+same password. </td>
+</tr>
+<tr>
+<td class=3D"body black" valign=3D"top" align=3D"left" dir=3D"ltr" style=3D=
+"padding:0px;margin:0px auto;font-family:'Helvetica Neue Light', Helvetica,=
+ Arial, sans-serif;-webkit-font-smoothing:antialiased;-webkit-text-size-adj=
+ust:none;font-size:16px;padding:0px;margin:0px;font-weight:normal;line-heig=
+ht:20px;font-family:'Helvetica Neue Light', Helvetica, Arial, sans-serif;-w=
+ebkit-font-smoothing:antialiased;-webkit-text-size-adjust:none;font-size:16=
+px;padding:0px;margin:0px;font-weight:normal;line-height:22px;"> 2. </td>
+<td width=3D"10" style=3D"padding:0px;margin:0px auto;">&nbsp;</td>
+<td class=3D"body black" valign=3D"top" align=3D"left" dir=3D"ltr" style=3D=
+"padding:0px;margin:0px auto;font-family:'Helvetica Neue Light', Helvetica,=
+ Arial, sans-serif;-webkit-font-smoothing:antialiased;-webkit-text-size-adj=
+ust:none;font-size:16px;padding:0px;margin:0px;font-weight:normal;line-heig=
+ht:20px;font-family:'Helvetica Neue Light', Helvetica, Arial, sans-serif;-w=
+ebkit-font-smoothing:antialiased;-webkit-text-size-adjust:none;font-size:16=
+px;padding:0px;margin:0px;font-weight:normal;line-height:22px;"> Use a stro=
+ng password that you don't reuse on other services. </td>
+</tr>
+<tr>
+<td class=3D"body black" valign=3D"top" style=3D"padding:0px;margin:0px aut=
+o;font-family:'Helvetica Neue Light', Helvetica, Arial, sans-serif;-webkit-=
+font-smoothing:antialiased;-webkit-text-size-adjust:none;font-size:16px;pad=
+ding:0px;margin:0px;font-weight:normal;line-height:20px;font-family:'Helvet=
+ica Neue Light', Helvetica, Arial, sans-serif;-webkit-font-smoothing:antial=
+iased;-webkit-text-size-adjust:none;font-size:16px;padding:0px;margin:0px;f=
+ont-weight:normal;line-height:22px;"> 3. </td>
+<td width=3D"10" style=3D"padding:0px;margin:0px auto;">&nbsp;</td>
+<td class=3D"body black" valign=3D"top" align=3D"left" dir=3D"ltr" style=3D=
+"padding:0px;margin:0px auto;font-family:'Helvetica Neue Light', Helvetica,=
+ Arial, sans-serif;-webkit-font-smoothing:antialiased;-webkit-text-size-adj=
+ust:none;font-size:16px;padding:0px;margin:0px;font-weight:normal;line-heig=
+ht:20px;font-family:'Helvetica Neue Light', Helvetica, Arial, sans-serif;-w=
+ebkit-font-smoothing:antialiased;-webkit-text-size-adjust:none;font-size:16=
+px;padding:0px;margin:0px;font-weight:normal;line-height:22px;"> Enable <a =
+href=3D"https://t.co/redirect?url=3Dhttps%3A%2F%2Ft.co%2Flogin-verification=
+&amp;t=3D1+1526031975465&amp;cn=3DbGVnYWxfZW1haWxfMg%3D%3D&amp;sig=3D78d3c9=
+53c4216c6e823663daf5935e71165866e9&amp;iid=3Dc496d5fe66494f439f17732846b869=
+45&amp;uid=3D963883338216951809&amp;nid=3D244+1554" class=3D"blue" style=3D=
+"text-decoration:none;border-style:none;border:0px;padding:0px;margin:0px;c=
+olor:#1DA1F2;color:#1DA1F2;text-decoration:none;">login verification</a>, a=
+lso known as two factor authentication. This is the single best action you =
+can take to increase your account security. </td>
+</tr>
+<tr>
+<td class=3D"body black" valign=3D"top" style=3D"padding:0px;margin:0px aut=
+o;font-family:'Helvetica Neue Light', Helvetica, Arial, sans-serif;-webkit-=
+font-smoothing:antialiased;-webkit-text-size-adjust:none;font-size:16px;pad=
+ding:0px;margin:0px;font-weight:normal;line-height:20px;font-family:'Helvet=
+ica Neue Light', Helvetica, Arial, sans-serif;-webkit-font-smoothing:antial=
+iased;-webkit-text-size-adjust:none;font-size:16px;padding:0px;margin:0px;f=
+ont-weight:normal;line-height:22px;"> 4. </td>
+<td width=3D"10" style=3D"padding:0px;margin:0px auto;">&nbsp;</td>
+<td class=3D"body black" valign=3D"top" align=3D"left" dir=3D"ltr" style=3D=
+"padding:0px;margin:0px auto;font-family:'Helvetica Neue Light', Helvetica,=
+ Arial, sans-serif;-webkit-font-smoothing:antialiased;-webkit-text-size-adj=
+ust:none;font-size:16px;padding:0px;margin:0px;font-weight:normal;line-heig=
+ht:20px;font-family:'Helvetica Neue Light', Helvetica, Arial, sans-serif;-w=
+ebkit-font-smoothing:antialiased;-webkit-text-size-adjust:none;font-size:16=
+px;padding:0px;margin:0px;font-weight:normal;line-height:22px;"> Use a pass=
+word manager to make sure you're using strong, unique passwords everywhere.=
+ </td>
+</tr>
+</tbody>
+</table> </td>
+</tr>
+<tr>
+<td class=3D"empty" height=3D"24" style=3D"padding:0px;margin:0px auto;font=
+-size:0px;line-height:1px;padding:0px;"> &nbsp; </td>
+</tr>
+<tr>
+<td class=3D"body black" align=3D"left" dir=3D"ltr" style=3D"padding:0px;ma=
+rgin:0px auto;font-family:'Helvetica Neue Light', Helvetica, Arial, sans-se=
+rif;-webkit-font-smoothing:antialiased;-webkit-text-size-adjust:none;font-s=
+ize:16px;padding:0px;margin:0px;font-weight:normal;line-height:20px;font-fa=
+mily:'Helvetica Neue Light', Helvetica, Arial, sans-serif;-webkit-font-smoo=
+thing:antialiased;-webkit-text-size-adjust:none;font-size:16px;padding:0px;=
+margin:0px;font-weight:normal;line-height:22px;"> We are very sorry this ha=
+ppened. We recognize and appreciate the trust you place in us, and are comm=
+itted to earning that trust every day. </td>
+</tr>
+<tr>
+<td class=3D"empty" height=3D"24" style=3D"padding:0px;margin:0px auto;font=
+-size:0px;line-height:1px;padding:0px;"> &nbsp; </td>
+</tr>
+<tr>
+<td class=3D"body black" align=3D"left" dir=3D"ltr" style=3D"padding:0px;ma=
+rgin:0px auto;font-family:'Helvetica Neue Light', Helvetica, Arial, sans-se=
+rif;-webkit-font-smoothing:antialiased;-webkit-text-size-adjust:none;font-s=
+ize:16px;padding:0px;margin:0px;font-weight:normal;line-height:20px;font-fa=
+mily:'Helvetica Neue Light', Helvetica, Arial, sans-serif;-webkit-font-smoo=
+thing:antialiased;-webkit-text-size-adjust:none;font-size:16px;padding:0px;=
+margin:0px;font-weight:normal;line-height:22px;"> Team Twitter </td>
+</tr>
+<tr>
+<td class=3D"empty" height=3D"32" style=3D"padding:0px;margin:0px auto;font=
+-size:0px;line-height:1px;padding:0px;"> &nbsp; </td>
+</tr>
+</tbody>
+</table> </td>
+<td class=3D"empty width_20" width=3D"24" style=3D"padding:0px;margin:0px a=
+uto;font-size:0px;line-height:1px;padding:0px;"> &nbsp; </td>
+</tr>
+<tr>
+<td class=3D"empty width_20" width=3D"45" style=3D"padding:0px;margin:0px a=
+uto;font-size:0px;line-height:1px;padding:0px;"> &nbsp; </td>
+<td class=3D"empty center" style=3D"padding:0px;margin:0px auto;font-size:0=
+px;line-height:1px;padding:0px;text-align:center;margin:auto;">
+<table align=3D"center" class=3D"center" dir=3D"ltr" style=3D"padding:0px;l=
+ine-height:1px;font-size:1px;margin:0px auto;text-align:center;margin:auto;=
+">
+<tbody>
+<tr>
+<td class=3D"empty" height=3D"72" style=3D"padding:0px;margin:0px auto;font=
+-size:0px;line-height:1px;padding:0px;"> &nbsp; </td>
+</tr>
+<tr>
+<td class=3D"footer strong footer_grey center" align=3D"center" dir=3D"ltr"=
+ style=3D"padding:0px;margin:0px auto;font-family:'Helvetica Neue Light', H=
+elvetica, Arial, sans-serif;-webkit-font-smoothing:antialiased;-webkit-text=
+-size-adjust:none;font-size:12px;padding:0px;margin:0px;font-weight:normal;=
+line-height:16px;font-weight:bold;text-align:center;margin:auto;color:#8899=
+a6;"> <a href=3D"https://twitter.com/i/redirect?url=3Dhttps%3A%2F%2Fsupport=
+.twitter.com&amp;t=3D1+1526031975466&amp;cn=3DbGVnYWxfZW1haWxfMg%3D%3D&amp;=
+sig=3Da61427a24cee6d7f2bd777f3a3b954ccf94a76a8&amp;iid=3Dc496d5fe66494f439f=
+17732846b86945&amp;uid=3D963883338216951809&amp;nid=3D244+1555" class=3D"fo=
+oter_grey" style=3D"text-decoration:none;border-style:none;border:0px;paddi=
+ng:0px;margin:0px;color:#1DA1F2;text-decoration:none;color:#8899a6;"> Help =
+</a> &nbsp;|&nbsp; <a href=3D"https://twitter.com/i/redirect?url=3Dhttps%3A=
+%2F%2Ftwitter.com%2Faccount%2Fbegin_password_reset%3Faccount_identifier%3DP=
+ayPeer_io&amp;t=3D1+1526031975466&amp;cn=3DbGVnYWxfZW1haWxfMg%3D%3D&amp;sig=
+=3Db35edaf393dae4c1dba9c8698b68428720d4db84&amp;iid=3Dc496d5fe66494f439f177=
+32846b86945&amp;uid=3D963883338216951809&amp;nid=3D244+1556" class=3D"foote=
+r_grey" style=3D"text-decoration:none;border-style:none;border:0px;padding:=
+0px;margin:0px;color:#1DA1F2;text-decoration:none;color:#8899a6;"> Reset Pa=
+ssword </a> &nbsp;|&nbsp; <a href=3D"https://twitter.com/i/redirect?url=3Dh=
+ttps%3A%2F%2Ftwitter.com%2Fdownload&amp;t=3D1+1526031975466&amp;cn=3DbGVnYW=
+xfZW1haWxfMg%3D%3D&amp;sig=3Debe6a0d498f90b608e4a9c252b34d4b33ff3d04e&amp;i=
+id=3Dc496d5fe66494f439f17732846b86945&amp;uid=3D963883338216951809&amp;nid=
+=3D244+1557" class=3D"footer_grey" style=3D"text-decoration:none;border-sty=
+le:none;border:0px;padding:0px;margin:0px;color:#1DA1F2;text-decoration:non=
+e;color:#8899a6;"> Download App </a> </td>
+</tr>
+<tr>
+<td class=3D"empty" height=3D"12" style=3D"padding:0px;margin:0px auto;font=
+-size:0px;line-height:1px;padding:0px;"> &nbsp; </td>
+</tr>
+<tr>
+<td class=3D"footer footer_grey center" align=3D"center" style=3D"padding:0=
+px;margin:0px auto;font-family:'Helvetica Neue Light', Helvetica, Arial, sa=
+ns-serif;-webkit-font-smoothing:antialiased;-webkit-text-size-adjust:none;f=
+ont-size:12px;padding:0px;margin:0px;font-weight:normal;line-height:16px;te=
+xt-align:center;margin:auto;color:#8899a6;"> We sent this to @PayPeer_io. <=
+/td>
+</tr>
+<tr>
+<td class=3D"empty" height=3D"12" style=3D"padding:0px;margin:0px auto;font=
+-size:0px;line-height:1px;padding:0px;"> &nbsp; </td>
+</tr>
+<tr>
+<td class=3D"footer footer_grey center" align=3D"center" style=3D"padding:0=
+px;margin:0px auto;font-family:'Helvetica Neue Light', Helvetica, Arial, sa=
+ns-serif;-webkit-font-smoothing:antialiased;-webkit-text-size-adjust:none;f=
+ont-size:12px;padding:0px;margin:0px;font-weight:normal;line-height:16px;te=
+xt-align:center;margin:auto;color:#8899a6;"> <span class=3D"addressLink"> <=
+a href=3D"http://twitter.com" style=3D"color: #8899a6 !important; text-deco=
+ration: none !important;text-decoration:none;border-style:none;border:0px;p=
+adding:0px;margin:0px;color:#1DA1F2;text-decoration:none;"><span style=3D"c=
+olor: #8899a6 !important; text-decoration: none !important;">Twitter, Inc. =
+1355 Market Street, Suite 900 San&nbsp;Francisco,&nbsp;CA&nbsp;94103</span>=
+</a>
+<!--https://twitter.com/scribe/ibis?t=3D1&amp;cn=3DbGVnYWxfZW1haWxfMg%3D%3D=
+&amp;iid=3Dc496d5fe66494f439f17732846b86945&amp;uid=3D963883338216951809&am=
+p;nid=3D244+20--></span> </td>
+</tr>
+<tr>
+<td class=3D"empty" height=3D"72" style=3D"padding:0px;margin:0px auto;font=
+-size:0px;line-height:1px;padding:0px;"> &nbsp; </td>
+</tr>
+</tbody>
+</table> </td>
+<td class=3D"empty width_20" width=3D"45" style=3D"padding:0px;margin:0px a=
+uto;font-size:0px;line-height:1px;padding:0px;"> &nbsp; </td>
+</tr>
+</tbody>
+</table> </td>
+</tr>
+<tr class=3D"hide">
+<td class=3D"empty hide" height=3D"32" style=3D"padding:0px;margin:0px auto=
+;font-size:0px;line-height:1px;padding:0px;"> &nbsp; </td>
+</tr>
+</tbody>
+</table>
+<!-- BODY END --> </td>
+</tr>
+<tr>
+<td class=3D"fix_gmail_ios" id=3D"hide" align=3D"center" style=3D"padding:0=
+px;margin:0px auto;color:#ffffff;font-family:Arial, sans-serif;font-size:14=
+px;"> =E2=80=94=E2=80=94=E2=80=94=E2=80=94=E2=80=94=E2=80=94=E2=80=94=E2=80=
+=94=E2=80=94=E2=80=94=E2=80=94=E2=80=94=E2=80=94=E2=80=94=E2=80=94=E2=80=94=
+=E2=80=94=E2=80=94=E2=80=94=E2=80=94=E2=80=94=E2=80=94=E2=80=94=E2=80=94=E2=
+=80=94=E2=80=94=E2=80=94=E2=80=94 </td>
+</tr>
+<tr>
+<td class=3D"fix_gmail_android" id=3D"hide" align=3D"center" style=3D"paddi=
+ng:0px;margin:0px auto;">
+<table align=3D"center" style=3D"padding:0px;line-height:1px;font-size:1px;=
+margin:0px auto;">
+<tbody>
+<tr>
+<td width=3D"135" height=3D"1" style=3D"padding:0px;margin:0px auto;"> <img=
+ src=3D"https://ea.twimg.com/email/self_serve/media/spacer-1476918453497.pn=
+g" height=3D"1" width=3D"130" style=3D"margin:0px;padding:0px;display:inlin=
+e-block;-ms-interpolation-mode:bicubic;border:none;outline:none;" /> </td>
+<td width=3D"135" height=3D"1" style=3D"padding:0px;margin:0px auto;"> <img=
+ src=3D"https://ea.twimg.com/email/self_serve/media/spacer-1476918453497.pn=
+g" height=3D"1" width=3D"130" style=3D"margin:0px;padding:0px;display:inlin=
+e-block;-ms-interpolation-mode:bicubic;border:none;outline:none;" /> </td>
+<td width=3D"135" height=3D"1" style=3D"padding:0px;margin:0px auto;"> <img=
+ src=3D"https://ea.twimg.com/email/self_serve/media/spacer-1476918453497.pn=
+g" height=3D"1" width=3D"130" style=3D"margin:0px;padding:0px;display:inlin=
+e-block;-ms-interpolation-mode:bicubic;border:none;outline:none;" /> </td>
+<td width=3D"135" height=3D"1" style=3D"padding:0px;margin:0px auto;"> <img=
+ src=3D"https://ea.twimg.com/email/self_serve/media/spacer-1476918453497.pn=
+g" height=3D"1" width=3D"130" style=3D"margin:0px;padding:0px;display:inlin=
+e-block;-ms-interpolation-mode:bicubic;border:none;outline:none;" /> </td>
+<td width=3D"135" height=3D"1" style=3D"padding:0px;margin:0px auto;"> <img=
+ src=3D"https://ea.twimg.com/email/self_serve/media/spacer-1476918453497.pn=
+g" height=3D"1" width=3D"130" style=3D"margin:0px;padding:0px;display:inlin=
+e-block;-ms-interpolation-mode:bicubic;border:none;outline:none;" /> </td>
+</tr>
+</tbody>
+</table> </td>
+</tr>
+</tbody>
+</table>
+<section>
+<div id=3D"new-gmail-hack" style=3D"white-space: nowrap; font: 15px courier=
+; line-height: 0; display: none;">
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp=
+; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+</div>
+</section>
+</body>
+</html>
+
+------=_Part_10261987_1665403291.1526031975472--

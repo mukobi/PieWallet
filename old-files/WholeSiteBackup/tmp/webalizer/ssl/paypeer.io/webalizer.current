@@ -1,0 +1,684 @@
+# Webalizer V2.23-05 Incremental Data - 07/30/2018 14:46:42
+2018 7 30 14 46 42
+2342 1693 111 51 33 27 104672394 346 226 0
+5 3 201 1 30
+28 19 1246143 6 3 3
+42 37 2407924 7 10 9
+6 6 11091 2 2 2
+26 25 768805 10 9 9
+29 20 1252902 5 3 3
+53 42 1514278 7 6 5
+24 20 79667 4 8 7
+12 9 30012 4 6 4
+87 75 3225092 10 31 18
+115 78 5719464 9 9 6
+19 14 633599 9 6 6
+17 16 63834 7 9 8
+11 8 27630 7 3 3
+11 9 31155 7 5 5
+17 9 116612 7 4 4
+103 78 6914666 12 19 9
+23 19 1222879 10 5 4
+171 117 7251884 10 20 12
+293 170 15295775 12 32 12
+45 40 2073695 10 9 9
+27 23 1220050 10 6 6
+76 71 4480304 31 15 13
+47 45 3229136 12 7 6
+61 42 1986300 8 10 7
+86 74 3530815 28 15 11
+39 31 1871125 22 7 7
+454 246 19376658 16 42 13
+69 51 2555215 11 12 10
+236 209 12158469 12 21 8
+115 90 4377215 5 12 7
+0 0 0 0 0 0
+90 61 2812745 17
+146 122 8930642 19
+25 21 1242064 5
+206 116 9521453 13
+36 35 3583315 7
+32 30 1282102 9
+38 33 876380 8
+4 4 15942 2
+52 41 3660725 10
+39 34 711698 20
+34 33 1284759 10
+24 22 260370 9
+57 52 1368404 16
+130 81 5974726 11
+99 83 3204035 14
+334 259 14209543 34
+136 96 5515815 17
+5 5 20547 4
+30 23 78196 11
+258 165 14629677 27
+42 29 1257718 7
+104 80 5122199 11
+258 171 12128502 40
+163 97 6980837 25
+0
+0
+0
+1693
+0
+0
+0
+0
+0
+0
+0
+5
+0
+0
+261
+0
+0
+0
+0
+0
+0
+383
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+# -urls- 
+/fonts/stylesheet.css
+0 43 0 13631 0 0
+/images/users/profile picture20180316053854.PNG
+0 4 0 246876 0 0
+/js/app_js.js
+0 119 0 66924648 0 0
+/images/SwitchWhite.png
+0 15 0 11070 0 0
+/images/users/demo_user.jpg
+0 1 0 10313 0 0
+/address-qr-codes/litecoin/LWuBmt1QMhrnp97w8vyMXPG4kPQ4CAW2Kn.png
+0 4 0 3780 0 0
+/images/header-logo.png
+0 25 0 179925 0 0
+/exchange
+0 46 0 438426 17 14
+/images/web-design_13.png
+0 14 0 39564 0 0
+/profile.php
+0 42 0 463495 0 0
+/fonts/helveticaneuebd-webfont.woff2
+0 16 0 288448 0 0
+/js/faq-accordian.js
+0 37 0 7178 0 0
+/css/style11.css
+0 71 0 31208 0 0
+/js/bootstrap.min.js
+0 41 0 393320 0 0
+/css/buybox11.css
+0 71 0 32289 0 0
+/js/convert-currency.js
+0 120 0 2769720 0 0
+/images/003-gauge.png
+0 28 0 1027908 0 0
+/address-qr-codes/litecoin/LYWPVYJrPXMCYeBUp6z88fnHZKZyWU72ba.png
+0 1 0 941 0 0
+/address-qr-codes/bitcoin/1LJGGiqnTP1ALqTwdYxQPEN1GcXk7v6eWk.png
+0 4 0 3752 0 0
+/css/animate.css
+0 98 0 205528 0 0
+/js/app.js
+0 40 0 21964000 0 0
+/images/account.png
+0 28 0 1741684 0 0
+/images/001-right-arrow.png
+0 28 0 1166732 0 0
+/images/bitcoin-logo.png
+0 3 0 247008 0 0
+/forgotPassword
+0 1 0 4500 0 0
+/dashboard
+0 8 0 42240 5 6
+/css/style.css
+0 99 0 232415 0 0
+/send
+0 37 0 162874 9 9
+/fonts/helveticaneuelt-webfont.woff2
+0 15 0 260160 0 0
+/login
+0 28 0 169820 14 7
+/edit-faq.php
+0 2 0 6342 0 0
+/css/bootstrap.min.css
+0 98 0 855922 0 0
+/images/web-design_05.png
+0 14 0 45290 0 0
+/signup
+0 22 0 134090 19 12
+/send.php
+0 8 0 37258 0 0
+/manage-faq.php
+0 1 0 3749 0 0
+/js/plupload.full.min.js
+0 18 0 691596 0 0
+/images/web-design_03.png
+0 14 0 33670 0 0
+/images/002-arrows.png
+0 28 0 1080912 0 0
+/address-qr-codes/bitcoin/1HJTzSciFpQi1Nem3CgzC8oTVWCRGUqF4g.png
+0 1 0 926 0 0
+/js/functions.js
+0 121 0 441287 0 0
+/
+0 189 0 988448 159 98
+/images/help.png
+0 28 0 185836 0 0
+/css/faq-style.css
+0 103 0 28224 0 0
+/css/oldstyle.css
+0 15 0 15444 0 0
+/images/web-design_08.png
+0 14 0 39452 0 0
+/images/header-logo2.png
+0 21 0 182553 0 0
+/robots.txt
+0 116 0 3364 0 0
+/images/web-design_11.png
+0 14 0 31640 0 0
+/error_page.gif
+0 3 0 3105 0 0
+/js/wow.min.js
+0 37 0 99974 0 0
+# End Of Table - urls
+# -sites- (monthly)
+5-255-250-106.spider.yandex.com
+0 4 4 23680 0 0
+-
+5-255-250-1.spider.yandex.com
+0 3 3 21885 0 0
+-
+jobqueue-listener.jobqueue.netcraft.com-u7179f490835411e89e79a55c838d6ab1u-digitalocean
+0 1 1 5372 1 1531110972
+/
+84-201-133-62.spider.yandex.com
+0 34 25 1250962 6 1530668712
+/signup
+77-88-5-48.spider.yandex.com
+0 6 6 56062 1 1532368889
+/
+msnbot-157-55-39-81.search.msn.com
+0 1 1 9531 1 1531835959
+/exchange
+77-88-5-33.spider.yandex.com
+0 5 5 584579 2 1532585841
+/login
+server.mrtseouzmani.com
+0 7 7 27383 0 0
+-
+crawl-66-249-69-169.googlebot.com
+0 33 27 1293039 2 1531101558
+/signup
+103.18.246.76
+0 1 1 3584 0 0
+-
+147.85.237.35.bc.googleusercontent.com
+0 2 2 10744 1 1532300139
+/
+crawl-66-249-69-232.googlebot.com
+0 1 0 235 1 1531332885
+-
+141-8-143-156.spider.yandex.com
+0 7 7 629883 2 1532583796
+/
+100-43-90-166.spider.yandex.com
+0 5 5 43975 2 1532447167
+/
+93-158-161-119.spider.yandex.com
+0 2 2 4785 0 0
+-
+178-154-171-18.spider.yandex.com
+0 67 64 167462 30 1532856234
+/
+2600:8807:2200:a830:1c92:4e54:a57b:14d7
+0 10 9 203012 1 1532537034
+/
+47.8.122.190
+0 15 15 216665 1 1532931964
+/login
+84-201-133-70.spider.yandex.com
+0 4 4 44800 0 0
+-
+77-88-47-41.spider.yandex.com
+0 7 6 12828 2 1532340055
+/
+cpc70029-sand12-2-0-cust189.16-1.cable.virginm.net
+0 25 24 1394294 1 1531233166
+/signup
+ec2-34-247-79-141.eu-west-1.compute.amazonaws.com
+0 1 1 5372 1 1531911579
+/
+141-8-144-32.spider.yandex.com
+0 1 1 29 0 0
+-
+ec2-52-16-51-25.eu-west-1.compute.amazonaws.com
+0 1 1 5372 1 1530823118
+/
+5-255-250-200.spider.yandex.com
+0 2 2 4974 0 0
+-
+122.228.10.51
+0 1 1 5372 1 1532147970
+/
+100-43-81-128.spider.yandex.com
+0 3 3 11496 2 1532725850
+/
+msnbot-157-55-39-8.search.msn.com
+0 3 0 5316 0 0
+-
+93-158-161-11.spider.yandex.com
+0 2 0 0 0 0
+-
+5-255-250-71.spider.yandex.com
+0 1 1 29 0 0
+-
+100-43-91-111.spider.yandex.com
+0 1 1 12494 0 0
+-
+msnbot-40-77-167-179.search.msn.com
+0 3 3 554078 1 1532262410
+/send
+ec2-52-8-185-89.us-west-1.compute.amazonaws.com
+0 6 6 40550 3 1531952218
+/exchange
+5-45-207-10.spider.yandex.com
+0 3 3 10773 2 1532725849
+/
+79.39.231.35.bc.googleusercontent.com
+0 2 2 10744 1 1530559690
+/
+119.66.231.35.bc.googleusercontent.com
+0 2 2 10744 1 1531427475
+/
+100-43-90-118.spider.yandex.com
+0 1 1 5372 1 1532856235
+/
+ip98-179-197-7.lf.br.cox.net
+0 13 10 29292 1 1530988386
+/login
+msnbot-207-46-13-151.search.msn.com
+0 5 2 6667 0 0
+-
+141-8-144-48.spider.yandex.com
+0 1 1 549100 0 0
+-
+93-158-161-200.spider.yandex.com
+0 5 5 10831 2 1532301439
+/
+84-201-133-85.spider.yandex.com
+0 3 3 24555 1 1532002260
+/
+163.83.229.35.bc.googleusercontent.com
+0 2 2 10744 1 1531010468
+/
+us139.siteground.us
+0 5 5 0 5 1532902745
+/
+5-255-250-115.spider.yandex.com
+0 1 1 549100 0 0
+-
+84-201-133-86.spider.yandex.com
+0 1 1 5372 1 1531738557
+/
+138.197.7.196
+0 1 1 5372 1 1531110825
+/
+84-201-133-91.spider.yandex.com
+0 4 4 567822 1 1532614271
+/
+msnbot-207-46-13-204.search.msn.com
+0 3 0 5316 0 0
+-
+2a01:4f8:141:31cf::2
+0 1 0 1772 0 0
+-
+84-201-133-37.spider.yandex.com
+0 1 1 29 0 0
+-
+141-8-144-37.spider.yandex.com
+0 124 114 3899236 36 1532944545
+/login
+77-88-47-21.spider.yandex.com
+0 2 2 4431 1 1531728012
+/send
+155.13.185.35.bc.googleusercontent.com
+0 2 2 10744 1 1532735533
+/
+172.58.38.237
+0 58 39 3863747 1 1531965292
+/exchange
+msnbot-207-46-13-45.search.msn.com
+0 2 0 3544 0 0
+-
+141-8-144-35.spider.yandex.com
+0 1 1 5372 1 1531546000
+/
+static-50-53-173-74.bvtn.or.frontiernet.net
+0 470 276 24834076 6 1532875155
+/login
+5-255-250-163.spider.yandex.com
+0 3 3 23961 2 1532528976
+/signup
+159.89.186.17
+0 12 9 57551 1 1531127480
+/forgotPassword
+msnbot-40-77-167-122.search.msn.com
+0 3 3 13318 2 1531723950
+/login
+jobqueue-listener.jobqueue.netcraft.com-u47499c667ee511e8af3fef4a838d6ab1u-digitalocean-2gb
+0 1 1 5372 1 1530670210
+/
+5-255-250-123.spider.yandex.com
+0 4 4 17924 1 1532171976
+/
+108-174-2-200.fwd.linkedin.com
+0 2 2 164672 0 0
+-
+141-8-144-18.spider.yandex.com
+0 2 2 6094 1 1532243377
+/login
+msnbot-40-77-167-178.search.msn.com
+0 1 1 9833 0 0
+-
+ec2-13-57-233-99.us-west-1.compute.amazonaws.com
+0 10 10 53720 10 1532765278
+/
+46.98.250.101
+0 201 177 10307350 1 1532878436
+/login
+141-8-144-46.spider.yandex.com
+0 2 2 9774 2 1532286049
+/send
+ip184-190-193-204.lf.br.cox.net
+0 833 529 36926023 22 1532962001
+/
+93-158-161-77.spider.yandex.com
+0 1 0 0 0 0
+-
+crawl-66-249-69-201.googlebot.com
+0 10 5 579113 2 1532067214
+/
+msnbot-40-77-167-180.search.msn.com
+0 5 5 595209 1 1532023573
+/signup
+crawl-66-249-69-205.googlebot.com
+0 15 9 634280 1 1532128674
+/
+143.34.185.35.bc.googleusercontent.com
+0 2 2 10744 1 1531868078
+/
+5-255-250-121.spider.yandex.com
+0 1 1 29 0 0
+-
+213-180-203-47.spider.yandex.com
+0 1 1 5372 1 1532481685
+/
+ec2-54-191-251-184.us-west-2.compute.amazonaws.com
+0 1 1 5372 1 1530985242
+/
+159.65.244.109
+0 1 1 5372 1 1531109925
+/
+108-174-5-116.fwd.linkedin.com
+0 1 1 82336 0 0
+-
+crawl-66-249-69-173.googlebot.com
+0 19 13 1196036 3 1531171925
+/
+crawl-66-249-69-75.googlebot.com
+0 35 28 4127662 2 1532912225
+/
+77-88-47-29.spider.yandex.com
+0 3 3 87 0 0
+-
+crawl-66-249-69-203.googlebot.com
+0 7 5 1160428 1 1531580853
+/
+5-255-250-150.spider.yandex.com
+0 2 2 9725 1 1530432309
+/exchange
+5-255-250-118.spider.yandex.com
+0 4 3 592190 0 0
+-
+crawl-66-249-69-234.googlebot.com
+0 2 0 3544 1 1531332885
+-
+84-201-133-100.spider.yandex.com
+0 42 36 2456889 4 1532754627
+/
+5-255-250-117.spider.yandex.com
+0 1 1 29 0 0
+-
+5-255-250-99.spider.yandex.com
+0 5 5 5776 1 1532528396
+/
+100-43-85-130.spider.yandex.com
+0 2 2 9019 1 1532393613
+/
+5-255-250-143.spider.yandex.com
+0 3 3 10773 2 1532829398
+/
+141-8-143-129.spider.yandex.com
+0 1 1 6065 1 1531260764
+/login
+100-43-85-180.spider.yandex.com
+0 1 1 9531 1 1531294924
+/exchange
+5-255-250-19.spider.yandex.com
+0 1 1 9531 1 1531526076
+/exchange
+100-43-91-104.spider.yandex.com
+0 1 1 29 0 0
+-
+crawl-66-249-69-77.googlebot.com
+0 18 11 1194551 2 1530549444
+/exchange
+100-43-90-165.spider.yandex.com
+0 1 1 29 0 0
+-
+93-158-161-117.spider.yandex.com
+0 3 3 18325 0 0
+-
+77-88-47-50.spider.yandex.com
+0 3 3 5333 0 0
+-
+141-8-143-194.spider.yandex.com
+0 5 5 25969 2 1532651907
+/
+141-8-143-189.spider.yandex.com
+0 2 2 11437 2 1532685328
+/
+ec2-52-53-201-78.us-west-1.compute.amazonaws.com
+0 13 13 69836 13 1532910103
+/
+84-201-133-79.spider.yandex.com
+0 1 1 5372 1 1532430845
+/
+crawl-66-249-69-171.googlebot.com
+0 33 27 1268039 4 1531351572
+/
+77-88-47-40.spider.yandex.com
+0 3 3 558940 1 1532481686
+/
+100-43-85-200.spider.yandex.com
+0 1 1 5372 1 1532679071
+/
+141-8-143-178.spider.yandex.com
+0 2 2 58 0 0
+-
+crawl-66-249-69-73.googlebot.com
+0 31 25 1290763 3 1532579260
+/
+100-43-85-102.spider.yandex.com
+0 1 1 29 0 0
+-
+msnbot-40-77-167-177.search.msn.com
+0 6 5 33011 0 0
+-
+# End Of Table - sites (monthly)
+# -sites- (daily)
+47.8.122.190
+0 15 15 216665 1 1532931964
+/login
+141-8-144-37.spider.yandex.com
+0 2 2 6094 1 1532944545
+/login
+ip184-190-193-204.lf.br.cox.net
+0 96 71 4143712 3 1532962001
+/
+crawl-66-249-69-75.googlebot.com
+0 1 1 5372 1 1532912225
+/
+ec2-52-53-201-78.us-west-1.compute.amazonaws.com
+0 1 1 5372 1 1532910103
+/
+# End Of Table - sites (daily)
+# -referrers- 
+https://paypeer.io/forgotPassword
+0 6
+https://www.paypeer.io/send
+0 35
+https://paypeer.io/dashboard
+0 7
+http://www.paypeer.io/
+0 14
+https://paypeer.io/login
+0 102
+https://paypeer.io/fonts/stylesheet.css
+0 24
+https://www.paypeer.io/
+0 31
+https://paypeer.io/css/style.css
+0 186
+https://www.paypeer.io/account/
+0 1
+https://www.paypeer.io/account
+0 1
+https://www.paypeer.io/profile.php
+0 60
+- (Direct Request)
+0 476
+https://www.paypeer.io/css/style.css
+0 47
+https://editor.wix.com/html/editor/web/renderer/render/document/41db2936-8daf-46e1-9e63-686296dfa181
+0 3
+https://www.upwork.com/leaving
+0 2
+https://www.paypeer.io/fonts/stylesheet.css
+0 7
+https://paypeer.io/
+0 216
+https://www.paypeer.io/signup
+0 25
+https://paypeer.io/alternateindex
+0 1
+https://www.info.paypeer.io/
+0 2
+https://paypeer.io/send
+0 208
+https://www.paypeer.io/manage-faq.php
+0 15
+https://paypeer.io/profile.php
+0 226
+https://www.paypeer.io/exchange
+0 70
+https://paypeer.io/send.php
+0 59
+https://www.google.co.in/
+0 1
+https://www.paypeer.io/login
+0 14
+https://paypeer.io/exchange
+0 300
+https://paypeer.io/account/
+0 2
+https://paypeer.io/signup
+0 166
+https://www.paypeer.io/dashboard
+0 4
+https://www.paypeer.io/send.php
+0 5
+https://paypeer.io/edit-faq.php
+0 26
+# End Of Table - referrers
+# -agents- 
+Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.75 Safari/537.36
+0 334
+Java/1.8.0_162
+0 2
+Mozilla/5.0 (compatible; NetcraftSurveyAgent/1.0; +info@netcraft.com)
+0 4
+Mozilla/5.0 (Linux; Android 7.1.2; ONE A2005 Build/NJH47F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3475.0 Mobile S
+0 50
+Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+0 715
+Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.103 Safari/537.36
+0 227
+Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)
+0 42
+Mozilla/5.0 (compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm)
+0 32
+Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36
+0 23
+Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Safari/537.36
+0 90
+Mozilla/5.0 (X11; Linux x86_64; rv:17.0) Gecko/20130402 Firefox/17.0
+0 5
+Googlebot-Image/1.0
+0 23
+Mozilla/5.0 (X11; CrOS x86_64 10718.29.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.34 Safari/537.36
+0 25
+Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:47.0) Gecko/20100101 Firefox/47.0
+0 1
+Mozilla/5.0 (compatible; spbot/5.0.3; +http://OpenLinkProfiler.org/bot )
+0 12
+Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.89 Safari/537.36
+0 1
+Mozilla/5.0 (Linux; Android 7.1.2; ONE A2005 Build/NJH47F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3493.4 Mobile S
+0 58
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1)
+0 4
+Mozilla/5.0 (compatible; BLEXBot/1.0; +http://webmeup-crawler.com/)
+0 1
+Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+0 201
+LinkedInBot/1.0 (compatible; Mozilla/5.0; Jakarta Commons-HttpClient/4.3 +http://www.linkedin.com)
+0 3
+Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.96 Mobile S
+0 49
+Mozilla/5.0 (compatible; YandexBot/3.0; +http://yandex.com/bots)
+0 403
+Mozilla/5.0 (Linux; Android 6.0.1; Redmi Note 3 Build/MMB29M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Mobi
+0 15
+Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.4) Gecko/20030624
+0 12
+Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36
+0 1
+Python/3.6 aiohttp/2.3.2
+0 1
+# End Of Table - agents
+# -search strings- 
+# End Of Table - search strings
+# -usernames- 
+# End Of Table - usernames

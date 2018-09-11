@@ -1,0 +1,89 @@
+/* Styles for page */
+.toggle-inner p{
+  color:#fff;
+}
+/* Styles for Accordion */
+.toggle:last-child {
+  border-bottom: 1px solid #dddddd;
+}
+.toggle .toggle-title {
+  position: relative;
+  display: block;
+  border-top: 1px solid #dddddd;
+  margin-bottom: 6px;
+}
+.toggle .toggle-title h3 {
+  font-size: 20px;
+  margin: 0px;
+  line-height: 1;
+  cursor: pointer;
+  font-weight: 200;
+  padding-right: 102px
+}
+.toggle .toggle-inner {
+  padding: 7px 25px 10px 25px;
+  display: none;
+  margin: -7px 0 6px;
+}
+.toggle .toggle-inner div {
+  max-width: 100%;
+}
+.toggle .toggle-title .title-name {
+  display: block;
+  padding: 25px 25px 14px;
+  color:#fff;
+}
+.toggle .toggle-title a i.plus {
+  font-size: 22px;
+  margin-right: 5px;
+}
+
+.toggle .toggle-title i {
+  position: absolute;  
+  width: 24px;
+  height: 24px;
+  color:#fff;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  margin: 0px;    
+  top: 23px;
+   
+  font-size: 16px;
+  line-height: 24px;
+}
+.toggle .toggle-title i.plus {
+  background: url("../images/plus_minus_white.png") 0px -24px no-repeat;
+  right: 10px;    
+} 
+
+
+.toggle .toggle-title i.fa-edit {
+  right:68px;
+}
+.toggle .toggle-title i.fa-trash {
+  right:34px;
+}
+
+.toggle .toggle-title.active i.plus {
+  background: url("../images/plus_minus_white.png") 0px 0px no-repeat;
+}
+
+
+
+@media(max-width: 480px) {
+  .toggle .toggle-title .title-name {
+    padding:25px 0px 14px; 
+  }
+  .toggle .toggle-title i.plus {
+    right: 0;
+  } 
+  .toggle .toggle-title i.fa-edit {
+    right: 48px;
+  }
+  .toggle .toggle-title i.fa-trash {
+    right: 24px;
+  }
+  .toggle .toggle-title h3 {
+    padding-right: 82px;
+  }
+}

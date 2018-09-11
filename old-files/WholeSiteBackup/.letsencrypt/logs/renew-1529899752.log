@@ -1,0 +1,83 @@
+:::::Verify domain resolving for paypeer.io
+Resolves OK
+:::::Verify domain resolving for www.paypeer.io
+Resolves OK
+:::::Verify domain resolving for paypeer.io
+Resolves OK
+:::::Verify domain resolving for www.paypeer.io
+Resolves OK
+:::::Verify domain resolving for paypeer.io
+Resolves OK
+:::::Verify domain resolving for www.paypeer.io
+Resolves OK
+:::::Verify domain resolving for paypeer.io
+Resolves OK
+:::::Verify domain resolving for www.paypeer.io
+Resolves OK
+:::::Verify domain resolving for paypeer.io
+Resolves OK
+:::::Verify domain resolving for www.paypeer.io
+Resolves OK
+:::::Verify domain resolving for paypeer.io
+Resolves OK
+:::::Verify domain resolving for www.paypeer.io
+Resolves OK
+:::::Verify domain resolving for paypeer.io
+Resolves OK
+:::::Verify domain resolving for www.paypeer.io
+Resolves OK
+:::::Verify domain resolving for paypeer.io
+Resolves OK
+:::::Verify domain resolving for www.paypeer.io
+Resolves OK
+:::::Verify domain resolving for paypeer.io
+Resolves OK
+:::::Verify domain resolving for www.paypeer.io
+Resolves OK
+:::::Verify domain resolving for paypeer.io
+Resolves OK
+:::::Verify domain resolving for www.paypeer.io
+Resolves OK
+:::::Verify domain resolving for paypeer.io
+Resolves OK
+:::::Verify domain resolving for www.paypeer.io
+Resolves OK
+:::::Verify domain resolving for paypeer.io
+Resolves OK
+:::::Verify domain resolving for www.paypeer.io
+Resolves OK
+:::::Verify domain resolving for paypeer.io
+Resolves OK
+:::::Verify domain resolving for www.paypeer.io
+Resolves OK
+:::::Verify domain resolving for paypeer.io
+Resolves OK
+:::::Verify domain resolving for www.paypeer.io
+Resolves OK
+:::::Verify domain resolving for paypeer.io
+Resolves OK
+:::::Verify domain resolving for www.paypeer.io
+Resolves OK
+:::::Verify domain resolving for paypeer.io
+Resolves OK
+:::::Verify domain resolving for www.paypeer.io
+Resolves OK
+:::::Verify domain resolving for paypeer.io
+Resolves OK
+:::::Verify domain resolving for www.paypeer.io
+Resolves OK
+:::::Verify domain resolving for paypeer.io
+Resolves OK
+:::::Verify domain resolving for www.paypeer.io
+Resolves OK
+:::::Calling Let's Encrypt
+CMD is: /usr/local/letsencrypt/venv/bin/certbot renew --quiet --cert-name paypeer.io --logs-dir /usr/local/letsencrypt/logs --max-log-backups 0 --expand --agree-tos --non-interactive -t --webroot --allow-subset-of-names --server https://acme-v02.api.letsencrypt.org/directory --preferred-challenges http --force-renewal 1>&2
+/usr/local/letsencrypt/venv/lib/python3.6/site-packages/josepy/jwa.py:107: CryptographyDeprecationWarning: signer and verifier have been deprecated. Please use sign and verify instead.
+  signer = key.signer(self.padding, self.hash)
+{"success": {"/etc/letsencrypt/live/paypeer.io/cert.pem": ["paypeer.io", "www.paypeer.io"]}, "failure": {}}
+Cert data for domain: paypeer.io is here: /etc/letsencrypt/live/paypeer.io
+:::::Successfully renew certificate for domain: paypeer.io
+:::::Installing certificate in cPanel
+:::::Installing certificate in cPanel:Cpanel replied:
+{"_done_filters":[],"errors":null,"_done_sorts":[],"status":1,"messages":["The certificate was successfully installed on the domain “paypeer.io”."],"_done_pagination":null,"metadata":{},"_total_results":null,"data":{"ip":"146.66.99.190","action":"update","html":"<br>The SSL certificate is now installed onto the domain âpaypeer.ioâ using the IP address â146.66.99.190â.\n<br />\nThe existing virtual host was updated with the new certificate.<br />Apache is restarting in the background.","cert_id":"paypeer_io_a85d6_9a28d_1537672149_963a67d40383f1de021011559fa24bc0","extra_certificate_domains":["www.paypeer.io"],"domain":"paypeer.io","status":1,"statusmsg":"The SSL certificate is now installed onto the domain âpaypeer.ioâ using the IP address â146.66.99.190â.\nThe existing virtual host was updated with the new certificate. Apache is restarting in the background.\n","message":"The SSL certificate is now installed onto the domain âpaypeer.ioâ using the IP address â146.66.99.190â.\nThe existing virtual host was updated with the new certificate. Apache is restarting in the background.\n","servername":"paypeer.io","working_domains":["paypeer.io"],"aliases":["mail.paypeer.io"],"user":"paypeer1","key_id":"a85d6_9a28d_f0c138b86527b09aa116ec8e82774554","warning_domains":["mail.paypeer.io"]}}
+STATUS:1
