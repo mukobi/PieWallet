@@ -40,7 +40,39 @@
 
 #main-container.account #account-widget .search {
     grid-area: search;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+#main-container.account #account-widget .search form {
+    background: linear-gradient(to left, #704ac7, #005ba1);
+    background: linear-gradient(to left, var(--color1), var(--color2));
+    width: 100%;
+    height: 60px;
+    padding: 4px 8px 8px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-content: center;
+    justify-content: left;
+}
+#main-container.account #account-widget .search form h3 {
+    margin-right: 16px;
+    height: auto;
+}
+#main-container.account #account-widget .search form input.form-control {
+    border: 3px solid rgba(255,255,255,0.5);
+    background: white;
+    padding: 8px;
+    display: inline-block;
+    margin-right: 16px;
+    color: black;
+    width: 40%;
 }
 #main-container.account #account-widget .notifications {
     grid-area: notifications;
+    height: 100%;
+    width: 100%;
 }

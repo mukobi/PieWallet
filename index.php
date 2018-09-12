@@ -7,7 +7,6 @@ include_once("server/components/handleTgLogin.php");
 
 $conn = new mysqli("localhost", "paypeer1_lite1", "wwOpF+T3bDl&", "paypeer1_litespeed"); 
 
-
 if(isset($_POST['action'])) : 
 
 	if($_POST['action'] == 'unfollowed'){

@@ -66,6 +66,19 @@ a.button {
 	border-radius: 16px;
 	cursor: pointer;
 }
+input.button {
+	color: white;
+	text-align: center;
+	padding: 4px 16px ;
+	display: block;
+	width: auto;
+	text-decoration: none;
+	background: linear-gradient(to right, #704ac7, #005ba1);
+	background: linear-gradient(to right, var(--color1), var(--color2));
+	border: 3px solid white;
+	border-radius: 16px;
+	cursor: pointer;
+}
 
 body {
 	margin: 0;

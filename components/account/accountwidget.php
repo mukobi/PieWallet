@@ -17,10 +17,10 @@
             <a href="?logout=1" class="button">Logout</a>
         </div>
     </div>
-    <div class="search">
+    <div class="search dashbox">
         <?php include('searchwidget.php'); ?>
     </div>
-    <div class="notifications">
+    <div class="notifications dashbox">
         <?php include('notificationswidget.php'); ?>
     </div>
 </div>
