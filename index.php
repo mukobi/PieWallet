@@ -4,8 +4,7 @@ ob_start();
 //@session_start();
 
 include_once("server/components/handleTgLogin.php");
-
-$conn = new mysqli("localhost", "paypeer1_lite1", "wwOpF+T3bDl&", "paypeer1_litespeed"); 
+include_once("server/components/loginToDb.php");
 
 if(isset($_POST['action'])) : 
 

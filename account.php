@@ -1,8 +1,7 @@
 <?php
 
 include_once("server/components/handleTgLogin.php");
-
-$conn = new mysqli("localhost", "paypeer1_lite1", "wwOpF+T3bDl&", "paypeer1_litespeed"); 
+include_once("server/components/loginToDb.php");
 
 echo '<?xml version="1.0" encoding="utf-8"?>' ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML Basic 1.1//EN"
