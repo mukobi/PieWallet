@@ -1,4 +1,5 @@
 <div class="searchwidget">
+    <link rel="stylesheet" href="css/widgets/searchwidget.css">
     <form action="?search" method="get">
         <h3>Find Users</h3>
         <input type="text" name="query" class="form-control" placeholder="Search Users by Telegram Name">
@@ -12,7 +13,13 @@
                 
                 $searchResults = searchForUsers($conn, $name);
                 foreach($searchResults as $result) {
-                    echo "<div>" . $result['username'] . ' - ' . $result['name'] . "</div>";
+                    $photoUrl = ($result['photo_url'] ? $result['photo_url'] : "/images/users/genericprofile.png");
+                    echo 
+                    "<div class='single-result'><img src='" . $photoUrl . "' />"
+                        . "<h4>" . $result['name'] . "</h4>"
+                        . "<p>@<a href='https://t.me/" . $result['username'] . "'>" . $result['username'] . "</a></p>"
+                        . "<a class='button'>" . "Follow" . "</a>" 
+                    . "</div>";
                 }
             }
             else{

@@ -1,0 +1,34 @@
+.searchwidget .results {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: auto;
+    padding: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.searchwidget .results .single-result {
+    width: 100%;
+    max-width: 140px;
+    padding: 4px;
+    margin: 8px 16px;
+}
+
+.searchwidget .results .single-result > * {
+    margin-bottom: 4px;
+}
+
+.searchwidget .results .single-result a {
+    color: white;
+}
+
+.searchwidget .results .single-result img {
+    object-fit: cover;
+    width:115px;
+    height:115px;
+    border-radius: 50%;
+}

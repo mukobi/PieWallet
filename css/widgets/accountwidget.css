@@ -2,7 +2,7 @@
     padding: 16px;
     display: grid;
     grid-gap: 16px;
-    grid-template-rows:  1fr 3fr;
+    grid-template-rows:  1fr 70vh;
     grid-template-columns: 2fr 7fr 3fr;
     grid-template-areas:
         "picture info info"
@@ -60,10 +60,12 @@
 }
 #main-container.account #account-widget .search form h3 {
     margin-right: 16px;
+    line-height: 40px;
     height: auto;
 }
 #main-container.account #account-widget .search form input.form-control {
     border: 3px solid rgba(255,255,255,0.5);
+    border-radius: 8px;
     background: white;
     padding: 8px;
     display: inline-block;
