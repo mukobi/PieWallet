@@ -35,4 +35,20 @@ function getFollowingIDs($conn, $user_id) {
 $myFollowers = getFollowersIDs($conn, $tg_id);
 $myFollowing = getFollowingIDs($conn, $tg_id);
 
+
+function searchForUsers($conn, $searchName) {
+    $searchName = "%" . $searchName . "%";
+    $stmt = $conn->prepare("SELECT * FROM users WHERE username LIKE ? OR name LIKE ?");
+    $stmt->bind_param('ss', $searchName, $searchName);
+    $output = array();
+    $stmt->execute();
+    $result = $stmt->get_result();
+    if($result != false) {
+        while( $row = $result->fetch_assoc() ){
+            array_push($output, $row);
+        }
+    }
+    return $output;
+}
+
 ?>

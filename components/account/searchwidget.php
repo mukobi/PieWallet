@@ -8,29 +8,15 @@
         <?php
         if(isset($_GET['query'])){
             if(preg_match("/^[  a-zA-Z]+/", $_GET['query'])) {
-            $name = $_GET['query'];
-
-            $stmt = " SELECT  * FROM ls_users WHERE nickname LIKE '%" . $name .  "%'; ";
-            $result = $conn->query($stmt);
-            while( $row = $result->fetch_assoc() ){
-                $id = $row['id'];
-                $firstname = $row['firstname'];
-                $lastname = $row['lastname'];
-                $name = $firstname . " " . $lastname;
-                $nickname = $row['nickname'];
-                $email = $row['email'];
-                $label = $row['label'];
-                $address = $row['address'];
-
-                echo "<ul class='search_results' >";
-                echo "<li>
-                <a class='search_result' href='profile.php?id=$id'>" . $nickname . "</a>
-                </li>";
-                echo "</ul>";
+                $name = $_GET['query'];
+                
+                $searchResults = searchForUsers($conn, $name);
+                foreach($searchResults as $result) {
+                    echo "<div>" . $result['username'] . ' - ' . $result['name'] . "</div>";
                 }
             }
             else{
-                echo  "<p>Please enter a search query</p>";
+                echo  "<p>Please enter a valid search query</p>";
             }
         }
         else {
