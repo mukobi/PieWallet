@@ -1,6 +1,7 @@
 <?php
 
 function getFollowersIDs($conn, $user_id) {
+    settype($user_id, 'integer');
     $query = "SELECT u.*
     FROM users u INNER JOIN follows
     ON follows.follower_id=u.id
@@ -16,6 +17,7 @@ function getFollowersIDs($conn, $user_id) {
 }
 
 function getFollowingIDs($conn, $user_id) {
+    settype($user_id, 'integer');
     $query = "SELECT u.*
     FROM users u INNER JOIN follows
     ON follows.following=u.id
