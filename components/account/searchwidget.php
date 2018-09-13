@@ -2,7 +2,7 @@
     <form action="?search" method="get">
         <h3>Find Users</h3>
         <input type="text" name="query" class="form-control" placeholder="Search Users by Telegram Name">
-        <input type="submit" class="button">
+        <input type="submit" class="button" value="Search">
     </form>
     <div class="results">
         <?php
@@ -32,6 +32,9 @@
             else{
                 echo  "<p>Please enter a search query</p>";
             }
+        }
+        else {
+            echo "<h3>Search for Piewallet users</h3>";
         }
         ?>		
     </div>	
