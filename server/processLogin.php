@@ -22,7 +22,10 @@ function checkTelegramAuthorization($auth_data) {
   return $auth_data;
 }
 
-function saveTelegramUserData($auth_data) {
+include_once('components/loginToDb.php');
+include_once('components/pushToDb.php');
+
+function saveTelegramUserDataCookie($auth_data) {
   $auth_data_json = json_encode($auth_data);
   // set cookie for 3 months
   setcookie('tg_user', $auth_data_json, time() + 7776000, '/');
@@ -30,7 +33,8 @@ function saveTelegramUserData($auth_data) {
 
 try {
   $auth_data = checkTelegramAuthorization($_GET);
-  saveTelegramUserData($auth_data);
+  saveTelegramUserDataCookie($auth_data);
+  addUpdateUserInDb($conn, $auth_data);
 } catch (Exception $e) {
   die ($e->getMessage());
 }
