@@ -41,6 +41,15 @@
                     var count = document.getElementById('following-count');
                     count.innerHTML = parseInt(count.innerHTML) + 1;
                     // send follow request
+                    var xhttp = new XMLHttpRequest();
+                    xhttp.onreadystatechange = function() {
+                        if (this.readyState == 4 && this.status == 200) {
+                            console.log(this.responseText);
+                        }
+                    };
+                    xhttp.open("POST", "server/followCommands.php", true);
+                    xhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+                    xhttp.send(`action=follow&id=${id}`);
                 }
                 else {
                     element.classList.remove('unfollow');
@@ -48,6 +57,15 @@
                     var count = document.getElementById('following-count');
                     count.innerHTML = parseInt(count.innerHTML) - 1;
                     // send unfollow request
+                    var xhttp = new XMLHttpRequest();
+                    xhttp.onreadystatechange = function() {
+                        if (this.readyState == 4 && this.status == 200) {
+                            console.log(this.responseText);
+                        }
+                    };
+                    xhttp.open("POST", "server/followCommands.php", true);
+                    xhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+                    xhttp.send(`action=unfollow&id=${id}`);
                 }
             }
         </script>	

@@ -1,5 +1,6 @@
 <?php
-import_once('components/handleTgLogin.php');
+include_once('components/loginToDb.php');
+include_once('components/handleTgLogin.php');
 
 if(isset($_POST['action'])) { 
 
@@ -35,7 +36,7 @@ if(isset($_POST['action'])) {
 		$row = $result->fetch_object();
 
 		if(!$row){
-			$stmt = " INSERT into follows (follower_id, following_id, followDate) VALUES ($tg_id ,$target_id, ' ".$current_timestamp." '); ";
+			$stmt = " INSERT into follows (follower_id, following_id, follow_date) VALUES ($tg_id ,$target_id, ' ".$current_timestamp." '); ";
 			$result = $conn->query($stmt);
 			if(!$result) {
 			 echo "<script> alert('Some error occured while following'); </script>" ;
