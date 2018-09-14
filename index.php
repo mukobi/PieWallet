@@ -1,7 +1,6 @@
 <?php session_start(); ?>
 <?php 
 ob_start();
-//@session_start();
 
 include_once("server/components/handleTgLogin.php");
 include_once("server/components/loginToDb.php");
@@ -52,86 +51,10 @@ if(isset($_POST['action'])) :
 			}
 		}	
 	}
-
-	if($_POST['action'] == 'acc_frm'){
-		$profile_id = $_GET['id'];
-		$user = $_POST['user'];
-		$email = $_POST['email'];
-		$firstname = $_POST['firstname'];
-		$lastname = $_POST['lastname'];
-		
-		$stmt = " UPDATE ls_users SET nickname = '". $user ."', firstname = '". $firstname ."', lastname = '". $lastname ."' WHERE id = ".$profile_id."; ";
-		//echo $stmt;
-		$result = $conn->query($stmt);
-		if(!$result) {
-		 echo "<script> alert('Some error occured while updating'); </script>" ;
-		}else{
-		 echo "<script> alert('Account has been updated'); </script>";
-		}	
-	}
-
-	if($_POST['action'] == 'pass_updt'){
-		
-		$profile_id = $_GET['id'];
-		$current_pass = $_POST['current_pass'];
-		$new_pass = $_POST['new_pass'];
-		$confirm_pass = $_POST['confirm_pass'];
-
-		$stmt= "SELECT password FROM `ls_users` WHERE id=".$profile_id."; ";
-		$result = $conn->query($stmt);
-		$row= $result->fetch_object();
-		$db_pass_hash = $row->password;
-
-		$hash = $db_pass_hash;
-
-		if (password_verify( $current_pass, $hash)) {
-			if($confirm_pass == $new_pass){
-			    
-				$password = password_hash(htmlspecialchars(trim($new_pass)), PASSWORD_DEFAULT);
-				$stmt = " UPDATE ls_users SET password = '". $password ."' WHERE id=".$profile_id."; ";
-				
-				$result = $conn->query($stmt);
-				if(!$result) {
-				 	echo "<script> alert('Some error occured while updating'); </script>" ;
-				}else{
-				 	echo "<script> alert('Password has been updated'); </script>";
-				}
-			}
-			else{ echo "<script> alert('New Password doesn\'t match with confirm password'); </script>"; }
-		} else {
-		    echo "<script> alert('Your current password is wrong'); </script>";
-		}			
-	}
-
-	if($_POST['action'] == 'dlt_acc'){
-		
-		$profile_id = $_GET['id'];
-		$enter_pass = $_POST['enter_pass'];
-
-		$stmt = "SELECT password FROM `ls_users` WHERE id=".$profile_id."; ";
-		$result = $conn->query($stmt);
-		$row = $result->fetch_object();
-		$db_pass_hash = $row->password;
-
-		$hash = $db_pass_hash;
-
-		if (password_verify( $enter_pass, $hash)) {		  
-				$stmt = " DELETE from ls_users WHERE id=".$profile_id."; ";			
-				$result = $conn->query($stmt);
-				if(!$result) {
-				 	echo "<script> alert('Some error occured while deleting your account'); </script>" ;
-				}else{
-				 	echo "<script> alert('Your account has been deleted');</script>";
-				 	header("Location:logout.php");
-					exit;
-				}
-		} else {
-		    echo "<script> alert('Enter correct password to delete your account'); </script>";
-		}
-	}
 	
 endif;
 ?>
+
 <?php
 echo '<?xml version="1.0" encoding="utf-8"?>' ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML Basic 1.1//EN"
