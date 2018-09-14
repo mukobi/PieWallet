@@ -18,8 +18,11 @@
                 foreach($searchResults as $result) {
                     $photoUrl = ($result['photo_url'] ? $result['photo_url'] : "/images/users/genericprofile.png");
                     echo 
-                    "<div class='single-result'><img src='" . $photoUrl . "' />"
-                        . "<h4>" . $result['name'] . "</h4>"
+                    "<div class='single-result'>"
+                        . "<a class='to-profile' href='profile.php?id=".$result['id']."'>"
+                            . "<img src='" . $photoUrl . "' />"
+                            . "<h4>" . $result['name'] . "</h4>"
+                        . "</a>"
                         . "<p>@<a href='https://t.me/" . $result['username'] . "'>" . $result['username'] . "</a></p>"
                         . (in_array($result['id'], $myFollowing) 
                             ? "<a class='button unfollow' onclick=toggleFollow(this,".$result['id'].")>Unfollow</a>" 

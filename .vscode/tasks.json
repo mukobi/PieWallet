@@ -10,7 +10,8 @@
             "args": [
                 "http",
                 "80"
-            ]
+            ],
+            "problemMatcher": []
         }
     ]
 }

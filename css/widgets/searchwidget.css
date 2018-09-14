@@ -16,10 +16,24 @@
     max-width: 140px;
     padding: 4px;
     margin: 8px 16px;
+    display: block;
 }
 
 .searchwidget .results .single-result > * {
     margin-bottom: 4px;
+}
+
+.searchwidget .results .single-result a.to-profile {
+    text-decoration: none;
+    transition: all 300ms;
+    display: block;
+    padding: 4px;
+    border-radius: 8px;
+}
+
+.searchwidget .results .single-result a.to-profile:hover{
+    background-color: rgba(255,255,255,0.3);
+    text-decoration: underline;
 }
 
 .searchwidget .results .single-result a {
@@ -37,4 +51,6 @@
     width:115px;
     height:115px;
     border-radius: 50%;
+    display: block;
+    margin: 0 auto;
 }
