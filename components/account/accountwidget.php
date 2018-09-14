@@ -5,8 +5,8 @@
     <div class="profile-info">
         <h3><?php echo ($tg_first_name . ($tg_last_name ? " " . $tg_last_name : "")) ?></h3>
         <?php echo ($tg_username ? "<h4>@" . $tg_username ."</h4>" : "") ?>
-        <p>Followers: 536</p>
-        <p>Following: 75</p>
+        <p>Followers: <?php echo count($myFollowers) ?></p>
+        <p>Following: <?php echo count($myFollowing) ?></p>
     </div>
     <div class="buttons">
         <div>

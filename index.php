@@ -5,6 +5,7 @@ ob_start();
 
 include_once("server/components/handleTgLogin.php");
 include_once("server/components/loginToDb.php");
+include_once("server/queryDbSocial.php");
 
 if(isset($_POST['action'])) : 
 

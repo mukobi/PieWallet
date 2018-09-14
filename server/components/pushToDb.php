@@ -16,7 +16,7 @@ function addUpdateUserInDb($conn, $user) {
         $name, 
         $user['photo_url'], 
         $user['username'], 
-        $user['name'], 
+        $name, 
         $user['photo_url']);
     $output = array();
     $stmt->execute();
