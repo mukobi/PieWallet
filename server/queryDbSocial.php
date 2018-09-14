@@ -20,8 +20,8 @@ function getFollowingIDs($conn, $user_id) {
     settype($user_id, 'integer');
     $query = "SELECT u.*
     FROM users u INNER JOIN follows
-    ON follows.following=u.id
-    WHERE follows.follower=$user_id";
+    ON follows.following_id=u.id
+    WHERE follows.follower_id=$user_id";
     $output = array();
     $result = $conn->query($query);
     if($result != false) {
