@@ -12,6 +12,9 @@
                 $name = $_GET['query'];
                 
                 $searchResults = searchForUsers($conn, $name);
+                if(count($searchResults) == 0) {
+                    echo "<h3>No profiles found.</h3>";
+                }
                 foreach($searchResults as $result) {
                     $photoUrl = ($result['photo_url'] ? $result['photo_url'] : "/images/users/genericprofile.png");
                     echo 
