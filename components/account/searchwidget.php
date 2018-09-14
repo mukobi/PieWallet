@@ -18,7 +18,9 @@
                     "<div class='single-result'><img src='" . $photoUrl . "' />"
                         . "<h4>" . $result['name'] . "</h4>"
                         . "<p>@<a href='https://t.me/" . $result['username'] . "'>" . $result['username'] . "</a></p>"
-                        . "<a class='button'>" . "Follow" . "</a>" 
+                        . (in_array($result['id'], $myFollowing) 
+                            ? "<a class='button unfollow' onclick=toggleFollow(this,".$result['id'].")>Unfollow</a>" 
+                            : "<a class='button' onclick=toggleFollow(this,".$result['id'].")>Follow</a>") 
                     . "</div>";
                 }
             }
@@ -29,6 +31,25 @@
         else {
             echo "<h3>Search for Piewallet users</h3>";
         }
-        ?>		
+        ?>	
+        <script>
+            function toggleFollow(element, id) {
+                var toFollow = !element.classList.contains('unfollow');
+                if(toFollow) {
+                    element.classList.add('unfollow');
+                    element.innerHTML = "Unfollow";
+                    var count = document.getElementById('following-count');
+                    count.innerHTML = parseInt(count.innerHTML) + 1;
+                    // send follow request
+                }
+                else {
+                    element.classList.remove('unfollow');
+                    element.innerHTML = "Follow";
+                    var count = document.getElementById('following-count');
+                    count.innerHTML = parseInt(count.innerHTML) - 1;
+                    // send unfollow request
+                }
+            }
+        </script>	
     </div>	
 </div>

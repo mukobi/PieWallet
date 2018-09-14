@@ -26,6 +26,12 @@
     color: white;
 }
 
+.searchwidget .results .single-result a.unfollow {
+    background: white;
+    color: black;
+    content: "Unfollow";
+}
+
 .searchwidget .results .single-result img {
     object-fit: cover;
     width:115px;

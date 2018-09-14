@@ -6,7 +6,7 @@
         <h3><?php echo ($tg_first_name . ($tg_last_name ? " " . $tg_last_name : "")) ?></h3>
         <?php echo ($tg_username ? "<h4>@" . $tg_username ."</h4>" : "") ?>
         <p>Followers: <?php echo count($myFollowers) ?></p>
-        <p>Following: <?php echo count($myFollowing) ?></p>
+        <p>Following: <span id="following-count"><?php echo count($myFollowing) ?></span></p>
     </div>
     <div class="buttons">
         <div>
