@@ -1,0 +1,53 @@
+#main-container.profile #single-profile-widget {
+    justify-content: center;
+}
+#main-container.profile #single-profile-widget > div {
+    margin-bottom: 48px;
+}
+
+#main-container.profile #single-profile-widget > div.picture-and-info {
+    height: 180px;
+    display: flex;
+    flex-wrap: nowrap;
+
+}
+
+#main-container.profile #single-profile-widget .picture {
+    background-image: url(../../images/users/genericprofile.png);
+    background-repeat: no-repeat;
+    background-position: center; /* Center the image */
+    background-size: contain;
+    height: 180px;
+    width: 180px;
+    margin-right: 16px;
+    border-radius: 50%;
+}
+
+#main-container.profile #single-profile-widget span {
+    font-size: inherit;
+}
+
+
+#main-container.profile #single-profile-widget .profile-info {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+#main-container.profile #single-profile-widget .follow-button > a {
+    color: white;
+    font-size: 32px;
+    padding: 16px;
+}
+
+#main-container.profile #single-profile-widget .follow-button > a.unfollow {
+    background: white;
+    color: black;
+    content: "Unfollow";
+}
+
+#main-container.profile #single-profile-widget .coin-addresses > * {
+    margin-bottom: 8px;
+}
+

@@ -1,0 +1,33 @@
+#main-container #single-profile-widget.dashbox {
+	grid-area: account;
+	border: 4px solid #584dbf;
+	border-image: linear-gradient(to top, #0c58a5, #7249c9) 30;
+	border-image: linear-gradient(to top, var(--color2), var(--color1)) 30;
+}
+
+#main-container.profile {
+	display: grid;
+	position: absolute;
+	top: 16px;
+	right: 16px;
+	bottom: 16px;
+	left: 0;
+	grid-gap: 16px;
+	grid-template-rows: 1fr;
+	grid-template-columns: 160px 1fr;
+	grid-template-areas: 
+		"navigation account";
+}
+
+@media screen and (max-width: 800px) {
+    #main-container.profile {
+        display: flex;
+        top: 0;
+        right: 0;
+        bottom: 60px;
+        left: 0;
+    }
+    #main-container.profile #single-profile-widget {
+        height: 90%;
+    }
+}
