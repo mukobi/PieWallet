@@ -35,6 +35,22 @@ function getFollowingIDs($conn, $user_id) {
 $myFollowers = getFollowersIDs($conn, $tg_id);
 $myFollowing = getFollowingIDs($conn, $tg_id);
 
+function getUsersObjectsById($conn, $user_id_array) {
+    $output = array();
+    foreach ($user_id_array as $user_id) {
+        settype($user_id, 'integer');
+        $stmt = $conn->prepare("SELECT * FROM users WHERE id = ?");
+        $stmt->bind_param('i', $user_id);
+        $stmt->execute();
+        $result = $stmt->get_result();
+        if($result != false) {
+            while( $row = $result->fetch_assoc() ){
+                array_push($output, $row);
+            }
+        }
+    }
+    return $output;
+}
 
 function searchForUsers($conn, $searchName) {
     $searchName = "%" . $searchName . "%";
