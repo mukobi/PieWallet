@@ -22,6 +22,20 @@
 #main-container.account #account-widget .profile-info {
     grid-area: info;
 }
+#main-container.account #account-widget .profile-info a {
+    display: inline-block;
+    padding: 4px;
+    border-radius: 4px;
+    margin-top: 4px;
+    font-size: 20pt;
+}
+
+#main-container.account #account-widget .profile-info .follow-count {
+    display: inline-block;
+    padding: 4px;
+    border-radius: 4px;
+    margin-top: 4px;
+}
 #main-container.account #account-widget .buttons {
     grid-area: buttons;
     display: flex;

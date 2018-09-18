@@ -4,9 +4,11 @@
     </div>
     <div class="profile-info">
         <h3><?php echo ($tg_first_name . ($tg_last_name ? " " . $tg_last_name : "")) ?></h3>
-        <?php echo ($tg_username ? "<h4>@" . $tg_username ."</h4>" : "") ?>
-        <p>Followers: <?php echo count($myFollowers) ?></p>
-        <p>Following: <span id="follow-count"><?php echo count($myFollowing) ?></span></p>
+        <?php echo ($tg_username ? "<a href='https://t.me/" . $tg_username . "' class='link-element username'>@" . $tg_username ."</a>" : "") ?>
+        <br>
+        <p class="link-element follow-count">Followers: <?php echo count($myFollowers) ?></p>
+        <br>
+        <p class="link-element follow-count">Following: <span id="follow-count"><?php echo count($myFollowing) ?></span></p>
     </div>
     <div class="buttons">
         <div>

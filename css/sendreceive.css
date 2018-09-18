@@ -108,7 +108,7 @@
     background-color: #0c1744;
     z-index: -100;
     opacity: 0;
-    transition: opacity 500ms;
+    transition: opacity 300ms;
 }
 #main-container.dashboard.content-main #sendreceive.transparent {
     opacity: 0;

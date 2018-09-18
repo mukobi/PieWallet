@@ -19,7 +19,7 @@
                     $photoUrl = ($result['photo_url'] ? $result['photo_url'] : "/images/users/genericprofile.png");
                     echo 
                     "<div class='single-result'>"
-                        . "<a class='to-profile' href='profile.php?id=".$result['id']."'>"
+                        . "<a class='to-profile link-element' href='profile.php?id=".$result['id']."'>"
                             . "<img src='" . $photoUrl . "' />"
                             . "<h4>" . $result['name'] . "</h4>"
                         . "</a>"
