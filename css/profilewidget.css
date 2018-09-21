@@ -27,6 +27,11 @@
     background-size: contain;
     height: 100%;
 }
+.dashboard #profilewidget .info > p {
+    display: inline-block;
+    padding: 2px 4px;
+    border-radius: 4px;
+}
 
 @media screen and (max-width: 1200px), (max-height: 695px) {
     .dashboard #profilewidget {

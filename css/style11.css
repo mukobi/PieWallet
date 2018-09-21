@@ -141,6 +141,7 @@ html {
 #profilewidget {grid-area: profile;}
 
 #main-container.dashboard {
+	z-index: 1;
 	display: grid;
 	position: absolute;
 	top: 16px;
