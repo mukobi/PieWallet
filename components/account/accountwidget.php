@@ -6,9 +6,15 @@
         <h3><?php echo ($tg_first_name . ($tg_last_name ? " " . $tg_last_name : "")) ?></h3>
         <?php echo ($tg_username ? "<a href='https://t.me/" . $tg_username . "' class='link-element username'>@" . $tg_username ."</a>" : "") ?>
         <br>
-        <p class="link-element follow-count">Followers: <?php echo count($myFollowers) ?></p>
+        <p class="link-element follow-count" onClick="popUpFollows('followers', <?php echo $tg_id ?>)">Followers: <?php echo count($myFollowers) ?></p>
         <br>
         <p class="link-element follow-count">Following: <span id="follow-count"><?php echo count($myFollowing) ?></span></p>
+        <script>
+        function popUpFollows(type, id) {
+            getFollowsHTML(type, id, changePopupWindowContents);
+            showPopupWindow();
+        }
+        </script>
     </div>
     <div class="buttons">
         <div>
@@ -25,4 +31,5 @@
     <div class="notifications dashbox">
         <?php include('notificationswidget.php'); ?>
     </div>
+    <?php include('components/popup-window.php') ?>
 </div>

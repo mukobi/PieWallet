@@ -23,3 +23,15 @@ function toggleFollow(element, id) {
         xhttp.send(`action=unfollow&id=${id}`);
     }
 }
+
+function getFollowsHTML(type, id, callback) {
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() { 
+        if (xhttp.readyState == 4 && xhttp.status == 200)
+            callback(xhttp.responseText);
+    }
+    xhttp.open("GET", "server/getFollowsHTML.php", true);
+    xhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+    xhttp.send(`type=${type}&id=${id}`);
+}
+

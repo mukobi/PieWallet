@@ -1,0 +1,39 @@
+#popup-window {
+    position: fixed;
+    top: 10%;
+    left: 10%;
+    right: 10%;
+    bottom: 10%;
+    box-shadow: 0 0 16vw 8vw rgba(10,10,10,0.8);
+    background-color: #0c1744;
+    z-index: -100;
+    opacity: 0;
+    transition: opacity 300ms;
+}
+#popup-window.active.transparent {
+    opacity: 0;
+}
+#popup-window.active {
+    z-index: 100;
+    opacity: 1;
+}
+#popup-window .x-out {
+    display: block;
+    position: absolute;
+    top: 5vh;
+    right: 5vh;
+    cursor: pointer;
+}
+#popup-window .x-out img {
+    height: 40px;
+}
+#popup-window #popup-window-contents {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-content: space-around;
+    justify-content: space-around;
+}
