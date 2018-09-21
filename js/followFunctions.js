@@ -30,8 +30,8 @@ function getFollowsHTML(type, id, callback) {
         if (xhttp.readyState == 4 && xhttp.status == 200)
             callback(xhttp.responseText);
     }
-    xhttp.open("GET", "server/getFollowsHTML.php", true);
+    xhttp.open("GET", `server/getFollowsHTML.php?type=${type}&id=${id}`, true);
     xhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-    xhttp.send(`type=${type}&id=${id}`);
+    xhttp.send(null);
 }
 

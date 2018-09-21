@@ -8,7 +8,7 @@
         <br>
         <p class="link-element follow-count" onClick="popUpFollows('followers', <?php echo $tg_id ?>)">Followers: <?php echo count($myFollowers) ?></p>
         <br>
-        <p class="link-element follow-count">Following: <span id="follow-count"><?php echo count($myFollowing) ?></span></p>
+        <p class="link-element follow-count" onClick="popUpFollows('following', <?php echo $tg_id ?>)">Following: <span id="follow-count"><?php echo count($myFollowing) ?></span></p>
         <script>
         function popUpFollows(type, id) {
             getFollowsHTML(type, id, changePopupWindowContents);
