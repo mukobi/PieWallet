@@ -11,6 +11,7 @@
         <p class="link-element follow-count" onClick="popUpFollows('following', <?php echo $tg_id ?>)">Following: <span id="follow-count"><?php echo count($myFollowing) ?></span></p>
         <script>
         function popUpFollows(type, id) {
+            changePopupWindowContents("");
             getFollowsHTML(type, id, changePopupWindowContents);
             showPopupWindow();
         }

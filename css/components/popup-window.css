@@ -20,20 +20,60 @@
 #popup-window .x-out {
     display: block;
     position: absolute;
-    top: 5vh;
-    right: 5vh;
+    top: 3vh;
+    right: 3vh;
     cursor: pointer;
 }
 #popup-window .x-out img {
     height: 40px;
 }
+
 #popup-window #popup-window-contents {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
+    overflow: auto;
+    padding: 16px;
     display: flex;
-    align-content: space-around;
+    flex-wrap: wrap;
     justify-content: space-around;
+}
+
+#popup-window #popup-window-contents .single-result {
+    width: 100%;
+    max-width: 140px;
+    padding: 4px;
+    margin: 8px 16px;
+    display: block;
+}
+
+#popup-window #popup-window-contents .single-result > * {
+    margin-bottom: 4px;
+}
+
+#popup-window #popup-window-contents .single-result a.to-profile {
+    display: block;
+    padding: 4px;
+    border-radius: 8px;
+}
+
+#popup-window #popup-window-contents .single-result a {
+    color: white;
+}
+
+#popup-window #popup-window-contents .single-result a.unfollow {
+    background: white;
+    color: black;
+    content: "Unfollow";
+}
+
+#popup-window #popup-window-contents .single-result img {
+    object-fit: cover;
+    width:115px;
+    height:115px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
 }
