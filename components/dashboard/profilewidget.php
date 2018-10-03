@@ -19,13 +19,13 @@
         <p>Portfolio: $6379.42</p>
     </div>
     <div class="profile">
-        <a href="#" class="button">Profile</a>
+        <a href="account.php" class="button">Account</a>
     </div>
     <div class="settings">
-        <a href="#" class="button">Settings</a>
+        <a href="account.php" class="button">Settings</a>
     </div>
     <div class="add-friends">
-        <a href="#" class="button">+Add Friends</a>
+        <a href="account.php" class="button">+Add Friends</a>
     </div>
     <div class="logout">
         <a href="?logout=1" class="button">Logout</a>
