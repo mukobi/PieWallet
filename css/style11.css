@@ -292,6 +292,11 @@ html {
 	flex-wrap: nowrap;
 	justify-content: space-between;
 }
+@media screen and (max-width: 1740px) {
+	#coin-widget-container .coin-widget  {
+		width: 31%;
+	}
+}
 #coin-widget-container .coin-widget .ticker-main {
 	flex-grow: 1;
 	padding: 0 8px;
@@ -300,6 +305,7 @@ html {
 	box-shadow: 0 3px 6px black;
 	border-radius: 10px;
 	text-shadow: 0 3px 6px black;
+	justify-content: center;
 }
 #coin-widget-container .coin-widget:nth-child(1) .ticker-main {
 	background: linear-gradient(to left, #8EDEFC, #56ACFF);
@@ -313,19 +319,14 @@ html {
 #coin-widget-container .coin-widget .ticker-main img {
 	position: absolute;
 	top: 45%;
-	left: 20%;
+	left: 25%;
 	transform: translate(-50%, -50%);
 	z-index: 0;
-	height: 80%;
+	height: 100%;
 }
-#coin-widget-container .coin-widget .ticker-main div.title {
-	width: 100%;
-	display: flex;
-	justify-content: space-between;
-}
-#coin-widget-container .coin-widget .ticker-main div.title span {font-size: 20pt;}
+#coin-widget-container .coin-widget .ticker-main p.title {font-size: 20pt;}
 #coin-widget-container .coin-widget .ticker-main p {
-	text-align: right;
+	text-align: center;
 	width: 100%;
 }
 #coin-widget-container .coin-widget .buttons {
@@ -343,6 +344,11 @@ html {
 	width: 40%;
 	font-size: 18px;
 	line-height: 18px;	
+}
+@media screen and (max-width: 1500px) {
+	#coin-widget-container .coin-widget .buttons a {
+		width: 49%;
+	}
 }
 #coin-widget-container .coin-widget .buttons a img {
 	display: inline-block;
