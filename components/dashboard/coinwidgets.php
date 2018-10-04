@@ -7,8 +7,8 @@
             <img src="images/coins/bitcoin-trans.png" />
         </div>
         <div class="buttons">
-            <a onClick="popupSendReceive(0,'send')" class="button"><?php echo file_get_contents("images/icons/send.svg") ?>Send</a>
-            <a onClick="popupSendReceive(0,'receive')" class="button"><?php echo file_get_contents("images/icons/receive.svg") ?>Receive</a>
+            <a onClick="popupSendReceive(0,'send')"><img src="images/icons/send.png" />Send</a>
+            <a onClick="popupSendReceive(0,'receive')"><img src="images/icons/receive.png" />Receive</a>
         </div>
     </div>
     <div id="widget-litecoin" class="coin-widget carousel-cell">
@@ -19,8 +19,8 @@
             <img src="images/coins/litecoin-trans.png" />
         </div>
         <div class="buttons">
-            <a onClick="popupSendReceive(2,'send')" class="button" class="button"><?php echo file_get_contents("images/icons/send.svg") ?>Send</a>
-            <a onClick="popupSendReceive(2,'receive')" class="button"><?php echo file_get_contents("images/icons/receive.svg") ?>Receive</a>
+            <a onClick="popupSendReceive(2,'send')"><img src="images/icons/send.png" />Send</a>
+            <a onClick="popupSendReceive(2,'receive')"><img src="images/icons/receive.png" />Receive</a>
         </div>
     </div>
     <div id="widget-ethereum" class="coin-widget carousel-cell">
@@ -31,8 +31,8 @@
             <img src="images/coins/ethereum-trans.png" />
         </div>
         <div class="buttons">
-            <a onClick="popupSendReceive(1,'send')"  class="button"><?php echo file_get_contents("images/icons/send.svg") ?>Send</a>
-            <a onClick="popupSendReceive(1,'receive')"  class="button"><?php echo file_get_contents("images/icons/receive.svg") ?>Receive</a>
+            <a onClick="popupSendReceive(1,'send')"><img src="images/icons/send.png" />Send</a>
+            <a onClick="popupSendReceive(1,'receive')"><img src="images/icons/receive.png" />Receive</a>
         </div>
     </div>
     <script>

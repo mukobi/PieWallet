@@ -1,17 +1,3 @@
-.tempcolorholderaaaaaaaa {
-	background-color: initial;
-	background: linear-gradient(
-		#005ba1,#704ac7,#ff6666,#7249c9,#4286f4,#c35bff,
-		#005972,#d4baff,#350072,#0c58a5,#d9a0ff,#ce1257,
-		#67d4fc,#4f0749,#e099ff); 
-}
-
-@font-face {
-    font-family: haettenschweiler;
-	src: url(../fonts/Haettenschweiler-Regular.ttf)  format('truetype'),
-		 url(../fonts/Haettenschweiler-Regular.ttf);
-}
-
 /* box sizing */
 html {
 	-webkit-box-sizing: border-box;
@@ -30,7 +16,7 @@ html {
 * {
 	padding: 0;
 	margin: 0;
-	font-family: haettenschweiler, sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	font-weight: lighter;
 	font-size: 22px;
 }
@@ -68,8 +54,6 @@ a.button {
 	display: block;
 	width: 100%;
 	text-decoration: none;
-	background: linear-gradient(to right, #704ac7, #005ba1);
-	background: linear-gradient(to right, var(--color1), var(--color2));
 	margin: 0 auto;
 	border-radius: 16px;
 	cursor: pointer;
@@ -81,8 +65,6 @@ input.button {
 	display: block;
 	width: auto;
 	text-decoration: none;
-	background: linear-gradient(to right, #704ac7, #005ba1);
-	background: linear-gradient(to right, var(--color1), var(--color2));
 	border: 3px solid white;
 	border-radius: 16px;
 	cursor: pointer;
@@ -99,10 +81,15 @@ input.button {
     text-decoration: underline;
 }
 
-.gradient-border {
-	border: 4px solid #584dbf;
-	border-image: linear-gradient(to right, #0c58a5, #7249c9) 30;
-	border-image: linear-gradient(to right, var(--color2), var(--color1)) 30;
+.hollow-button {
+	border: 1px solid #9589C5;
+	box-shadow: 0 0 6px #9589C5;
+	padding: 7px 30px;
+	transition: all 250ms;
+}
+.hollow-button:hover {
+	box-shadow: 0 0 12px 2px rgb(57, 52, 77);
+	text-shadow: 0 2px 3px black;
 }
 
 
@@ -194,7 +181,7 @@ html {
 /* navigation */
 #navigation-menu {
 	background: #3C4564;
-	box-shadow: 0 3px 30px #9589C5;
+	box-shadow: 0 3px 30px 10px #9589C5;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -203,9 +190,8 @@ html {
 }
 
 #navigation-menu p {
-	font-family: "haettenschweiler";
-	font-size: 24pt;
-	color: black;
+	color: #AFBFEE;
+	font-size: 16px;
 }
 
 #navigation-menu a {
@@ -217,7 +203,7 @@ html {
 }
 
 #navigation-menu .navicon {
-	height: 12%;
+	height: 10%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -233,7 +219,8 @@ html {
 }
 
 #navigation-menu .navicon .imgleft {
-	width: 64px;
+	width: 48px;
+	margin-bottom: 4px;
 }
 @media screen and (max-height: 840px) {
 	#navigation-menu p {	
@@ -272,13 +259,22 @@ html {
 		margin-top: 30px;
 	}
 }
-
-#navigation-menu div.navicon.active {
-	background-color:  rgba(255,255,255,0.15);
+#navigation-menu div.navicon:after {
+	content: " ";
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 94%;
+	transition: all 250ms;
 }
 
-#navigation-menu div.navicon:not(.active):not(.empty):hover {
-	background-color: rgba(255,255,255,0.3);
+#navigation-menu div.navicon.active:after {
+	background-color: #1C8FE7;
+}
+
+#navigation-menu div.navicon:not(.active):not(.empty):not(.noeffect):hover:after {
+	background-color: #AFBFEE;
 }
 
 /* coin widgets */
@@ -289,7 +285,7 @@ html {
 }
 #coin-widget-container .coin-widget {
 	font-size: 20pt;
-	width: 31%;
+	width: 27%;
 	position: relative;
 	display: flex;
 	flex-direction: column;
@@ -303,6 +299,7 @@ html {
 	border: none;
 	box-shadow: 0 3px 6px black;
 	border-radius: 10px;
+	text-shadow: 0 3px 6px black;
 }
 #coin-widget-container .coin-widget:nth-child(1) .ticker-main {
 	background: linear-gradient(to left, #8EDEFC, #56ACFF);
@@ -319,7 +316,6 @@ html {
 	left: 20%;
 	transform: translate(-50%, -50%);
 	z-index: 0;
-	opacity: 0.3;
 	height: 80%;
 }
 #coin-widget-container .coin-widget .ticker-main div.title {
@@ -332,16 +328,28 @@ html {
 	text-align: right;
 	width: 100%;
 }
+#coin-widget-container .coin-widget .buttons {
+	display: flex;
+	justify-content: space-between;
+}
 #coin-widget-container .coin-widget .buttons a {
 	display: inline-block;
-	width: 49%;
 	margin-top: 8px;
+	color: #AFBFEE;
+	background-color: #3C4564;
+	box-shadow: 0 3px 6px black;
+	text-align: center;
+	padding: 4px 0;
+	width: 40%;
+	font-size: 18px;
+	line-height: 18px;	
 }
-#coin-widget-container .coin-widget .buttons a svg {
-	fill: white;
+#coin-widget-container .coin-widget .buttons a img {
 	display: inline-block;
-	height: 16px;
-	margin-right: 8px;
+	height: 18px;
+	margin-right: 2px;
+	position: relative;
+	top: 2px;
 }
 
 /* graph */
@@ -371,8 +379,6 @@ html {
 	/* header */
 	#header-mobile {
 		display: block;
-		background: linear-gradient(to right, #704ac7, #005ba1);
-		background: linear-gradient(to right, var(--color1), var(--color2));
 		margin: 0;
 		padding: 8px 0;
 	}
@@ -400,8 +406,6 @@ html {
 		margin: 0;
 		flex-direction: row;
 		justify-content: space-between;
-		background: linear-gradient(to right, #704ac7, #005ba1);
-		background: linear-gradient(to right, var(--color1), var(--color2));
 	}
 	#navigation-menu .navicon {
 		height: 60px;

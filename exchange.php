@@ -12,7 +12,7 @@ echo '<?xml version="1.0" encoding="utf-8"?>' ?>
 		<title>Exchange - PayPeer.io</title>
 		<link rel="stylesheet" href="/css/style11.css">
 		<link rel="stylesheet" href="/css/exchange.css">
-		<!-- <link rel="stylesheet" href="/css/buybox11.css"> -->
+		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
 

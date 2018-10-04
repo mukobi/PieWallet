@@ -15,7 +15,7 @@ echo '<?xml version="1.0" encoding="utf-8"?>' ?>
 		<title>Dashboard - PayPeer.io</title>
 		<link rel="stylesheet" href="https://changelly.com/widget.css">
 		<link rel="stylesheet" href="/css/style11.css">
-		<!-- <link rel="stylesheet" href="/css/buybox11.css"> -->
+		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
 		<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
