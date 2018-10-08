@@ -137,14 +137,12 @@ html {
 	right: 16px;
 	bottom: 16px;
 	left: 0;
-	grid-gap: 16px;
-	grid-template-rows: 2fr 1fr 5fr 3fr;
-	grid-template-columns: 160px 2fr 1fr;
+	grid-gap: 32px;
+	grid-template-rows: 25% 1fr;
+	grid-template-columns: 12% 25% 1fr;
 	grid-template-areas: 
-		"navigation coin-widgets profile"
-		"navigation graph        profile"
-		"navigation graph        transactions"
-		"navigation shapeshift   transactions";
+		"navigation profile coin-widgets"
+		"navigation transactions graph";
 }
 
 [id=fixedheading] {
@@ -306,6 +304,7 @@ html {
 	border-radius: 10px;
 	text-shadow: 0 3px 6px black;
 	justify-content: center;
+	overflow: hidden;
 }
 #coin-widget-container .coin-widget:nth-child(1) .ticker-main {
 	background: linear-gradient(to left, #8EDEFC, #56ACFF);
@@ -319,7 +318,7 @@ html {
 #coin-widget-container .coin-widget .ticker-main img {
 	position: absolute;
 	top: 45%;
-	left: 25%;
+	left: 30%;
 	transform: translate(-50%, -50%);
 	z-index: 0;
 	height: 100%;
@@ -343,7 +342,8 @@ html {
 	padding: 4px 0;
 	width: 40%;
 	font-size: 18px;
-	line-height: 18px;	
+	line-height: 18px;
+	border-radius: 2px;	
 }
 @media screen and (max-width: 1500px) {
 	#coin-widget-container .coin-widget .buttons a {

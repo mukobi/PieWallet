@@ -23,14 +23,11 @@ echo '<?xml version="1.0" encoding="utf-8"?>' ?>
 	</head>
 	<body>
 		<div id="main-container" class="content-main dashboard">
-			<?php include_once("components/header-mobile.php"); ?>
 			<?php include_once("components/navigation.php"); ?>
 			<?php include_once("components/dashboard/coinwidgets.php"); ?>
 			<?php include_once("components/dashboard/transactions.php"); ?>
 			<?php include_once("components/dashboard/profilewidget.php"); ?>
-			<?php include_once("components/dashboard/shapeshift.php"); ?>
 			<?php include_once("components/dashboard/graph.php"); ?>
-			<?php include_once("components/dashboard/sendreceive.php"); ?>
 		</div>
 	</body>
 </html>

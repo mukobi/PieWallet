@@ -8,69 +8,24 @@
 
 
 .dashboard #profilewidget {
-    padding: 8px;
-    display: grid;
-	grid-gap: 8px;
-	grid-template-rows:  5fr 5fr 5fr 1fr 5fr;
-	grid-template-columns: 15fr 15fr 1fr 15fr;
-	grid-template-areas:
-		"picture info . profile"
-		"picture info . settings"
-		"picture info . friends"
-		".       .    . ."
-		"portfolio portfolio . logout"
+    
 }
-.dashboard #profilewidget .picture {
-    background-image: url(../images/users/genericprofile.png);
-    background-repeat: no-repeat;
-    background-position: center; /* Center the image */
-    background-size: contain;
-    height: 100%;
+.dashboard #profilewidget a {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    background: linear-gradient(to top right, #4438EF, #F4C0FF);
+    border-radius: 16px;
+    box-shadow: 0 3px 6px black;
+    text-decoration: none;
+    text-shadow: 0 3px 6px black;
+    width: 80%;
+    height: 80%;
+    color: white;
+    text-align: center;
 }
-.dashboard #profilewidget .info > p {
-    display: inline-block;
-    padding: 2px 4px;
-    border-radius: 4px;
-}
-
-@media screen and (max-width: 1200px), (max-height: 695px) {
-    .dashboard #profilewidget {
-        padding: 4px;
-        display: grid;
-        grid-gap: 4px;
-        grid-template-rows:  1fr 1fr 1fr 1fr;
-        grid-template-columns: 2fr 2fr 3fr;
-        grid-template-areas:
-            "picture info profile"
-            "picture info settings"
-            "picture info friends"
-            "portfolio portfolio logout"
-    }
-    .dashboard #profilewidget h3 {
-        font-size: 18pt;
-    }
-    .dashboard #profilewidget p {
-        font-size: 14pt;
-    }
-    .dashboard #profilewidget a.button {
-        font-size: 70%;
-    }
-}
-
-@media screen and (max-width: 1060px), (max-height: 420px) {
-    .dashboard #profilewidget {
-        padding: 2px;
-        display: grid;
-        grid-gap: 4px;
-        grid-template-rows:  1fr 1fr 1fr 1fr;
-        grid-template-columns: 2fr 3fr 3fr;
-        grid-template-areas:
-            "picture info profile"
-            "picture info settings"
-            "picture info friends"
-            "portfolio portfolio logout"
-    }
-    .dashboard #profilewidget a.button {
-        padding: 0;
-    }
+.dashboard #profilewidget .info {
+    margin-bottom: 16px;
 }
