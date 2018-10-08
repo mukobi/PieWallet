@@ -20,6 +20,7 @@
 #exchange-widget .button-bar > div {
     position: relative;
     width: 100%;
+    cursor: pointer;
 }
 #exchange-widget .button-bar > div:nth-child(2) {
     margin-top: 48px;
@@ -55,10 +56,11 @@
 
 #exchange-widget .content-area {
     position: absolute;
-    top: 60px;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    top: -16px;
+    left: 12%;
+    right: -16px;
+    bottom: -16px;
+    overflow: hidden;
 }
 #exchange-widget .content-area .tab {
     height: 100%;
