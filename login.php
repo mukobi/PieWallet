@@ -33,7 +33,7 @@ echo '<?xml version="1.0" encoding="utf-8"?>' ?>
         </div>
         <script src="js/moving-floor.js"></script>
         <div class="login-box">
-            <img src="images/piewallet-long-logo.png" alt="Piewallet">
+            <img src="images/navigation/piewallet-long-logo.png" alt="Piewallet">
             <div>
             <script async src="https://telegram.org/js/telegram-widget.js?4" data-telegram-login="<?php echo TG_BOT_NAME ?>" data-size="large" data-auth-url="./server/processLogin.php" data-request-access="write"></script>
             </div>
