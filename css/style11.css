@@ -125,7 +125,6 @@ html {
 #coin-widget-container {grid-area: coin-widgets;}
 #navigation-menu {grid-area: navigation;}
 #transactions {grid-area: transactions;}
-#shapeshift {grid-area: shapeshift;}
 #trading-graph {grid-area: graph;}
 #profilewidget {grid-area: profile;}
 

@@ -1,15 +1,3 @@
-.dashboard #profilewidget .picture {grid-area: picture;}
-.dashboard #profilewidget .info {grid-area: info;}
-.dashboard #profilewidget .portfolio {grid-area: portfolio;}
-.dashboard #profilewidget .profile {grid-area: profile;}
-.dashboard #profilewidget .settings {grid-area: settings;}
-.dashboard #profilewidget .add-friends {grid-area: friends;}
-.dashboard #profilewidget .logout {grid-area: logout;}
-
-
-.dashboard #profilewidget {
-    
-}
 .dashboard #profilewidget a {
     padding: 16px;
     display: flex;
