@@ -1,31 +1,6 @@
 <div id="transactions" class="dashbox genbox balancebox">
     <h3>Transaction History</h3>
-    </br>
-    <div id="balance-content">
-        <?php
-        if ( !mysqli_connect_errno() && isset($_SESSION['ud_login'])){
-
-        $email = $_SESSION['ud_login']['email'] ;
-        $stmt = " SELECT label from ls_users where email LIKE '".$email."'; " ;
-        $result = $conn->query($stmt);
-        if ( $result->num_rows > 0 ) {
-            $row = $result->fetch_assoc();
-            echo '<img src="images/litecoin.svg"> ';
-            ?>
-            <span id="amount-lite-coin">0 LTC</span>
-            <?php	echo '  /  <img src="images/bitcoin.png"> '; ?>
-                <span id="amount-bit-coin">0 BTC</span>
-                <?php	
-        }
-            else {
-                echo "Please login to see your balance";
-            }
-        }
-        else {
-            echo "Please login to see your balance";
-        }
-        ?>
-    </div>
+    <br>
     <div class="placeholder-history">
         <ul class="balancetable">
             <li>

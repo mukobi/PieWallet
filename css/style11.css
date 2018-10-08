@@ -185,6 +185,9 @@ html {
 	align-items: stretch;
 	margin: -16px 0;
 }
+#navigation-menu.no-shadow {
+	box-shadow: none;
+}
 
 #navigation-menu p {
 	color: #AFBFEE;

@@ -12,9 +12,9 @@
 	right: 16px;
 	bottom: 16px;
 	left: 0;
-	grid-gap: 16px;
+	grid-gap: 0;
 	grid-template-rows: 1fr;
-	grid-template-columns: 160px 1fr;
+	grid-template-columns: 12% 1fr;
 	grid-template-areas: 
 		"navigation exchange";
 }
