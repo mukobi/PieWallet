@@ -1,33 +1,45 @@
 #main-container.account #account-widget  {
     padding: 16px;
-    display: grid;
-    grid-gap: 16px;
-    grid-template-rows:  1fr 70vh;
-    grid-template-columns: 2fr 7fr 3fr;
-    grid-template-areas:
-        "picture info info"
-        "buttons search notifications"
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
 }
 
-#main-container.account #account-widget .picture {
+#main-container.account #account-widget .profile-info {
+    background: linear-gradient(to right, #3C4564, #8998C5);
+    display: grid;
+    grid-template-rows: 160px 90px;
+    grid-template-columns: 200px 300px;
+    grid-gap: 8px;
+    grid-template-areas: 
+        "picture info"
+        "balance telegram";
+}
+
+#main-container.account #account-widget .profile-info .picture {
     grid-area: picture;
-    background-image: url(../images/users/genericprofile.png);
-    background-repeat: no-repeat;
-    background-position: center; /* Center the image */
-    background-size: contain;
+}
+#main-container.account #account-widget .profile-info .picture img {
     height: 100%;
-    width: 100%;
+    border-radius: 100%;
 }
 
 #main-container.account #account-widget .profile-info {
     grid-area: info;
 }
+#main-container.account #account-widget .profile-info #account-info .follow-count-section {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+#main-container.account #account-widget .profile-info #account-info p {
+    text-align: center;
+}
 #main-container.account #account-widget .profile-info a {
     display: inline-block;
-    padding: 4px;
     border-radius: 4px;
     margin-top: 4px;
-    font-size: 20pt;
 }
 
 #main-container.account #account-widget .profile-info .follow-count {
@@ -36,59 +48,8 @@
     border-radius: 4px;
     margin-top: 4px;
 }
-#main-container.account #account-widget .buttons {
-    grid-area: buttons;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    height: 100%;
-}
 #main-container.account #account-widget .buttons a {    
     font-size: 26px;
-}
-
-#main-container.account #account-widget .buttons > div > a:first-child {
-    margin-bottom: 16px;
-}
-
-#main-container.account #account-widget .search {
-    grid-area: search;
-    height: 100%;
-    width: 100%;
-    position: relative;
-}
-#main-container.account #account-widget .search form {
-    background: linear-gradient(to left, #704ac7, #005ba1);
-    background: linear-gradient(to left, var(--color1), var(--color2));
-    width: 100%;
-    height: 60px;
-    padding: 4px 8px 8px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    display: flex;
-    align-content: center;
-    justify-content: left;
-}
-#main-container.account #account-widget .search form h3 {
-    margin-right: 16px;
-    line-height: 40px;
-    height: auto;
-}
-#main-container.account #account-widget .search form input.form-control {
-    border: 3px solid rgba(255,255,255,0.5);
-    border-radius: 8px;
-    background: white;
-    padding: 8px;
-    display: inline-block;
-    margin-right: 16px;
-    color: black;
-    width: 40%;
-}
-#main-container.account #account-widget .notifications {
-    grid-area: notifications;
-    height: 100%;
-    width: 100%;
+    display: block;
+    background: grey;
 }
