@@ -7,7 +7,11 @@
 }
 
 #main-container.account #account-widget .profile-info {
-    background: linear-gradient(to right, #3C4564, #8998C5);
+    border-radius: 24px;
+    position: relative;
+    padding: 16px;
+    grid-area: info;
+    background-image: linear-gradient(264.1388532704982deg, rgba(60, 69, 100, 1) 0%, rgba(137, 152, 197, 1) 100%);
     display: grid;
     grid-template-rows: 160px 90px;
     grid-template-columns: 200px 300px;
@@ -15,6 +19,35 @@
     grid-template-areas: 
         "picture info"
         "balance telegram";
+    box-shadow: 0px 35px 36px 0px rgba(0, 0, 0, 0.2);
+    margin-bottom: 45px;
+}
+#main-container.account #account-widget .profile-info::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background-image: linear-gradient(264.1388532704982deg, rgba(75, 85, 119, 1) 0%, rgba(122, 138, 183, 1) 100%);
+    border-radius: 24px;
+    bottom: -12px;
+    left: 24px;
+    right: 24px;
+    top: 24px;
+}
+#main-container.account #account-widget .profile-info::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background-image: linear-gradient(264.1388532704982deg, rgba(75, 85, 119, 1) 0%, rgba(122, 138, 183, 1) 100%);
+    border-radius: 24px;
+    bottom: -24px;
+    left: 48px;
+    right: 48px;
+    top: 48px;
+}
+
+#main-container.account #account-widget .profile-info {
+    font-weight: bold;
+    text-align: center;
 }
 
 #main-container.account #account-widget .profile-info .picture {
@@ -23,15 +56,18 @@
 #main-container.account #account-widget .profile-info .picture img {
     height: 100%;
     border-radius: 100%;
+    box-shadow: 0 0 30px 0 #FF83D2;
 }
-
-#main-container.account #account-widget .profile-info {
-    grid-area: info;
+#main-container.account #account-widget .profile-info #account-info {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
 }
 #main-container.account #account-widget .profile-info #account-info .follow-count-section {
     display: flex;
     flex-wrap: nowrap;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 #main-container.account #account-widget .profile-info #account-info p {
     text-align: center;
@@ -48,8 +84,36 @@
     border-radius: 4px;
     margin-top: 4px;
 }
+
+#balance, #telegram {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+#balance img, #telegram img {
+    width: 28px;
+    margin-right: 8px;
+}
+#balance span {
+    color: #CFFF9E;
+}
+#telegram span a {
+    color: #89FFF2;
+}
+
 #main-container.account #account-widget .buttons a {    
     font-size: 26px;
-    display: block;
-    background: grey;
+    background: linear-gradient(to left, #3C4564, #8998C5);
+    width: 540px;
+    margin-bottom: 24px;
+    padding: 0 16px;
+    box-shadow: 0px 35px 36px 0px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: left;
+    align-content: flex-end;
+    line-height: 80px;
+}
+#main-container.account #account-widget .buttons a img {
+    height: 80px;
 }

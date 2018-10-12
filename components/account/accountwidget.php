@@ -19,18 +19,24 @@
             </div>
         </div>
         <div id="balance">
-            Balance:<br>
-            $864.253
+            <div>
+                <img src="images/icons/balance.svg" />Balance:
+            </div>
+            <span>$864.253</span>
         </div>
         <div id="telegram">
-            Telegram:<br>
+            <div>
+                <img src="images/icons/telegram.svg" />Telegram:
+            </div>
+            <span>
             <?php echo ($tg_username ? "<a href='https://t.me/" . $tg_username . "' class='link-element username'>@" . $tg_username ."</a>" : "") ?>
+            </span>
         </div>
     </div>
     <div class="buttons">
-        <a href="#" class="button">Wallets</a>
-        <a href="#" class="button">Settings</a>
-        <a href="#" class="button">Friends</a>
+        <a href="#" class="button"><img src="images/icons/wallets.svg" />View Wallets</a>
+        <a href="#" class="button"><img src="images/icons/settings.svg" />Settings</a>
+        <a href="#" class="button"><img src="images/icons/friends.svg" />Friends</a>
     </div>
     <?php include("components/popup-window.php"); ?>
 </div>

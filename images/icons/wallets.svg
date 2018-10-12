@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 66.358 65.503">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-2 {
+        filter: url(#Path_33);
+      }
+
+      .cls-3 {
+        filter: url(#Path_32);
+      }
+
+      .cls-4 {
+        filter: url(#Path_31);
+      }
+
+      .cls-5 {
+        filter: url(#Path_30);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#89fff2"/>
+      <stop offset="1" stop-color="#89b0ff"/>
+    </linearGradient>
+    <filter id="Path_30" x="3.826" y="0" width="54.68" height="48.903" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="7.5" result="blur"/>
+      <feFlood flood-color="#89b0ff"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Path_31" x="7.723" y="1.646" width="54.956" height="47.257" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="7.5" result="blur-2"/>
+      <feFlood flood-color="#89b0ff"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Path_32" x="0" y="4.742" width="65.125" height="60.76" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="7.5" result="blur-3"/>
+      <feFlood flood-color="#89b0ff"/>
+      <feComposite operator="in" in2="blur-3"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Path_33" x="11.81" y="10.048" width="54.548" height="50.068" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="7.5" result="blur-4"/>
+      <feFlood flood-color="#89b0ff"/>
+      <feComposite operator="in" in2="blur-4"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="wallet-filled-money-tool" transform="translate(22.5 4.66)">
+    <g id="Group_40" data-name="Group 40" transform="translate(0 17.84)">
+      <g class="cls-5" transform="matrix(1, 0, 0, 1, -22.5, -22.5)">
+        <path id="Path_30-2" data-name="Path 30" class="cls-1" d="M160.666,21.743l8.515-2.324-.451-.911a1.2,1.2,0,0,0-1.607-.542L159.5,21.743Z" transform="translate(-133.17 4.66)"/>
+      </g>
+      <g class="cls-4" transform="matrix(1, 0, 0, 1, -22.5, -22.5)">
+        <path id="Path_31-2" data-name="Path 31" class="cls-1" d="M330.426,86.46a1.2,1.2,0,0,0-.317.043l-2,.547L322,88.717h9.956l-.374-1.372A1.2,1.2,0,0,0,330.426,86.46Z" transform="translate(-291.78 -62.31)"/>
+      </g>
+      <g class="cls-3" transform="matrix(1, 0, 0, 1, -22.5, -22.5)">
+        <path id="Path_32-2" data-name="Path 32" class="cls-1" d="M18.929,215.56H1.2a1.2,1.2,0,0,0-1.158.885,1.241,1.241,0,0,0-.043.314v13.362a1.2,1.2,0,0,0,1.2,1.2H18.926a1.2,1.2,0,0,0,1.2-1.2v-3.346H13.009a2.04,2.04,0,0,1-2.039-2.039v-2.667a2.036,2.036,0,0,1,2.036-2.036h7.119v-3.274A1.2,1.2,0,0,0,18.929,215.56Z" transform="translate(22.5 -188.32)"/>
+      </g>
+      <g class="cls-2" transform="matrix(1, 0, 0, 1, -22.5, -22.5)">
+        <path id="Path_33-2" data-name="Path 33" class="cls-1" d="M501.557,437.075a1.2,1.2,0,0,0-.42-.249,1.222,1.222,0,0,0-.389-.065H493.6a1.2,1.2,0,0,0-1.2,1.2v2.669a1.2,1.2,0,0,0,1.2,1.2h7.15a1.222,1.222,0,0,0,.389-.065,1.163,1.163,0,0,0,.42-.249,1.2,1.2,0,0,0,.391-.885V437.96A1.2,1.2,0,0,0,501.557,437.075Zm-5.454,2.458a.6.6,0,0,1-.6.6h-.4a.6.6,0,0,1-.6-.6v-.4a.588.588,0,0,1,.23-.47.606.606,0,0,1,.369-.129h.4a.6.6,0,0,1,.6.6v.4Z" transform="translate(-458.09 -404.21)"/>
+      </g>
+    </g>
+  </g>
+</svg>
