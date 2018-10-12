@@ -120,35 +120,13 @@ html {
 ::-webkit-resizer { background-color: #666;}
 
 
-/* grid layout */
-#coin-widget-container {grid-area: coin-widgets;}
-#navigation-menu {grid-area: navigation;}
-#transactions {grid-area: transactions;}
-#trading-graph {grid-area: graph;}
-#profilewidget {grid-area: profile;}
 
-#main-container.dashboard {
-	z-index: 1;
-	display: grid;
-	position: absolute;
-	top: 16px;
-	right: 16px;
-	bottom: 16px;
-	left: 0;
-	grid-gap: 32px;
-	grid-template-rows: 25% 1fr;
-	grid-template-columns: 12% 25% 1fr;
-	grid-template-areas: 
-		"navigation profile coin-widgets"
-		"navigation transactions graph";
-}
 
 [id=fixedheading] {
 	display: none;
 }
 
 #main-container .dashbox {
-	/* background-color: white; */
 	color: white;
 	display: flex;
 	flex-direction: column;
@@ -183,6 +161,7 @@ html {
 	justify-content: center;
 	align-items: stretch;
 	margin: -16px 0;
+	transition: all 250ms;
 }
 #navigation-menu.no-shadow {
 	box-shadow: none;
@@ -383,76 +362,44 @@ html {
 /**** Mobile Design ****/
 
 @media screen and (max-width: 800px) {
-	/* header */
-	#header-mobile {
-		display: block;
-		margin: 0;
-		padding: 8px 0;
-	}
-	#header-mobile a {
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
-		align-items: center;
-		text-decoration: none;
-	}
-	#header-mobile .headlogo.mobile {
-		height: 50px;
-		display: block;
-		margin: 0;
-		padding: 0;
-	}
 	/* navigation */
 	#navigation-menu {
 		position: fixed;
 		bottom: 0;
-		left: 0;
-		right: 0;
-		height: 60px;
+		left: -100%;
+		top: 0;
 		align-items: center;
 		margin: 0;
-		flex-direction: row;
-		justify-content: space-between;
 	}
 	#navigation-menu .navicon {
-		height: 60px;
 		width: 100%;
-		margin: 0;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		transition: none;
-	}
-	#navigation-menu .navicon.headlogodiv, #navigation-menu .navicon.empty {
-		display: none;
 	}
 	#navigation-menu .navicon.login-logout {
-		margin: 0;
+		width: 60%;
 	}
-	#navigation-menu div.navicon.active {
-		background-color:  initial;
+	#navigation-menu a {
+		justify-content: center;
+		align-items: center;
+		flex-direction: row;
+		width: 100%;
 	}
-	#navigation-menu div.navicon .imgleft {
-		width: 17vw;
-		max-width: 50px;
-	}
-	#navigation-menu div.navicon p {
-		display: none;
+	#navigation-menu .navicon img {
+		margin-right: 16px;
 	}
 
 	/* general layout */
 	#main-container.content-main {
 		display: flex;
 		flex-direction: column;
-		justify-content: space-between;
-		top: 0;
+		justify-content: space-around;
+		top: 100px;
 		left: 0;
-		bottom: 60px;
+		bottom: 0;
 		right: 0;
 	}
 
 	#coin-widget-container {
-		height: 40%;
+		height: 50%;
 		display: block;
 		padding: 15px 0;
 	}
@@ -476,7 +423,7 @@ html {
 		overflow-y: scroll;
 	}
 
-	#main-container.dashboard #profilewidget, #main-container.dashboard #shapeshift, #main-container.dashboard #trading-graph {
+	#main-container.dashboard #transactions, #main-container.dashboard #trading-graph {
 		display: none;
 	}
 }

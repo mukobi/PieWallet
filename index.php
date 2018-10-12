@@ -14,6 +14,7 @@ echo '<?xml version="1.0" encoding="utf-8"?>' ?>
 	<head>
 		<title>Dashboard - PayPeer.io</title>
 		<link rel="stylesheet" href="https://changelly.com/widget.css">
+		<link rel="stylesheet" href="/css/dashboard.css">
 		<link rel="stylesheet" href="/css/style11.css">
 		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,11 +24,13 @@ echo '<?xml version="1.0" encoding="utf-8"?>' ?>
 	</head>
 	<body>
 		<div id="main-container" class="content-main dashboard">
-			<?php include_once("components/navigation.php"); ?>
-			<?php include_once("components/dashboard/coinwidgets.php"); ?>
-			<?php include_once("components/dashboard/transactions.php"); ?>
-			<?php include_once("components/dashboard/profilewidget.php"); ?>
-			<?php include_once("components/dashboard/graph.php"); ?>
+			<?php 
+				include_once("components/dashboard/transactions.php");
+				include_once("components/dashboard/profilewidget.php");
+				include_once("components/dashboard/coinwidgets.php");
+				include_once("components/dashboard/graph.php");
+				include_once("components/navigation.php");
+			?>
 		</div>
 	</body>
 </html>

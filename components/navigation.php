@@ -1,3 +1,4 @@
+<?php include_once("components/mobile-nav-toggle.php"); ?>
 <div id="navigation-menu" class="genbox">
     <script defer src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/TweenMax-latest-beta.js"></script>
     <script defer src="js/gradient-color-change.js"></script>

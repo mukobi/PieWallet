@@ -1,0 +1,78 @@
+.mobiletoggle {
+    display: none;
+    z-index: 10;
+}
+
+#sidebartoggler {
+    display: none;
+}
+
+@media screen and (max-width: 800px) {
+    .mobiletoggle {
+        display: block;
+        width: 80px;
+        padding: 20px;
+        cursor: pointer;
+        text-decoration: none;
+        position: fixed;
+        top: 16px;
+        left: 16px;
+    }
+
+    .mobiletoggle .buns {
+        position: relative;
+        height: 40px;
+        width: 40px;
+    }
+
+    .mobiletoggle span {
+        background-color: #f0f0f0;
+        height: 5px;
+        width: 40px;
+        display: block;
+        position: absolute;
+        -webkit-transition: 300ms all;
+        transition: 300ms all;
+    }
+
+    .mobiletoggle span.s1 {
+        top: 5px;
+    }
+
+    .mobiletoggle span.s2 {
+        top: 17.5px;
+    }
+
+    .mobiletoggle span.s3 {
+        bottom: 5px;
+        margin-bottom: 0;
+    }
+
+    /*transition menu icon to x*/
+    #sidebartoggler:checked+.mobiletoggle .s1 {
+        top: 17.5px;
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+
+    #sidebartoggler:checked+.mobiletoggle .s2 {
+        width: 0;
+    }
+
+    #sidebartoggler:checked+.mobiletoggle .s3 {
+        -webkit-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+        bottom: 17.5px;
+    }
+
+    #sidebartoggler:checked~#navigation-menu {
+        left: 0;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    #navigation-menu h1 {
+        width: 220px;
+    }
+}

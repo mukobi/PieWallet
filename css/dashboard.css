@@ -1,0 +1,26 @@
+/* grid layout */
+#coin-widget-container {grid-area: coin-widgets;}
+#navigation-menu {grid-area: navigation;}
+#transactions {grid-area: transactions;}
+#trading-graph {grid-area: graph;}
+#profilewidget {grid-area: profile;}
+
+#main-container.dashboard {
+	z-index: 1;
+	display: grid;
+	position: absolute;
+	top: 16px;
+	right: 16px;
+	bottom: 16px;
+	left: 0;
+	grid-gap: 32px;
+	grid-template-rows: 25% 1fr;
+	grid-template-columns: 12% 25% 1fr;
+	grid-template-areas: 
+		"navigation profile coin-widgets"
+		"navigation transactions graph";
+}
+
+#main-container #profilewidget {
+    justify-content: flex-start;
+}
