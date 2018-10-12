@@ -27,6 +27,7 @@ echo '<?xml version="1.0" encoding="utf-8"?>' ?>
 			<?php 
 				include_once("components/dashboard/transactions.php");
 				include_once("components/dashboard/profilewidget.php");
+				include_once("components/dashboard/sendreceive.php");
 				include_once("components/dashboard/coinwidgets.php");
 				include_once("components/dashboard/graph.php");
 				include_once("components/navigation.php");
