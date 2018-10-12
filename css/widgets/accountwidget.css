@@ -1,4 +1,4 @@
-#main-container.account #account-widget  {
+#main-container.account #account-widget {
     padding: 16px;
     display: flex;
     justify-content: center;
@@ -16,12 +16,13 @@
     grid-template-rows: 160px 90px;
     grid-template-columns: 200px 300px;
     grid-gap: 8px;
-    grid-template-areas: 
+    grid-template-areas:
         "picture info"
         "balance telegram";
     box-shadow: 0px 35px 36px 0px rgba(0, 0, 0, 0.2);
     margin-bottom: 45px;
 }
+
 #main-container.account #account-widget .profile-info::after {
     content: "";
     position: absolute;
@@ -33,6 +34,7 @@
     right: 24px;
     top: 24px;
 }
+
 #main-container.account #account-widget .profile-info::before {
     content: "";
     position: absolute;
@@ -53,25 +55,30 @@
 #main-container.account #account-widget .profile-info .picture {
     grid-area: picture;
 }
+
 #main-container.account #account-widget .profile-info .picture img {
     height: 100%;
     border-radius: 100%;
     box-shadow: 0 0 30px 0 #FF83D2;
 }
+
 #main-container.account #account-widget .profile-info #account-info {
     display: flex;
     justify-content: center;
     align-content: center;
     flex-direction: column;
 }
+
 #main-container.account #account-widget .profile-info #account-info .follow-count-section {
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-around;
 }
+
 #main-container.account #account-widget .profile-info #account-info p {
     text-align: center;
 }
+
 #main-container.account #account-widget .profile-info a {
     display: inline-block;
     border-radius: 4px;
@@ -85,24 +92,30 @@
     margin-top: 4px;
 }
 
-#balance, #telegram {
+
+#balance,
+#telegram {
     display: flex;
     justify-content: center;
     align-content: center;
     flex-direction: column;
 }
-#balance img, #telegram img {
+
+#balance img,
+#telegram img {
     width: 28px;
     margin-right: 8px;
 }
+
 #balance span {
     color: #CFFF9E;
 }
+
 #telegram span a {
     color: #89FFF2;
 }
 
-#main-container.account #account-widget .buttons a {    
+#main-container.account #account-widget .buttons a {
     font-size: 26px;
     background: linear-gradient(to left, #3C4564, #8998C5);
     width: 540px;
@@ -114,6 +127,36 @@
     align-content: flex-end;
     line-height: 80px;
 }
+
 #main-container.account #account-widget .buttons a img {
     height: 80px;
+}
+
+
+@media screen and (max-width: 600px) {
+    #main-container.account #account-widget .profile-info {
+        width: 100%;
+        grid-template-rows: 80px 80px;
+        grid-template-columns: 40% 60%;
+    }
+
+    #main-container.account #account-widget .buttons {
+        width: 100%;
+    }
+
+    #main-container.account #account-widget .buttons a {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    h4 {
+        font-size: 14pt;
+    }
+    p, * {
+        font-size: 12pt;
+    }
+    a {
+        font-size: 14pt;
+    }
 }

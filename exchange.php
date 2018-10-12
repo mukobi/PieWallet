@@ -18,8 +18,8 @@ echo '<?xml version="1.0" encoding="utf-8"?>' ?>
 
 	<body>
 		<div id="main-container" class="content-main exchange">
-			<?php include_once("components/navigation.php"); ?>
 			<?php include_once("components/exchange/exchangewidget.php"); ?>
+			<?php include_once("components/navigation.php"); ?>
 		</div>
 	</body>
 </html>

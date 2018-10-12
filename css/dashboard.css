@@ -1,9 +1,3 @@
-/* grid layout */
-#coin-widget-container {grid-area: coin-widgets;}
-#navigation-menu {grid-area: navigation;}
-#transactions {grid-area: transactions;}
-#trading-graph {grid-area: graph;}
-#profilewidget {grid-area: profile;}
 
 #main-container.dashboard {
 	z-index: 1;

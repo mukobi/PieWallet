@@ -119,7 +119,12 @@ html {
 ::-webkit-scrollbar-corner { background-color: #061082;}
 ::-webkit-resizer { background-color: #666;}
 
-
+/* grid layout */
+#coin-widget-container {grid-area: coin-widgets;}
+#navigation-menu {grid-area: navigation;}
+#transactions {grid-area: transactions;}
+#trading-graph {grid-area: graph;}
+#profilewidget {grid-area: profile;}
 
 
 [id=fixedheading] {
@@ -162,6 +167,7 @@ html {
 	align-items: stretch;
 	margin: -16px 0;
 	transition: all 250ms;
+	z-index: 4;
 }
 #navigation-menu.no-shadow {
 	box-shadow: none;
