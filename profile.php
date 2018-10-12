@@ -47,8 +47,10 @@ echo '<?xml version="1.0" encoding="utf-8"?>' ?>
 
 	<body>
 		<div id="main-container" class="content-main profile">
-			<?php include_once("components/navigation.php"); ?>
-			<?php include_once("components/account/singleprofilewidget.php"); ?>
+            <?php 
+                include_once("components/navigation.php");
+			    include_once("components/account/singleprofilewidget.php");
+            ?>
 		</div>
 	</body>
 </html>

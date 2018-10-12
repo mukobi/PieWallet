@@ -38,5 +38,5 @@
         <a href="#" class="button"><img src="images/icons/settings.svg" />Settings</a>
         <a href="#" class="button"><img src="images/icons/friends.svg" />Friends</a>
     </div>
-    <?php include("components/popup-window.php"); ?>
+    <script src="../../js/followFunctions.js"></script>	
 </div>

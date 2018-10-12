@@ -19,9 +19,12 @@ echo '<?xml version="1.0" encoding="utf-8"?>' ?>
 
 	<body>
 		<div id="main-container" class="content-main account">
-			<?php include_once("components/header-mobile.php"); ?>
-			<?php include_once("components/navigation.php"); ?>
-			<?php include_once("components/account/accountwidget.php"); ?>
+			<?php 
+				include_once("components/header-mobile.php");
+			 	include_once("components/navigation.php");
+				include_once("components/account/accountwidget.php");
+                include_once("components/popup-window.php"); 
+			?>
 		</div>
 	</body>
 </html>
