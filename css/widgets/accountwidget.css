@@ -82,7 +82,6 @@
 #main-container.account #account-widget .profile-info a {
     display: inline-block;
     border-radius: 4px;
-    margin-top: 4px;
 }
 
 #main-container.account #account-widget .profile-info .follow-count {
@@ -103,7 +102,7 @@
 
 #balance img,
 #telegram img {
-    width: 28px;
+    height: 24px;
     margin-right: 8px;
 }
 
@@ -113,6 +112,7 @@
 
 #telegram span a {
     color: #89FFF2;
+    margin: 0;
 }
 
 #main-container.account #account-widget .buttons a {
@@ -150,13 +150,27 @@
 }
 
 @media screen and (max-width: 400px) {
+    #main-container.account #account-widget .profile-info {
+        grid-gap: 2px;
+    }
+    #balance img,
+    #telegram img {
+        height: 16px;
+        margin-right: 2px;
+    }
     h4 {
         font-size: 14pt;
     }
-    p, * {
+    p, .telegram a, * {
         font-size: 12pt;
     }
-    a {
-        font-size: 14pt;
+}
+
+@media screen and (max-height: 630px) {
+    #main-container.account #account-widget .profile-info {
+        margin-bottom: 8px;
+    }
+    #main-container.account #account-widget .buttons a {
+        margin-bottom: 8px;
     }
 }
