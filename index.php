@@ -19,8 +19,6 @@ echo '<?xml version="1.0" encoding="utf-8"?>' ?>
 		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
-		<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-		<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 	</head>
 	<body>
 		<div id="main-container" class="content-main dashboard">
