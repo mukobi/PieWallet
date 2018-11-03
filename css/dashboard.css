@@ -18,3 +18,59 @@
 #main-container #profilewidget {
     justify-content: flex-start;
 }
+
+/* mobile coins */
+#mobile-coins-container {
+	display: none;
+}
+@media screen and (max-width: 800px) {
+	#mobile-coins-container {
+		display: block;
+	}
+}
+
+#mobile-coins-container > div {
+	background: linear-gradient(to left, #3C4564, #6B78A0);
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: center;
+	padding: 12px;
+	margin: 20px;
+	border-radius: 16px;
+	box-shadow: 0 35px 36px rgba(0,0,0,0.2);
+	cursor: pointer;
+}
+#mobile-coins-container .icon {
+	width: 40px;
+	height: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 10px;
+}
+#mobile-coins-container .icon img {
+	height: 32px;
+}
+#mobile-coins-container #widget-bitcoin .icon {
+	background: linear-gradient(to bottom left, #8EDEFC, #56ACFF);
+}
+#mobile-coins-container #widget-ethereum .icon {
+	background: linear-gradient(to bottom left, #FFB3B3, #FF80B7);
+}
+#mobile-coins-container #widget-litecoin .icon {
+	background: linear-gradient(to bottom left, #FFFF98, #FFA2D4);
+}
+
+#mobile-coins-container .coin-widget div p:first-child {
+	font-size: 13pt;
+	color: white;
+}
+#mobile-coins-container .coin-widget div p:nth-child(2) {
+	font-size: 10pt;
+	color: #AFBFEE;
+}
+#mobile-coins-container .coin-widget > div.growth p {
+	color: #B7FFAC;
+}
