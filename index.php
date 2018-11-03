@@ -30,6 +30,7 @@ echo '<?xml version="1.0" encoding="utf-8"?>' ?>
 				include_once("components/dashboard/mobilecoins.php");
 				include_once("components/dashboard/graph.php");
 				include_once("components/navigation.php");
+				include_once("components/popup-window.php");
 			?>
 		</div>
 	</body>

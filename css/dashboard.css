@@ -37,7 +37,7 @@
 	justify-content: space-between;
 	align-items: center;
 	padding: 12px;
-	margin: 20px;
+	margin: 20px 30px;
 	border-radius: 16px;
 	box-shadow: 0 35px 36px rgba(0,0,0,0.2);
 	cursor: pointer;
@@ -51,7 +51,7 @@
 	border-radius: 10px;
 }
 #mobile-coins-container .icon img {
-	height: 32px;
+	height: 21px;
 }
 #mobile-coins-container #widget-bitcoin .icon {
 	background: linear-gradient(to bottom left, #8EDEFC, #56ACFF);
