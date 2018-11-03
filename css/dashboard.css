@@ -1,5 +1,5 @@
 
-#main-container.dashboard {
+.content-main.dashboard {
 	z-index: 1;
 	display: grid;
 	position: absolute;
@@ -14,6 +14,15 @@
 		"navigation profile coin-widgets"
 		"navigation transactions graph";
 }
+@media screen and (max-width: 800px) {
+	#main-container.dashboard {
+		justify-content: center;
+	}
+	#main-container #profilewidget {
+		margin-bottom: 5vh;
+	}
+}
+
 
 #main-container #profilewidget {
     justify-content: flex-start;

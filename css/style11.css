@@ -207,9 +207,6 @@ html {
 	margin-bottom: 4px;
 }
 @media screen and (max-height: 840px) {
-	#navigation-menu p {	
-		font-size: 20pt;
-	}
 	#navigation-menu .navicon .imgleft {
 		width: 48px;
 	}

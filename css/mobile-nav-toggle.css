@@ -10,7 +10,6 @@
 @media screen and (max-width: 800px) {
     .mobiletoggle {
         display: block;
-        width: 80px;
         padding: 20px;
         cursor: pointer;
         text-decoration: none;
@@ -74,5 +73,21 @@
 @media screen and (max-width: 350px) {
     #navigation-menu h1 {
         width: 220px;
+    }
+}
+
+
+@media screen and (max-height: 800px) {
+    .mobiletoggle {
+        top: 12px;
+        left: 12px;
+        padding: 12px;
+    }
+}
+@media screen and (max-height: 600px) {
+    .mobiletoggle {
+        top: 8px;
+        left: 8px;
+        padding: 8px;
     }
 }

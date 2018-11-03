@@ -63,6 +63,14 @@
     height: 100%;
     width: 100%;
 }
+@media screen and (max-width: 1200px) {
+    #exchange-widget .button-bar img {
+        height: 50px;
+    }
+    #exchange-widget .button-bar p {
+        font-size: 12px;
+    }
+}
 
 @media screen and (max-width: 800px) {
     #exchange-widget {
@@ -129,3 +137,9 @@
         font-size: 12pt;
     }
 }
+
+@media screen and (max-height: 750px) {
+    #exchange-widget .button-bar img {
+        height: 32px;
+    }
+} 
