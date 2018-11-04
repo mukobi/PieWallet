@@ -1,7 +1,7 @@
 <?php
 
-include_once('components/loginToDb.php');
-include_once('components/handleTgLogin.php');
+include_once('../../server/components/loginToDb.php');
+include_once('../../server/components/handleTgLogin.php');
 
 if(isset($_GET['coin'])) { 
 	if($_GET['coin'] == 'btc'){
@@ -31,18 +31,19 @@ else {
 }
 ?>
 
-<div id="coin-widget-container" class="wallet-view">
-    <div id="widget-<?php echo $walletType;?>" class="coin-widget">
-        <div class="ticker-main dashbox">
-            <p class="title">1.3122314 <?php echo $coinAbbreviation;?></p>
-            <p>$8635.64</p>
-            <img src="images/coins/<?php echo $walletType;?>-trans.png" />
-        </div>
-        <div class="buttons">
-            <a onClick="popupSendReceive(<?php echo $popupCode;?>,'send')"><img src="images/icons/send.png" />Send</a>
-            <a onClick="popupSendReceive(<?php echo $popupCode;?>,'receive')"><img src="images/icons/receive.png" />Receive</a>
-        </div>
-    </div>
+<div id="wallet-container" class="wallet-view">
+	<div class="coin-widget widget-<?php echo $walletType;?>">
+		<h2><?php echo $walletTitle;?></h2>
+		<div class="ticker-main dashbox">
+			<p class="title">1.3122314 <?php echo $coinAbbreviation;?></p>
+			<p>$8635.64</p>
+			<img src="images/coins/<?php echo $walletType;?>-trans.png" />
+		</div>
+		<div class="buttons">
+			<a onClick="popupSendReceive(<?php echo $popupCode;?>,'send')"><img src="images/icons/send.png" />Send</a>
+			<a onClick="popupSendReceive(<?php echo $popupCode;?>,'receive')"><img src="images/icons/receive.png" />Receive</a>
+		</div>
+	</div>
     <script>
         function popupSendReceive(coin, action) {
             document.getElementById("send-receive-coin-select").selectedIndex = coin;

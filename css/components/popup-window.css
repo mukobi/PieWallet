@@ -4,9 +4,10 @@
     left: 10%;
     right: 10%;
     bottom: 10%;
-    box-shadow: 0 0 16vw 8vw rgba(10,10,10,0.8);
-    background-color: #0c1744;
-    z-index: -100;
+    box-shadow: 0 0 16vw 8vw rgba(0,0,0,0.8);
+    background: linear-gradient(to top left, #3C4564, #7682A9);
+    color: white;
+    z-index: -5;
     opacity: 0;
     transition: opacity 300ms;
 }
@@ -14,7 +15,7 @@
     opacity: 0;
 }
 #popup-window.active {
-    z-index: 100;
+    z-index: 5;
     opacity: 1;
 }
 #popup-window .x-out {
@@ -76,4 +77,18 @@
     border-radius: 50%;
     display: block;
     margin: 0 auto;
+}
+
+@media screen and (max-width: 800px) {
+    #popup-window {
+        top: 16px;
+        left: 16px;
+        right: 16px;
+        bottom: 16px;
+        box-shadow: 0 0 16px 6px rgba(0,0,0,0.8);
+    }
+    #popup-window .x-out {
+        right: 12px;
+        top: 12px;
+    }
 }

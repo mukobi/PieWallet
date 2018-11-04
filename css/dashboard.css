@@ -83,3 +83,93 @@
 #mobile-coins-container .coin-widget > div.growth p {
 	color: #B7FFAC;
 }
+
+
+/* wallet */
+#wallet-container {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+}
+#wallet-container .coin-widget {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+}
+
+#coin-widget-container {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+}
+#coin-widget-container .coin-widget {
+	font-size: 20pt;
+	width: 27%;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+}
+#coin-widget-container .coin-widget .ticker-main {
+	flex-grow: 1;
+	padding: 0 8px;
+	position: relative;
+	border: none;
+	box-shadow: 0 3px 6px black;
+	border-radius: 10px;
+	text-shadow: 0 3px 6px black;
+	justify-content: center;
+	overflow: hidden;
+}
+#coin-widget-container .coin-widget:nth-child(1) .ticker-main {
+	background: linear-gradient(to left, #8EDEFC, #56ACFF);
+}
+#coin-widget-container .coin-widget:nth-child(2) .ticker-main {
+	background: linear-gradient(to left, #FFFF98, #FFA2D4);
+}
+#coin-widget-container .coin-widget:nth-child(3) .ticker-main {
+	background: linear-gradient(to left, #FF80B7, #FFB3B3);
+}
+#coin-widget-container .coin-widget .ticker-main img {
+	position: absolute;
+	top: 45%;
+	left: 30%;
+	transform: translate(-50%, -50%);
+	z-index: 0;
+	height: 100%;
+}
+#coin-widget-container .coin-widget .ticker-main p.title {font-size: 20pt;}
+#coin-widget-container .coin-widget .ticker-main p {
+	text-align: center;
+	width: 100%;
+}
+#coin-widget-container .coin-widget .buttons {
+	display: flex;
+	justify-content: space-between;
+}
+#coin-widget-container .coin-widget .buttons a {
+	display: inline-block;
+	margin-top: 8px;
+	color: #AFBFEE;
+	background-color: #3C4564;
+	box-shadow: 0 3px 6px black;
+	text-align: center;
+	padding: 4px 0;
+	width: 40%;
+	font-size: 18px;
+	line-height: 18px;
+	border-radius: 2px;
+	cursor: pointer;
+}
+#coin-widget-container .coin-widget .buttons a img {
+	display: inline-block;
+	height: 18px;
+	margin-right: 2px;
+	position: relative;
+	top: 2px;
+}
