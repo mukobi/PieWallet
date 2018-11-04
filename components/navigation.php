@@ -46,7 +46,7 @@
         </a>
     </div>
     <div class="navicon empty"></div>
-    <div class="navicon login-logout noeffect">
+    <div class="navicon logout noeffect">
         <a href="?logout=1" class="hollow-button">
             <p>Logout</p>
         </a>

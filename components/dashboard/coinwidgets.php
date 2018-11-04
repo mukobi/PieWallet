@@ -1,6 +1,6 @@
 <div id="coin-widget-container">
     <div id="widget-bitcoin" class="coin-widget">
-        <div class="ticker-main dashbox">
+        <div class="ticker-main dashbox" onClick="popupWallet('btc')">
             <p class="title">1.3122314 BTC</p>
             <p>$8635.64</p>
             <img src="images/coins/bitcoin-trans.png" />
@@ -11,7 +11,7 @@
         </div>
     </div>
     <div id="widget-litecoin" class="coin-widget">
-        <div class="ticker-main dashbox">
+        <div class="ticker-main dashbox" onClick="popupWallet('ltc')">
             <p class="title">24.36478 LTC</p>
             <p>$1369.08</p>
             <img src="images/coins/litecoin-trans.png" />
@@ -22,7 +22,7 @@
         </div>
     </div>
     <div id="widget-ethereum" class="coin-widget">
-        <div class="ticker-main dashbox">
+        <div class="ticker-main dashbox" onClick="popupWallet('eth')">
             <p class="title">3.87674 ETH</p>
             <p>$41,345.98</p>
             <img src="images/coins/ethereum-trans.png" />

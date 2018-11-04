@@ -88,7 +88,7 @@
     }
 }
 @media screen and (max-height: 600px) {
-    .mobiletoggle {
+    .exchange .mobiletoggle {
         top: 8px;
         left: 8px;
         padding: 8px;

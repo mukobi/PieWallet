@@ -85,22 +85,12 @@
 }
 
 
-/* wallet */
-#wallet-container {
-	display: flex;
-	flex-direction: column;
-	flex-wrap: nowrap;
-	justify-content: center;
-	align-items: center;
-}
-#wallet-container .coin-widget {
-	display: flex;
-	flex-direction: column;
-	flex-wrap: nowrap;
-	justify-content: center;
-	align-items: center;
-}
 
+
+
+
+
+/* coin widgets */
 #coin-widget-container {
 	display: flex;
 	flex-wrap: nowrap;
@@ -120,11 +110,17 @@
 	padding: 0 8px;
 	position: relative;
 	border: none;
-	box-shadow: 0 3px 6px black;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.8);
 	border-radius: 10px;
 	text-shadow: 0 3px 6px black;
 	justify-content: center;
 	overflow: hidden;
+	cursor: pointer;
+	transition: all 250ms;
+}
+#coin-widget-container .coin-widget .ticker-main:hover {
+	box-shadow: 0 3px 32px 6px rgba(0,0,0,0.5);
+	text-shadow: 0 6px 12px black;
 }
 #coin-widget-container .coin-widget:nth-child(1) .ticker-main {
 	background: linear-gradient(to left, #8EDEFC, #56ACFF);
@@ -157,7 +153,7 @@
 	margin-top: 8px;
 	color: #AFBFEE;
 	background-color: #3C4564;
-	box-shadow: 0 3px 6px black;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.8);
 	text-align: center;
 	padding: 4px 0;
 	width: 40%;
@@ -165,6 +161,11 @@
 	line-height: 18px;
 	border-radius: 2px;
 	cursor: pointer;
+	transition: all 250ms;
+}
+#coin-widget-container .coin-widget .buttons a:hover {
+	box-shadow: 0 3px 24px 6px rgba(0,0,0,0.8);
+	text-shadow: 0 3px 6px black;
 }
 #coin-widget-container .coin-widget .buttons a img {
 	display: inline-block;
@@ -172,4 +173,119 @@
 	margin-right: 2px;
 	position: relative;
 	top: 2px;
+}
+@media screen and (max-width: 1450px) {
+	#coin-widget-container .coin-widget .buttons a img {
+		display: block;
+		margin: 0 auto;
+	}
+	#coin-widget-container .coin-widget .buttons a {
+		font-size: 12px;
+	}
+}
+@media screen and (max-width: 1240px) {
+	#coin-widget-container .coin-widget .ticker-main p.title {font-size: 16pt;}
+}
+@media screen and (max-width: 800px) {
+	#coin-widget-container {
+		display: none;
+	}
+}
+
+
+
+
+
+
+
+/* wallet */
+#wallet-container {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+#wallet-container .coin-widget {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	height: 40%;
+	width: 90%;
+	max-width: 400px;
+}
+#wallet-container .coin-widget .ticker-main {
+	flex-grow: 1;
+	padding: 0 8px;
+	margin: 16px 0;
+	position: relative;
+	border: none;
+	box-shadow: 0 3px 6px black;
+	border-radius: 10px;
+	text-shadow: 0 3px 6px black;
+	justify-content: center;
+	overflow: hidden;
+}
+#wallet-container .coin-widget.widget-bitcoin .ticker-main {
+	background: linear-gradient(to left, #8EDEFC, #56ACFF);
+}
+#wallet-container .coin-widget.widget-litecoin .ticker-main {
+	background: linear-gradient(to left, #FFFF98, #FFA2D4);
+}
+#wallet-container .coin-widget.widget-ethereum .ticker-main {
+	background: linear-gradient(to left, #FF80B7, #FFB3B3);
+}
+#wallet-container .coin-widget .ticker-main p.title {font-size: 20pt;}
+#wallet-container .coin-widget .ticker-main p {
+	text-align: center;
+	width: 100%;
+}
+#wallet-container .coin-widget .ticker-main img {
+	position: absolute;
+	top: 45%;
+	left: 30%;
+	transform: translate(-50%, -50%);
+	z-index: 0;
+	height: 100%;
+}
+
+#wallet-container .coin-widget .buttons {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+#wallet-container .coin-widget .buttons a {
+	display: inline-block;
+	margin-top: 8px;
+	color: #AFBFEE;
+	background-color: #3C4564;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.8);
+	text-align: center;
+	padding: 4px 0;
+	width: 40%;
+	font-size: 18px;
+	line-height: 18px;
+	border-radius: 2px;
+	cursor: pointer;
+	transition: all 250ms;
+}
+#wallet-container .coin-widget .buttons a:hover {
+	box-shadow: 0 3px 24px 6px rgba(0,0,0,0.8);
+	text-shadow: 0 3px 6px black;
+}
+#wallet-container .coin-widget .buttons a img {
+	display: inline-block;
+	height: 18px;
+	margin-right: 2px;
+	position: relative;
+	top: 2px;
+}
+
+@media screen and (max-width: 400px) {
+	#wallet-container .coin-widget h2 {
+		font-size: 22pt;
+	}
 }
