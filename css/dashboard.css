@@ -215,7 +215,7 @@
 	align-items: center;
 	height: 40%;
 	width: 90%;
-	max-width: 400px;
+	max-width: 512px;
 }
 #wallet-container .coin-widget .ticker-main {
 	flex-grow: 1;
@@ -228,6 +228,7 @@
 	text-shadow: 0 3px 6px black;
 	justify-content: center;
 	overflow: hidden;
+	width: 100%;
 }
 #wallet-container .coin-widget.widget-bitcoin .ticker-main {
 	background: linear-gradient(to left, #8EDEFC, #56ACFF);
@@ -237,6 +238,9 @@
 }
 #wallet-container .coin-widget.widget-ethereum .ticker-main {
 	background: linear-gradient(to left, #FF80B7, #FFB3B3);
+}
+#wallet-container .coin-widget h2 {
+	text-align: center;
 }
 #wallet-container .coin-widget .ticker-main p.title {font-size: 20pt;}
 #wallet-container .coin-widget .ticker-main p {
@@ -287,5 +291,15 @@
 @media screen and (max-width: 400px) {
 	#wallet-container .coin-widget h2 {
 		font-size: 22pt;
+	}
+}
+@media screen and (max-width: 470px) {
+	#wallet-container .coin-widget.widget-ethereum h2 {
+		font-size: 22pt;
+	}
+}
+@media screen and (max-width: 3470px) {
+	#wallet-container .coin-widget.widget-ethereum h2 {
+		font-size: 16pt;
 	}
 }
