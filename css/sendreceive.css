@@ -10,55 +10,23 @@
     min-height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-content: center;
+    text-align: center;
 }
 
-#sendreceiveform .walletsellect, 
-#sendreceiveform .button-bar, #sendreceiveform .bottomform {
-    width: 100%;
+#sendreceiveform .walletsellect, #sendreceiveform .button-bar {
+    display: none;
 }
 
-#sendreceiveform .walletsellect {
-    padding: 2px 16px;
-}
-#sendreceiveform .walletsellect h4 {
-    display: inline-block;
-    margin-right: 8px;
-}
-#sendreceiveform .walletsellect p {
-    display: inline-block;
-}
-#sendreceiveform .walletsellect select {
-    color: white;
-    background-color: rgba(255,255,255,0.1);
-    border: none;
-    padding: 2px 16px;
-}
-#sendreceiveform .walletsellect select option {
-    background-color: #4ba0eb;
-}
-
-#sendreceiveform .button-bar {
-    border-top: 4px solid #4ba0eb;
-}
-
-#sendreceiveform button {
-    border: none;
-    padding: 2px 16px;
-    background-color: transparent;
-    color: white;
-}
-#sendreceiveform button.active {
-    background-color: #4ba0eb;
-}
 #sendreceiveform .bottomform {
+    width: 100%;
     padding: 2px 16px;
 }
 #sendreceiveform .bottomform .input-row {
     display: flex;
     flex-wrap: nowrap;
-    margin-bottom: 2px;
+    margin-bottom: 16px;
     justify-content: space-around;
 }
 #sendreceiveform .bottomform .input-row.address {
@@ -79,19 +47,25 @@
     top: 50%;
     transform: translateY(-50%);
 }
-#sendreceiveform .bottomform h4 {
+#sendreceiveform .bottomform h5 {
     display: inline-block;
     margin-right: 8px;
+    margin-bottom: 48px;
 }
 #sendreceiveform .bottomform input[type="text"] {
     display: inline-block;
     width: 100%;
+    color: white;
+}
+#sendreceiveform .bottomform input::placeholder {
+    color: white;
 }
 
 #sendreceiveform .bottomform input[type="submit"] {
-    border: none;
-    padding: 2px 16px;
-    background-color: #4ba0eb;
+    border: 1px solid #9589C5;
+    padding: 4px 32px;
+    background-color: #CC81FF;
+    box-shadow: 0 3px 6px #E95DFF;
     color: white;
 }
 
@@ -150,4 +124,9 @@
         right: 24px;
         top: 24px;
     }
+}
+
+/* change titles */
+#main-container.dashboard #sendreceive .button-bar #send-button.active + .title.receive {
+    display: none;
 }

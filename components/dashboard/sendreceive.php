@@ -9,24 +9,22 @@
                 <option value="eth">ETH</option>
                 <option value="ltc">LTC</option>
             </select>
-            <div>
-                <h4>Balance: </h4><p id="address">3534.4524 ($23454.34)</p>
-            </div>
         </div>
         <div class="button-bar">
-                <button id="send-button" class="button active" onclick="changeSendReceiveTab('send')">Send</button>
-                <button id="receive-button" class="button" onclick="changeSendReceiveTab('receive')">Receive</button>
-            </div>
+            <button id="send-button" class="button active" onclick="changeSendReceiveTab('send')">Send</button>
+            <button id="receive-button" class="button" onclick="changeSendReceiveTab('receive')">Receive</button>
+        </div>
+        <h4 id="send-receive-window-title"></h4>
         <div class="bottomform">
             <div id="send" class="tab-sendreceive">
                 <div class="input-row">
-                    <h4>Ammount: </h4><input type="text" name="ammount"/>
+                    <input type="text" name="ammount" placeholder="Enter Amount"/>
                 </div>  
                 <div class="input-row">
-                    <h4>To: </h4><input type="text" name="to"/>
+                    <input type="text" name="to" placeholder="Enter Address"/>
                 </div>
                 <div>
-                    <h4>Fee: </h4>
+                    <h5>Fee: </h5>
                 </div> 
                 <div class="input-row">
                     <input type="submit" value="Send" />
@@ -60,6 +58,15 @@
                     x[i].classList.remove("active");
                 }
                 document.getElementById(tabName + "-button").classList.add("active");
+                
+                var coinMap = {0:"BTC", 1:"LTC", 2:"ETH"};
+                var coin = coinMap[document.getElementById("send-receive-coin-select").selectedIndex];
+                console.log("Coin: " + coin);
+                
+                tabName = tabName.charAt(0).toUpperCase() + tabName.slice(1);
+
+                document.getElementById("send-receive-window-title").innerHTML = tabName + " " + coin;
+
             }
             function xOutOfSendReceive() {
                 document.getElementById("sendreceive").classList.add("transparent");
