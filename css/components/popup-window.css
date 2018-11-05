@@ -81,14 +81,14 @@
 
 @media screen and (max-width: 800px) {
     #popup-window {
-        top: 16px;
-        left: 16px;
-        right: 16px;
-        bottom: 16px;
-        box-shadow: 0 0 16px 6px rgba(0,0,0,0.8);
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        box-shadow: none;
     }
     #popup-window .x-out {
-        right: 12px;
-        top: 12px;
+        right: 24px;
+        top: 24px;
     }
 }

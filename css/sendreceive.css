@@ -105,7 +105,7 @@
     right: 10%;
     bottom: 10%;
     box-shadow: 0 0 16vw 8vw rgba(10,10,10,0.8);
-    background-color: #0c1744;
+    background: linear-gradient(to top left, #3C4564, #7682A9);
     z-index: -100;
     opacity: 0;
     transition: opacity 300ms;
@@ -115,7 +115,7 @@
 }
 
 #main-container.dashboard #sendreceive.active {
-    z-index: 100;
+    z-index: 6;
     opacity: 1;
 }
 
@@ -136,4 +136,18 @@
 }
 #main-container.dashboard #sendreceive .x-out img {
     height: 40px;
+}
+
+@media screen and (max-width: 800px) {
+    #main-container.dashboard #sendreceive {
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        box-shadow: none;
+    }
+    #main-container.dashboard #sendreceive .x-out {
+        right: 24px;
+        top: 24px;
+    }
 }
