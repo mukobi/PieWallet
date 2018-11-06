@@ -15,6 +15,9 @@
             <button id="receive-button" class="button" onclick="changeSendReceiveTab('receive')">Receive</button>
         </div>
         <h4 id="send-receive-window-title"></h4>
+        <div id="send-receive-window-image-container" > 
+            <img id="send-receive-window-coin-img" src="images/coins/btc-small.png" />
+        </div>
         <div class="bottomform">
             <div id="send" class="tab-sendreceive">
                 <div class="input-row">
@@ -31,16 +34,14 @@
                 </div> 
             </div>
             <div id="receive" class="tab-sendreceive" style="display:none">
-                <div class="input-row address">
-                    <p id="address">   
-                        Your Public Key: JHD87nd43oqw8SHD2l8edfh82gwerf3
-                    </p>
-                </div>
                 <div class="input-row">
                     <a href="#">
-                        <img src="images/qrcode.png" alt="QR Code" />
+                        <img src="images/icons/qrcodedefault.png" alt="QR Code" />
                     </a>
                 </div> 
+                <p class="input-row address">
+                    Je5Keh74bWsMd83rw3Lkx
+                </p>
             </div>
             <script>
             function changeSendReceiveTab(tabName) {
@@ -67,6 +68,10 @@
 
                 document.getElementById("send-receive-window-title").innerHTML = tabName + " " + coin;
 
+                document.getElementById("send-receive-window-coin-img").src = "images/coins/" + coin.toLowerCase() + "-small.png";
+                
+                document.getElementById("send-receive-window-image-container").classList.remove("btc", "ltc", "eth");
+                document.getElementById("send-receive-window-image-container").classList.add(coin);
             }
             function xOutOfSendReceive() {
                 document.getElementById("sendreceive").classList.add("transparent");

@@ -11,12 +11,33 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    align-content: center;
+    align-items: center;
     text-align: center;
 }
 
 #sendreceiveform .walletsellect, #sendreceiveform .button-bar {
     display: none;
+}
+
+#sendreceiveform #send-receive-window-image-container {
+	width: 96px;
+	height: 96px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 10px;
+}
+#sendreceiveform #send-receive-window-image-container img {
+	height: 64px;
+}
+#sendreceiveform #send-receive-window-image-container.BTC {
+	background: linear-gradient(to bottom left, #8EDEFC, #56ACFF);
+}
+#sendreceiveform #send-receive-window-image-container.LTC {
+	background: linear-gradient(to bottom left, #FFB3B3, #FF80B7);
+}
+#sendreceiveform #send-receive-window-image-container.ETH {
+	background: linear-gradient(to bottom left, #FFFF98, #FFA2D4);
 }
 
 #sendreceiveform .bottomform {
@@ -30,22 +51,13 @@
     justify-content: space-around;
 }
 #sendreceiveform .bottomform .input-row.address {
-    height: 50px;
-    width: 100%;
-    display: block;
-    margin: 7px 0;
-    position: relative;
-}
-#sendreceiveform .bottomform .input-row.address h4 {
-    display: inline;
-}
-#sendreceiveform .bottomform .input-row.address p {
-    display: block;
+    border: 1px solid #9589C5;
+    max-width: 100%;
     word-break: break-all;
-    word-wrap: break-word;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+	background-color: transparent;
+	box-shadow: 0 3px 6px black;
+	padding: 4px;
+    color: white;
 }
 #sendreceiveform .bottomform h5 {
     display: inline-block;
@@ -124,9 +136,4 @@
         right: 24px;
         top: 24px;
     }
-}
-
-/* change titles */
-#main-container.dashboard #sendreceive .button-bar #send-button.active + .title.receive {
-    display: none;
 }
