@@ -17,8 +17,8 @@
             <img src="images/coins/litecoin-trans.png" />
         </div>
         <div class="buttons">
-            <a onClick="popupSendReceive(2,'send')"><img src="images/icons/send.png" />Send</a>
-            <a onClick="popupSendReceive(2,'receive')"><img src="images/icons/receive.png" />Receive</a>
+            <a onClick="popupSendReceive(1,'send')"><img src="images/icons/send.png" />Send</a>
+            <a onClick="popupSendReceive(1,'receive')"><img src="images/icons/receive.png" />Receive</a>
         </div>
     </div>
     <div id="widget-ethereum" class="coin-widget">
@@ -28,8 +28,8 @@
             <img src="images/coins/ethereum-trans.png" />
         </div>
         <div class="buttons">
-            <a onClick="popupSendReceive(1,'send')"><img src="images/icons/send.png" />Send</a>
-            <a onClick="popupSendReceive(1,'receive')"><img src="images/icons/receive.png" />Receive</a>
+            <a onClick="popupSendReceive(2,'send')"><img src="images/icons/send.png" />Send</a>
+            <a onClick="popupSendReceive(2,'receive')"><img src="images/icons/receive.png" />Receive</a>
         </div>
     </div>
     <script>
