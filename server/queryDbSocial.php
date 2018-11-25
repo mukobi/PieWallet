@@ -32,9 +32,6 @@ function getFollowingIDs($conn, $user_id) {
     return $output;
 }
 
-$myFollowers = getFollowersIDs($conn, $tg_id);
-$myFollowing = getFollowingIDs($conn, $tg_id);
-
 function getUsersObjectsById($conn, $user_id_array) {
     $output = array();
     foreach ($user_id_array as $user_id) {
@@ -66,5 +63,12 @@ function searchForUsers($conn, $searchName) {
     }
     return $output;
 }
+
+$myFollowers = getFollowersIDs($conn, $tg_id);
+$myFollowing = getFollowingIDs($conn, $tg_id);
+
+$myUserObject = getUsersObjectsById($conn, array($tg_id));
+
+
 
 ?>
