@@ -34,10 +34,10 @@
 	background: linear-gradient(to bottom left, #8EDEFC, #56ACFF);
 }
 #sendreceiveform #send-receive-window-image-container.LTC {
-	background: linear-gradient(to bottom left, #FFB3B3, #FF80B7);
+	background: linear-gradient(to bottom left, #FFFF98, #FFA2D4);
 }
 #sendreceiveform #send-receive-window-image-container.ETH {
-	background: linear-gradient(to bottom left, #FFFF98, #FFA2D4);
+	background: linear-gradient(to bottom left, #FFB3B3, #FF80B7);
 }
 
 #sendreceiveform .bottomform {

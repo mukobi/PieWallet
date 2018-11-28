@@ -70,7 +70,7 @@
 
                 document.getElementById("send-receive-window-coin-img").src = "images/coins/" + coin.toLowerCase() + "-small.png";
                 
-                document.getElementById("send-receive-window-image-container").classList.remove("btc", "ltc", "eth");
+                document.getElementById("send-receive-window-image-container").classList.remove("BTC", "LTC", "ETH");
                 document.getElementById("send-receive-window-image-container").classList.add(coin);
             }
             function xOutOfSendReceive() {
