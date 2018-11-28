@@ -19,6 +19,7 @@ echo '<?xml version="1.0" encoding="utf-8"?>' ?>
 		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+		<?php include_once("server/walletFunctionality.php"); ?>
 	</head>
 	<body>
 		<div id="main-container" class="content-main dashboard">
