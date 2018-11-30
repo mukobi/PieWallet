@@ -85,6 +85,11 @@ var refreshBalance = function() {
     }
 }
 
-refreshMarketValue();
-refreshBalance();
+var updateTickers = function() {
+    refreshMarketValue();
+    refreshBalance();
+}
+
+updateTickers();
+
 </script>
