@@ -3,7 +3,7 @@ function addUpdateUserInDb($conn, $user) {
     settype($user['id'], 'integer');
     mysqli_report(MYSQLI_REPORT_ALL);
     $stmt = $conn->prepare("
-    INSERT INTO `users` (`id`, `username`, `name`, `photo_url`, `btc_address`, `ltc_address`, `etc_address`) VALUES (?, ?, ?, ?, '', '', '')
+    INSERT INTO `users` (`id`, `username`, `name`, `photo_url`, `btc_address`, `ltc_address`, `eth_address`) VALUES (?, ?, ?, ?, '', '', '')
     ON DUPLICATE KEY UPDATE 
         username = ?, 
         name = ?, 

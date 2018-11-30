@@ -67,7 +67,7 @@ function searchForUsers($conn, $searchName) {
 $myFollowers = getFollowersIDs($conn, $tg_id);
 $myFollowing = getFollowingIDs($conn, $tg_id);
 
-$myUserObject = getUsersObjectsById($conn, array($tg_id));
+$myUserObject = getUsersObjectsById($conn, array($tg_id))[0];
 
 
 
