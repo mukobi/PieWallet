@@ -12,7 +12,7 @@
             <p class="balance-btc"></p>
         </div>
         <div class="growth">
-            <p>+10%</p>
+            <p class="change-btc"></p>
         </div>
     </div>
     <div id="widget-litecoin" class="coin-widget" onClick="popupWallet('ltc')">
@@ -28,7 +28,7 @@
             <p class="balance-ltc"></p>
         </div>
         <div class="growth">
-            <p>+10%</p>
+            <p class="change-ltc"></p>
         </div>
     </div>
     <div id="widget-ethereum" class="coin-widget" onClick="popupWallet('eth')">
@@ -44,7 +44,7 @@
             <p class="balance-eth"></p>
         </div>
         <div class="growth">
-            <p>+10%</p>
+            <p class="change-eth"></p>
         </div>
     </div>
     <script>
