@@ -85,11 +85,54 @@ var refreshBalance = function() {
     }
 }
 
-var updateTickers = function() {
-    refreshMarketValue();
-    refreshBalance();
+var updateTickerHTML = function() {
+    var list = document.getElementsByClassName("market-btc");
+    for (var i = 0; i < list.length; i++) {
+        list[i].innerHTML = "$" + PieWallet.marketValue.btc;
+    }
+    list = document.getElementsByClassName("market-ltc");
+    for (var i = 0; i < list.length; i++) {
+        list[i].innerHTML = "$" + PieWallet.marketValue.ltc;
+    }
+    list = document.getElementsByClassName("market-eth");
+    for (var i = 0; i < list.length; i++) {
+        list[i].innerHTML = "$" + PieWallet.marketValue.eth;
+    }
+
+    list = document.getElementsByClassName("balance-btc");
+    for (var i = 0; i < list.length; i++) {
+        list[i].innerHTML = PieWallet.balance.btc + " BTC";
+    }
+    list = document.getElementsByClassName("balance-ltc");
+    for (var i = 0; i < list.length; i++) {
+        list[i].innerHTML = PieWallet.balance.ltc + " LTC";
+    }
+    list = document.getElementsByClassName("balance-eth");
+    for (var i = 0; i < list.length; i++) {
+        list[i].innerHTML = PieWallet.balance.eth + " ETH";
+    }
+    
+    list = document.getElementsByClassName("balance-btc-usd");
+    for (var i = 0; i < list.length; i++) {
+        list[i].innerHTML = "$" + PieWallet.balance.btc * PieWallet.marketValue.btc;
+    }
+    list = document.getElementsByClassName("balance-ltc-usd");
+    for (var i = 0; i < list.length; i++) {
+        list[i].innerHTML = "$" + PieWallet.balance.ltc * PieWallet.marketValue.ltc;
+    }
+    list = document.getElementsByClassName("balance-eth-usd");
+    for (var i = 0; i < list.length; i++) {
+        list[i].innerHTML = "$" + PieWallet.balance.eth * PieWallet.marketValue.eth;
+    }
 }
 
-updateTickers();
+var refreshMoney = function() {
+    refreshMarketValue();
+    refreshBalance();
+    updateTickerHTML();
+}
 
+window.onload = function() {
+    refreshMoney();
+}
 </script>

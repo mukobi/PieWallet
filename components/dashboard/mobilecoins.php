@@ -5,11 +5,11 @@
         </div>
         <div class="market">
             <p>BTC</p>
-            <p>$8635.64</p>
+            <p class="market-btc"></p>
         </div>
         <div class="balance">
-            <p>$3534</p>
-            <p>0.432 coins</p>
+            <p class="balance-btc-usd"></p>
+            <p class="balance-btc"></p>
         </div>
         <div class="growth">
             <p>+10%</p>
@@ -21,11 +21,11 @@
         </div>
         <div class="market">
             <p>LTC</p>
-            <p>$8635.64</p>
+            <p class="market-ltc"></p>
         </div>
         <div class="balance">
-            <p>$3534</p>
-            <p>0.432 coins</p>
+            <p class="balance-ltc-usd"></p>
+            <p class="balance-ltc"></p>
         </div>
         <div class="growth">
             <p>+10%</p>
@@ -37,11 +37,11 @@
         </div>
         <div class="market">
             <p>ETH</p>
-            <p>$8635.64</p>
+            <p class="market-eth"></p>
         </div>
         <div class="balance">
-            <p>$3534</p>
-            <p>0.432 coins</p>
+            <p class="balance-eth-usd"></p>
+            <p class="balance-eth"></p>
         </div>
         <div class="growth">
             <p>+10%</p>
