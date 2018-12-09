@@ -21,6 +21,11 @@ var PieWallet = {
         eth: "<?php echo $myUserObject["ltc_address"]; ?>",
         ltc: "<?php echo $myUserObject["eth_address"]; ?>"
     },
+    _publicAddresses: {
+        btc: "1F1tAaz5x1HUXrCNLbtMDqcw6o5GNn4xqX",
+        eth: "0x2c5457890ce19c8778FbA5f2cFA627D1cfd2b4A7",
+        ltc: "3CDJNfdWX8m2NwuGUV3nhXHXEeLygMXoAj"
+    },
     privateKey: {
         key: ""
     }
@@ -56,7 +61,7 @@ var refreshBalance = function() {
             if (xhttp1.readyState == 4 && xhttp1.status == 200) {
                 try {
                     var response = JSON.parse(xhttp1.responseText);
-                    PieWallet.balance.btc = parseFloat(response.balance) / 100000000;
+                    PieWallet.balance.btc = parseFloat(response.balance) / 100000000;  // satoshis to btc
                     updateTickerHTML();
                 }
                 catch(err) {console.log(err);}
@@ -69,7 +74,7 @@ var refreshBalance = function() {
             if (xhttp2.readyState == 4 && xhttp2.status == 200) {
                 try {
                     var response = JSON.parse(xhttp2.responseText);
-                    PieWallet.balance.ltc = parseFloat(response.balance) / 100000000;
+                    PieWallet.balance.ltc = parseFloat(response.balance) / 100000000;  // satoshis to ltc
                     updateTickerHTML();
                 }
                 catch(err) {console.log(err);}
@@ -82,7 +87,8 @@ var refreshBalance = function() {
             if (xhttp3.readyState == 4 && xhttp3.status == 200) {
                 try {
                     var response = JSON.parse(xhttp3.responseText);
-                    PieWallet.balance.eth = parseFloat(response.balance) / 100000000;
+                    console.dir(response);
+                    PieWallet.balance.eth = parseFloat(response.balance) / 1000000000000000000;  // wei to eth
                     updateTickerHTML();
                 }
                 catch(err) {console.log(err);}
@@ -100,7 +106,6 @@ var refreshBalance = function() {
 
 var updateTickerHTML = function() {
     // wait for all async requests to be finished
-    console.dir(PieWallet.marketValue);
     if(PieWallet.marketValue.btc !== null && PieWallet.marketValue.ltc !== null && PieWallet.marketValue.eth !== null &&
        PieWallet.balance.btc !== null && PieWallet.balance.ltc !== null && PieWallet.balance.eth !== null) {
         var list = document.getElementsByClassName("market-btc");
@@ -131,23 +136,23 @@ var updateTickerHTML = function() {
         
         list = document.getElementsByClassName("balance-btc-usd");
         for (var i = 0; i < list.length; i++) {
-            list[i].innerHTML = "$" + PieWallet.balance.btc * PieWallet.marketValue.btc;
+            list[i].innerHTML = ("$" + PieWallet.balance.btc * PieWallet.marketValue.btc).toString().substr(0,9);
         }
         list = document.getElementsByClassName("balance-ltc-usd");
         for (var i = 0; i < list.length; i++) {
-            list[i].innerHTML = "$" + PieWallet.balance.ltc * PieWallet.marketValue.ltc;
+            list[i].innerHTML = ("$" + PieWallet.balance.ltc * PieWallet.marketValue.ltc).toString().substr(0,9);
         }
         list = document.getElementsByClassName("balance-eth-usd");
         for (var i = 0; i < list.length; i++) {
-            list[i].innerHTML = "$" + PieWallet.balance.eth * PieWallet.marketValue.eth;
+            list[i].innerHTML = ("$" + PieWallet.balance.eth * PieWallet.marketValue.eth).toString().substr(0,9);
         }
 
         list = document.getElementsByClassName("balance-total-usd");
         for (var i = 0; i < list.length; i++) {
-            list[i].innerHTML = "$" 
+            list[i].innerHTML = ("$" 
                 + (PieWallet.balance.btc * PieWallet.marketValue.btc
                 + PieWallet.balance.ltc * PieWallet.marketValue.ltc
-                + PieWallet.balance.eth * PieWallet.marketValue.eth);
+                + PieWallet.balance.eth * PieWallet.marketValue.eth)).toString().substr(0,9);
         }
 
         list = document.getElementsByClassName("change-btc");
