@@ -170,7 +170,9 @@ var refreshMoney = function() {
     refreshBalance();
 }
 
+refreshMoney();  // called early while page loads
+
 window.onload = function() {
-    refreshMoney();
+    updateTickerHTML();  // only update page with values after loaded
 }
 </script>
