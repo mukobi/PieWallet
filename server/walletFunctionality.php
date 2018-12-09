@@ -142,6 +142,14 @@ var updateTickerHTML = function() {
             list[i].innerHTML = "$" + PieWallet.balance.eth * PieWallet.marketValue.eth;
         }
 
+        list = document.getElementsByClassName("balance-total-usd");
+        for (var i = 0; i < list.length; i++) {
+            list[i].innerHTML = "$" 
+                + (PieWallet.balance.btc * PieWallet.marketValue.btc
+                + PieWallet.balance.ltc * PieWallet.marketValue.ltc
+                + PieWallet.balance.eth * PieWallet.marketValue.eth);
+        }
+
         list = document.getElementsByClassName("change-btc");
         for (var i = 0; i < list.length; i++) {
             list[i].innerHTML = ((PieWallet.marketChange.btc > 0 ? "+" : "") + PieWallet.marketChange.btc.toString()).substr(0,5) + "%";

@@ -5,7 +5,7 @@
             <h3><?php echo ($tg_first_name . ($tg_last_name ? " " . $tg_last_name : "")) ?></h3>
         </div>
         <div class="portfolio">
-            <h2>$6379.42</h2>
+            <h2 class="balance-total-usd"></h2>
         </div>
     </a>
 </div>
