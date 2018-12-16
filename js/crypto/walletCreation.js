@@ -1,4 +1,12 @@
-var getRandomWords = function() {
+// global vars
+myWordsArr = [];
+myWordsArrStr = "";
+myPrivateKey = "";
+myAddressBTC = "";
+myAddressLTC = "";
+myAddressETH = "";
+
+var checkValidImports = function() {
     if(typeof bip39 == "undefined") {
         err = "can't find bip39 word list"
         alert(err);
@@ -9,32 +17,86 @@ var getRandomWords = function() {
         alert(err);
         throw(err);
     }
+    if(typeof sha256 == "undefined") {
+        err = "can't find sha256 lib"
+        alert(err);
+        throw(err);
+    }
+}
+
+var setActiveWindow = function(number) {
+    var windows = document.getElementsByClassName("wallet-create-window");
+    for(var i = 0; i < windows.length; ++i) {
+        if(windows[i].classList.contains("active")) {
+            windows[i].classList.remove("active");
+        }
+    }
+    windows[number].classList.add("active");
+}
+
+var getRandomWords = function() {
     var array = new Uint32Array(12);
     window.crypto.getRandomValues(array);
 
-    output = []
+    myWordsArr = []
     for (var i = 0; i < array.length; i++) {
-        output.push(bip39[array[i] % bip39.length]);
+        myWordsArr.push(bip39[array[i] % bip39.length]);
     }
-    return output;
 }
 
-var showRandomWords = function(wordArr) {
+var showRandomWords = function() {
     var wordsHtml = "";
-    for(var i = 0; i < wordArr.length; i++) {
-        wordsHtml += "<span>" + wordArr[i] + "</span> ";
+    for(var i = 0; i < myWordsArr.length; i++) {
+        wordsHtml += "<span>" + myWordsArr[i] + "</span> ";
     }
     document.getElementById("wallet-create-seed-words").innerHTML = wordsHtml.trim(); 
 }
 
 var generateAndShowRandomWords = function() {
-    wordsArr = getRandomWords();
-    showRandomWords(wordsArr);
-    return wordsArr;
+    getRandomWords();
+    showRandomWords();
 }
 
-myWordsArr = generateAndShowRandomWords();
+var getWordsArrStr = function() {
+    myWordsArrStr = "";
+    for(var i = 0; i < myWordsArr.length; ++i) {
+        myWordsArrStr += myWordsArr[i] + " ";
+    }
+    myWordsArrStr = myWordsArrStr.trim();
+}
 
+var generatePrivateKey = function() {
+    getWordsArrStr();
+    myPrivateKey = sha256(myWordsArrStr);
+}
+
+var showPrivateKey = function() {
+    document.getElementById("wallet-create-private-key").innerHTML = myPrivateKey;
+    setActiveWindow(1);
+}
+
+var generateAndShowPrivateKey = function() {
+    generatePrivateKey(myWordsArr);
+    showPrivateKey();
+}
+
+var generateAddresses = function() {
+
+}
+
+
+// 1 check imports
+checkValidImports();
+
+// 2 generate random words
+generateAndShowRandomWords();
 window.onload = function() {
-    showRandomWords(myWordsArr);
+    showRandomWords(myWordsArr);  // if wasn't able to correctly show earlier
 }
+
+// 3 generate wallet
+var generateWallet = function() {
+    generateAndShowPrivateKey();
+    generateAddresses();
+}
+
