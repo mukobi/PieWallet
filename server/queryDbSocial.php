@@ -69,6 +69,11 @@ $myFollowing = getFollowingIDs($conn, $tg_id);
 
 $myUserObject = getUsersObjectsById($conn, array($tg_id))[0];
 
-
+if(($myUserObject["btc_address"] == "" ||
+    $myUserObject["ltc_address"] == "" ||
+    $myUserObject["eth_address"] == "") &&
+    $_SERVER['REQUEST_URI'] != "/createWallet.php") {
+	header("Location:createWallet.php");
+}
 
 ?>
