@@ -1,6 +1,5 @@
 #main-container.content-main.login {
     background: linear-gradient(to right, #704ac7, #005ba1);
-    background: linear-gradient(to right, var(--color1), var(--color2));
     position: absolute;
 	top: 0;
 	right: 0;

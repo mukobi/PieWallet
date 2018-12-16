@@ -22,6 +22,7 @@ echo '<?xml version="1.0" encoding="utf-8"?>' ?>
     <title>Create PieWallet - PayPeer</title>
     <link rel="stylesheet" href="/css/style11.css">
     <link rel="stylesheet" href="/css/login.css">
+    <link rel="stylesheet" href="/css/widgets/create-wallet-widget.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script defer src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/TweenMax-latest-beta.js"></script>
@@ -29,16 +30,14 @@ echo '<?xml version="1.0" encoding="utf-8"?>' ?>
 </head>
 
 <body>
-    <div id="main-container" class="content-main login">
+    <div id="main-container" class="content-main login create-wallet">
         <div id="moving-floor-canvas-container">
             <canvas id="moving-floor-canvas">
             </canvas>
         </div>
         <script src="js/moving-floor.js"></script>
         <div class="login-box">
-            <img src="images/navigation/piewallet-long-logo.png" alt="Piewallet">
-            <div>
-            </div>
+            <?php include_once("components/crypto/create-wallet-widget.php"); ?>
         </div>
     </div>
 </body>
