@@ -67,7 +67,8 @@ var getWordsArrStr = function() {
 
 var generatePrivateKey = function() {
     getWordsArrStr();
-    myPrivateKey = sha256(myWordsArrStr);
+    var maxValue = parseInt("FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEBAAEDCE6AF48A03BBFD25E8CD0364140", 16);
+    myPrivateKey = (parseInt(sha256(myWordsArrStr), 16) % maxValue).toString(16);
 }
 
 var showPrivateKey = function() {
@@ -76,12 +77,16 @@ var showPrivateKey = function() {
 }
 
 var generateAndShowPrivateKey = function() {
-    generatePrivateKey(myWordsArr);
+    generatePrivateKey();
     showPrivateKey();
 }
 
 var generateAddresses = function() {
 
+}
+
+var generateAndShowAddresses = function() {
+    generateAddresses();
 }
 
 
@@ -97,6 +102,6 @@ window.onload = function() {
 // 3 generate wallet
 var generateWallet = function() {
     generateAndShowPrivateKey();
-    generateAddresses();
+    generateAndShowAddresses();
 }
 
