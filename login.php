@@ -6,8 +6,6 @@ if(isset($_COOKIE['tg_user'])) {
 	header("Location:index.php");
 }
 include_once('server/components/getTgBotInfo.php');
-
-$conn = new mysqli("localhost", "paypeer1_lite1", "wwOpF+T3bDl&", "paypeer1_litespeed"); 
 ?>
 <?php
 echo '<?xml version="1.0" encoding="utf-8"?>' ?>
