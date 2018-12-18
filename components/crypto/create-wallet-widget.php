@@ -23,7 +23,7 @@
     </div>
 </div>
 <script src="../../js/crypto/bip39.js"></script>
-<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/js-sha256/0.9.0/sha256.min.js"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/js-sha256/0.9.0/sha256.js"></script>
 <script src="https://cdn.rawgit.com/h2non/jsHashes/master/hashes.js"></script>
 <script src="../../js/crypto/buffer.js"></script>
 <script src="../../js/crypto/base58.js"></script>

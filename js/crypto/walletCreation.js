@@ -4,7 +4,6 @@
 var EC = require('elliptic').ec;
 var ec = new EC('secp256k1');
 
-var sha256 =  new Hashes.SHA256;
 var rmd160 = new Hashes.RMD160;
 
 // global vars
@@ -83,7 +82,7 @@ var getWordsArrStr = function() {
 var generatePrivateKey = function() {
     getWordsArrStr();
     var maxValue = BigInt("0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEBAAEDCE6AF48A03BBFD25E8CD0364140");  
-    myPrivateKey = (BigInt("0x" + sha256.hex(myWordsArrStr)) % maxValue).toString(16).toUpperCase();
+    myPrivateKey = (BigInt("0x" + sha256(myWordsArrStr)) % maxValue).toString(16).toUpperCase();
 }
 
 var showPrivateKey = function() {
@@ -100,7 +99,7 @@ function createPublicKeyHash() {
 	var keys = ec.keyFromPrivate(myPrivateKey, 'hex');  
 	var publicKey = keys.getPublic('hex');
 	console.log('> Public key created: ', publicKey);
-	var publicKeyHash = rmd160.hex(sha256.hex(publicKey));
+	var publicKeyHash = rmd160.hex(buffer.Buffer.from(publicKey, 'hex').toString('hex'));
 	console.log('> Public keyHash created: ', publicKeyHash);
 	return publicKeyHash
 }
@@ -110,10 +109,10 @@ function createPublicAddress(publicKeyHash) {
 	const step1 = "00" + publicKeyHash;
 	console.log(step1);
 	// step 2 - create SHA256 hash of step 1
-	const step2 = sha256.hex(step1);
+	const step2 = sha256(buffer.Buffer.from(step1, 'hex'));
 	console.log(step2);
 	// step 3 - create SHA256 hash of step 2
-	const step3 = sha256.hex(step2);
+	const step3 = sha256(buffer.Buffer.from(step2, 'hex'));
 	console.log(step3);
 	// step 4 - find the 1st byte of step 3 - save as "checksum"
 	const checksum = step3.substring(0, 8);
@@ -123,6 +122,7 @@ function createPublicAddress(publicKeyHash) {
 	console.log(step4);
 	// return base 58 encoding of step 5
 	const address = window.Base58.encode(buffer.Buffer.from(step4, 'hex'));
+	//base58.encode(Buffer.from(step4, 'hex'));
 	return address;
 }
 
