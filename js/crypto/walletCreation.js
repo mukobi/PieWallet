@@ -52,7 +52,8 @@ var getRandomWords = function() {
 var showRandomWords = function() {
     var wordsHtml = "";
     for(var i = 0; i < myWordsArr.length; i++) {
-        wordsHtml += "<span>" + myWordsArr[i] + "</span> ";
+        wordsHtml += "<span>" + myWordsArr[i] + "</span>" + (i % 3 == 2 ? "<br>" : " ");
+        
     }
     document.getElementById("wallet-create-seed-words").innerHTML = wordsHtml.trim(); 
 }
@@ -73,7 +74,7 @@ var getWordsArrStr = function() {
 var generatePrivateKey = function() {
     getWordsArrStr();
     var maxValue = BigInt("0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEBAAEDCE6AF48A03BBFD25E8CD0364140");  
-    myPrivateKey = (BigInt("0x" + sha256(myWordsArrStr)) % maxValue).toString(16);
+    myPrivateKey = (BigInt("0x" + sha256(myWordsArrStr)) % maxValue).toString(16).toUpperCase();
 }
 
 var showPrivateKey = function() {
