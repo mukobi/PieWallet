@@ -91,8 +91,13 @@ var generateAddresses = function() {
 
 }
 
+var showAddresses = function() {
+
+}
+
 var generateAndShowAddresses = function() {
     generateAddresses();
+    showAdresses();
 }
 
 
@@ -101,8 +106,11 @@ checkValidImports();
 
 // 2 generate random words
 generateAndShowRandomWords();
-window.onload = function() {
-    showRandomWords(myWordsArr);  // if wasn't able to correctly show earlier
+
+if(window.addEventListener){  // show words again when doc loaded
+    window.addEventListener('load', showRandomWords)
+} else{
+    window.attachEvent('onload', showRandomWords)
 }
 
 // 3 generate wallet

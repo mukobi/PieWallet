@@ -1,4 +1,4 @@
-window.onload = function() {
+var movingFloorFunction = function() {
 var refreshInterval;
 
 function resizeAndDrawMovingFloor() {
@@ -47,4 +47,10 @@ function resizeAndDrawMovingFloor() {
 resizeAndDrawMovingFloor();
 window.addEventListener('resize', resizeAndDrawMovingFloor);
 
+}
+
+if(window.addEventListener){
+    window.addEventListener('load', movingFloorFunction)
+} else{
+    window.attachEvent('onload', movingFloorFunction)
 }
