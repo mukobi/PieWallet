@@ -11,6 +11,7 @@
     </div>
     <div class="wallet-create-window">
         <h3>Your Private Key</h3>
+        <a class="btn secondary" onClick="setActiveWindow(0)">Back to Words</a>
         <p id="wallet-create-private-key" class="important-info"></p>
         <p>This is your private key. It is very important that you <b>DO NOT LOSE THIS KEY</b>, as otherwise you will not be able to use any of the funds in your wallet.</p>
         <p>You private key never gets sent to PayPeer's servers or stored on PayPeer's database. It is up to you to keep a secure, offline copy of it, so <b>write it down on paper</b> then click "Addresses" to see your public addresses.</p>

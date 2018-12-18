@@ -8,17 +8,22 @@ myAddressETH = "";
 
 var checkValidImports = function() {
     if(typeof bip39 == "undefined") {
-        err = "can't find bip39 word list"
+        err = "Can't find bip39 word list. Try a different browser"
         alert(err);
         throw(err);
     }
     if(typeof window.crypto == "undefined") {
-        err = "can't find window.crypto lib"
+        err = "Can't find window.crypto lib. Try a different browser"
         alert(err);
         throw(err);
     }
     if(typeof sha256 == "undefined") {
-        err = "can't find sha256 lib"
+        err = "Can't find sha256 lib. Try a different browser"
+        alert(err);
+        throw(err);
+    }
+    if(typeof BigInt != "function") {
+        err = "Can't find BigInt function. Try a different browser"
         alert(err);
         throw(err);
     }
@@ -67,8 +72,8 @@ var getWordsArrStr = function() {
 
 var generatePrivateKey = function() {
     getWordsArrStr();
-    var maxValue = parseInt("FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEBAAEDCE6AF48A03BBFD25E8CD0364140", 16);
-    myPrivateKey = (parseInt(sha256(myWordsArrStr), 16) % maxValue).toString(16);
+    var maxValue = BigInt("0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEBAAEDCE6AF48A03BBFD25E8CD0364140");  
+    myPrivateKey = (BigInt("0x" + sha256(myWordsArrStr)) % maxValue).toString(16);
 }
 
 var showPrivateKey = function() {
