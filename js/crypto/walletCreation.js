@@ -91,7 +91,7 @@ var getWordsArrStr = function() {
 var generatePrivateKey = function() {
     getWordsArrStr();
     var maxValue = BigInt("0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEBAAEDCE6AF48A03BBFD25E8CD0364140");  
-    myPrivateKey = (BigInt("0x" + sha256(myWordsArrStr)) % maxValue).toString(16).toUpperCase();
+    myPrivateKey = (BigInt("0x" + sha256(myWordsArrStr)) % maxValue).toString(16);
 }
 
 var showPrivateKey = function() {
