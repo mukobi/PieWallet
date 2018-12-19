@@ -109,7 +109,7 @@ var createPublicKey = function() {
 	__publicKey = keys.getPublic('hex');
 }
 
-function createAddressBTC() {
+var createAddressBTC = function() {
     var hash = sha256(buffer.Buffer.from(__publicKey, 'hex'));
 	var publicKeyHash = new RIPEMD160().update(buffer.Buffer.from(hash, 'hex')).digest('hex');
 	var prefixedHash = "00" + publicKeyHash;
@@ -119,13 +119,13 @@ function createAddressBTC() {
 	myAddressBTC = window.Base58.encode(buffer.Buffer.from(prefixedHash + checksum, 'hex'));
 }
 
-function createAddressETH() {
+var createAddressETH = function() {
     myAddressETH = "0x"
         + new window.keccak(256).update(buffer.Buffer.from(__publicKey, 'hex')).digest('hex')
         .substring(24);
 }
 	
-function createAddressLTC() {
+var createAddressLTC = function() {
 
 }
 
