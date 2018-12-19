@@ -1,11 +1,12 @@
-myWordsArr = [];
-myWordsArrStr = "";
-myPrivateKey = "";
-myAddressBTC = "";
-myAddressLTC = "";
-myAddressETH = "";
-// public key derived directly from private key, long and not intended for use besides generating addresses
-__publicKey = ""; 
+var myWordsArr = [];
+var myWordsArrStr = "";
+var myPrivateKey = "";
+var myAddressBTC = "";
+var myAddressLTC = "";
+var myAddressETH = "";
+// long public key info used only for address creation
+var __publicKey = ""; 
+var __publicKeyHash = "";
 
 var checkValidImports = function() {
     var err;
@@ -109,14 +110,25 @@ var createPublicKey = function() {
 	__publicKey = keys.getPublic('hex');
 }
 
-var createAddressBTC = function() {
+var createPublicKeyHash = function() {
     var hash = sha256(buffer.Buffer.from(__publicKey, 'hex'));
-	var publicKeyHash = new RIPEMD160().update(buffer.Buffer.from(hash, 'hex')).digest('hex');
-	var prefixedHash = "00" + publicKeyHash;
+	__publicKeyHash = new RIPEMD160().update(buffer.Buffer.from(hash, 'hex')).digest('hex');
+}
+
+var createBTCStyleAddress = function(prefix) {
+	var prefixedHash = "00" + __publicKeyHash;
 	var checksum = sha256(buffer.Buffer.from(
 				   sha256(buffer.Buffer.from(prefixedHash, 'hex')), 'hex'))
 				   .substring(0, 8);
-	myAddressBTC = window.Base58.encode(buffer.Buffer.from(prefixedHash + checksum, 'hex'));
+	return window.Base58.encode(buffer.Buffer.from(prefixedHash + checksum, 'hex'));
+}
+
+var createAddressBTC = function() {
+    myAddressBTC = createBTCStyleAddress("00");
+}
+
+var createAddressLTC = function() {
+	myAddressLTC = createBTCStyleAddress("30");  // only difference from BTC is network prefix
 }
 
 var createAddressETH = function() {
@@ -125,19 +137,16 @@ var createAddressETH = function() {
         .substring(24);
 }
 	
-var createAddressLTC = function() {
-
-}
-
 var generateAddresses = function() {
     createPublicKey();
+    createPublicKeyHash();
 	createAddressBTC();
 	createAddressETH();
 	createAddressLTC();
 }
 
 var showAddresses = function() {
-
+    
 }
 
 var generateAndShowAddresses = function() {
@@ -163,10 +172,3 @@ var generateWallet = function() {
     generateAndShowPrivateKey();
     generateAndShowAddresses();
 }
-
-
-document.getElementById("generateAndShowRandomWords").onclick = generateAndShowRandomWords;
-document.getElementById("generateWallet").onclick = generateWallet;
-document.getElementById("setActiveWindow(0)").onclick = () => {setActiveWindow(0);};
-document.getElementById("setActiveWindow(1)").onclick = () => {setActiveWindow(1);};
-document.getElementById("setActiveWindow(2)").onclick = () => {setActiveWindow(2);};
