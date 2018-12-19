@@ -105,15 +105,10 @@ var generateAndShowPrivateKey = function() {
 }
 
 function createAddressBTC() {
-	console.log("Private: " + myPrivateKey);
 	var keys = ec.keyFromPrivate(myPrivateKey, 'hex');  
 	__publicKey = keys.getPublic('hex');
-	console.log("Public: " + __publicKey);
     var hash = sha256(buffer.Buffer.from(__publicKey, 'hex'));
-    console.log("Hash: " + hash);
 	var publicKeyHash = new RIPEMD160().update(buffer.Buffer.from(hash, 'hex')).digest('hex');
-    console.log("Public Hash: ")
-    console.log(publicKeyHash);
 	var prefixedHash = "00" + publicKeyHash;
 	var checksum = sha256(buffer.Buffer.from(
 				   sha256(buffer.Buffer.from(prefixedHash, 'hex')), 'hex'))
