@@ -104,9 +104,12 @@ var generateAndShowPrivateKey = function() {
     showPrivateKey();
 }
 
-function createAddressBTC() {
+var createPublicKey = function() {
 	var keys = ec.keyFromPrivate(myPrivateKey, 'hex');  
 	__publicKey = keys.getPublic('hex');
+}
+
+function createAddressBTC() {
     var hash = sha256(buffer.Buffer.from(__publicKey, 'hex'));
 	var publicKeyHash = new RIPEMD160().update(buffer.Buffer.from(hash, 'hex')).digest('hex');
 	var prefixedHash = "00" + publicKeyHash;
@@ -117,11 +120,8 @@ function createAddressBTC() {
 }
 
 function createAddressETH() {
-    myAddressETH = 
-        "0x"
-        + new window.keccak(256)
-        .update(buffer.Buffer.from(__publicKey, 'hex'))
-        .digest('hex')
+    myAddressETH = "0x"
+        + new window.keccak(256).update(buffer.Buffer.from(__publicKey, 'hex')).digest('hex')
         .substring(24);
 }
 	
@@ -130,6 +130,7 @@ function createAddressLTC() {
 }
 
 var generateAddresses = function() {
+    createPublicKey();
 	createAddressBTC();
 	createAddressETH();
 	createAddressLTC();
