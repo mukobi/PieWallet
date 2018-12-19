@@ -18,8 +18,8 @@ var PieWallet = {
     },
     publicAddresses: {
         btc: "<?php echo $myUserObject["btc_address"]; ?>",
-        eth: "<?php echo $myUserObject["ltc_address"]; ?>",
-        ltc: "<?php echo $myUserObject["eth_address"]; ?>"
+        eth: "<?php echo $myUserObject["eth_address"]; ?>",
+        ltc: "<?php echo $myUserObject["ltc_address"]; ?>"
     },
     __testpublicAddresses: {
         btc: "1F1tAaz5x1HUXrCNLbtMDqcw6o5GNn4xqX",
@@ -87,7 +87,6 @@ var refreshBalance = function() {
             if (xhttp3.readyState == 4 && xhttp3.status == 200) {
                 try {
                     var response = JSON.parse(xhttp3.responseText);
-                    console.dir(response);
                     PieWallet.balance.eth = parseFloat(response.balance) / 1000000000000000000;  // wei to eth
                     updateTickerHTML();
                 }
