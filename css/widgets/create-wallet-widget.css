@@ -25,10 +25,6 @@
     height: 100%;
 }
 
-#create-wallet-widget .wallet-create-window > * {
-    
-}
-
 #create-wallet-widget p  {
     font-size: 12pt;
     text-align: justify;
@@ -39,12 +35,12 @@
     text-decoration: underline;
 }
 
-#create-wallet-widget #wallet-create-seed-words {
+#create-wallet-widget .wallet-create-seed-words {
     margin: 8px 0;
     text-align: center;
 }
 
-#create-wallet-widget #wallet-create-seed-words span {
+#create-wallet-widget .wallet-create-seed-words span {
     background-color: white;
     padding: 1px 6px;
     border-radius: 8px;
@@ -89,4 +85,16 @@
     font-size: 18pt;
     word-wrap: break-word;
     text-align: center;
+}
+
+#create-wallet-widget .wallet-create-addresses.important-info > span {
+    display: block;
+    margin-bottom: 4px;
+    font-size: 14pt;
+}
+
+#create-wallet-widget .wallet-create-window.summary .important-info,
+#create-wallet-widget .wallet-create-window.summary .superemphasis,
+#create-wallet-widget .wallet-create-window.summary span {
+    font-size: 12pt;
 }

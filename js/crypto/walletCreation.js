@@ -71,9 +71,11 @@ var showRandomWords = function() {
     var wordsHtml = "";
     for(var i = 0; i < myWordsArr.length; i++) {
         wordsHtml += "<span>" + myWordsArr[i] + "</span>" + (i % 3 == 2 ? "<br>" : " ");
-        
     }
-    document.getElementById("wallet-create-seed-words").innerHTML = wordsHtml.trim(); 
+    var words = document.getElementsByClassName("wallet-create-seed-words");
+    for(var i = 0; i < words.length; i++) {
+        words[i].innerHTML = wordsHtml.trim();
+    }
 }
 
 var generateAndShowRandomWords = function() {
@@ -96,7 +98,10 @@ var generatePrivateKey = function() {
 }
 
 var showPrivateKey = function() {
-    document.getElementById("wallet-create-private-key").innerHTML = myPrivateKey;
+    var privates = document.getElementsByClassName("wallet-create-private-key");
+    for(var i = 0; i < privates.length; i++) {
+        privates[i].innerHTML = myPrivateKey;
+    }
     setActiveWindow(1);
 }
 
@@ -116,7 +121,7 @@ var createPublicKeyHash = function() {
 }
 
 var createBTCStyleAddress = function(prefix) {
-	var prefixedHash = "00" + __publicKeyHash;
+	var prefixedHash = prefix + __publicKeyHash;
 	var checksum = sha256(buffer.Buffer.from(
 				   sha256(buffer.Buffer.from(prefixedHash, 'hex')), 'hex'))
 				   .substring(0, 8);
@@ -146,7 +151,13 @@ var generateAddresses = function() {
 }
 
 var showAddresses = function() {
-    
+    var addresses = document.getElementsByClassName("wallet-create-addresses");
+    for(var i = 0; i < addresses.length; i++) {
+        addresses[i].innerHTML = 
+        "<span>BTC: " + myAddressBTC + "</span>" + 
+        "<span>ETH: " + myAddressETH + "</span>" + 
+        "<span>LTC: " + myAddressLTC + "</span>";
+    }
 }
 
 var generateAndShowAddresses = function() {

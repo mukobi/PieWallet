@@ -93,6 +93,11 @@ input.button {
 	text-shadow: 0 2px 3px black;
 }
 
+.align-center {
+	text-align: center !important;
+}
+
+
 
 body {
 	margin: 0;
