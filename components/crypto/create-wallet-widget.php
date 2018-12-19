@@ -21,7 +21,7 @@
         <h3>Your Addresses</h3>
         <a class="btn secondary" onClick="setActiveWindow(1)">Back to Private Key</a>
         <p class="wallet-create-addresses important-info"></p>
-        <p>These are your public addresses. Crypto sent to these is sent to you. You can then spend that crypto using your private key. Your addresses are public information that don't need protection. <b>PayPeer will store these addresses</b> for your convenience, but you should write them down anyway.</p>
+        <p>These are your public addresses. Crypto sent to these is sent to you. You can then spend that crypto using your private key. Your addresses are public information that don't need protection. <b>PieWallet will store these addresses</b> for your convenience, but you should write them down anyway.</p>
         <a class="btn primary" onClick="setActiveWindow(3)">Summary</a>
     </div>
     <div class="wallet-create-window summary">
