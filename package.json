@@ -1,0 +1,25 @@
+{
+  "name": "piewallet",
+  "version": "1.0.0",
+  "description": "This package.json only used for managing browserified npm packages",
+  "main": "none",
+  "dependencies": {
+    "elliptic": "^6.4.1",
+    "keccakjs": "^0.2.3",
+    "ripemd160": "^2.0.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mukobi/PieWallet-Frontend-Development.git"
+  },
+  "author": "Gabriel Mukobi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mukobi/PieWallet-Frontend-Development/issues"
+  },
+  "homepage": "https://github.com/mukobi/PieWallet-Frontend-Development#readme"
+}

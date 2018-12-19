@@ -27,4 +27,7 @@
 <script src="https://cdn.rawgit.com/h2non/jsHashes/master/hashes.js"></script>
 <script src="../../js/crypto/buffer.js"></script>
 <script src="../../js/crypto/base58.js"></script>
+<!-- various crypto modules, like ECDSA, ripemd160, keccak256: -->
+<script src="../../js/crypto/requirements.js"></script>
+ <!-- wallet creation main script: -->
 <script src="../../js/crypto/walletCreation.js"></script>
