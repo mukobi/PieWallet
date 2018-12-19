@@ -33,7 +33,7 @@
         <p class="wallet-create-private-key important-info"></p>
         <p class="align-center">My Public Addresses:</p>
         <p class="wallet-create-addresses important-info"></p>
-        <a class="btn primary" onClick="">Got It!</a>
+        <a class="btn primary" onClick="confirmWallet()">Got It!</a>
     </div>
 </div>
 <script src="../../js/crypto/bip39.js"></script>

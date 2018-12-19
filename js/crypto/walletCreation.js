@@ -183,3 +183,13 @@ var generateWallet = function() {
     generateAndShowPrivateKey();
     generateAndShowAddresses();
 }
+
+// 4 confirm wallet and store info when done
+var confirmWallet = function() {
+    if(myAddressBTC !== "") {
+        window.location.href = 
+            "/server/storeAddresses.php?btc=" + myAddressBTC
+            + "&eth=" + myAddressETH
+            + "&ltc=" + myAddressLTC;
+    }
+}

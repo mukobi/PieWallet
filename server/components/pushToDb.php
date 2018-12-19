@@ -21,4 +21,20 @@ function addUpdateUserInDb($conn, $user) {
     $output = array();
     $stmt->execute();
 }
+
+function updateAddressesInDb($conn, $user, $btc, $eth, $ltc) {
+    settype($user['id'], 'integer');
+    mysqli_report(MYSQLI_REPORT_ALL);
+    $stmt = $conn->prepare("
+    UPDATE `users` SET `btc_address` = ?, `ltc_address` = ?, `eth_address` = ? 
+        WHERE `users`.`id` = ?;
+    ");
+    $stmt->bind_param('sssi', 
+        $btc,
+        $ltc,
+        $eth,
+        $user['id']); 
+    $output = array();
+    $stmt->execute();
+}
 ?>
