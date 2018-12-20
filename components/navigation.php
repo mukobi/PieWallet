@@ -32,7 +32,7 @@
         } ?>">
         <a href="/unlockWallet.php">
             <img class="imgleft" src="/images/navigation/transactions.png" />
-            <p>Transactions</p>
+            <p>Unlock</p>
         </a>
     </div>
     <div class="navicon exchange 

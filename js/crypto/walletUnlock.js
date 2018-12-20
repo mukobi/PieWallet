@@ -76,7 +76,6 @@ var showPrivateKey = function() {
     for(var i = 0; i < privates.length; i++) {
         privates[i].innerHTML = myPrivateKey;
     }
-    setActiveWindow(1);
 }
 
 var generateAndShowPrivateKey = function() {
@@ -139,13 +138,63 @@ var generateAndShowAddresses = function() {
     showAddresses();
 }
 
+var showWords = function() {
+    document.getElementsByClassName("my-words-label")[0].classList.remove("hidden");
+    var wordsHtml = "";
+    for(var i = 0; i < myWordsArr.length; i++) {
+        wordsHtml += "<span>" + myWordsArr[i] + "</span>" + (i % 3 == 2 ? "<br>" : " ");
+    }
+    var words = document.getElementsByClassName("wallet-create-seed-words");
+    for(var i = 0; i < words.length; i++) {
+        words[i].innerHTML = wordsHtml.trim();
+    }
+}
+
+var checkValidWords = function() {
+    var val = document.getElementById("words").value.trim().toLowerCase();
+    if(val === "") {
+        alert("Please enter your 12 word seed");
+        return false;
+    }
+    if(val.search("[^a-zA-Z ]") !== -1) {
+        alert("Only enter letters and spaces");
+        return false;
+    }
+    for(var i = 0; i < val.split(" ").length; i++) {
+        if(!bip39.includes(val.split(" ")[i])) {
+            alert(val.split(" ")[i] + " is not a recognised seed word.");
+            return false;
+        }
+    }
+    if(val.indexOf("  ") !== -1) {
+        alert("Please remove double spaces");
+        return false;
+    }
+    if(val.split(" ").length != 12) {
+        alert("You must enter 12 words (found " + val.split(" ").length + ")");
+        return false;
+    }
+    myWordsArr = val.split(" ");
+    myWordsArrStr = val;
+    return true;
+}
+
 
 // 1 check imports
 checkValidImports();
 
 // 2 create wallet from seed or private key
-var unlockWallet = function() {
-    
+var unlockWalletFromWords = function() {
+    if (checkValidWords()) {
+        generateWallet();
+        showWords();
+        setActiveWindow(1);
+    }
+}
+var unlockWalletFromKey = function() {
+    if (checkValidKey()) {
+
+    }
 }
 
 // 3 generate wallet

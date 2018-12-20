@@ -96,6 +96,9 @@ input.button {
 .align-center {
 	text-align: center !important;
 }
+.hidden {
+	display: none;
+}
 
 
 
