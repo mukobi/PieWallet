@@ -30,7 +30,7 @@
         <?php if(basename($_SERVER['PHP_SELF']) == "transactions.php") {
             echo "active";
         } ?>">
-        <a href="/transactions.php">
+        <a href="/unlockWallet.php">
             <img class="imgleft" src="/images/navigation/transactions.png" />
             <p>Transactions</p>
         </a>
