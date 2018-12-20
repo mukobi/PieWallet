@@ -165,6 +165,11 @@ var generateAndShowAddresses = function() {
     showAddresses();
 }
 
+var openUnlockWallet = function() {
+    window.location.href = 
+        "/unlockWallet.php";
+}
+
 
 // 1 check imports
 checkValidImports();

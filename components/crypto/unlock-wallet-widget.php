@@ -1,6 +1,7 @@
 <div id="create-wallet-widget">
     <div class="wallet-create-window active">
         <h3>Unlock an Existing Wallet</h3>
+        <a class="btn secondary" onClick="openGenerateWallet()">Create New Wallet</a>
         <p>Enter either your 12 word seed phrase (separated by spaces) or your private key to unlock your wallet and see the rest of it's information.</p>
         <label for="words">12 Word Seed: </label>
         <input type="text" id="words" name="words"

@@ -207,6 +207,11 @@ var checkValidKey = function() {
     return true;
 }
 
+var openGenerateWallet = function() {
+    window.location.href = 
+        "/createWallet.php";
+}
+
 
 // 1 check imports
 checkValidImports();

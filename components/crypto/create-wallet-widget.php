@@ -1,6 +1,7 @@
 <div id="create-wallet-widget">
     <div class="wallet-create-window active">
         <h3>Let's Create Your PieWallet!</h3>
+        <a class="btn secondary" onClick="openUnlockWallet()">Unlock Existing Wallet</a>
         <p>These are your seed of 12 random words from which we generate your wallet. This way, you can write down easy to remember information that can be used to unlock your wallet it the future.</p>
         <div class="row">
             <a class="btn secondary" onClick="generateAndShowRandomWords()">Random Words</a>
