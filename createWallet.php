@@ -6,11 +6,6 @@ include_once("server/components/handleTgLogin.php");
 include_once("server/components/loginToDb.php");
 include_once("server/queryDbSocial.php");
 
-if($myUserObject["btc_address"] != "" &&
-    $myUserObject["ltc_address"] != "" &&
-    $myUserObject["eth_address"] != "") {
-	header("Location:createWallet.php");
-}
 ?>
 <?php
 echo '<?xml version="1.0" encoding="utf-8"?>' ?>

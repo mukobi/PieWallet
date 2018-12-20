@@ -15,7 +15,7 @@
         <h3>Wallet Unlocked</h3>
         <a class="btn secondary" onClick="setActiveWindow(0)">Back</a>
         <p class="align-center hidden my-words-label">My Words:</p>
-        <p class="wallet-create-seed-words superemphasis"></p>
+        <p class="wallet-create-seed-words superemphasis my-words-label"></p>
         <p class="align-center">My Private Key:</p>
         <p class="wallet-create-private-key important-info"></p>
         <p class="align-center">My Public Addresses:</p>

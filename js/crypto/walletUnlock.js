@@ -139,7 +139,10 @@ var generateAndShowAddresses = function() {
 }
 
 var showWords = function() {
-    document.getElementsByClassName("my-words-label")[0].classList.remove("hidden");
+    var words = document.getElementsByClassName("my-words-label");
+    for(var i = 0; i < words.length; i++) {
+        words[i].classList.remove("hidden");
+    }
     var wordsHtml = "";
     for(var i = 0; i < myWordsArr.length; i++) {
         wordsHtml += "<span>" + myWordsArr[i] + "</span>" + (i % 3 == 2 ? "<br>" : " ");
@@ -147,6 +150,13 @@ var showWords = function() {
     var words = document.getElementsByClassName("wallet-create-seed-words");
     for(var i = 0; i < words.length; i++) {
         words[i].innerHTML = wordsHtml.trim();
+    }
+}
+
+var hideWords = function() {
+    var words = document.getElementsByClassName("my-words-label");
+    for(var i = 0; i < words.length; i++) {
+        words[i].classList.add("hidden");
     }
 }
 
@@ -179,6 +189,24 @@ var checkValidWords = function() {
     return true;
 }
 
+var checkValidKey = function() {
+    var val = document.getElementById("key").value.trim().toLowerCase();
+    if(val === "") {
+        alert("Please enter your private key");
+        return false;
+    }
+    if(val.search("[^a-f0-9]") !== -1) {
+        alert("Your key should only be numbers and letters (a-f)");
+        return false;
+    }
+    if(val.length !== 64) {
+        alert("Your key should be 64 characters long (found " + val.length + ")");
+        return false;
+    }
+    myPrivateKey = val;
+    return true;
+}
+
 
 // 1 check imports
 checkValidImports();
@@ -193,7 +221,10 @@ var unlockWalletFromWords = function() {
 }
 var unlockWalletFromKey = function() {
     if (checkValidKey()) {
-
+        showPrivateKey();
+        generateAndShowAddresses();
+        hideWords();
+        setActiveWindow(1);
     }
 }
 
