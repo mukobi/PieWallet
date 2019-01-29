@@ -39,9 +39,7 @@
                         <img src="images/icons/qrcodedefault.png" alt="QR Code" />
                     </a>
                 </div> 
-                <p class="input-row address">
-                    Je5Keh74bWsMd83rw3Lkx
-                </p>
+                <p class="input-row address" id="send-receive-window-public-address"></p>
             </div>
             <script>
             function changeSendReceiveTab(tabName) {
@@ -62,7 +60,7 @@
                 
                 var coinMap = {0:"BTC", 1:"LTC", 2:"ETH"};
                 var coin = coinMap[document.getElementById("send-receive-coin-select").selectedIndex];
-                console.log("Coin: " + coin);
+                // console.log("Coin: " + coin);
                 
                 tabName = tabName.charAt(0).toUpperCase() + tabName.slice(1);
 
@@ -72,7 +70,10 @@
                 
                 document.getElementById("send-receive-window-image-container").classList.remove("BTC", "LTC", "ETH");
                 document.getElementById("send-receive-window-image-container").classList.add(coin);
+
+                document.getElementById("send-receive-window-public-address").innerHTML = PieWallet.publicAddresses[coin.toLowerCase()];
             }
+
             function xOutOfSendReceive() {
                 document.getElementById("sendreceive").classList.add("transparent");
                 setTimeout(function() {
