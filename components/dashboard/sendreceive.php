@@ -35,12 +35,16 @@
             </div>
             <div id="receive" class="tab-sendreceive" style="display:none">
                 <div class="input-row">
+                    <p>Share your public address by text or QR code to let someone send you cryptocurrency.</p>
+                </div> 
+                <div class="input-row">
                     <a href="#">
-                        <img src="images/icons/qrcodedefault.png" alt="QR Code" />
+                        <div id="send-receive-window-address-qrcode"></div>
                     </a>
                 </div> 
                 <p class="input-row address" id="send-receive-window-public-address"></p>
             </div>
+            <script src="../../js/lib/qrcode.min.js"></script>
             <script>
             function changeSendReceiveTab(tabName) {
                 // change tab
@@ -51,7 +55,6 @@
                 }
                 document.getElementById(tabName).style.display = "block";
                 // change highlighted button
-                var i;
                 var x = document.getElementsByClassName("button");
                 for (i = 0; i < x.length; i++) {
                     x[i].classList.remove("active");
@@ -72,6 +75,16 @@
                 document.getElementById("send-receive-window-image-container").classList.add(coin);
 
                 document.getElementById("send-receive-window-public-address").innerHTML = PieWallet.publicAddresses[coin.toLowerCase()];
+                
+                document.getElementById("send-receive-window-address-qrcode").innerHTML = "";
+                var qrcode = new QRCode("send-receive-window-address-qrcode", {
+                    text: PieWallet.publicAddresses[coin.toLowerCase()],
+                    width: 128,
+                    height: 128,
+                    colorLight : "#ffffff",
+                    colorDark : "#000000",
+                    correctLevel : QRCode.CorrectLevel.H
+                });
             }
 
             function xOutOfSendReceive() {
