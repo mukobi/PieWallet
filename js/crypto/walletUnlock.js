@@ -1,32 +1,32 @@
 var checkValidImports = function() {
   var err;
   if (typeof bip39 == "undefined") {
-    err = "Can't find bip39 word list. Make sure you are on the right page";
+    err = "Can't find bip39 word list. Make sure you are on the right page.";
     alert(err);
     throw err;
   }
   if (typeof window.crypto == "undefined") {
-    err = "Can't find window.crypto lib. Try a different browser";
+    err = "Can't find window.crypto lib, so wallet creation is not possible. Please try a different browser.";
     alert(err);
     throw err;
   }
   if (typeof sha256 == "undefined") {
-    err = "Can't find sha256 lib. Make sure you are on the right page";
+    err = "Can't find sha256 lib. Make sure you are on the right page.";
     alert(err);
     throw err;
   }
   if (typeof BigInt != "function") {
-    err = "Can't find BigInt function. Try a different browser";
+    err = "Can't find BigInt function, so wallet creation is not possible. Please try a different browser.";
     alert(err);
     throw err;
   }
   if (typeof window.ec == "undefined") {
-    err = "Can't find elliptic lib. Make sure you are on the right page";
+    err = "Can't find elliptic lib. Make sure you are on the right page.";
     alert(err);
     throw err;
   }
   if (typeof window.RIPEMD160 == "undefined") {
-    err = "Can't find RIPEMD160 lib. Make sure you are on the right page";
+    err = "Can't find RIPEMD160 lib. Make sure you are on the right page.";
     alert(err);
     throw err;
   }
