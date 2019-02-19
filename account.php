@@ -15,6 +15,7 @@ echo '<?xml version="1.0" encoding="utf-8"?>' ?>
 		<link rel="stylesheet" href="/css/account.css">
 		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<?php include_once("server/walletFunctionality.php"); ?>
 	</head>
 
 	<body>

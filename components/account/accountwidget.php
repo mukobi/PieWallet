@@ -22,7 +22,7 @@
             <div>
                 <img src="images/icons/balance.svg" />Balance:
             </div>
-            <span>$864.253</span>
+            <span class="balance-total-usd"></span>
         </div>
         <div id="telegram">
             <div>
