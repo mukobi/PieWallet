@@ -45,4 +45,5 @@
 <!-- various crypto modules, like ECDSA, ripemd160, keccak256: -->
 <script src="../../js/crypto/requirements.js"></script>
  <!-- wallet creation main script: -->
+<script src="../../js/crypto/walletFunctionReqs.js"></script>
 <script src="../../js/crypto/walletCreation.js"></script>
