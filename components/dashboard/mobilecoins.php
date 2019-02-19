@@ -49,8 +49,9 @@
     </div>
     <script>
         function popupWallet(coin) {
+            console.log(coin);
             changePopupWindowContents("");
-            loadPage(`components/dashboard/wallets.php?coin=${coin}`, changePopupWindowContents);
+            loadPageMultiCallback(`components/dashboard/wallets.php?coin=${coin}`, changePopupWindowContents, updateTickerHTML);
             showPopupWindow();
         }
     </script>

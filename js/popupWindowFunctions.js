@@ -27,3 +27,17 @@ function loadPage(page, callback) {
     xhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
     xhttp.send(null);
 }
+
+function loadPageMultiCallback(page, resultCallback, otherCallback) {
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() { 
+        if (xhttp.readyState == 4 && xhttp.status == 200) {
+            resultCallback(xhttp.responseText);
+            otherCallback();
+        }
+
+    }
+    xhttp.open("GET", page, true);
+    xhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+    xhttp.send(null);
+}

@@ -16,6 +16,11 @@ var PieWallet = {
         eth: null,
         ltc: null
     },
+    balanceUSD: {
+        btc: null,
+        eth: null,
+        ltc: null
+    },
     publicAddresses: {
         btc: "<?php echo $myUserObject["btc_address"]; ?>",
         eth: "<?php echo $myUserObject["eth_address"]; ?>",
@@ -135,15 +140,18 @@ var updateTickerHTML = function() {
         
         list = document.getElementsByClassName("balance-btc-usd");
         for (var i = 0; i < list.length; i++) {
-            list[i].innerHTML = ("$" + PieWallet.balance.btc * PieWallet.marketValue.btc).toString().substr(0,9);
+            PieWallet.balanceUSD.btc = PieWallet.balance.btc * PieWallet.marketValue.btc;
+            list[i].innerHTML = "$" + (PieWallet.balanceUSD.btc).toString().substr(0,9);
         }
         list = document.getElementsByClassName("balance-ltc-usd");
         for (var i = 0; i < list.length; i++) {
-            list[i].innerHTML = ("$" + PieWallet.balance.ltc * PieWallet.marketValue.ltc).toString().substr(0,9);
+            PieWallet.balanceUSD.ltc = PieWallet.balance.ltc * PieWallet.marketValue.ltc;
+            list[i].innerHTML = "$" + (PieWallet.balanceUSD.ltc).toString().substr(0,9);
         }
         list = document.getElementsByClassName("balance-eth-usd");
         for (var i = 0; i < list.length; i++) {
-            list[i].innerHTML = ("$" + PieWallet.balance.eth * PieWallet.marketValue.eth).toString().substr(0,9);
+            PieWallet.balanceUSD.eth = PieWallet.balance.eth * PieWallet.marketValue.eth;
+            list[i].innerHTML = "$" + (PieWallet.balanceUSD.eth).toString().substr(0,9);
         }
 
         list = document.getElementsByClassName("balance-total-usd");
