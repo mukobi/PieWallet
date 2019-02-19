@@ -46,25 +46,11 @@ else {
 		</div>
 	</div>
     <script defer>
-		function updateTickers() {
-			console.log("tick " + coin);
-			document.getElementById("wallet-coin-counter").innerHTML = "lalala";
-			document.getElementById("wallet-coin-counter").classList.remove("balance-btc", "balance-ltc", "balance-eth");
-			document.getElementById("wallet-coin-counter").classList.add("balance-" + coin);
-			document.getElementById("wallet-coin-usd-counter").classList.remove("balance-btc-usd", "balance-ltc-usd", "balance-eth-usd");
-			document.getElementById("wallet-coin-usd-counter").classList.add("balance-" + coin + "-usd");
-			updateTickerHTML();
-		}
         function popupSendReceive(coin, action) {
             document.getElementById("send-receive-coin-select").selectedIndex = coin;
             changeSendReceiveTab(action);
             document.getElementById("sendreceive").classList.remove("transparent");
 			document.getElementById("sendreceive").classList.add("active");
-		}
-		if(window.addEventListener){  // show words again when doc loaded
-			window.addEventListener('load', updateTickers)
-		} else{
-			window.attachEvent('onload', updateTickers)
 		}
     </script>
 </div>
