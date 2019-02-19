@@ -13,7 +13,6 @@ echo '<?xml version="1.0" encoding="utf-8"?>' ?>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 	<head>
 		<title>Dashboard - PayPeer.io</title>
-		<link rel="stylesheet" href="https://changelly.com/widget.css">
 		<link rel="stylesheet" href="/css/style11.css">
 		<link rel="stylesheet" href="/css/dashboard.css">
 		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
