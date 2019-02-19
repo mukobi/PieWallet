@@ -129,11 +129,15 @@ var createBTCStyleAddress = function(prefix) {
 }
 
 var createAddressBTC = function() {
-    myAddressBTC = createBTCStyleAddress("00");
+    var networkPrefix = "00";
+    networkPrefix = "6f";  // testnet
+    myAddressBTC = createBTCStyleAddress(networkPrefix);
 }
 
 var createAddressLTC = function() {
-	myAddressLTC = createBTCStyleAddress("30");  // only difference from BTC is network prefix
+    var networkPrefix = "30";  // only difference from BTC is network prefix
+    // networkPrefix = "6f";  // testnet
+	myAddressLTC = createBTCStyleAddress(networkPrefix);
 }
 
 var createAddressETH = function() {
