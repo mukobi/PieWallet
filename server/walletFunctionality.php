@@ -114,15 +114,15 @@ var updateTickerHTML = function() {
        PieWallet.balance.btc !== null && PieWallet.balance.ltc !== null && PieWallet.balance.eth !== null) {
         var list = document.getElementsByClassName("market-btc");
         for (var i = 0; i < list.length; i++) {
-            list[i].innerHTML = "$" + PieWallet.marketValue.btc.toString().substr(0,8);
+            list[i].innerHTML = "$" + PieWallet.marketValue.btc.toString().substr(0,7);
         }
         list = document.getElementsByClassName("market-ltc");
         for (var i = 0; i < list.length; i++) {
-            list[i].innerHTML = "$" + PieWallet.marketValue.ltc.toString().substr(0,8);
+            list[i].innerHTML = "$" + PieWallet.marketValue.ltc.toString().substr(0,7);
         }
         list = document.getElementsByClassName("market-eth");
         for (var i = 0; i < list.length; i++) {
-            list[i].innerHTML = "$" + PieWallet.marketValue.eth.toString().substr(0,8);
+            list[i].innerHTML = "$" + PieWallet.marketValue.eth.toString().substr(0,7);
         }
 
         list = document.getElementsByClassName("balance-btc");
@@ -141,17 +141,17 @@ var updateTickerHTML = function() {
         list = document.getElementsByClassName("balance-btc-usd");
         for (var i = 0; i < list.length; i++) {
             PieWallet.balanceUSD.btc = PieWallet.balance.btc * PieWallet.marketValue.btc;
-            list[i].innerHTML = "$" + (PieWallet.balanceUSD.btc).toString().substr(0,9);
+            list[i].innerHTML = "$" + (PieWallet.balanceUSD.btc).toString().substr(0,7);
         }
         list = document.getElementsByClassName("balance-ltc-usd");
         for (var i = 0; i < list.length; i++) {
             PieWallet.balanceUSD.ltc = PieWallet.balance.ltc * PieWallet.marketValue.ltc;
-            list[i].innerHTML = "$" + (PieWallet.balanceUSD.ltc).toString().substr(0,9);
+            list[i].innerHTML = "$" + (PieWallet.balanceUSD.ltc).toString().substr(0,7);
         }
         list = document.getElementsByClassName("balance-eth-usd");
         for (var i = 0; i < list.length; i++) {
             PieWallet.balanceUSD.eth = PieWallet.balance.eth * PieWallet.marketValue.eth;
-            list[i].innerHTML = "$" + (PieWallet.balanceUSD.eth).toString().substr(0,9);
+            list[i].innerHTML = "$" + (PieWallet.balanceUSD.eth).toString().substr(0,7);
         }
 
         list = document.getElementsByClassName("balance-total-usd");
@@ -159,7 +159,7 @@ var updateTickerHTML = function() {
             list[i].innerHTML = ("$" 
                 + (PieWallet.balance.btc * PieWallet.marketValue.btc
                 + PieWallet.balance.ltc * PieWallet.marketValue.ltc
-                + PieWallet.balance.eth * PieWallet.marketValue.eth)).toString().substr(0,9);
+                + PieWallet.balance.eth * PieWallet.marketValue.eth)).toString().substr(0,8);
         }
 
         list = document.getElementsByClassName("change-btc");
