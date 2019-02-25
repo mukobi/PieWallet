@@ -64,6 +64,8 @@
   margin: 0 auto;
   border-radius: 16px;
   font-size: 14pt;
+  text-decoration: none;
+  color: white;
 }
 
 #create-wallet-widget .btn.primary {
@@ -76,7 +78,8 @@
   text-decoration: none;
 }
 
-#create-wallet-widget .btn.secondary:hover, #create-wallet-widget .btn.primary:hover {
+#create-wallet-widget .btn.secondary:hover,
+#create-wallet-widget .btn.primary:hover {
   cursor: pointer;
 }
 

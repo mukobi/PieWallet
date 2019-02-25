@@ -12,7 +12,7 @@ generateAndShowRandomWords();
 
 if(window.addEventListener){  // show words again when doc loaded
     window.addEventListener('load', showRandomWords)
-} else{
+} else {
     window.attachEvent('onload', showRandomWords)
 }
 
