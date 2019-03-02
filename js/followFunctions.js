@@ -2,6 +2,7 @@ function toggleFollow(element, id) {
     var toFollow = !element.classList.contains('unfollow');
     if(toFollow) {
         element.classList.add('unfollow');
+        element.classList.remove('follow');
         element.innerHTML = "Unfollow";
         var count = document.getElementById('follow-count');
         if(count !== null) count.innerHTML = parseInt(count.innerHTML) + 1;
@@ -13,6 +14,7 @@ function toggleFollow(element, id) {
     }
     else {
         element.classList.remove('unfollow');
+        element.classList.add('follow');
         element.innerHTML = "Follow";
         var count = document.getElementById('follow-count');
         if(count !== null) count.innerHTML = parseInt(count.innerHTML) - 1;

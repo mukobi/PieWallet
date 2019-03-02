@@ -58,14 +58,16 @@
 }
 
 .searchwidget .results .single-result a.follow {
-    border: 2px solid black;
+    background: white;
+    color: black;
+    border: none;
 }
 
 .searchwidget .results .single-result a.unfollow {
-    background: white;
-    color: black;
+    border: 2px solid black;
+    color: white;
+    background: none;
     content: "Unfollow";
-    border: none;
 }
 
 .searchwidget .results .single-result img {

@@ -65,14 +65,16 @@
 }
 
 #popup-window #popup-window-contents .single-result a.follow {
-    border: 2px solid black;
+    background: white;
+    color: black;
+    border: none;
 }
 
 #popup-window #popup-window-contents .single-result a.unfollow {
-    background: white;
-    color: black;
+    border: 2px solid black;
+    color: white;
+    background: none;
     content: "Unfollow";
-    border: none;
 }
 
 #popup-window #popup-window-contents .single-result img {
