@@ -4,7 +4,7 @@ include_once('components/handleTgLogin.php');
 include_once('queryDbSocial.php');
 
 if(isset($_GET['type']) && isset($_GET['id'])) { 
-	if($_GET['type'] == 'followers'){
+	if($_GET['type'] == 'followers') {
         $myFollowers = getFollowersIDs($conn, $_GET['id']);
         $myFollowersObjects = getUsersObjectsById($conn, $myFollowers);
         foreach($myFollowersObjects as $user) {
@@ -22,7 +22,7 @@ if(isset($_GET['type']) && isset($_GET['id'])) {
             . "</div>";
         }
     }
-    elseif($_GET['type'] == 'following'){
+    elseif($_GET['type'] == 'following') {
         $myFollowing = getFollowingIDs($conn, $_GET['id']);
         $myFollowingObjects = getUsersObjectsById($conn, $myFollowing);
         foreach($myFollowingObjects as $user) {

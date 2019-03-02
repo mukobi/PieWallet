@@ -1,0 +1,42 @@
+/*** layout ***/
+
+#main-container.search {
+	display: grid;
+	position: absolute;
+	top: 16px;
+	right: 16px;
+	bottom: 16px;
+	left: 0;
+	grid-gap: 16px;
+	grid-template-rows: 1fr;
+	grid-template-columns: 12% 1fr;
+	grid-template-areas: 
+		"navigation account";
+}
+
+@media screen and (max-width: 800px) {
+    #main-container.search {
+        display: flex;
+        top: 80px;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
+    #main-container.search #search {
+        height: 100%;
+    }
+}
+
+
+/*** widgets ***/
+#search-bar {
+	margin-bottom: 20px;
+}
+
+#search-button {
+	text-align: center;
+	margin: 0 auto;
+	display: block;
+	max-width: 200px;
+}
+
