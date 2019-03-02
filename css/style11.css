@@ -71,6 +71,25 @@ input.button {
 	cursor: pointer;
 }
 
+.btn {
+	border: 2px solid white;
+	padding: 4px 8px;
+	width: 100%;
+	margin: 0 auto;
+	border-radius: 16px;
+	font-size: 14pt;
+	text-decoration: none;
+	color: white;
+}
+
+::placeholder {
+	color: rgb(200,200,200);
+}
+
+.btn.primary {
+	background: linear-gradient(to left, #704ac7, #005ba1);
+}
+
 .link-element {
 	transition: all 250ms;
 	cursor: pointer;
@@ -160,11 +179,6 @@ html {
 .fixedlogo {
 	display: inline-block;
 	height: 16px;
-}
-
-/* header */
-#header-mobile {
-	display: none;
 }
 
 /* navigation */
