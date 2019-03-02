@@ -6,11 +6,11 @@
         <p>Enter either your 12 word seed phrase (separated by spaces) or your private key to unlock your wallet and see the rest of it's information.</p>
         <label for="words">12 Word Seed: </label>
         <input type="text" id="words" name="words"
-            placeholder="enter your words here like this">
+            placeholder="enter your words here">
         <a class="btn primary" onClick="unlockWalletFromWords()">Unlock from 12 Word Seed</a>
         <label for="key">Private Key: </label>
         <input type="text" id="key" name="key"
-            placeholder="enter your private key">
+            placeholder="enter your private key here">
         <a class="btn primary" onClick="unlockWalletFromKey()">Unlock from Private Key</a>
     </div>
     <div class="wallet-create-window summary">
