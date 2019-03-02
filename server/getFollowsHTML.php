@@ -18,7 +18,7 @@ if(isset($_GET['type']) && isset($_GET['id'])) {
                 . "<p>@<a href='https://t.me/" . $user['username'] . "'>" . $user['username'] . "</a></p>"
                 . (in_array($user['id'], $myFollowing) 
                     ? "<a class='button unfollow' onclick=toggleFollow(this,".$user['id'].")>Unfollow</a>" 
-                    : "<a class='button' onclick=toggleFollow(this,".$user['id'].")>Follow</a>") 
+                    : "<a class='button follow' onclick=toggleFollow(this,".$user['id'].")>Follow</a>") 
             . "</div>";
         }
     }

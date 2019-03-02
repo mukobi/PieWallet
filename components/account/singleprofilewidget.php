@@ -14,7 +14,7 @@
         <?php echo 
         (in_array($target_user['id'], $myFollowing) 
         ? "<a class='button unfollow' onclick=toggleFollow(this,".$target_user['id'].")>Unfollow</a>" 
-        : "<a class='button' onclick=toggleFollow(this,".$target_user['id'].")>Follow</a>") 
+        : "<a class='button follow' onclick=toggleFollow(this,".$target_user['id'].")>Follow</a>") 
         .
         (in_array($target_user['id'], $myFollowers)
         ? "<h4>".$target_user['name']." follows you</h4>"

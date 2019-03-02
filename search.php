@@ -23,7 +23,6 @@ echo '<?xml version="1.0" encoding="utf-8"?>' ?>
 			<?php
 			 	include_once("components/navigation.php");
 				include_once("components/search/searchwidget.php");
-                include_once("components/popup-window.php"); 
 			?>
 		</div>
 	</body>

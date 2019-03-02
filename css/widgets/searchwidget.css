@@ -1,14 +1,38 @@
+.searchwidget {
+    display: grid;
+    align-content: center;
+    overflow: hidden;
+}
+
+/*** search bar ***/
+.search-bar-container {
+	margin-bottom: 20px;
+	color: white;
+    text-align: center;
+}
+
+.search-bar {
+    margin-bottom: 20px;
+}
+
+.search-button {
+	text-align: center;
+	margin: 0 auto;
+	display: block;
+	max-width: 200px;
+}
+
+
+
+/*** results ***/
+
 .searchwidget .results {
-    position: absolute;
-    top: 60px;
-    left: 0;
-    right: 0;
-    bottom: 0;
     overflow: auto;
     padding: 16px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    color: white;
 }
 
 .searchwidget .results .single-result {
@@ -33,10 +57,15 @@
     color: white;
 }
 
+.searchwidget .results .single-result a.follow {
+    border: 2px solid black;
+}
+
 .searchwidget .results .single-result a.unfollow {
     background: white;
     color: black;
     content: "Unfollow";
+    border: none;
 }
 
 .searchwidget .results .single-result img {
