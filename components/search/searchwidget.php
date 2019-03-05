@@ -1,4 +1,5 @@
 <div class="searchwidget">
+    <?php include_once('components/account/getSingleResult.php'); ?>
     <link rel="stylesheet" href="css/widgets/searchwidget.css">
     <form action="?search" method="get" class="search-bar-container">
         <h3>Search</h3>
@@ -17,18 +18,7 @@
                 }
                 foreach($searchResults as $result) {
                     // TODO remove self from results
-                    $photoUrl = ($result['photo_url'] ? $result['photo_url'] : "/images/users/genericprofile.png");
-                    echo 
-                    "<div class='single-result'>"
-                        . "<a class='to-profile link-element' href='profile.php?id=".$result['id']."'>"
-                            . "<img src='" . $photoUrl . "' />"
-                            . "<h4>" . $result['name'] . "</h4>"
-                        . "</a>"
-                        . "<p>@<a href='https://t.me/" . $result['username'] . "'>" . $result['username'] . "</a></p>"
-                        . (in_array($result['id'], $myFollowing) 
-                            ? "<a class='button unfollow' onclick=toggleFollow(this,".$result['id'].")>Unfollow</a>" 
-                            : "<a class='button follow' onclick=toggleFollow(this,".$result['id'].")>Follow</a>") 
-                    . "</div>";
+                    echo getSingleResult($result, $myFollowing);
                 }
             }
             else{

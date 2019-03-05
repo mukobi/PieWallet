@@ -53,23 +53,6 @@
     border-radius: 8px;
 }
 
-.searchwidget .results .single-result a {
-    color: white;
-}
-
-.searchwidget .results .single-result a.follow {
-    background: white;
-    color: black;
-    border: none;
-}
-
-.searchwidget .results .single-result a.unfollow {
-    border: 2px solid black;
-    color: white;
-    background: none;
-    content: "Unfollow";
-}
-
 .searchwidget .results .single-result img {
     object-fit: cover;
     width:115px;

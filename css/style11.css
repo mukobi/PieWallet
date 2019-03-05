@@ -181,6 +181,29 @@ html {
 	height: 16px;
 }
 
+.results .single-result a {
+	color: white;
+}
+
+.results .single-result p.username, .results .single-result p.username a {
+	font-size: 12pt;
+}
+
+.results .single-result a.follow {
+    background: white;
+    color: black;
+    border: none;
+}
+
+.results .single-result a.unfollow {
+    border: 2px solid black;
+    color: white;
+    background: none;
+    content: "Unfollow";
+}
+
+
+
 /* navigation */
 #navigation-menu {
 	background: #3C4564;
