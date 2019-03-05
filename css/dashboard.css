@@ -28,6 +28,12 @@
     justify-content: flex-start;
 }
 
+@media screen and (max-height: 530px) {
+	#main-container #profilewidget {
+		margin-bottom: 0px;
+	}
+}
+
 /* mobile coins */
 #mobile-coins-container {
 	display: none;
