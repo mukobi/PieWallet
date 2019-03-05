@@ -90,8 +90,11 @@ input.button {
 	color: rgb(200,200,200);
 }
 
-.btn.primary {
+.primary.btn {
 	background: linear-gradient(to left, #704ac7, #005ba1);
+}
+.primary.btn:hover {
+	cursor: pointer;
 }
 
 .link-element {

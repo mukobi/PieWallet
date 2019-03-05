@@ -21,16 +21,13 @@
         <div class="bottomform">
             <div id="send" class="tab-sendreceive">
                 <div class="input-row">
-                    <input type="text" name="ammount" placeholder="Enter Amount"/>
-                </div>  
-                <div class="input-row">
-                    <input type="text" name="to" placeholder="Enter Address"/>
+                    <p id="wallet-send-instructions"></p>
                 </div>
-                <div>
-                    <h5>Fee: </h5>
-                </div> 
                 <div class="input-row">
-                    <input type="submit" value="Send" />
+                    <input type="text" name="search" placeholder="Search Users" id="user-search-bar"/>
+                </div>
+                <div class="input-row">
+                    <a class="btn primary" onClick="searchForUser()">Search</a>
                 </div> 
             </div>
             <div id="receive" class="tab-sendreceive" style="display:none">
@@ -74,6 +71,13 @@
                 document.getElementById("send-receive-window-image-container").classList.remove("BTC", "LTC", "ETH");
                 document.getElementById("send-receive-window-image-container").classList.add(coin);
 
+                var sendMessages = {
+                    "BTC": "<ol><li><a href='unlockWallet.php'>Unlock your private key</a></li><li>Import your private key into <a href='https://login.blockchain.com/en/#/settings/addresses/btc'>Blockchain.com</a> or your favorite BTC wallet</li><li>Search users below and send BTC to their address</li></p>", 
+                    "LTC": "",
+                    "ETH": ""
+                };
+                document.getElementById("wallet-send-instructions").innerHTML = sendMessages[coin];
+
                 document.getElementById("send-receive-window-public-address").innerHTML = PieWallet.publicAddresses[coin.toLowerCase()];
                 
                 document.getElementById("send-receive-window-address-qrcode").innerHTML = "";
@@ -85,6 +89,10 @@
                     colorDark : "#000000",
                     correctLevel : QRCode.CorrectLevel.H
                 });
+            }
+
+            function searchForUser() {
+                window.location.href = "search.php?query=" + document.getElementById("user-search-bar").value;
             }
 
             function xOutOfSendReceive() {

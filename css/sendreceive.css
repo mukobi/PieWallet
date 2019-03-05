@@ -19,6 +19,11 @@
     display: none;
 }
 
+#sendreceiveform #wallet-send-instructions * {
+    text-align: left;
+    list-style-position: inside;
+}
+
 #sendreceiveform #send-receive-window-image-container {
 	width: 96px;
 	height: 96px;
