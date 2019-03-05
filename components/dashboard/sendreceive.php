@@ -35,7 +35,7 @@
             </div>
             <div id="receive" class="tab-sendreceive" style="display:none">
                 <div class="input-row">
-                    <p>Share your public address by text or QR code to let someone send you cryptocurrency.</p>
+                    <p><a target="_blank" href="https://web.telegram.org">Share your public address</a> by text or QR code to let someone send you cryptocurrency.</p>
                 </div> 
                 <div class="input-row">
                     <a href="#">

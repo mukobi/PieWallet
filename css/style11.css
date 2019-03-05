@@ -32,6 +32,10 @@ h4 {
 	font-size: 20pt;
 }
 
+a {
+	color: inherit;
+}
+
 p {
 	font-size: 16pt;
 }
