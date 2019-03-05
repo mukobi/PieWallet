@@ -44,6 +44,15 @@
             <p>Exchange</p>
         </a>
     </div>
+    <div class="navicon search 
+        <?php if(basename($_SERVER['PHP_SELF']) == "search.php") {
+            echo "active";
+        } ?>">
+        <a href="/search.php">
+            <img class="imgleft" src="/images/navigation/search.png" />
+            <p>Search</p>
+        </a>
+    </div>
     <div class="navicon empty"></div>
     <div class="navicon logout noeffect">
         <a href="?logout=1" class="hollow-button">
