@@ -1,5 +1,6 @@
 #main-container.profile #single-profile-widget {
     justify-content: center;
+    grid-area: profile;
 }
 #main-container.profile #single-profile-widget > div {
     margin-bottom: 48px;
@@ -9,7 +10,6 @@
     height: 180px;
     display: flex;
     flex-wrap: nowrap;
-
 }
 
 #main-container.profile #single-profile-widget .picture {
@@ -27,6 +27,13 @@
     font-size: inherit;
 }
 
+#main-container.profile #single-profile-widget a {
+    font-size: 22pt;
+}
+#main-container.profile #single-profile-widget a.username {
+    color: white;
+}
+
 
 #main-container.profile #single-profile-widget .profile-info {
     display: flex;
@@ -35,19 +42,22 @@
     justify-content: space-around;
 }
 
-#main-container.profile #single-profile-widget .follow-button > a {
-    color: white;
-    font-size: 32px;
-    padding: 16px;
-}
-
-#main-container.profile #single-profile-widget .follow-button > a.unfollow {
-    background: white;
-    color: black;
-    content: "Unfollow";
-}
-
 #main-container.profile #single-profile-widget .coin-addresses > * {
     margin-bottom: 8px;
+    text-align: center;
 }
 
+@media screen and (max-width: 800px) {
+    #main-container.profile #single-profile-widget h2 {font-size: 22pt; word-break: break-all;}
+
+    #main-container.profile #single-profile-widget h3, 
+        #main-container.profile #single-profile-widget .follow-button a {font-size: 18pt; word-break: break-all;}
+
+    #main-container.profile #single-profile-widget h4 {font-size: 14pt; word-break: break-all;}
+
+    #main-container.profile #single-profile-widget .picture {
+        height: 100px;
+        width: 100px;
+        margin-right: 8px;
+    }
+}

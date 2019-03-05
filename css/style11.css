@@ -189,17 +189,19 @@ html {
 	font-size: 12pt;
 }
 
-.results .single-result a.follow {
+.results .single-result a.follow, #single-profile-widget a.follow {
     background: white;
     color: black;
-    border: none;
+	border: 2px solid white;
+	padding: 8px 16px;
 }
 
-.results .single-result a.unfollow {
+.results .single-result a.unfollow, #single-profile-widget a.unfollow {
     border: 2px solid black;
     color: white;
     background: none;
     content: "Unfollow";
+	padding: 8px 16px;
 }
 
 

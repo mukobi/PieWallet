@@ -7,7 +7,7 @@ function getSingleResult($user, $myFollowing) {
             . "<img src='" . $photoUrl . "' />"
             . "<h4>" . $user['name'] . "</h4>"
         . "</a>"
-        . "<p class='username'>@<a href='https://t.me/" . $user['username'] . "'>" . $user['username'] . "</a></p>"
+        . "<p class='username'><a href='https://t.me/" . $user['username'] . "'>@" . $user['username'] . "</a></p>"
         . (in_array($user['id'], $myFollowing) 
             ? "<a class='button unfollow' onclick=toggleFollow(this,".$user['id'].")>Unfollow</a>" 
             : "<a class='button follow' onclick=toggleFollow(this,".$user['id'].")>Follow</a>") 
