@@ -34,9 +34,9 @@
         </div>
     </div>
     <div class="buttons">
-        <a href="#" class="button"><img src="images/icons/wallets.svg" />View Wallets</a>
-        <a href="#" class="button"><img src="images/icons/settings.svg" />Settings</a>
-        <a href="#" class="button"><img src="images/icons/friends.svg" />Friends</a>
+        <a href="../../index.php" class="button"><img src="images/icons/wallets.svg" />View Wallets</a>
+        <a href="../../index.php" class="button"><img src="images/icons/settings.svg" />Settings</a>
+        <a href="../../search.php" class="button"><img src="images/icons/friends.svg" />Friends</a>
     </div>
     <script src="../../js/followFunctions.js"></script>	
 </div>

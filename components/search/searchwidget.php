@@ -16,7 +16,7 @@
                     echo "<h3>No results for '" . $name . "'</h3>";
                 }
                 foreach($searchResults as $result) {
-                    // TODO remove self
+                    // TODO remove self from results
                     $photoUrl = ($result['photo_url'] ? $result['photo_url'] : "/images/users/genericprofile.png");
                     echo 
                     "<div class='single-result'>"
