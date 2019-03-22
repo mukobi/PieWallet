@@ -130,7 +130,7 @@ var unlockWalletFromWords = function() {
 };
 var unlockWalletFromKey = function() {
   if (checkValidKey()) {
-    showPrivateKey();
+    generateAndShowPrivateKeys();
     generateAndShowAddresses();
     hideWords();
     setActiveWindow(1);
@@ -139,7 +139,7 @@ var unlockWalletFromKey = function() {
 
 // 3 generate wallet
 var generateWallet = function() {
-  generateAndShowPrivateKey();
+  generateAndShowPrivateKeys();
   generateAndShowAddresses();
 };
 

@@ -18,7 +18,7 @@ if(window.addEventListener){  // show words again when doc loaded
 
 // 3 generate wallet
 var generateWallet = function() {
-    generateAndShowPrivateKey();
+    generateAndShowPrivateKeys();
     generateAndShowAddresses();
 }
 

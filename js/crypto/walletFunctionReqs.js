@@ -1,6 +1,8 @@
 var myWordsArr = [];
 var myWordsArrStr = "";
 var myPrivateKey = "";
+var myPrivateKeyWIFBTC = "";
+var myPrivateKeyWIFLTC = "";
 var myAddressBTC = "";
 var myAddressLTC = "";
 var myAddressETH = "";
@@ -97,17 +99,15 @@ var generatePrivateKey = function() {
     myPrivateKey = (BigInt("0x" + sha256(myWordsArrStr)) % maxValue).toString(16);
 }
 
-var showPrivateKey = function() {
+var showPrivateKeys = function() {
     var privates = document.getElementsByClassName("wallet-create-private-key");
     for(var i = 0; i < privates.length; i++) {
-        privates[i].innerHTML = myPrivateKey;
+        privates[i].innerHTML = 
+        "<span>Uncompressed: " + myPrivateKey + "</span>" +
+        "<span>BTC WIF: " + myPrivateKeyWIFBTC + "</span>" + 
+        "<span>LTC WIF: " + myPrivateKeyWIFLTC + "</span>";
     }
     setActiveWindow(1);
-}
-
-var generateAndShowPrivateKey = function() {
-    generatePrivateKey();
-    showPrivateKey();
 }
 
 var createPublicKey = function() {
@@ -131,6 +131,22 @@ var createBTCStyleAddress = function(prefix) {
 	return window.Base58.encode(buffer.Buffer.from(prefixedHash + checksum, 'hex'));
 }
 
+var createPrivateKeyWIF = function(prefixedHash) {
+	var checksum = sha256(buffer.Buffer.from(
+				   sha256(buffer.Buffer.from(prefixedHash, 'hex')), 'hex'))
+				   .substring(0, 8);
+	return window.Base58.encode(buffer.Buffer.from(prefixedHash + checksum, 'hex'));
+}
+
+var createAllPrivateKeysWIF = function() {
+    var prefix = "80"; // BTC
+    // prefix = "ef";  // testnet
+    var suffix = "01"; // indicates compressed public keys
+	myPrivateKeyWIFBTC = createPrivateKeyWIF(prefix + myPrivateKey + suffix);
+    prefix = "B0"; // LTC
+	myPrivateKeyWIFLTC = createPrivateKeyWIF(prefix + myPrivateKey + suffix);
+}
+
 var createAddressBTC = function() {
     var networkPrefix = "00";
     //networkPrefix = "6f";  // testnet
@@ -147,6 +163,12 @@ var createAddressETH = function() {
     myAddressETH = "0x"
         + new window.keccak(256).update(buffer.Buffer.from(__publicKey, 'hex')).digest('hex')
         .substring(24);
+}
+
+var generateAndShowPrivateKeys = function() {
+    generatePrivateKey();
+    createAllPrivateKeysWIF();
+    showPrivateKeys();
 }
 	
 var generateAddresses = function() {
