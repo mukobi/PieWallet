@@ -112,7 +112,10 @@ var generateAndShowPrivateKey = function() {
 
 var createPublicKey = function() {
 	var keys = ec.keyFromPrivate(myPrivateKey, 'hex');  
-	__publicKey = keys.getPublic('hex');
+    __publicKey = keys.getPublic('hex');
+    // compress public key
+    var yIsEven = parseInt(__publicKey.substring(128), 16) % 2 == 0;
+    __publicKey = (yIsEven ? "02" : "03") + __publicKey.substring(2, 66);
 }
 
 var createPublicKeyHash = function() {
@@ -130,7 +133,7 @@ var createBTCStyleAddress = function(prefix) {
 
 var createAddressBTC = function() {
     var networkPrefix = "00";
-    networkPrefix = "6f";  // testnet
+    //networkPrefix = "6f";  // testnet
     myAddressBTC = createBTCStyleAddress(networkPrefix);
 }
 

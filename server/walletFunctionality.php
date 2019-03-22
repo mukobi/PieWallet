@@ -72,7 +72,7 @@ var refreshBalance = function() {
                 catch(err) {console.log(err);}
             }
         }
-        xhttp1.open("GET", "https://api.blockcypher.com/v1/btc/test3/addrs/" + PieWallet.publicAddresses.btc + "/balance", true);
+        xhttp1.open("GET", "https://api.blockcypher.com/v1/btc/main/addrs/" + PieWallet.publicAddresses.btc + "/balance", true);
         xhttp1.send();
         var xhttp2 = new XMLHttpRequest();
         xhttp2.onreadystatechange = function() { 
