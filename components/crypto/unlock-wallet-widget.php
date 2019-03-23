@@ -3,12 +3,12 @@
         <h3>Unlock an Existing Wallet</h3>
         <a class="btn secondary" onClick="openGenerateWallet()">Create New Wallet</a>
         <a class="btn secondary" href="index.php">Back to Dashboard</a>
-        <p>Enter either your 12 word seed phrase (separated by spaces) or your private key to unlock your wallet and see the rest of it's information.</p>
+        <p>Enter either your 12 word seed phrase (separated by spaces) or your <b>uncompressed</b> private key (i.e. not WIF) to unlock your wallet and see the rest of it's information.</p>
         <label for="words">12 Word Seed: </label>
         <input type="text" id="words" name="words"
             placeholder="enter your words here">
         <a class="btn primary" onClick="unlockWalletFromWords()">Unlock from 12 Word Seed</a>
-        <label for="key">Private Key: </label>
+        <label for="key">Uncompressed Private Key: </label>
         <input type="text" id="key" name="key"
             placeholder="enter your private key here">
         <a class="btn primary" onClick="unlockWalletFromKey()">Unlock from Private Key</a>
@@ -18,7 +18,7 @@
         <a class="btn secondary" onClick="setActiveWindow(0)">Back</a>
         <p class="align-center hidden my-words-label">My Words:</p>
         <p class="wallet-create-seed-words superemphasis my-words-label"></p>
-        <p class="align-center">My Private Key:</p>
+        <p class="align-center">My Private Keys:</p>
         <p class="wallet-create-private-key important-info"></p>
         <p class="align-center">My Public Addresses:</p>
         <p class="wallet-create-addresses important-info"></p>

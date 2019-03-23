@@ -103,7 +103,7 @@ var showPrivateKeys = function() {
     var privates = document.getElementsByClassName("wallet-create-private-key");
     for(var i = 0; i < privates.length; i++) {
         privates[i].innerHTML = 
-        "<span>Uncompressed: " + myPrivateKey + "</span>" +
+        "<span>Uncompressed/ETH: " + myPrivateKey + "</span>" +
         "<span>BTC WIF: " + myPrivateKeyWIFBTC + "</span>" + 
         "<span>LTC WIF: " + myPrivateKeyWIFLTC + "</span>";
     }

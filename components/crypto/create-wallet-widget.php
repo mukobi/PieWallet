@@ -14,8 +14,8 @@
         <h3>Your Private Key</h3>
         <a class="btn secondary" onClick="setActiveWindow(0)">Back to Words</a>
         <p class="wallet-create-private-key important-info"></p>
-        <p>This is your private key. It is very important that you <b>DO NOT LOSE THIS KEY</b>, as otherwise you will not be able to use any of the funds in your wallet.</p>
-        <p>You private key never gets sent to PayPeer's servers or stored on PayPeer's database, and we can't recover it for you. It is up to you to keep a secure, offline copy of it, so <b>write it down on paper</b> then click "Addresses" to see your public addresses.</p>
+        <p>These are your private keys. It is very important that you <b>DO NOT LOSE THESE KEYS</b>, as otherwise you will not be able to use any of the funds in your wallet.</p>
+        <p>You private keys never gets sent to PayPeer's servers or stored on PayPeer's database, and we can't recover them for you. It is up to you to keep a secure, offline copy of them, so <b>write them down on paper</b> then click "Addresses" to see your public addresses.</p>
         <a class="btn primary" onClick="setActiveWindow(2)">Addresses</a>
     </div>
     <div class="wallet-create-window">
@@ -30,7 +30,7 @@
         <a class="btn secondary" onClick="setActiveWindow(2)">Back to Addresses</a>
         <p class="align-center">My Words:</p>
         <p class="wallet-create-seed-words superemphasis"></p>
-        <p class="align-center">My Private Key:</p>
+        <p class="align-center">My Private Keys:</p>
         <p class="wallet-create-private-key important-info"></p>
         <p class="align-center">My Public Addresses:</p>
         <p class="wallet-create-addresses important-info"></p>
