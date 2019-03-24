@@ -21,12 +21,17 @@ var PieWallet = {
         eth: null,
         ltc: null
     },
-    publicAddresses: {
+    transactions: {
+        btc: null,
+        eth: null,
+        ltc: null
+    },
+    __publicAddresses: {
         btc: "<?php echo $myUserObject["btc_address"]; ?>",
         eth: "<?php echo $myUserObject["eth_address"]; ?>",
         ltc: "<?php echo $myUserObject["ltc_address"]; ?>"
     },
-    __testpublicAddresses: {
+    publicAddresses: {
         btc: "1F1tAaz5x1HUXrCNLbtMDqcw6o5GNn4xqX",
         eth: "0x2c5457890ce19c8778FbA5f2cFA627D1cfd2b4A7",
         ltc: "3CDJNfdWX8m2NwuGUV3nhXHXEeLygMXoAj"
@@ -67,6 +72,7 @@ var refreshBalance = function() {
                 try {
                     var response = JSON.parse(xhttp1.responseText);
                     PieWallet.balance.btc = parseFloat(response.balance) / 100000000;  // satoshis to btc
+                    PieWallet.transactions.btc = response.txs;
                     updateTickerHTML();
                 }
                 catch(err) {console.log(err);}
@@ -80,6 +86,7 @@ var refreshBalance = function() {
                 try {
                     var response = JSON.parse(xhttp2.responseText);
                     PieWallet.balance.ltc = parseFloat(response.balance) / 100000000;  // satoshis to ltc
+                    PieWallet.transactions.ltc = response.txs;
                     updateTickerHTML();
                 }
                 catch(err) {console.log(err);}
@@ -93,12 +100,14 @@ var refreshBalance = function() {
                 try {
                     var response = JSON.parse(xhttp3.responseText);
                     PieWallet.balance.eth = parseFloat(response.balance) / 1000000000000000000;  // wei to eth
+                    // NOTE! blockcypher ETH api currently doesn't work for /full endpoint, maybe try later
+                    //PieWallet.transactions.eth = response.txs; 
                     updateTickerHTML();
                 }
                 catch(err) {console.log(err);}
             }
         }
-        xhttp3.open("GET", "https://api.blockcypher.com/v1/eth/main/addrs/" + PieWallet.publicAddresses.eth + "/full", true);
+        xhttp3.open("GET", "https://api.blockcypher.com/v1/eth/main/addrs/" + PieWallet.publicAddresses.eth + "/balance", true);
         xhttp3.send();
     }
     else {
@@ -174,7 +183,13 @@ var updateTickerHTML = function() {
         for (var i = 0; i < list.length; i++) {
             list[i].innerHTML = ((PieWallet.marketChange.eth > 0 ? "+" : "") + PieWallet.marketChange.eth.toString()).substr(0,5) + "%";
         }
+
+        updateTransactionHTML();
     }
+}
+
+var updateTransactionHTML = function() {
+    
 }
 
 var refreshMoney = function() {
