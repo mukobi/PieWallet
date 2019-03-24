@@ -22,9 +22,9 @@ var PieWallet = {
         ltc: null
     },
     transactions: {
-        btc: null,
-        eth: null,
-        ltc: null
+        btc: [],
+        eth: [],
+        ltc: []
     },
     __publicAddresses: {
         btc: "<?php echo $myUserObject["btc_address"]; ?>",
@@ -189,7 +189,15 @@ var updateTickerHTML = function() {
 }
 
 var updateTransactionHTML = function() {
-    
+    // add all transactions into single array
+    var allTransactions = [];
+    PieWallet.transactions.btc.forEach(function(tx) {tx.coin = "btc"; allTransactions.push(tx);});
+    PieWallet.transactions.ltc.forEach(function(tx) {tx.coin = "ltc"; allTransactions.push(tx);});
+    PieWallet.transactions.eth.forEach(function(tx) {tx.coin = "eth"; allTransactions.push(tx);});
+    // sort transactions array by date
+
+    // add each transaction to document
+    console.dir(allTransactions);
 }
 
 var refreshMoney = function() {
