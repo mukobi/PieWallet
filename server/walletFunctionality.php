@@ -72,7 +72,7 @@ var refreshBalance = function() {
                 catch(err) {console.log(err);}
             }
         }
-        xhttp1.open("GET", "https://api.blockcypher.com/v1/btc/main/addrs/" + PieWallet.publicAddresses.btc + "/balance", true);
+        xhttp1.open("GET", "https://api.blockcypher.com/v1/btc/main/addrs/" + PieWallet.publicAddresses.btc + "/full", true);
         xhttp1.send();
         var xhttp2 = new XMLHttpRequest();
         xhttp2.onreadystatechange = function() { 
@@ -85,7 +85,7 @@ var refreshBalance = function() {
                 catch(err) {console.log(err);}
             }
         }
-        xhttp2.open("GET", "https://api.blockcypher.com/v1/ltc/main/addrs/" + PieWallet.publicAddresses.ltc + "/balance", true);
+        xhttp2.open("GET", "https://api.blockcypher.com/v1/ltc/main/addrs/" + PieWallet.publicAddresses.ltc + "/full", true);
         xhttp2.send();
         var xhttp3 = new XMLHttpRequest();
         xhttp3.onreadystatechange = function() { 
@@ -98,7 +98,7 @@ var refreshBalance = function() {
                 catch(err) {console.log(err);}
             }
         }
-        xhttp3.open("GET", "https://api.blockcypher.com/v1/eth/main/addrs/" + PieWallet.publicAddresses.eth + "/balance", true);
+        xhttp3.open("GET", "https://api.blockcypher.com/v1/eth/main/addrs/" + PieWallet.publicAddresses.eth + "/full", true);
         xhttp3.send();
     }
     else {
