@@ -33,6 +33,13 @@
     text-overflow: clip;
 }
 
+#transactions p span.from {
+    color: rgb(255, 112, 102);
+}
+#transactions p span.to {
+    color: rgb(69, 253, 69);
+}
+
 #transactions p span.me-BTC {
     color: #8EDEFC;
 }

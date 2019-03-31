@@ -213,8 +213,8 @@ var updateTransactionHTML = function() {
                 if(address === myAddress) address = 
                     "<span class='me-" + coin + "'>(me) " 
                     + address + "</span>";
-                inHTML += "<p>" + tx.inputs[j].output_value / conversion + 
-                    " from " + address + "</p>";
+                inHTML += "<p><span class='from'>" + tx.inputs[j].output_value / conversion + 
+                    "</span> from " + address + "</p>";
             }
         }
         var outHTML = "";
@@ -225,8 +225,8 @@ var updateTransactionHTML = function() {
                 if(address === myAddress) address = 
                     "<span class='me-" + coin + "'>(me) " 
                     + address + "</span>";
-                outHTML += "<p>" + tx.outputs[j].value / conversion + 
-                    " to " + address + "</p>";
+                outHTML += "<p><span class='to'>" + tx.outputs[j].value / conversion + 
+                    "</span> to " + address + "</p>";
             }
         }
         // better format time
