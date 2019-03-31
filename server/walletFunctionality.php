@@ -222,7 +222,7 @@ var updateTransactionHTML = function() {
         }
         transactionsHTML += 
         "<div>" +
-            "<p class='coin'>" + coin + " Transaction</p>" +
+            "<p class='coin'>" + coin + " - " + tx.received + "</p>" +
             "<div class='in'>" + inHTML + "</div>" +
             "<div class='out'>" + outHTML + "</div>" +
         "</div>";
