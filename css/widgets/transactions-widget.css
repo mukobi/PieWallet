@@ -1,0 +1,34 @@
+/* overall layout */
+#transactions {
+	display: block;
+    overflow: hidden;
+    text-align: left;
+}
+#transactions > .container {
+	overflow-y: scroll;
+    overflow-x: auto;
+    width: 100%;
+    height: 100%;
+}
+
+/* element style */
+#transactions .transaction-history-list > div {
+    margin-bottom: 16px;
+    padding-bottom: 16px;
+    border-bottom: 2px solid #1C8FE7;
+}
+
+#transactions .transaction-history-list > div > * {
+    margin-bottom: 8px;
+}
+
+#transactions h3 {
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+#transactions p {
+    font-size: 10pt;
+    white-space: nowrap;
+    text-overflow: clip;
+}

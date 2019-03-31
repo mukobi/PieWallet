@@ -341,20 +341,6 @@ html {
 	bottom: 0;
 }
 
-/* transactions */
-#main-container #transactions {
-	display: block;
-	text-align: center;
-	overflow-y: scroll;
-}
-#main-container #transactions #balance-content {
-	margin-bottom: 20px;
-}
-#main-container #transactions .balancetable ul {
-	width: 50%;
-	margin: 0 auto;
-}
-
 
 /**** Mobile Design ****/
 

@@ -204,17 +204,27 @@ var updateTransactionHTML = function() {
         var tx = allTransactions[i];
         var coin = tx.coin.toUpperCase();
         var conversion = coin === "ETH" ? 1000000000000000000 : 100000000;
-        var fromHTML = "";
+        var inHTML = "";
         for(var j = 0; j < tx.inputs.length; j++) {
             if(tx.inputs[j].addresses !== undefined) {
-                fromHTML += "<p> " + tx.inputs[j].output_value / conversion + 
+                inHTML += "<p>" + tx.inputs[j].output_value / conversion + 
                     " from " + tx.inputs[j].addresses[0] + "</p>"
+            }
+        }
+        var outHTML = "";
+        for(var j = 0; j < tx.outputs.length; j++) {
+            if(tx.outputs[j].addresses !== undefined) {
+                var address = tx.outputs[j].addresses == null ? 
+                    "none" : tx.outputs[j].addresses[0]
+                outHTML += "<p>" + tx.outputs[j].value / conversion + 
+                    " to " + address + "</p>"
             }
         }
         transactionsHTML += 
         "<div>" +
             "<p class='coin'>" + coin + " Transaction</p>" +
-            "<div class='in'>" + fromHTML + "</div>" +
+            "<div class='in'>" + inHTML + "</div>" +
+            "<div class='out'>" + outHTML + "</div>" +
         "</div>";
     }
 
