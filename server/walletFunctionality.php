@@ -194,10 +194,11 @@ var updateTransactionHTML = function() {
     PieWallet.transactions.btc.forEach(function(tx) {tx.coin = "btc"; allTransactions.push(tx);});
     PieWallet.transactions.ltc.forEach(function(tx) {tx.coin = "ltc"; allTransactions.push(tx);});
     PieWallet.transactions.eth.forEach(function(tx) {tx.coin = "eth"; allTransactions.push(tx);});
+
     // sort transactions array by date
+    allTransactions.sort(function(a,b){return b.received.localeCompare(a.received)});
 
     // create html list of transactions
-    
     console.dir(allTransactions);
     var transactionsHTML = "";
     for(var i = 0; i < allTransactions.length; i++) {
