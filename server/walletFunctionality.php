@@ -229,9 +229,11 @@ var updateTransactionHTML = function() {
                     " to " + address + "</p>";
             }
         }
+        // better format time
+        var dateTime = tx.received.replace(/T|Z/gi, " ");
         transactionsHTML += 
         "<div>" +
-            "<h5 class='coin'>" + coin + " - " + tx.received + "</h5>" +
+            "<h5 class='coin'>" + coin + " - " + dateTime + "</h5>" +
             "<div class='in'>" + inHTML + "</div>" +
             "<div class='out'>" + outHTML + "</div>" +
         "</div>";
