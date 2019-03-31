@@ -34,7 +34,7 @@ var PieWallet = {
     publicAddresses: {
         btc: "1F1tAaz5x1HUXrCNLbtMDqcw6o5GNn4xqX",
         eth: "0x2c5457890ce19c8778FbA5f2cFA627D1cfd2b4A7",
-        ltc: "3CDJNfdWX8m2NwuGUV3nhXHXEeLygMXoAj"
+        ltc: "LYy7HHbrJs4mkXJ4BC7LM4SFnCqcL5PqtK"
     },
     privateKey: {
         key: ""
