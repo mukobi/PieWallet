@@ -196,8 +196,33 @@ var updateTransactionHTML = function() {
     PieWallet.transactions.eth.forEach(function(tx) {tx.coin = "eth"; allTransactions.push(tx);});
     // sort transactions array by date
 
-    // add each transaction to document
+    // create html list of transactions
+    
     console.dir(allTransactions);
+    var transactionsHTML = "";
+    for(var i = 0; i < allTransactions.length; i++) {
+        var tx = allTransactions[i];
+        var coin = tx.coin.toUpperCase();
+        var conversion = coin === "ETH" ? 1000000000000000000 : 100000000;
+        var fromHTML = "";
+        for(var j = 0; j < tx.inputs.length; j++) {
+            if(tx.inputs[j].addresses !== undefined) {
+                fromHTML += "<p> " + tx.inputs[j].output_value / conversion + 
+                    " from " + tx.inputs[j].addresses[0] + "</p>"
+            }
+        }
+        transactionsHTML += 
+        "<div>" +
+            "<p class='coin'>" + coin + " Transaction</p>" +
+            "<div class='in'>" + fromHTML + "</div>" +
+        "</div>";
+    }
+
+    // add transaction history to document
+    list = document.getElementsByClassName("transaction-history-list");
+    for (var i = 0; i < list.length; i++) {
+        list[i].innerHTML = transactionsHTML;
+    }
 }
 
 var refreshMoney = function() {
