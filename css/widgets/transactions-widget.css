@@ -32,3 +32,13 @@
     white-space: nowrap;
     text-overflow: clip;
 }
+
+#transactions p span.me-BTC {
+    color: #8EDEFC;
+}
+#transactions p span.me-LTC {
+    color: #FFFF98;
+}
+#transactions p span.me-ETH {
+    color: #FF80B7;
+}

@@ -202,27 +202,36 @@ var updateTransactionHTML = function() {
     var transactionsHTML = "";
     for(var i = 0; i < allTransactions.length; i++) {
         var tx = allTransactions[i];
+        var myAddress = PieWallet.publicAddresses[tx.coin];
         var coin = tx.coin.toUpperCase();
         var conversion = coin === "ETH" ? 1000000000000000000 : 100000000;
         var inHTML = "";
         for(var j = 0; j < tx.inputs.length; j++) {
             if(tx.inputs[j].addresses !== undefined) {
+                var address = tx.inputs[j].addresses == null ? 
+                    "none" : tx.inputs[j].addresses[0];
+                if(address === myAddress) address = 
+                    "<span class='me-" + coin + "'>(me) " 
+                    + address + "</span>";
                 inHTML += "<p>" + tx.inputs[j].output_value / conversion + 
-                    " from " + tx.inputs[j].addresses[0] + "</p>"
+                    " from " + address + "</p>";
             }
         }
         var outHTML = "";
         for(var j = 0; j < tx.outputs.length; j++) {
             if(tx.outputs[j].addresses !== undefined) {
                 var address = tx.outputs[j].addresses == null ? 
-                    "none" : tx.outputs[j].addresses[0]
+                    "none" : tx.outputs[j].addresses[0];
+                if(address === myAddress) address = 
+                    "<span class='me-" + coin + "'>(me) " 
+                    + address + "</span>";
                 outHTML += "<p>" + tx.outputs[j].value / conversion + 
-                    " to " + address + "</p>"
+                    " to " + address + "</p>";
             }
         }
         transactionsHTML += 
         "<div>" +
-            "<p class='coin'>" + coin + " - " + tx.received + "</p>" +
+            "<h5 class='coin'>" + coin + " - " + tx.received + "</h5>" +
             "<div class='in'>" + inHTML + "</div>" +
             "<div class='out'>" + outHTML + "</div>" +
         "</div>";
