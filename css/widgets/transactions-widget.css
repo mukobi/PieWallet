@@ -27,7 +27,7 @@
     margin-bottom: 8px;
 }
 
-#transactions h3 {
+#transactions h3 a {
     margin-bottom: 24px;
     text-align: center;
 }

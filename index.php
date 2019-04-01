@@ -23,7 +23,7 @@ echo '<?xml version="1.0" encoding="utf-8"?>' ?>
 	<body>
 		<div id="main-container" class="content-main dashboard">
 			<?php 
-				include_once("components/dashboard/transactions.php");
+				include_once("components/dashboard/transactions-widget.php");
 				include_once("components/dashboard/profilewidget.php");
 				include_once("components/dashboard/sendreceive.php");
 				include_once("components/dashboard/coinwidgets.php");

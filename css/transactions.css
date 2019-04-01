@@ -1,6 +1,6 @@
 /*** layout ***/
 
-#main-container.search {
+#main-container.transactions {
 	display: grid;
 	position: absolute;
 	top: 16px;
@@ -11,18 +11,18 @@
 	grid-template-rows: 1fr;
 	grid-template-columns: 12% 1fr;
 	grid-template-areas: 
-		"navigation other";
+		"navigation transactions";
 }
 
 @media screen and (max-width: 800px) {
-    #main-container.search {
+    #main-container.transactions {
         display: flex;
         top: 80px;
         right: 0;
         bottom: 0;
         left: 0;
     }
-    #main-container.search #search {
+    #main-container.transactions #transactions {
         height: 100%;
     }
 }
