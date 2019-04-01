@@ -22,7 +22,7 @@
             <div>
                 <img src="images/icons/balance.svg" />Balance:
             </div>
-            <span class="balance-total-usd"></span>
+            <span class="balance-total-usd">loading...</span>
         </div>
         <div id="telegram">
             <div>
