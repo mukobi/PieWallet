@@ -3,8 +3,6 @@
     <h3>Transaction History</h3>
     <br>
     <div class="container">
-        <div class="transaction-history-list">
-            
-</div>
+        <div class="transaction-history-list"></div>
     </div>
 </div>

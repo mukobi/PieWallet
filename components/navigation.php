@@ -30,6 +30,15 @@
         <?php if(basename($_SERVER['PHP_SELF']) == "transactions.php") {
             echo "active";
         } ?>">
+        <a href="/transactions.php">
+            <img class="imgleft" src="/images/navigation/transactions.png" />
+            <p>Transactions</p>
+        </a>
+    </div>
+    <div class="navicon unlock 
+        <?php if(basename($_SERVER['PHP_SELF']) == "unlock.php") {
+            echo "active";
+        } ?>">
         <a href="/unlockWallet.php">
             <img class="imgleft" src="/images/navigation/transactions.png" />
             <p>Unlock</p>
