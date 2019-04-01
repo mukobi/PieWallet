@@ -2,7 +2,7 @@
     <div id="widget-bitcoin" class="coin-widget">
         <div class="ticker-main dashbox" onClick="popupWallet('btc')">
             <p class="title balance-btc"></p>
-            <p class="balance-btc-usd"></p>
+            <p class="balance-btc-usd">loading balance...</p>
             <img src="images/coins/bitcoin-trans.png" />
         </div>
         <div class="buttons">
@@ -13,7 +13,7 @@
     <div id="widget-litecoin" class="coin-widget">
         <div class="ticker-main dashbox" onClick="popupWallet('ltc')">
             <p class="title balance-ltc"></p>
-            <p class="balance-ltc-usd"></p>
+            <p class="balance-ltc-usd">loading balance...</p>
             <img src="images/coins/litecoin-trans.png" />
         </div>
         <div class="buttons">
@@ -24,7 +24,7 @@
     <div id="widget-ethereum" class="coin-widget">
         <div class="ticker-main dashbox" onClick="popupWallet('eth')">
             <p class="title balance-eth"></p>
-            <p class="balance-eth-usd"></p>
+            <p class="balance-eth-usd">loading balance...</p>
             <img src="images/coins/ethereum-trans.png" />
         </div>
         <div class="buttons">

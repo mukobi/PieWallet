@@ -3,6 +3,6 @@
     <a href="../../transactions.php"><h3>Transaction History</h3></a>
     <br>
     <div class="container">
-        <div class="transaction-history-list"></div>
+        <div class="transaction-history-list">loading transactions...</div>
     </div>
 </div>
