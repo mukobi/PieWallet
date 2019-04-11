@@ -26,12 +26,12 @@ var PieWallet = {
         eth: [],
         ltc: []
     },
-    __publicAddresses: {
+    publicAddresses: {
         btc: "<?php echo $myUserObject["btc_address"]; ?>",
         eth: "<?php echo $myUserObject["eth_address"]; ?>",
         ltc: "<?php echo $myUserObject["ltc_address"]; ?>"
     },
-    publicAddresses: {
+    __publicAddresses: {
         btc: "1F1tAaz5x1HUXrCNLbtMDqcw6o5GNn4xqX",
         eth: "0x2c5457890ce19c8778FbA5f2cFA627D1cfd2b4A7",
         ltc: "LYy7HHbrJs4mkXJ4BC7LM4SFnCqcL5PqtK"
