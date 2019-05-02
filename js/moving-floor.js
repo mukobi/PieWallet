@@ -32,7 +32,6 @@ function resizeAndDrawMovingFloor() {
             ctx.moveTo(maxWidth * i / numberVerticalReys, 0);
             ctx.lineTo(maxWidth * i / numberVerticalReys,maxHeight - 1);
         }
-        //console.log(horizontalLineArray);
         for(var i = 0; i < horizontalLineArray.length; ++i) {
             horizontalLineArray[i] = (horizontalLineArray[i] + 0.002 * maxHeight) % maxHeight; 
             var roundedPosition = Math.round(horizontalLineArray[i]);

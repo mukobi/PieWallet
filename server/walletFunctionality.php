@@ -1,3 +1,5 @@
+<!-- values.js for STRINGS var -->
+<script src="../js/values/values.js"></script>
 <script>
 // object to hold all info regarding wallet/cryptocurrency integration
 var PieWallet = {
@@ -78,7 +80,7 @@ var refreshBalance = function() {
                 catch(err) {console.log(err);}
             }
         }
-        xhttp1.open("GET", "https://api.blockcypher.com/v1/btc/main/addrs/" + PieWallet.publicAddresses.btc + "/full", true);
+        xhttp1.open("GET", STRINGS.endpoints.btc + "/addrs/" + PieWallet.publicAddresses.btc + "/full", true);
         xhttp1.send();
         var xhttp2 = new XMLHttpRequest();
         xhttp2.onreadystatechange = function() { 
@@ -92,7 +94,7 @@ var refreshBalance = function() {
                 catch(err) {console.log(err);}
             }
         }
-        xhttp2.open("GET", "https://api.blockcypher.com/v1/ltc/main/addrs/" + PieWallet.publicAddresses.ltc + "/full", true);
+        xhttp2.open("GET", STRINGS.endpoints.ltc + "/addrs/" + PieWallet.publicAddresses.ltc + "/full", true);
         xhttp2.send();
         var xhttp3 = new XMLHttpRequest();
         xhttp3.onreadystatechange = function() { 
@@ -107,7 +109,7 @@ var refreshBalance = function() {
                 catch(err) {console.log(err);}
             }
         }
-        xhttp3.open("GET", "https://api.blockcypher.com/v1/eth/main/addrs/" + PieWallet.publicAddresses.eth + "/balance", true);
+        xhttp3.open("GET", STRINGS.endpoints.eth + "/addrs/" + PieWallet.publicAddresses.eth + "/balance", true);
         xhttp3.send();
     }
     else {
@@ -199,7 +201,7 @@ var updateTransactionHTML = function() {
     allTransactions.sort(function(a,b){return b.received.localeCompare(a.received)});
 
     // create html list of transactions
-    console.dir(allTransactions);
+    // console.dir(allTransactions);
     var transactionsHTML = "";
     for(var i = 0; i < allTransactions.length; i++) {
         var tx = allTransactions[i];
