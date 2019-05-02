@@ -243,7 +243,8 @@ var updateTransactionHTML = function() {
     // add transaction history to document
     list = document.getElementsByClassName("transaction-history-list");
     for (var i = 0; i < list.length; i++) {
-        list[i].innerHTML = transactionsHTML;
+        list[i].innerHTML = transactionsHTML !== "" ? 
+            transactionsHTML : "No transactions found.";
     }
 }
 
