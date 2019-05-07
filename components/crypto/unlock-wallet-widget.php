@@ -1,3 +1,14 @@
+<script src="../../js/crypto/bip39.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/js-sha256/0.9.0/sha256.js"></script>
+<script src="https://cdn.rawgit.com/h2non/jsHashes/master/hashes.js"></script>
+<script src="../../js/crypto/buffer.js"></script>
+<script src="../../js/crypto/base58.js"></script>
+<!-- various crypto modules, like ECDSA, ripemd160, keccak256: -->
+<script src="../../js/crypto/requirements.js"></script>
+ <!-- wallet creation main script: -->
+<script src="../../js/values/values.js"></script>
+<script src="../../js/crypto/walletFunctionReqs.js"></script>
+<script src="../../js/crypto/walletUnlock.js"></script>
 <div id="create-wallet-widget">
     <div class="wallet-create-window active">
         <h3>Unlock an Existing Wallet</h3>
@@ -25,13 +36,3 @@
         <a class="btn primary" onClick="confirmWallet()">Got It!</a>
     </div>
 </div>
-<script src="../../js/crypto/bip39.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/js-sha256/0.9.0/sha256.js"></script>
-<script src="https://cdn.rawgit.com/h2non/jsHashes/master/hashes.js"></script>
-<script src="../../js/crypto/buffer.js"></script>
-<script src="../../js/crypto/base58.js"></script>
-<!-- various crypto modules, like ECDSA, ripemd160, keccak256: -->
-<script src="../../js/crypto/requirements.js"></script>
- <!-- wallet creation main script: -->
-<script src="../../js/crypto/walletFunctionReqs.js"></script>
-<script src="../../js/crypto/walletUnlock.js"></script>

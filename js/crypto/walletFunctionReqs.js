@@ -139,24 +139,17 @@ var createPrivateKeyWIF = function(prefixedHash) {
 }
 
 var createAllPrivateKeysWIF = function() {
-    var prefix = "80"; // BTC
-    // prefix = "ef";  // testnet
     var suffix = "01"; // indicates compressed public keys
-	myPrivateKeyWIFBTC = createPrivateKeyWIF(prefix + myPrivateKey + suffix);
-    prefix = "B0"; // LTC
-	myPrivateKeyWIFLTC = createPrivateKeyWIF(prefix + myPrivateKey + suffix);
+	myPrivateKeyWIFBTC = createPrivateKeyWIF(STRINGS.networkPrefixes.private.btc + myPrivateKey + suffix);
+	myPrivateKeyWIFLTC = createPrivateKeyWIF(STRINGS.networkPrefixes.private.ltc + myPrivateKey + suffix);
 }
 
 var createAddressBTC = function() {
-    var networkPrefix = "00";
-    //networkPrefix = "6f";  // testnet
-    myAddressBTC = createBTCStyleAddress(networkPrefix);
+    myAddressBTC = createBTCStyleAddress(STRINGS.networkPrefixes.address.btc);
 }
 
 var createAddressLTC = function() {
-    var networkPrefix = "30";  // only difference from BTC is network prefix
-    // networkPrefix = "6f";  // testnet
-	myAddressLTC = createBTCStyleAddress(networkPrefix);
+	myAddressLTC = createBTCStyleAddress(STRINGS.networkPrefixes.address.ltc);
 }
 
 var createAddressETH = function() {
