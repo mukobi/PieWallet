@@ -28,12 +28,12 @@ var PieWallet = {
         eth: [],
         ltc: []
     },
-    publicAddresses: {
+    _publicAddresses: {
         btc: "<?php echo $myUserObject["btc_address"]; ?>",
         eth: "<?php echo $myUserObject["eth_address"]; ?>",
         ltc: "<?php echo $myUserObject["ltc_address"]; ?>"
     },
-    __publicAddresses: {
+    publicAddresses: {
         btc: "1F1tAaz5x1HUXrCNLbtMDqcw6o5GNn4xqX",
         eth: "0x2c5457890ce19c8778FbA5f2cFA627D1cfd2b4A7",
         ltc: "LYy7HHbrJs4mkXJ4BC7LM4SFnCqcL5PqtK"
@@ -49,12 +49,22 @@ var refreshMarketValue = function() {
         if (xhttp1.readyState == 4 && xhttp1.status == 200) {
             try {
                 var response = JSON.parse(xhttp1.responseText);
-                PieWallet.marketValue.btc = parseFloat(response.data[0].quote.USD.price);
-                PieWallet.marketChange.btc = parseFloat(response.data[0].quote.USD.percent_change_1h);
-                PieWallet.marketValue.ltc = parseFloat(response.data[7].quote.USD.price);
-                PieWallet.marketChange.ltc = parseFloat(response.data[7].quote.USD.percent_change_1h);
-                PieWallet.marketValue.eth = parseFloat(response.data[2].quote.USD.price);
-                PieWallet.marketChange.eth = parseFloat(response.data[2].quote.USD.percent_change_1h);
+                for(var i = 0; i < response.data.length; i++) {
+                    var data = response.data[i];
+                    if(data.name === "Bitcoin") {
+                        PieWallet.marketValue.btc = parseFloat(data.quote.USD.price);
+                        PieWallet.marketChange.btc = parseFloat(data.quote.USD.percent_change_1h);
+                    }
+                    else if(data.name === "Litecoin") {
+                        PieWallet.marketValue.ltc = parseFloat(data.quote.USD.price);
+                        PieWallet.marketChange.ltc = parseFloat(data.quote.USD.percent_change_1h);
+                    }
+                    else if(data.name === "Ethereum") {
+                        PieWallet.marketValue.eth = parseFloat(data.quote.USD.price);
+                        PieWallet.marketChange.eth = parseFloat(data.quote.USD.percent_change_1h);
+                    }
+
+                }
                 updateTickerHTML();
             }
             catch(err) {console.log(err);}
@@ -152,17 +162,17 @@ var updateTickerHTML = function() {
         list = document.getElementsByClassName("balance-btc-usd");
         for (var i = 0; i < list.length; i++) {
             PieWallet.balanceUSD.btc = PieWallet.balance.btc * PieWallet.marketValue.btc;
-            list[i].innerHTML = "$" + (PieWallet.balanceUSD.btc).toString().substr(0,7);
+            list[i].innerHTML = "$" + (PieWallet.balanceUSD.btc).toString().substr(0,8);
         }
         list = document.getElementsByClassName("balance-ltc-usd");
         for (var i = 0; i < list.length; i++) {
             PieWallet.balanceUSD.ltc = PieWallet.balance.ltc * PieWallet.marketValue.ltc;
-            list[i].innerHTML = "$" + (PieWallet.balanceUSD.ltc).toString().substr(0,7);
+            list[i].innerHTML = "$" + (PieWallet.balanceUSD.ltc).toString().substr(0,8);
         }
         list = document.getElementsByClassName("balance-eth-usd");
         for (var i = 0; i < list.length; i++) {
             PieWallet.balanceUSD.eth = PieWallet.balance.eth * PieWallet.marketValue.eth;
-            list[i].innerHTML = "$" + (PieWallet.balanceUSD.eth).toString().substr(0,7);
+            list[i].innerHTML = "$" + (PieWallet.balanceUSD.eth).toString().substr(0,8);
         }
 
         list = document.getElementsByClassName("balance-total-usd");
