@@ -1,0 +1,26 @@
+.send-widget {
+    display: grid;
+    align-content: center;
+    overflow: hidden;
+    color: white;
+}
+
+.send-widget .tab-container .tab {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    padding: 32px;
+    margin: 0 auto;
+}
+.send-widget .tab-container .tab.active {
+    display: flex;
+}
+
+.send-widget .tab-container .tab.form {
+    max-width: 600px;
+}
+
+.send-widget .tab-container .tab > * {
+    margin-bottom: 16px;
+    text-align: center;
+}
