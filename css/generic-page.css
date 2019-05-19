@@ -1,6 +1,4 @@
-/*** layout ***/
-
-#main-container.search {
+#main-container {
 	display: grid;
 	position: absolute;
 	top: 16px;
@@ -15,7 +13,7 @@
 }
 
 @media screen and (max-width: 800px) {
-    #main-container.search {
+    #main-container {
         display: flex;
         top: 80px;
         right: 0;
