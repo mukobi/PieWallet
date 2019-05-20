@@ -4,8 +4,10 @@
   "description": "This package.json only used for managing browserified npm packages",
   "main": "none",
   "dependencies": {
+    "bitcoinjs-lib": "^5.0.3",
     "elliptic": "^6.4.1",
     "keccakjs": "^0.2.3",
+    "requests": "^0.2.2",
     "ripemd160": "^2.0.2"
   },
   "devDependencies": {},

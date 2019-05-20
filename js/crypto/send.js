@@ -10,3 +10,6 @@ var changeSendTabs = function() {
         }
     }
 }
+
+console.log(window.requests);
+console.log(window.bitcoin);

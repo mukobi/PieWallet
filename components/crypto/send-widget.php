@@ -17,6 +17,6 @@
             <p></p>
         </div>
     </div>
-    <script src="../../js/crypto/requirements.js"></script>
-    <script src="../../js/crypto/send.js"></script>
+    <script src="../../js/crypto/txRequirementsBroswerified.js"></script>	
+    <script src="../../js/crypto/send.js"></script>	
 </div>
