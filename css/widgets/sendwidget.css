@@ -5,22 +5,19 @@
     color: white;
 }
 
-.send-widget .tab-container .tab {
-    display: none;
+.send-widget .tab {
     flex-direction: column;
     justify-content: center;
     padding: 32px;
     margin: 0 auto;
-}
-.send-widget .tab-container .tab.active {
-    display: flex;
+    text-align: center;
 }
 
-.send-widget .tab-container .tab.form {
-    max-width: 600px;
+.send-widget .tab.send-form {
+    max-width: 800px;
 }
 
-.send-widget .tab-container .tab > * {
+.send-widget .tab > * {
     margin-bottom: 16px;
     text-align: center;
 }
