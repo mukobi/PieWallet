@@ -1,33 +1,22 @@
-var request = window.requests;
+/*
+From https://yohanes.gultom.me/2017/10/05/sending-bitcoin-programmatically-using-blockcypher-api/
+*/
+
+const request = require('request');
 const bitcoin = require("bitcoinjs-lib");
 const bitcoinNetwork = bitcoin.networks.testnet;
 
 
-var changeSendTabs = function() {
-    var tabs = document.getElementsByClassName("tab");
-    for(var i = 0; i < tabs.length; i++) {
-        var tab = tabs[i];
-        if(tab.classList.contains("active")) {
-            tab.classList.remove("active");
-        }
-        else {
-            tab.classList.add("active");
-        }
-    }
-}
-
-console.log(window.requests);
-console.log(window.bitcoin);
-
-
 /**
  * Send bitcoin in testnet using BlockCypher
+ * Exported to window.sendBitcoin() for use in smaller script
+ * after this one has been browserified
  * @param {number} amount - Bitcoin amount in BTC
  * @param {string} to - output Bitcoin wallet address
  * @param {string} from - input Bitcoin wallet address
  * @param {string} wif 
  */
-const sendBitcoin = function (amount, to, from, wif) {
+window.sendBitcoin = function (amount, to, from, wif) {
   let keys = bitcoin.ECPair.fromWIF(wif, bitcoinNetwork);
   return new Promise(function (resolve, reject) {
     // create tx skeleton

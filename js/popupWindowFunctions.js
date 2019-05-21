@@ -35,7 +35,6 @@ function loadPageMultiCallback(page, resultCallback, otherCallback) {
             resultCallback(xhttp.responseText);
             otherCallback();
         }
-
     }
     xhttp.open("GET", page, true);
     xhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
