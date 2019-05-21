@@ -25,18 +25,20 @@ window.sendBitcoin = function (amount, to, from, wif) {
         body: JSON.stringify({
           inputs: [{ addresses: [ from ] }],
           // convert amount from BTC to Satoshis
-          outputs: [{ addresses: [ to ], value: amount * Math.pow(10, 8) }]
+          outputs: [{ addresses: [ to ], value: Math.round(amount * Math.pow(10, 8)) }]
         }),
       },
       function (err, res, body) {
         if (err) {
           reject(err);        
         } else {
+          console.log(body);
           let tmptx = JSON.parse(body);
-          console.log("Errors found:");
           console.dir(tmptx);
-          if(tmptx.errors.length > 0) {
+          if(tmptx.errors !== undefined) {
             // show errors to the user
+            console.log("Errors found:");
+            console.dir(tmptx.errors);
             displayTxErrors(tmptx.errors);
             return;
           }
