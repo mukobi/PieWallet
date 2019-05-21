@@ -72,7 +72,7 @@
                 document.getElementById("send-receive-window-image-container").classList.add(coin);
 
                 var sendMessages = {
-                    "BTC": "<ol><li><a href='unlockWallet.php'>Unlock your private key</a></li><li>Import your private key into <a href='https://login.blockchain.com/en/#/settings/addresses/btc'>Blockchain.com</a> or your favorite BTC wallet</li><li>Search users below and send BTC to their address</li></ol>", 
+                    "BTC": "<p class='align-center'><b><a href='send.php'>Send with PieWallet</a></b></p><p class='align-center'><i>or</i></p><ol><li><a href='unlockWallet.php'>Unlock your private key</a></li><li>Import your private key into <a href='https://login.blockchain.com/en/#/settings/addresses/btc'>Blockchain.com</a> or your favorite BTC wallet</li><li>Search users below and send BTC to their address</li></ol>", 
                     "LTC": "<ol><li><a href='unlockWallet.php'>Unlock your private key</a></li><li>Import your private key into <a href='https://electrum-ltc.org/'>Electrum-LTC</a> or your favorite LTC wallet</li><li>Search users below and send LTC to their address</li></ol>",
                     "ETH": "<ol><li><a href='unlockWallet.php'>Unlock your private key</a></li><li>Import your private key into <a href='https://www.myetherwallet.com/Interface'>MyEtherWallet</a> or your favorite ETH wallet</li><li>Search users below and send ETH to their address</li></ol>"
                 };

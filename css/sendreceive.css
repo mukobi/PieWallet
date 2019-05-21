@@ -86,6 +86,10 @@
     color: white;
 }
 
+#sendreceiveform .bottomform #wallet-send-instructions > * {
+    margin-bottom: 16px;
+}
+
 
 /* special dashboard popup styling */
 
