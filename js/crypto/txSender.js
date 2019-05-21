@@ -2,7 +2,14 @@ var sendTx = function() {
     var input = gatherInput();
     if(validateInput(input)) {
         changeSendTabs();
-        // TODO Make TX request with window.sendBitcoin
+        // Make TX request using txRequireNode.js (browserified)
+        window.sendBitcoin(
+            input.amount, 
+            input.toAddress, 
+            input.fromAddress, 
+            input.fromPrivateKey
+        );
+        // TODO this function will call displayTxResponse()
     }
 }
 

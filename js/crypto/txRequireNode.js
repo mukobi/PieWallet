@@ -21,6 +21,7 @@ window.sendBitcoin = function (amount, to, from, wif) {
   return new Promise(function (resolve, reject) {
     // create tx skeleton
     request.post({
+      // TODO replace hard url with values string
       url: 'https://api.blockcypher.com/v1/btc/test3/txs/new',
         body: JSON.stringify({
           inputs: [{ addresses: [ from ] }],
@@ -51,7 +52,8 @@ window.sendBitcoin = function (amount, to, from, wif) {
                 reject(err);
               } else {
                 // return tx hash as feedback
-                let finaltx = JSON.parse(body);                
+                let finaltx = JSON.parse(body);
+                console.dir(finaltx);           
                 resolve(finaltx.tx.hash);
               }
             }

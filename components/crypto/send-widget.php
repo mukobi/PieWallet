@@ -19,5 +19,5 @@
         </div>
     </div>
     <script src="../../js/crypto/txRequirementsBroswerified.js"></script>	
-    <script src="../../js/crypto/send.js"></script>	
+    <script src="../../js/crypto/txSender.js"></script>	
 </div>
