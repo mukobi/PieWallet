@@ -1,8 +1,8 @@
-var sendTx = function(response, isError) {
-    changeSendTabs();
+var sendTx = function() {
     var input = gatherInput();
     if(validateInput(input)) {
-        // TODO POST a request to TX response page
+        changeSendTabs();
+        // TODO Make TX request with window.sendBitcoin
     }
 }
 
@@ -17,6 +17,7 @@ var gatherInput = function() {
 
 var validateInput = function(input) {
     // TODO validate user input
+    // TODO alert for confirmation of sending amount to address
     return true;
 }
 

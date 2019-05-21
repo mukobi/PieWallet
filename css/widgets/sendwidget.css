@@ -5,7 +5,8 @@
     color: white;
 }
 
-.send-widget .tab {
+.send-widget .tab-container .tab {
+    display: none;
     flex-direction: column;
     justify-content: center;
     padding: 32px;
@@ -13,11 +14,15 @@
     text-align: center;
 }
 
-.send-widget .tab.send-form {
+.send-widget .tab-container .tab.active {
+    display: flex;
+}
+
+.send-widget .tab-container .tab.send-form {
     max-width: 800px;
 }
 
-.send-widget .tab > * {
+.send-widget .tab-container .tab > * {
     margin-bottom: 16px;
     text-align: center;
 }
