@@ -44,8 +44,9 @@ window.sendBitcoin = function (amount, to, from, wif) {
           }
           // signing each of the hex-encoded string required to finalize the transaction
           tmptx.pubkeys = [];
+          console.dir(keys);
           tmptx.signatures = tmptx.tosign.map(function (tosign, n) {
-            tmptx.pubkeys.push(keys.getPublicKeyBuffer().toString('hex'));
+            tmptx.pubkeys.push(keys.publicKey.toString("hex"));
             return keys.sign(new Buffer(tosign, 'hex')).toDER().toString('hex');
           });
 
