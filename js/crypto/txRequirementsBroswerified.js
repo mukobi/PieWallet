@@ -33038,7 +33038,7 @@ window.sendBitcoin = function (amount, to, from, wif) {
   return new Promise(function (resolve, reject) {
     // create tx skeleton
     request.post({
-      url: 'https://api.blockcypher.com/v1/btc/test3/txs/new',
+      url: STRINGS.endpoints.btc + '/txs/new',
         body: JSON.stringify({
           inputs: [{ addresses: [ from ] }],
           // convert amount from BTC to Satoshis
@@ -33060,7 +33060,7 @@ window.sendBitcoin = function (amount, to, from, wif) {
 
           // sending back the transaction with all the signatures to broadcast
           request.post({
-            url: 'https://api.blockcypher.com/v1/btc/test3/txs/send',
+            url: STRINGS.endpoints.btc + '/txs/send',
               body: JSON.stringify(tmptx),
             },
             function (err, res, body) {
@@ -33068,7 +33068,8 @@ window.sendBitcoin = function (amount, to, from, wif) {
                 reject(err);
               } else {
                 // return tx hash as feedback
-                let finaltx = JSON.parse(body);                
+                let finaltx = JSON.parse(body);
+                console.dir(finaltx);           
                 resolve(finaltx.tx.hash);
               }
             }
