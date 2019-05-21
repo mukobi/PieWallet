@@ -14,9 +14,8 @@
         </div>
         <div class="tab response">
             <h3>Transaction Results</h3>
-            <p class="status">loading...</p>
-            <p></p>
-            <p></p>
+            <div id="send-response-results-container">loading...</div>
+            <a class="btn primary search-button" onClick="changeSendTabs()">New Transaction</a>
         </div>
     </div>
     <script src="../../js/values/values.js"></script>	

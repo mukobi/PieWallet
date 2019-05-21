@@ -1,4 +1,5 @@
 var STRINGS = {
+    networkType: "main", // "test" // for testnet
     endpoints: {
         btc: "https://api.blockcypher.com/v1/btc/main",
         // btc: "https://api.blockcypher.com/v1/btc/test3", // BTC testnet

@@ -3,13 +3,18 @@ var sendTx = function() {
     if(validateInput(input)) {
         changeSendTabs();
         // Make TX request using txRequireNode.js (browserified)
-        window.sendBitcoin(
-            input.amount, 
-            input.toAddress, 
-            input.fromAddress, 
-            input.fromPrivateKey
-        );
-        // TODO this function will call displayTxResponse()
+        try {
+            // this function will call displayTxResponse() or displayTxErrors()
+            window.sendBitcoin(
+                input.amount, 
+                input.toAddress, 
+                input.fromAddress, 
+                input.fromPrivateKey
+            );
+        }
+        catch(e) {
+            displayTxErrors([{error: e}]);
+        }
     }
 }
 
@@ -41,6 +46,15 @@ var changeSendTabs = function() {
     }
 }
 
-var displayTxResponse = function(response, isError) {
+var displayTxResponse = function(response) {
     // TODO Display response on page
+}
+
+var displayTxErrors = function(errorList) {
+    var errorHTML = "<h5>The following errors were found:</h5><ul>";
+    for(var i = 0; i < errorList.length; i++) {
+        errorHTML += "<li>" + errorList[i].error + "</li>";
+    }
+    errorHTML += "</ul>";
+    document.getElementById("send-response-results-container").innerHTML = errorHTML;
 }

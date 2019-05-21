@@ -4,8 +4,8 @@ From https://yohanes.gultom.me/2017/10/05/sending-bitcoin-programmatically-using
 
 const request = require('request');
 const bitcoin = require("bitcoinjs-lib");
-const bitcoinNetwork = bitcoin.networks.testnet;
-
+const bitcoinNetwork = STRINGS.networkType == "main" ? 
+  bitcoin.networks.bitcoin : bitcoin.networks.testnet;
 
 /**
  * Send bitcoin in testnet using BlockCypher
@@ -33,7 +33,13 @@ window.sendBitcoin = function (amount, to, from, wif) {
           reject(err);        
         } else {
           let tmptx = JSON.parse(body);
-          
+          console.log("Errors found:");
+          console.dir(tmptx);
+          if(tmptx.errors.length > 0) {
+            // show errors to the user
+            displayTxErrors(tmptx.errors);
+            return;
+          }
           // signing each of the hex-encoded string required to finalize the transaction
           tmptx.pubkeys = [];
           tmptx.signatures = tmptx.tosign.map(function (tosign, n) {
