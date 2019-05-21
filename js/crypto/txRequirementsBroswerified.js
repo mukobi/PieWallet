@@ -33064,7 +33064,11 @@ window.sendBitcoin = function (amount, to, from, wif) {
           console.dir(keys);
           tmptx.signatures = tmptx.tosign.map(function (tosign, n) {
             tmptx.pubkeys.push(keys.publicKey.toString("hex"));
-            return keys.sign(new Buffer(tosign, 'hex')).toDER().toString('hex');
+            let signature = keys.sign(new Buffer(tosign, 'hex'));
+            console.dir(signature);
+            let encodedSignature = bitcoin.script.signature.encode(signature,  bitcoin.Transaction.SIGHASH_NONE);    
+            let hexStr = encodedSignature.toString("hex");
+            return hexStr.substring(0, hexStr.length - 2); // slice off last byte (1 byte sighash version)
           });
 
           // sending back the transaction with all the signatures to broadcast

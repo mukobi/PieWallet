@@ -4,7 +4,7 @@ var sendTx = function() {
         changeSendTabs();
         // Make TX request using txRequireNode.js (browserified)
         try {
-            // this function will call displayTxResponse() or displayTxErrors()
+            // this function will call displayTxSuccess() or displayTxErrors()
             window.sendBitcoin(
                 input.amount, 
                 input.toAddress, 
@@ -46,7 +46,7 @@ var changeSendTabs = function() {
     }
 }
 
-var displayTxResponse = function(response) {
+var displayTxSuccess = function(response) {
     // TODO Display response on page
 }
 
