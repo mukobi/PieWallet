@@ -1,2 +1,2 @@
 window.bitcoin = require("bitcoinjs-lib");
-window.requests = require("requests");
+window.request = require("request");
