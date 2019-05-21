@@ -46,8 +46,43 @@ var changeSendTabs = function() {
     }
 }
 
-var displayTxSuccess = function(response) {
-    // TODO Display response on page
+var displayTxSuccess = function(tx) {
+    var coin = "btc";
+    var myAddress = PieWallet.publicAddresses[coin];
+    var coin = coin.toUpperCase();
+    var conversion = coin === "ETH" ? 1000000000000000000 : 100000000;
+    var inHTML = "";
+    for(var j = 0; j < tx.inputs.length; j++) {
+        if(tx.inputs[j].addresses !== undefined) {
+            var address = tx.inputs[j].addresses == null ? 
+                "none" : tx.inputs[j].addresses[0];
+            if(address === myAddress) address = 
+                "<span class='me-" + coin + "'>(me) " 
+                + address + "</span>";
+            inHTML += "<p><span class='from'>" + tx.inputs[j].output_value / conversion + 
+                "</span> from " + address + "</p>";
+        }
+    }
+    var outHTML = "";
+    for(var j = 0; j < tx.outputs.length; j++) {
+        if(tx.outputs[j].addresses !== undefined) {
+            var address = tx.outputs[j].addresses == null ? 
+                "none" : tx.outputs[j].addresses[0];
+            if(address === myAddress) address = 
+                "<span class='me-" + coin + "'>(me) " 
+                + address + "</span>";
+            outHTML += "<p><span class='to'>" + tx.outputs[j].value / conversion + 
+                "</span> to " + address + "</p>";
+        }
+    }
+    // better format time
+    var dateTime = tx.received.replace(/T|Z/gi, " ");
+    transactionsHTML = 
+    "<h5>" + coin + " transaction successful!</h5>" +
+    "<div><p>Received at " + dateTime + "</p></div>" +
+    "<div>" + inHTML + "</div>" +
+    "<div>" + outHTML + "</div>";
+    document.getElementById("send-response-results-container").innerHTML = transactionsHTML;
 }
 
 var displayTxErrors = function(errorList) {

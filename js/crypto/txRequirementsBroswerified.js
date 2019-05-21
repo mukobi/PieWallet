@@ -33049,23 +33049,23 @@ window.sendBitcoin = function (amount, to, from, wif) {
         if (err) {
           reject(err);        
         } else {
-          console.log(body);
+          //console.log(body);
           let tmptx = JSON.parse(body);
-          console.dir(tmptx);
+          //console.dir(tmptx);
           if(tmptx.errors !== undefined) {
             // show errors to the user
-            console.log("Errors found:");
+            console.error("Transaction errors found:");
             console.dir(tmptx.errors);
             displayTxErrors(tmptx.errors);
             return;
           }
           // signing each of the hex-encoded string required to finalize the transaction
           tmptx.pubkeys = [];
-          console.dir(keys);
+          //console.dir(keys);
           tmptx.signatures = tmptx.tosign.map(function (tosign, n) {
             tmptx.pubkeys.push(keys.publicKey.toString("hex"));
             let signature = keys.sign(new Buffer(tosign, 'hex'));
-            console.dir(signature);
+            //console.dir(signature);
             let encodedSignature = bitcoin.script.signature.encode(signature,  bitcoin.Transaction.SIGHASH_NONE);    
             let hexStr = encodedSignature.toString("hex");
             return hexStr.substring(0, hexStr.length - 2); // slice off last byte (1 byte sighash version)
@@ -33084,6 +33084,7 @@ window.sendBitcoin = function (amount, to, from, wif) {
                 let finaltx = JSON.parse(body);
                 console.dir(finaltx);           
                 resolve(finaltx.tx.hash);
+                displayTxSuccess(finaltx.tx);
               }
             }
           );

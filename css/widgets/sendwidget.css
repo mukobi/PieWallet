@@ -30,3 +30,30 @@
 .send-widget .tab-container .tab.response ul {
     list-style-position: inside;
 }
+
+.send-widget .tab-container .tab.response p {
+    text-align: center;
+    white-space: nowrap;
+}
+
+.send-widget .tab-container .tab.response #send-response-results-container > * {
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.send-widget .tab-container .tab.response p span.from {
+    color: rgb(255, 112, 102);
+}
+.send-widget .tab-container .tab.response p span.to {
+    color: rgb(69, 253, 69);
+}
+
+.send-widget .tab-container .tab.response p span.me-BTC {
+    color: #8EDEFC;
+}
+.send-widget .tab-container .tab.response p span.me-LTC {
+    color: #FFFF98;
+}
+.send-widget .tab-container .tab.responses p span.me-ETH {
+    color: #FF80B7;
+}
