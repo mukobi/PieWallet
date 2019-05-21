@@ -33082,6 +33082,7 @@ window.sendBitcoin = function (amount, to, from, wif) {
               } else {
                 // return tx hash as feedback
                 let finaltx = JSON.parse(body);
+                console.log("Transaction successful! Transaction:");
                 console.dir(finaltx);           
                 resolve(finaltx.tx.hash);
                 displayTxSuccess(finaltx.tx);
