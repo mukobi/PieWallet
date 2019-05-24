@@ -274,6 +274,7 @@ html {
 	width: 48px;
 	margin-bottom: 4px;
 }
+
 @media screen and (max-height: 840px) {
 	#navigation-menu .navicon .imgleft {
 		width: 48px;
