@@ -40,7 +40,7 @@
             echo "active";
         } ?>">
         <a href="/unlockWallet.php">
-            <img class="imgleft" src="/images/navigation/transactions.png" />
+            <img class="imgleft" src="/images/navigation/unlock.svg" />
             <p>Unlock</p>
         </a>
     </div>
@@ -58,7 +58,7 @@
             echo "active";
         } ?>">
         <a href="/search.php">
-            <img class="imgleft" src="/images/navigation/search.png" />
+            <img class="imgleft" src="/images/navigation/search.svg" />
             <p>Search</p>
         </a>
     </div>
