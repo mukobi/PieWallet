@@ -1,5 +1,6 @@
 <?php
-if(strpos($_SERVER['SERVER_NAME'], "000webhost") != false) {  // test server
+if(strpos($_SERVER['SERVER_NAME'], "piewallet") !== false || 
+   strpos($_SERVER['SERVER_NAME'], "000webhost") !== false) {  // prod servers
     define('TG_BOT_TOKEN', '637599184:AAFhVYf-dJEIVLqAWQWj4mk_RYE0vOuEcYk');
     define('TG_BOT_NAME', 'PiewalletBot');
 }
