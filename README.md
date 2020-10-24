@@ -1,4 +1,4 @@
-# PieWallet-Frontend-Development
+# PieWallet
 
 PieWallet is a hybrid cryptocurrency wallet and social media web app built in PHP and JavaScript as a freelance project: If you crossed your favourite cryptocurrency with Venmo, you might get something like PieWallet. For security, users must record their private keys offline until ready for exchange with a linked partner, but public keys are paired with profiles and stored in PieWallet’s database allowing for social interactions like user search, following/followers, and crypto requests.
 
